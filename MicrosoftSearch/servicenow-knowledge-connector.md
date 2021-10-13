@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 ServiceNow 知識 Graph 連接器
-ms.openlocfilehash: 8052571124a74dfa92e5cd81deceee044081ecc1
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: 49dbfd069e9d419d525e12ae9230bfb6d80f7672
+ms.sourcegitcommit: f16e61bde8dbacd84565e29032b600d0724604ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375808"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60332989"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -69,7 +69,7 @@ ms.locfileid: "59375808"
  
 - 基本驗證 
 - ServiceNow OAuth (建議) 
-- Azure AD OpenID 連線
+- Azure ADOpenID 連線
 
 ## <a name="step-31-basic-authentication"></a>步驟3.1：基本驗證
 
@@ -83,7 +83,7 @@ ms.locfileid: "59375808"
 
 欄位 | 描述 | 建議值 
 --- | --- | ---
-姓名 | 識別您需要 OAuth 存取之應用程式的唯一值。 | Microsoft 搜尋
+名稱 | 識別您需要 OAuth 存取之應用程式的唯一值。 | Microsoft 搜尋
 用戶端識別碼 | 應用程式的唯讀、自動產生的唯一識別碼。 當實例要求存取權杖時，會使用用戶端識別碼。 | NA
 用戶端密碼 | 使用此共用的機密字串，ServiceNow 實例和 Microsoft 搜尋會授權彼此進行通訊。 | 遵循安全性最佳作法，將密碼當做密碼對待。
 重新導向 URL | 授權伺服器重新導向所需的回撥 URL。 | https://gcs.office.com/v1.0/admin/oauth/callback
@@ -150,7 +150,7 @@ ServiceNow 實例需要下列設定：
 
    欄位 | 描述 | 建議值
    --- | --- | ---
-   姓名 | 識別 OAuth OIDC 實體的唯一名稱。 | Azure AD
+   名稱 | 識別 OAuth OIDC 實體的唯一名稱。 | Azure AD
    用戶端識別碼 | 在協力廠商 OAuth OIDC server 中註冊之應用程式的用戶端識別碼。 實例在要求存取權杖時使用用戶端識別碼。 | Application (Client) ID 從步驟3。
    用戶端密碼 | 在協力廠商 OAuth OIDC server 中註冊之應用程式的用戶端密碼。 | 步驟3的用戶端密碼。 b
 
@@ -168,7 +168,7 @@ ServiceNow 實例需要下列設定：
    應用程式 | 全域
    使用者宣告 | 子
    使用者欄位 | 使用者識別碼
-   啟用 JTI 宣告驗證 | 停用
+   啟用 JTI 宣告驗證 | 已停用
 
 5. 選取 [提交並更新 OAuth OIDC 實體表單]。
 
@@ -189,7 +189,7 @@ ServiceNow 實例需要下列設定：
 
 存取您用 ServiceNow 主體識別碼建立的 ServiceNow 帳戶做為使用者識別碼並指派知識角色。 您可以在這裡找到將角色指派給 ServiceNow 帳戶的指示， [將角色指派給使用者](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)。 請參閱「 [步驟3：連線設定](#step-3-connection-settings) 」的開頭中的表格，以提供更多 ServiceNow 表記錄的讀取權，以及索引使用者準則許可權。
 
-使用應用程式識別碼做為用戶端識別碼 (從步驟3。系統管理中心) 中的) 和用戶端密碼 (，以使用 Azure AD ServiceNow OpenID 來驗證您的連線實例。
+使用應用程式識別碼做為用戶端識別碼 (從步驟3。系統管理中心) 中的) 和用戶端密碼 (，以使用 ServiceNow Azure AD OpenID 來驗證您的連線實例。
 
 ## <a name="step-4-select-properties-and-filter-data"></a>步驟4：選取屬性和篩選資料
 
@@ -205,16 +205,16 @@ ServiceNow 連接器支援 **所有人都** 可以看到的搜尋許可權，或
 
 ServiceNow Graph 連接器支援不含高級腳本的預設使用者準則許可權。 當連接器使用 advanced script 遇到使用者準則時，所有使用該使用者準則的資料都不會出現在搜尋結果中。
 
-如果您只選擇可 **存取此資料來源的人員**，您需要進一步選擇是否 ServiceNow 實例 Azure Active Directory (AAD) 已布建的使用者或非 AAD 使用者。
+如果您只選擇可 **存取此資料來源的人員**，您需要進一步選擇是否 ServiceNow 實例具有 Azure Active Directory (AAD) 已布建的使用者或非 AAD 的使用者。
 
 若要找出適合您組織的選項：
 
-1. 如果 ServiceNow 使用者的電子郵件識別碼與 AAD 中使用者的 UserPrincipalName (UPN) **相同**，請選擇 [ **aad** ] 選項。
-2. 如果 ServiceNow 使用者的電子郵件識別碼 **不同** 于 AAD 中使用者的 USERPRINCIPALNAME (UPN) ，請選擇 [**非 AAD** ] 選項。 
+1. 如果 ServiceNow 使用者的電子郵件識別碼與) 中使用者的 UserPrincipalName (UPN AAD **相同**，請選擇 **AAD** 選項。
+2. 如果 ServiceNow 使用者的電子郵件識別碼 **不同** 于) 中使用者的 UserPrincipalName (UPN AAD，請選擇 [**非 AAD** ] 選項。 
 
 >[!NOTE]
-> * 如果您選擇 [AAD] 做為身分識別來源的類型，連接器就會將從 ServiceNow 直接從取得之使用者的電子郵件 IDs，對應至 AAD 的 UPN 屬性。
-> * 如果您為身分識別類型選擇「非 AAD」，請參閱 [對應您的非 AZURE AD](map-non-aad.md) 身分識別，以取得對應身分識別的指示。 您可以使用此選項，提供從電子郵件識別碼到 UPN 的對應正則運算式。
+> * 如果您選擇 AAD 做為身分識別來源的類型，連接器會將透過 ServiceNow 直接從取得之使用者的電子郵件 IDs，對應到 AAD 中的 UPN 屬性。
+> * 如果您為身分識別類型選擇「非 AAD」，請參閱[對應您的非 Azure AD](map-non-aad.md)身分識別，以取得對應身分識別的指示。 您可以使用此選項，提供從電子郵件識別碼到 UPN 的對應正則運算式。
 
 
 ## <a name="step-6-assign-property-labels"></a>步驟6：指派屬性標籤
@@ -256,7 +256,10 @@ ServiceNow 知識 Graph 連接器在其最新版本中有下列限制：
 #### <a name="21-check-table-access-permissions"></a>2.1。 檢查表存取許可權
 如果您在線上狀態中看到禁止回應或未經授權的回應，請檢查服務帳戶是否需要存取 [步驟3：連線設定](#step-3-connection-settings)中所述的資料表。 請檢查表格中的所有資料行是否都有讀取權。
 
-#### <a name="22-check-if-servicenow-instance-behind-firewall"></a>2.2。 檢查防火牆背後 ServiceNow 實例是否
+#### <a name="22-change-in-account-password"></a>2.2。 變更帳戶密碼
+Graph 連接器會使用代表服務帳戶取得的存取權杖，以進行編目。 存取權杖每12小時會更新一次。 確定服務帳戶密碼在發佈連線之後未變更。 如果密碼變更，您可能需要重新驗證連線。
+
+#### <a name="23-check-if-servicenow-instance-behind-firewall"></a>2.3。 檢查防火牆背後 ServiceNow 實例是否
 Graph如果連接器位於網路防火牆之後，連接器可能無法與您的 ServiceNow 實例取得聯繫。 您將需要明確允許存取 Graph Connector service。 您可以在下表中找到 Graph 連接器服務的公用 IP 位址範圍。 根據您的租使用者區域，將其新增至您的 ServiceNow 實例網路允許清單。
 
 **環境** | **地區** | **Range**
@@ -265,7 +268,7 @@ Graph如果連接器位於網路防火牆之後，連接器可能無法與您的
 促使 | 歐洲 | 20.54.41.208/30、51.105.159.88/30 
 促使 | 亞太地區 | 52.139.188.212/30、20.43.146.44/30 
 
-#### <a name="23-access-permissions-not-working-as-expected"></a>2.3。 存取權未如預期般運作
+#### <a name="24-access-permissions-not-working-as-expected"></a>2.4。 存取權未如預期般運作
 如果您觀察套用至搜尋結果的存取權限中的差異，請在 [管理知識庫和文章存取](https://docs.servicenow.com/bundle/rome-servicenow-platform/page/product/knowledge-management/concept/user-access-knowledge.html)中的使用者準則中驗證 access 流程圖表。
 
 如果您有任何其他問題，或想要提供意見反應，請寫信給我們 [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors)
