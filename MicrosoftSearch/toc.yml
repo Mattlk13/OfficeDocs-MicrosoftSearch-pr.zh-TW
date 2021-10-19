@@ -117,6 +117,8 @@ items:
             href: overview-microsoft-search-bing.md
           - name: 安全性和隱私權
             href: security-for-search.md
+          - name: 自訂 Microsoft Edge 的網址列快捷方式
+            href: edge-shortcuts.md
           - name: 將搜尋方塊新增至您的內部網路網站
             href: add-a-search-box-to-your-intranet-site.md
           - name: '選取學校或工作搜尋體驗 (預覽) '
