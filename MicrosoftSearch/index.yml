@@ -55,6 +55,8 @@ additionalContent:
               url: manage-powerbi.md
             - text: 管理 Q&
               url: manage-qas.md
+            - text: 管理搜尋應用程式
+              url: manage-search-apps.md
         - title: 管理資料來源
           links:
             - text: Graph連接器概述

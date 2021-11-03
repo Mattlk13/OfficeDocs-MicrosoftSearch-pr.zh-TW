@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: 建立和更新大量編輯 Microsoft 搜尋書簽結果的書簽和方式
-ms.openlocfilehash: a08bef9ccc56d395fe6570bacc856653ff3a1563
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: 613ff71a4108579c1bcd7158fb2571063a420e56
+ms.sourcegitcommit: d2bb36b6d3102b08ced93faa5e102bdb7e7e1e5f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375717"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60720593"
 ---
 # <a name="manage-bookmarks"></a>管理書籤
 
@@ -104,7 +104,7 @@ ms.locfileid: "59375717"
 
 若要減少新增書簽所需的手動操作，Microsoft 搜尋可以評估組織的 SharePoint 連結和建議書簽。 您可以在發佈之前加以檢查，或將其設為自動發行。 建議的書簽不需要任何安裝程式，預設會啟用並設定為 autopublish。 若要隨時變更這些設定，請選取 [ **管理書簽** ] 以開啟 [書簽設定] 面板。
 
-![Microsoft 365 管理入口網站中建議的書簽設定的螢幕擷取畫面。](media/bookmarks-recommendedsettings.png)
+:::image type="content" alt-text="Microsoft 365 管理入口網站中建議的書簽設定的螢幕擷取畫面。" source="media/bookmarks-recommendedsettings.png":::
 
 如果已啟用建議的書簽，則建議引擎會評估組織中的 SharePoint 網站，以識別高流量連結。 在初始評估期間之後，建議的書簽會 autopublished 或加入至建議的書簽清單。 接下來的週期（30天評估期間後接 autopublishing 或加入建議的書簽）會開始。
 

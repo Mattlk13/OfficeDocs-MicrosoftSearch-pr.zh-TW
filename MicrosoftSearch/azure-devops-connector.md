@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 Azure DevOps Graph 連接器
-ms.openlocfilehash: fcf381a92ef397f900b300ca667fa80067a6672a
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: a89b9d433cf78c1207fc4cad13e70cc59a9fdc06
+ms.sourcegitcommit: d2bb36b6d3102b08ced93faa5e102bdb7e7e1e5f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375725"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60720578"
 ---
 <!---Previous ms.author: shgrover --->
 
@@ -35,8 +35,20 @@ Azure DevOps Graph 連接器可讓您的組織為其 Azure DevOps 服務實例�
 >Azure DevOps 連接器只支援 Azure DevOps 雲端服務。 Azure DevOps Server 2019、tfs 2018、tfs 2017、tfs 2015 和 tfs 2013 都不受此連接器支援。
 
 <!---## Before you get started-->
+## <a name="before-you-get-started"></a>開始之前
+您必須是組織之 M365 租使用者的系統管理員，以及組織 Azure DevOps 實例的管理員。
 
-<!---Insert "Before you get started" recommendations for this data source-->
+若要允許連接器連線到您的 Azure DevOps 組織，您必須透過 **OAuth 啟用協力廠商應用程式存取**。 請參閱 Azure DevOps 檔，以[管理安全性原則](/azure/devops/organizations/accounts/change-application-access-policies?view=azure-devops#manage-a-policy&preserve-view=true)以深入瞭解。
+
+![透過 OAuth 的協力廠商應用程式存取](media/ado-workitems-connector-security-policies.png)
+
+您必須將下列許可權授與在設定連接器時使用其認證的使用者帳戶：
+
+| 許可權名稱 | 許可權類型 | 需要的 |
+| ------------ | ------------ | ------------ |
+| 查看專案層級資訊 | [Project 許可權](/azure/devops/organizations/security/permissions?view=azure-devops&tabs=preview-page#project-level-permissions&preserve-view=true) | 編目 Azure DevOps 的工作專案。 此許可權對於需要編制索引的專案是 **必要** 的。 |
+| _View analytics_ | [Project 許可權](/azure/devops/organizations/security/permissions?view=azure-devops&tabs=preview-page#project-level-permissions&preserve-view=true) | 編目 Azure DevOps 的工作專案。 此許可權對於需要編制索引的專案是 **必要** 的。 |
+| _查看此節點中的工作專案_ | [區域路徑](/azure/devops/organizations/security/permissions?view=azure-devops&tabs=preview-page#area-path-object-level&preserve-view=true) | 編目區域路徑中的工作專案。 這是 **選用** 的許可權。 只有那些區域路徑會進行編目，讓使用者帳戶具有許可權。 |
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟1：在 Microsoft 365 系統管理中心中新增 Graph 連接器
 
@@ -90,6 +102,9 @@ instructions.-->
 
 如果您選擇個別專案，則只有那些專案中的工作專案將會編制索引。
 
+> [!NOTE]
+> 在授與專案的專案 _層級資訊_ 和 _view analytics_ 許可權之後，可將 Azure DevOps 專案編目。
+
 ![設定資料。](media/ADO_Configure_data.png)
 
 接下來，選取您要連線索引及預覽這些欄位中資料的欄位，然後再繼續進行。
@@ -127,11 +142,17 @@ Azure DevOps 連接器支援完整和累加編目的更新排程。
 instructions.-->
 
 ## <a name="troubleshooting"></a>疑難排解
-以下是設定連接器時所觀察到的常見錯誤及其可能的原因。
+在設定連接器時或在編目期間，發現下列常見錯誤及其可能的原因。
 
-| 設定步驟 | 錯誤訊息 | 可能的原因 (s)  |
+| 步驟 | 錯誤訊息 | 可能的原因 (s)  |
 | ------------ | ------------ | ------------ |
-|  | `The account associated with the connector doesn't have permission to access the item.` | 已註冊的應用程式沒有任何必要的 OAuth 範圍。  (記事-已于8/31/2021 引進新的 OAuth 範圍需求 ' Analytics： read ')   |
+| 連接設定 | `Invalid Credentials detected. Try signing in with a different account or check the permissions for your account` | 可能會停用 *OAuth 的協力廠商應用程式存取*。 遵循 [管理安全性原則](/azure/devops/organizations/accounts/change-application-access-policies?view=azure-devops#manage-a-policy&preserve-view=true) 以啟用 OAuth 的步驟。 |
+| 連接設定 | `Bad state` 顯示 URL 的 OAuth 快顯視窗中的訊息說明 `error=InvalidScope` | 向登錄的應用程式提供錯誤範圍。 |
+| 連接設定 | `400 - Bad request` OAuth 快顯視窗中的訊息 | 不正確的應用程式識別碼 |
+| 連接設定 | `BadRequest: Bad Request on api request` OAuth 快顯視窗中的訊息 | 不正確的用戶端密碼 |
+|  (後置後設定) 的編目時間 | `The account associated with the connector doesn't have permission to access the item.` | 已註冊的應用程式沒有任何必要的 OAuth 範圍。  (記事-已于8/31/2021 引進新的 OAuth 範圍需求 ' Analytics： read ')  |
+|  (後置後設定) 的編目時間 | `You don't have permission to access this data source. You can contact the owner of this data source to request permission.` | 已停用 *OAuth 的協力廠商應用程式存取*。 遵循 [管理安全性原則](/azure/devops/organizations/accounts/change-application-access-policies?view=azure-devops#manage-a-policy&preserve-view=true) 以啟用 OAuth 的步驟。 |
+|  (後置後設定) 的編目時間 | `Credentials associated with this data source have expired. Renew the credentials and then update the connection` | 註冊的應用程式可能已遭刪除或過期。 |
 
 <!---## Limitations-->
 <!---Insert limitations for this data source-->

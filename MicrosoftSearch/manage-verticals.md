@@ -7,45 +7,54 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 ms.localizationpriority: medium
+ms.date: 10/27/2021
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 在 [結果] 頁面上管理搜尋縱向
-ms.openlocfilehash: 0396c1f67b22a77a39f78aa1f058ee4b2019a39c
-ms.sourcegitcommit: 02d4f91210d992da080fd39d5b60f8cf30d8f0b2
+ms.openlocfilehash: c4cff0d16977bfe7b321edceb1c3b23322bc503c
+ms.sourcegitcommit: d2bb36b6d3102b08ced93faa5e102bdb7e7e1e5f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60238401"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60720630"
 ---
 # <a name="manage-search-verticals"></a>管理搜尋行業
 
-搜尋縱向是搜尋結果頁面上的索引標籤，顯示特定類型的結果或從 [選取來源]。 例如，檔會顯示分類為檔案的結果，並可讓尋找檔的使用者輕鬆。 您可以在 Microsoft 搜尋中自訂各行業，以符合組織或個別部門的需求。
+搜尋縱向是搜尋結果頁面上的索引標籤，顯示特定類型的結果或從 [選取來源]。 例如，檔會顯示分類為檔案的結果，並可讓尋找檔的使用者輕鬆。 您可以在 Microsoft 搜尋中自訂各行業，以符合組織或個別部門的需求。 Microsoft 搜尋有兩種類型的縱向，現成或預設和自訂的縱向。 預設的縱向（如「所有」、「檔案」及「人員」）可輕鬆存取最常用的搜尋結果。
 
 您可以在兩個層次管理縱向：
 
 - **組織層級**-當使用者從 [SharePoint](https://sharepoint.com/)開始頁面、 [Microsoft Office](https://office.com)及 Microsoft 搜尋搜尋時，會顯示在 [搜尋結果] 頁面上的垂直位置 [Bing](https://bing.com)
 - **網站層級**-當使用者在 SharePoint 網站上搜尋時，會在 [搜尋結果] 頁面上顯示該網站層級的垂直位置。 例如，您可能想要讓客戶服務員工直接從部門的 SharePoint 網站搜尋嚴重性1事件。
 
-## <a name="understanding-search-verticals"></a>瞭解搜尋縱向
+## <a name="default-verticals"></a>預設的縱向
 
-Microsoft 搜尋有兩種類型的縱向，可供盒內和自訂的縱向。 現成的縱向（如所有）、檔案和人員，都能輕鬆存取最常用的搜尋結果。
+在組織層級（如[Bing](https://bing.com/)或在每個網站搜尋結果頁面的 SharePoint 網站層級）中，會顯示預設的縱向[SharePoint](https://sharepoint.com/)、 [Microsoft Office](https://office.com/)和 Microsoft 搜尋。 
 
-其他設定選項是針對自訂的行業提供，可用來為您的使用者建立最佳的體驗。
+以下是盒中的縱向自訂功能摘要。
 
-您可以新增與您組織相關的搜尋行業。 例如，您可以根據每個部門所需的資訊類型，為行銷相關的內容及另一個銷售人員建立垂直。 您可以新增縱向以顯示由[Graph 連接器](connectors-overview.md)編制索引的內容結果，但無法為位於 SharePoint 中的內容建立垂直。
+|自訂類型   |組織層級     |網站層級   |
+|---------|---------|---------|
+| 重新命名垂直    | 是 |是  |
+| 停用垂直   | 部分       |是  |
+| 新增查詢      | 部分       |是  |
 
-## <a name="create-search-verticals"></a>建立搜尋行業
+## <a name="custom-verticals"></a>自訂的縱向
+您可以新增與您組織相關的搜尋行業。 例如，您可以根據每個部門所需的資訊類型，為行銷相關的內容及另一個銷售人員建立垂直。 您可以新增縱向，以顯示由 Graph 連接器或從 SharePoint 編制索引的內容結果。
 
-「垂直管理經驗」是由嚮導驅動，您可以逐步指導您定義要搜尋之內容的豎直名稱、內容來源及範圍。 您可以使用一組有限的 [關鍵字查詢語言 (KQL) ](#keyword-query-language-kql) 來定義指定內容來源的垂直搜尋範圍。
+> [!NOTE]
+> 為 SharePoint 內容來源新增縱向是在預覽中，僅供目標版本使用者使用。  
+> 
+## <a name="create-or-modify-search-verticals"></a>建立或修改搜尋縱向
 
-以下是在 [SharePoint home](https://sharepoint.com/)、 [Office](https://office.com/)或 [Bing](https://bing.com/)的 Microsoft 搜尋上建立自訂縱向的步驟。  
+「垂直管理經驗」是由嚮導驅動，您可以逐步指導您定義要搜尋之內容的豎直名稱、內容來源及範圍。 您可以使用一組有限的 [關鍵字查詢語言 (KQL) ](#keyword-query-language-kql) 來定義指定內容來源的垂直搜尋範圍。 您也可以在組織和網站層級，將篩選新增至現成和自訂的行業。 如需篩選的詳細資訊，請參閱 [管理篩選器](/microsoftsearch/custom-filters)。
 
 ### <a name="manage-organization-level-verticals"></a>管理組織層級的縱向
 
 1. 在 [Microsoft 365 系統管理中心](https://admin.microsoft.com)中，移至 [**自訂**] 區段中的 [[**縱向**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)] 頁面。
-1. 按一下 [ **新增** ] 以建立新的垂直。
+1. 選取現有的垂直，然後按一下 [ **編輯** ]，或按一下 [ **新增** ] 以建立新的垂直。
 1. 在完成設定步驟之後，您可以檢查並儲存垂直。  
 
 ### <a name="manage-site-level-verticals"></a>管理網站層級的縱向
@@ -54,10 +63,10 @@ Microsoft 搜尋有兩種類型的縱向，可供盒內和自訂的縱向。 現
 1. 選取 [ **網站資訊**]，然後選取 [ **查看所有網站設定**]。  
 1. 尋找 [Microsoft 搜尋] 區段，然後選取 [ **設定搜尋設定**]。
 1. 在功能窗格中，移至 [自訂經驗]，然後選取 [ **縱向**]。
-1. 按一下 [ **新增** ] 以建立新的垂直。
+1. 選取現有的垂直，然後按一下 [ **編輯** ]，或按一下 [ **新增** ] 以建立新的垂直。
 1. 設定好設定後，您可以檢查並儲存垂直。  
 
-## <a name="view-the-vertical-in-search-results"></a>在搜尋結果中查看垂直
+## <a name="view-the-vertical-in-the-search-result-page"></a>在搜尋結果頁面中查看垂直
 
 搜尋[結果版面](manage-result-types.md)配置是在搜尋類別頁面上轉譯的 Graph 連接器結果所需。 在確保有適當的結果版面配置時，您可以啟用搜尋類別。 在您啟用垂直時，會有幾個小時的延遲，您才能進行查看。 您可以將 cacheClear = true 新增至 SharePoint 和 Office 中的 URL，以便立即查看垂直方向。 在 Bing 中，append &features = uncachedVerticals 至工作垂直 URL，以立即查看垂直。
 
@@ -100,7 +109,7 @@ Microsoft 搜尋有兩種類型的縱向，可供盒內和自訂的縱向。 現
 
 這種語言會縮小搜尋結果，只顯示受託人為執行搜尋之使用者的專案。
 
-[設定檔資源](/graph/api/resources/profile) 公開屬性做為集合。 例如，電子郵件地址相關的資訊會透過電子郵件集合、工作職位集合等方式公開。 使用者設定檔中所有可用的屬性，都是以「AAD」為來源類型的方式公開為查詢變數。
+[設定檔資源](/graph/api/resources/profile) 公開屬性做為集合。 例如，電子郵件地址相關的資訊會透過電子郵件集合、工作職位集合等方式公開。 使用者設定檔中所有可用的屬性都會公開為查詢變數。
 
 請考慮電子郵件集合中有三個可用電子郵件地址的使用者，如下所示：
 
@@ -150,10 +159,13 @@ Microsoft 搜尋有兩種類型的縱向，可供盒內和自訂的縱向。 現
 | 3     | {?MyProperty： {Profile. 電子郵件}}  |  這不會解決，因為 *電子郵件* 是物件。 "？" 運算子會忽略未解析的查詢變數。 在查詢堆疊上進一步傳遞時，將會移除此變數。   |
 | 4  | {&#124;MyProperty： {Profile. Type}}    |   ( (MyProperty： "官方" ) 或 (MyProperty： "非官方" ) 或 (MyProperty： "personal" ) )     |
 
-> [!NOTE]
->
-> - 只有使用 [連接器](connectors-overview.md) 做為內容來源的自訂的行業，才支援設定檔查詢變數。
-> - 「設定檔查詢變數」功能目前正在預覽中。 如需預覽的詳細資訊，請參閱 [連接器預覽功能](connectors-overview.md#what-are-the-preview-features)。
+## <a name="limitations"></a>限制
+- 在修改後，語言當地語系化不適用於 box 縱向的名稱。 
+- KQL 不適用於從使用者 OneDrive 所呈現的內容。 
+- 自訂的縱向不會出現在 Microsoft 搜尋的行動裝置視圖上。 
+- 在 [人員] 垂直上不支援新增查詢。 
+- 組織中的來賓使用者看不到縱向修改和新的縱向。 
+- 不支援縱向重新排序 
 
 ## <a name="troubleshooting"></a>疑難排解
 
@@ -163,3 +175,5 @@ Microsoft 搜尋有兩種類型的縱向，可供盒內和自訂的縱向。 現
 |---------|---------|
 | 在垂直上看到「發生錯誤」錯誤訊息。 | 需要有垂直和結果類型，才可完成設定。 請確定內容來源已設定兩者。 |
 | 在垂直頁面上沒有看到任何內容來源。 | 請確定您已設定連接器和索引的資料。   |
+
+

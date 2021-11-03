@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 ServiceNow 知識 Graph 連接器
-ms.openlocfilehash: 49dbfd069e9d419d525e12ae9230bfb6d80f7672
-ms.sourcegitcommit: f16e61bde8dbacd84565e29032b600d0724604ab
+ms.openlocfilehash: 4456149671f1d825b1686cba3ca5d49df51a46b3
+ms.sourcegitcommit: d2bb36b6d3102b08ced93faa5e102bdb7e7e1e5f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60332989"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60720648"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -58,8 +58,12 @@ ms.locfileid: "60332989"
 | | sys_user_grmember | 使用者的讀取群組成員資格
 | | user_criteria | 讀取使用者準則許可權
 | | kb_knowledge_base | 閱讀知識文庫資訊
+索引擴充表格屬性 (選用)  | sys_db_object | 讀取擴充表格詳細資料
+| | sys_dictionary | 讀取擴充表格屬性
 
 您可以為您用來連線 Microsoft 搜尋的服務帳戶 **建立並指派角色**。 [瞭解如何指派 ServiceNow 帳戶的角色](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)。 您可以在建立的角色上指派對表格的讀取權限。 若要瞭解如何設定表記錄的「讀取」存取權，請參閱 [保護資料表記錄](https://developer.servicenow.com/dev.do#!/learn/learning-plans/orlando/new_to_servicenow/app_store_learnv2_securingapps_orlando_creating_and_editing_access_controls)。 
+
+若要從 *kb_knowledge* 的 [擴充表格](https://docs.servicenow.com/bundle/rome-platform-administration/page/administer/table-administration/concept/table-extension-and-classes.html_)中索引屬性，請提供 sys_dictionary 和 sys_db_object 的讀取權限。 這是選用的功能。 您可以編制索引 *kb_knowledge* 資料表屬性，但不能存取其他兩個數據表。
 
 
 >[!NOTE]

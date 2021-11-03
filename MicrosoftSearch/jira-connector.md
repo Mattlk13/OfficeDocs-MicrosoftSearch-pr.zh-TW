@@ -13,19 +13,20 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 Atlassian Jira Graph 連接器
-ms.openlocfilehash: 0b4b1dc0ed1f9e9d3ca57f98dc3878f63e68d510
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: 1edc5adec820aea9a3cb9b1a23dec0791b291495
+ms.sourcegitcommit: d2bb36b6d3102b08ced93faa5e102bdb7e7e1e5f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375730"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60720621"
 ---
 # <a name="atlassian-jira-graph-connector-preview"></a>Atlassian Jira Graph connector (preview) 
 
 Atlassian Jira Graph connector 可讓您的組織建立 Jira 問題的索引。 在您設定 Jira 網站的連接器和索引內容之後，使用者就可以在 Microsoft 搜尋中搜尋這些專案。
 
 > [!NOTE]
-> 請閱讀 [**Graph 連接器**](configure-connector.md)文章的設定，以瞭解一般 Graph 連接器設定指示。
+> * 請閱讀 [**Graph 連接器**](configure-connector.md)文章的設定，以瞭解一般 Graph 連接器設定指示。
+> * Atlassian Jira Graph connector 位於預覽中。 如果您想要取得儘早的試用權，請使用 [<b> 此表單 </b>](https://forms.office.com/r/kVZAvpn6YP)註冊。
 
 本文適用于任何設定、執行及監控 Atlassian Jira Graph connector 的使用者。 它會補充一般設定程式，並顯示只適用于 Atlassian Jira Graph connector 的指示。
 
@@ -33,7 +34,17 @@ Atlassian Jira Graph connector 可讓您的組織建立 Jira 問題的索引。 
 >Atlassian Jira Graph connector 只支援 Jira 雲端主控的實例。 此連接器不支援 Jira Server 和 Jira 資料中心版本。
 
 ## <a name="before-you-get-started"></a>開始之前
+
 您必須是組織之 M365 租使用者的系統管理員，以及組織之 Jira 網站的管理員。
+
+您必須將下列許可權授與在設定連接器時使用其認證的使用者帳戶：
+
+| 許可權名稱 | 許可權類型 | 需要的 |
+| ------------ | ------------ | ------------ |
+| 流覽專案 | [Project 許可權](https://support.atlassian.com/jira-cloud-administration/docs/manage-project-permissions/) | 編目 Jira 問題。 此許可權對於需要編制索引的專案是 **必要** 的。 |
+| 問題層級安全性許可權 | [問題層級安全性](https://support.atlassian.com/jira-cloud-administration/docs/configure-issue-security-schemes/) | 編目不同的問題類型。 這是 **選用** 的許可權。 |
+| 流覽使用者和群組   | [通用權限](https://support.atlassian.com/jira-cloud-administration/docs/manage-global-permissions/) | 搜尋結果的 ACL 修整。 此許可權是 **選用** 的，而且必須選取 `Only people with access to this data source` 下列步驟4中的選項。 |
+| 管理 Jira | [通用權限](https://support.atlassian.com/jira-cloud-administration/docs/manage-global-permissions/) | 搜尋結果的 ACL 修整。 此許可權是 **選用** 的，而且必須選取 `Only people with access to this data source` 下列步驟4中的選項。 |
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟1：在 Microsoft 365 系統管理中心中新增 Graph 連接器
 遵循一般 [設定指示](./configure-connector.md)。
@@ -68,7 +79,11 @@ Atlassian Jira Graph connector 可讓您的組織建立 Jira 問題的索引。 
 * 如果您選擇為整個 Jira 網站編制索引，網站中的所有專案的 Jira 問題都會取得索引。 在建立新專案及問題之後，會在下一次編目期間編制索引。
 * 如果您選擇個別專案，則只有那些專案中的 Jira 問題會編制索引。
 
+> [!NOTE]
+> 當您授與 _流覽專案_ Jira 專案的許可權時，會列出該專案，而且可以進行編目。 如果專案遺失，請檢查您的帳戶許可權。
+
 您可以進一步選擇篩選將以兩種方式編制索引的 Jira 問題。
+
 * 指定 **問題的修改時間週期**。 這只會針對根據目前編目所 **選取的時間** 週期建立或修改的 Jira 問題進行索引。
 * 指定 **JQL**。 這只會為根據提供的 Jira 查詢語言 (JQL) 所傳回的 Jira 問題建立索引。 若要深入瞭解如何使用 JQL，請參閱 Atlassian Support 檔， [使用具有 Jira 查詢語言的高級搜尋](https://support.atlassian.com/jira-service-management-cloud/docs/use-advanced-search-with-jira-query-language-jql/)
 
@@ -88,16 +103,16 @@ Atlassian Jira Graph connector 可以編制預設發貨欄位及自訂已建立�
 
 Atlassian Jira Graph connector 可對  **所有人** 或 **只有存取此資料來源的人員顯示的** 搜尋許可權。 如果您選擇 [ **任何人**]，索引資料將會出現在所有使用者的搜尋結果中。 如果您只選擇可 **存取此資料來源的人員**，則具有存取權的使用者可在搜尋結果中顯示索引的資料。 在 Atlassian Jira 中，安全性許可權是使用包含網站層級群組和專案角色的專案許可權架構來定義的。 您也可以使用問題層級許可權方案來定義問題層級安全性。
 
-如果您只選擇可 **存取此資料來源的人員**，您需要進一步選擇您的 Jira 網站是否有 Azure Active Directory (AAD) 布建使用者或非 AAD 使用者。
+如果您只選擇可 **存取此資料來源的人員**，您需要進一步選擇您的 Jira 網站是否有 Azure Active Directory (AAD) 已布建的使用者或非 AAD 的使用者。
 
 若要找出適合您組織的選項：
 
-1. 如果 Jira 使用者的電子郵件識別碼與 AAD 中使用者的 UserPrincipalName (UPN) **相同**，請選擇 [ **aad** ] 選項。
-2. 如果 Jira 使用者的電子郵件識別碼與 AAD 中使用者的 UserPrincipalName (UPN) **不同**，請選擇 **非 AAD** 選項。 
+1. 如果 Jira 使用者的電子郵件識別碼與 AAD 中使用者的 UserPrincipalName (UPN) **相同**，請選擇 **AAD** 選項。
+2. 如果 Jira 使用者的電子郵件識別碼 **不同** 于 AAD 中使用者的 UserPrincipalName (UPN) ，請選擇 [**非 AAD** ] 選項。
 
 >[!NOTE]
-> * 如果您選擇 [AAD] 做為身分識別來源的類型，連接器會將透過 Jira 直接從取得之使用者的電子 IDs 郵件，對應到 AAD 中的 UPN 屬性。
-> * 如果您為身分識別類型選擇「非 AAD」，請參閱 [對應您的非 AZURE AD](map-non-aad.md) 身分識別，以取得對應身分識別的指示。 您可以使用此選項，提供從電子郵件識別碼到 UPN 的對應正則運算式。
+> * 如果您選擇 AAD 做為身分識別來源的類型，連接器會將從 Jira 取得的使用者電子郵件 IDs 直接對應至 AAD 中的 UPN 屬性。
+> * 如果您為身分識別類型選擇「非 AAD」，請參閱[對應您的非 Azure AD](map-non-aad.md)身分識別，以取得對應身分識別的指示。 您可以使用此選項，提供從電子郵件識別碼到 UPN 的對應正則運算式。
 
 ## <a name="step-5-assign-property-labels"></a>步驟5：指派屬性標籤
 
@@ -117,14 +132,16 @@ Atlassian Jira Graph connector 支援完整和累加編目的更新排程。
 遵循一般 [設定指示](./configure-connector.md)。
 
 ## <a name="troubleshooting"></a>疑難排解
-下表是設定連接器時所觀察到的常見錯誤，以及可能的原因。
+以下是設定連接器或編目時所看到的常見錯誤清單，以及可能的原因。
 
-| 設定步驟 | 錯誤訊息 | 可能的原因 (s)  |
+| 步驟 | 錯誤訊息 | 可能的原因 (s)  |
 | ------------ | ------------ | ------------ |
 | 連接設定 | 要求格式錯誤或不正確。 | 不正確的 Jira 網站 URL |
 | 連接設定 | 無法到達 Jira 網站的 Jira 雲端服務。 | 不正確的 Jira 網站 URL |
 | 連接設定 | 用戶端沒有執行該動作的許可權。 | 針對基本驗證提供的 API 權杖無效 |
-
+| 連接設定 | OAuth 快顯視窗中的「發生錯誤」錯誤。 | 授與 OAuth 應用程式的範圍不相符。 快顯視窗中會列出不匹配的範圍。 |
+|  (後置後設定) 的編目時間 | 無法使用資料來源進行驗證。 驗證與此資料來源相關聯的認證是否正確。 | 使用者沒有編目 Jira 所需的一或多個許可權。 |
+|  (後置後設定) 的編目時間 | 您沒有存取此資料來源的許可權。 您可以聯繫此資料來源的擁有者以要求許可權。 | 在 OAuth 的情況下，應用程式範圍可能已變更，或應用程式可能已到期或已刪除。 <br> 若為基本驗證，API 權杖可能已到期或已刪除。 |
 
 ## <a name="limitations"></a>限制
 下列為 Atlassian Jira Graph connector 的已知限制：
