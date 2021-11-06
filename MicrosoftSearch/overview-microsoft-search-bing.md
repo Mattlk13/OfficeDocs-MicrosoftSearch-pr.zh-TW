@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 深入瞭解 Bing 中的 Microsoft 搜尋，包括您的使用者看到的體驗，以及如何簡化存取。
-ms.openlocfilehash: cfbe155e52e837e9744bf1eafcef3df134f8a88f
-ms.sourcegitcommit: 967a02ee932f8a6cee70cfd78bb0c8b1b78d07c4
+ms.openlocfilehash: df8968de5dd8ede05e190d50fc26186f3934fa11
+ms.sourcegitcommit: bd79449e3fcae2cb730828d99245704cc2f0bab1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60127764"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60805149"
 ---
 # <a name="overview-of-microsoft-search-in-bing"></a>Bing 中的 Microsoft 搜尋綜述
 
-Bing 中的 Microsoft 搜尋會將 Microsoft 搜尋和 Bing 網頁搜尋的功能彙集在一起。 它會提供熟悉的搜尋體驗，以協助使用者從您的組織和網頁找到相關的結果。 為了協助保護您的使用者和您的資料，使用者必須先登入其工作或學校帳戶的 Bing，才能找到內部結果。
+Bing 中的 Microsoft 搜尋會將 Microsoft 搜尋和 Bing 網頁搜尋的功能彙集在一起。 它會提供熟悉的搜尋體驗，以協助使用者從您的組織和網頁找到相關的結果。 為了協助保護您的使用者和您的資料，使用者必須先登入其工作或學校帳戶的 Bing，才能找到內部結果。 已登入至 Microsoft app 的使用者（包括 Microsoft Edge、Outlook 和 SharePoint）會在繼續進行 Bing 時自動登入。
 
 ## <a name="what-users-see"></a>使用者看到的內容
 
@@ -34,9 +34,23 @@ Bing 中的 Microsoft 搜尋會將 Microsoft 搜尋和 Bing 網頁搜尋的功�
 
 使用者可以尋找組織的標誌、名稱或其設定檔影像，輕鬆識別工作或學校結果。
 
+## <a name="where-users-can-start-a-search"></a>使用者可以從何處開始搜尋
+
+若要讓查找工作或學校搜尋變得更簡單，請 Microsoft 搜尋 Bing 支援多個進入點。 根據進入點，使用者可能會看到 [所有結果] 頁面或 [公司或學校結果] 頁面：
+
+|搜尋專案點|讓使用者能夠|
+|:-----|:-----|
+|Bing 首頁|所有結果頁面|
+|[工作](https://www.bing.com/work) 搜尋開始頁面|工作結果頁面|
+|[Windows搜索](https://support.microsoft.com/windows/search-for-anything-anywhere-b14cc5bf-c92a-1e73-ea18-2845891e6cc8)|內部網站、檔、所有結果或工作或學校結果頁面，視其選取的相符|
+|Microsoft Edge 位址列|所有結果頁面|
+|[Microsoft Edge 工作快捷方式](/microsoftsearch/edge-shortcuts)|工作結果頁面|
+|Microsoft Edge 新的] 索引標籤頁面|所有結果頁面|
+|內部網路或內部應用程式上的[內嵌搜尋](/microsoftsearch/add-a-search-box-to-your-intranet-site)方塊|「工作或學校結果」頁面|
+
 ## <a name="getting-started-with-microsoft-search-in-bing"></a>Bing 中 Microsoft 搜尋入門
 
-預設會為組織中的所有人啟用 Bing 中的 Microsoft 搜尋。 如果使用者已登入其他服務上的公司或學校帳戶，例如 Outlook、Microsoft Teams 或 SharePoint--當他們前往 Bing 時，會自動登入相同的帳戶。 如需詳細資訊，請參閱[Bing 專用 Microsoft 搜尋的安全性和隱私權](security-for-search.md)。
+預設會為組織中的所有人啟用 Bing 中的 Microsoft 搜尋。 為了協助確保您的使用者受到保護，Microsoft 搜尋 Bing 使用增強型隱私權及安全性措施。 如需詳細資訊，請參閱[Bing 專用 Microsoft 搜尋的安全性和隱私權](security-for-search.md)。
 
 如果您不熟悉 Bing 中的 Microsoft 搜尋，建議您複習 Bing 系統[管理重點指南](https://aka.ms/SearchAdminEssentials)中的 Microsoft 搜尋，以取得設定及部署資訊。 為了協助提高使用者對 Microsoft 搜尋的認知，我們[採用套件](https://aka.ms/SearchAdoptionKit)包含訓練和通訊資源。
 
@@ -66,7 +80,7 @@ Microsoft 搜尋的設計目的是讓內部資訊在您的使用者搜尋的任�
 
 **預設瀏覽器**：當您 Microsoft Edge 預設瀏覽器時，您的使用者就可以搜尋您的組織，並取得相關的搜尋建議，直接從網址列。 從位址列進行搜尋的速度很快，易於找到資訊，而且不需要移至 Bing 開始搜尋。 如需詳細資訊，請參閱[Set Microsoft Edge as default browser](/deployedge/edge-default-browser)。
 
-**預設搜尋引擎**：如果變更您的預設瀏覽器不是選項，您可以將 Bing 設定為預設搜尋引擎，以從位址列啟用 [工作] 或 [學校] 搜尋。 如需詳細資訊，請參閱[Bing 預設搜尋引擎](set-default-search-engine.md)。 如果您的組織有 Microsoft 365 Apps 企業版 (先前 Office 365 專業增強版) 服務方案，您可以在 Bing 副檔名中部署 Microsoft 搜尋，將 Bing 設定為 Google Chrome 的預設搜尋引擎。 如需詳細資訊，請參閱[Bing 和 Microsoft 365 Apps 企業版中的 Microsoft 搜尋](/deployoffice/microsoft-search-bing)。
+**預設搜尋引擎**：如果變更您的預設瀏覽器不是選項，您可以將 Bing 設定為預設搜尋引擎，以從位址列啟用 [工作] 或 [學校] 搜尋。 如需詳細資訊，請參閱[Bing 預設搜尋引擎](set-default-search-engine.md)。
 
 **預設首頁**：設定 Bing 為組織的預設首頁，不會從位址列中搜尋工作或學校，但提供任何簡易的方式可以存取 bing.com。 如需詳細資訊，請參閱[將 Bing .com 設定為預設的首頁](set-default-homepage.md)。
 

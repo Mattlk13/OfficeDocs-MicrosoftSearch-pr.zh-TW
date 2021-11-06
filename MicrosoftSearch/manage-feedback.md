@@ -1,6 +1,6 @@
 ---
 title: 管理使用者意見反應
-ms.author: lebhansa
+ms.author: jeffkizn
 author: jeffkizn
 manager: parulm
 ms.audience: Admin
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 在 Microsoft 搜尋中查看並處理使用者意見反應
-ms.openlocfilehash: db2854205b3006328919e22bd69c11a075ffc15d
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: 5e30a5fcf55ecc86addb5e892049f8273c350951
+ms.sourcegitcommit: bd79449e3fcae2cb730828d99245704cc2f0bab1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375475"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60805165"
 ---
 # <a name="managing-user-feedback"></a>管理使用者意見反應
 
