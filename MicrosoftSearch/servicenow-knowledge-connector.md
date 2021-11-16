@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 ServiceNow 知識 Graph 連接器
-ms.openlocfilehash: 4456149671f1d825b1686cba3ca5d49df51a46b3
-ms.sourcegitcommit: d2bb36b6d3102b08ced93faa5e102bdb7e7e1e5f
+ms.openlocfilehash: 0b0f20e281df8bac7e5cfb34617a3a6ff7ba13e9
+ms.sourcegitcommit: 4491c35630670318e3f3c86dd826eb607bc08a86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60720648"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60970023"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -27,9 +27,7 @@ ms.locfileid: "60720648"
 
 透過使用 Microsoft Graph Connector ServiceNow，您的組織可以為您組織內的使用者準則許可權，編制對所有使用者可見或限制的知識庫文章的索引。 從 ServiceNow 設定連接器和索引內容之後，使用者可以從任何 Microsoft 搜尋用戶端搜尋這些文章。  
 
-您也可以參閱[下列影片](https://www.youtube.com/watch?v=TVSkJpk1RiE)，深入瞭解 Graph 連接器在管理搜尋許可權中的功能。
-
-[![在 Microsoft Graph Connector 中管理 ServiceNow 的搜尋許可權。](https://img.youtube.com/vi/TVSkJpk1RiE/hqdefault.jpg)](https://www.youtube.com/watch?v=TVSkJpk1RiE)
+您也可以參考[這段影片](https://www.youtube.com/watch?v=TVSkJpk1RiE)，深入瞭解 Graph 連接器在管理搜尋許可權中的功能。
 
 本文適用于 Microsoft 365 系統管理員或任何設定、執行及監視 ServiceNow 知識 Graph 連接器的人員。 它會補充[設定 Graph 連接器](configure-connector.md)文章中提供的一般指示。 若尚未這麼做，請閱讀整個設定 Graph 連接器文章，以瞭解一般的設定程式。
 
@@ -73,7 +71,7 @@ ms.locfileid: "60720648"
  
 - 基本驗證 
 - ServiceNow OAuth (建議) 
-- Azure ADOpenID 連線
+- Azure AD OpenID 連線
 
 ## <a name="step-31-basic-authentication"></a>步驟3.1：基本驗證
 
@@ -137,7 +135,7 @@ ms.locfileid: "60720648"
 
 現在，您已具備 Azure 入口網站所需的所有資訊。 下表提供資訊的快速摘要。
 
-屬性	 | 描述 
+屬性 | 描述 
 --- | ---
 目錄識別碼 (租使用者識別碼)  | 步驟 3 Azure Active Directory 租使用者的唯一識別碼。
  (用戶端識別碼的應用程式識別碼)  | 在步驟3中註冊之應用程式的唯一識別碼。
@@ -264,7 +262,7 @@ ServiceNow 知識 Graph 連接器在其最新版本中有下列限制：
 Graph 連接器會使用代表服務帳戶取得的存取權杖，以進行編目。 存取權杖每12小時會更新一次。 確定服務帳戶密碼在發佈連線之後未變更。 如果密碼變更，您可能需要重新驗證連線。
 
 #### <a name="23-check-if-servicenow-instance-behind-firewall"></a>2.3。 檢查防火牆背後 ServiceNow 實例是否
-Graph如果連接器位於網路防火牆之後，連接器可能無法與您的 ServiceNow 實例取得聯繫。 您將需要明確允許存取 Graph Connector service。 您可以在下表中找到 Graph 連接器服務的公用 IP 位址範圍。 根據您的租使用者區域，將其新增至您的 ServiceNow 實例網路允許清單。
+Graph 連接器可能無法到達網路防火牆之後的 ServiceNow 實例。 您將需要明確允許存取 Graph Connector service。 您可以在下表中找到 Graph 連接器服務的公用 IP 位址範圍。 根據您的租使用者區域，將其新增至您的 ServiceNow 實例網路允許清單。
 
 **環境** | **地區** | **Range**
 --- | --- | ---

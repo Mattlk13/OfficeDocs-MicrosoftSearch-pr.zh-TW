@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Enterprise 的網站 Graph 連接器 Microsoft 搜尋
-ms.openlocfilehash: 2461a447b07dec827c8cf699865c027b01e42608
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: 2ea3d4aba6ff04ff3aa2a4dc84933caa76d0da6e
+ms.sourcegitcommit: 4491c35630670318e3f3c86dd826eb607bc08a86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375750"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60970042"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -49,7 +49,7 @@ Enterprise 網站 Graph 連接器可讓您的組織編制 **來自內部網站**
 
 ## <a name="step-3-configure-the-connection-settings"></a>步驟3：設定連接設定
 
-若要連線至您的資料來源，請填入網站的根 URL、選擇編目來源，以及您想要使用的驗證類型： [無]、[基本驗證]，或 OAuth 2.0 搭配[Azure Active Directory (Azure AD) ](/azure/active-directory/)。 在您完成此資訊之後，請選取 [測試連線] 以驗證您的設定。
+若要連線至您的資料來源，請填入網站的根 URL、選擇編目來源，以及您想要使用的驗證類型： [無]、[基本驗證]，或 OAuth 2.0 搭配[Azure Active Directory (Azure AD) ](/azure/active-directory/)]。 在您完成此資訊之後，請選取 [測試連線] 以驗證您的設定。
 
 ### <a name="url"></a>URL
 
@@ -85,18 +85,87 @@ Enterprise 網站 Graph 連接器可讓您的組織編制 **來自內部網站**
 
 ### <a name="authentication"></a>驗證
 
-基本驗證需要使用者名稱和密碼。 使用[Microsoft 365 系統管理中心](https://admin.microsoft.com)建立此 bot 帳戶。
+**基本驗證** 需要使用者名稱和密碼。
 
-使用 [AZURE AD](/azure/active-directory/) OAuth 2.0 需要資源識別碼、用戶端識別碼和用戶端密碼。 OAuth 2.0 僅適用于雲端模式。
+**OAuth 2.0** with [Azure AD](/azure/active-directory/)需要資源識別碼、用戶端識別碼和用戶端密碼。 OAuth 2.0 僅適用于雲端模式。
 
-如需詳細資訊，請參閱[使用 OAuth 2.0 代碼授與流程授權存取 Azure Active Directory web 應用程式](/azure/active-directory/develop/v1-protocols-oauth-code)。 使用下列值進行註冊：
+資源識別碼、用戶端識別碼和用戶端密碼值將取決於您為網站的 AAD 驗證設定的方式。
 
-**名稱：** Microsoft 搜尋 <br/>
-**Redirect_URI：**`https://gcs.office.com/v1.0/admin/oauth/callback`
+1. 如果您使用的是應用程式作為身分識別提供者及用戶端應用程式來存取網站，則用戶端識別碼和資源識別碼 將會是應用程式的應用程式識別碼，用戶端密碼將是您在應用程式中產生的秘密。
+    
+    > [!NOTE]
+    > 如需將用戶端應用程式設定為身分識別提供者的詳細步驟，請參閱[快速入門：使用 Microsoft 身分識別平臺註冊應用程式，並將您的應用程式服務或 Azure 功能應用程式設定為使用 Azure AD 登入](/azure/app-service/configure-authentication-provider-aad)。
 
-若要取得資源、client_id 及 client_secret 的值，請移至 **使用授權碼以要求** 重新導向 URL 網頁上的存取權杖。
+    設定用戶端應用程式後，請移至應用程式的 [ **憑證 & 機密** ] 區段，確定您建立新的用戶端密碼。 複製頁面中顯示的用戶端密碼值，因為它不會再次顯示。
 
-如需詳細資訊，請參閱[快速入門：使用 Microsoft 身分識別平臺註冊應用程式](/azure/active-directory/develop/quickstart-register-app)。
+    在下列螢幕擷取畫面中，您可以看到必要的步驟，以取得用戶端識別碼、用戶端密碼，並在您自行建立應用程式時，安裝應用程式。
+    
+    * 「署名」區段上的設定視圖：
+    
+      > [!div class="mx-imgBorder"]
+      > [![顯示 [品牌] 頁面上的 [設定] 區段的圖像。 ](media/enterprise-web-connector//connectors-enterpriseweb-branding.png) ](media/enterprise-web-connector//connectors-enterpriseweb-branding.png#lightbox)
+    
+    * View the authentication 設定區段：
+    
+      > [!div class="mx-imgBorder"]
+      > [![顯示 [驗證] 頁面上的 [設定] 區段的圖像。 ](media/enterprise-web-connector/connectors-enterpriseweb-authentication.png) ](media/enterprise-web-connector/connectors-enterpriseweb-authentication.png#lightbox)
+    
+      > [!NOTE]
+      > 在您的網站中，不需要有以上針對重新導向 URI 所指定的路由。 只有當您在網站中使用 Azure 所傳送的使用者權杖進行驗證時，您才需要擁有該路由。
+    
+    * 在 **Essentials** 區段上查看用戶端識別碼：
+    
+      > [!div class="mx-imgBorder"]
+      > [![顯示 [essentials] 區段上之用戶端識別碼的圖像。 ](media/enterprise-web-connector/connectors-enterpriseweb-clientapp-clientidresource-Id.png) ](media/enterprise-web-connector/connectors-enterpriseweb-clientapp-clientidresource-Id.png#lightbox)
+    
+    * 在 [ **憑證 & 秘訣** ] 區段中查看用戶端密碼：
+    
+      > [!div class="mx-imgBorder"]
+      > [![顯示用戶端密碼的影像。 ](media/enterprise-web-connector/connectors-enterpriseweb-client-secret.png) ](media/enterprise-web-connector/connectors-enterpriseweb-client-secret.png#lightbox)
+    
+2. 如果您是使用應用程式作為資源的身分識別提供者，另一個應用程式存取網站，則用戶端識別碼將會是第二個應用程式的應用程式識別碼，而用戶端密碼將是第二個應用程式中設定的密碼。 不過，資源識別碼 將會是第一個應用程式的識別碼。
+
+    > [!NOTE]
+    > 如需將用戶端應用程式設定為身分識別提供者的步驟，請參閱[快速入門：使用 Microsoft 身分識別平臺註冊應用程式](/azure/active-directory/develop/quickstart-register-app)，並[將應用程式服務或 Azure 功能應用程式設定為使用 Azure AD 登](/azure/app-service/configure-authentication-provider-aad)入。
+
+    您不需要在此應用程式中設定用戶端密碼，但 wou 將需要在應用程式的應用程式 **角色** 區段中新增應用程式角色，之後將會指派給您的用戶端應用程式。 在下列螢幕擷取畫面中，您可以瞭解如何新增應用程式角色。
+
+    * 建立新的應用程式角色：
+    
+      > [!div class="mx-imgBorder"]
+      > [![影像，顯示建立應用程式角色的選項。 ](media/enterprise-web-connector/connectors-enterpriseweb-new-app-role.png) ](media/enterprise-web-connector/connectors-enterpriseweb-new-app-role.png#lightbox)
+    
+    * 編輯新的應用程式角色：
+    
+      > [!div class="mx-imgBorder"]
+      > [![顯示編輯應用程式角色之區段的圖像。 ](media/enterprise-web-connector/connectors-enterpriseweb-new-app-role2.png) ](media/enterprise-web-connector/connectors-enterpriseweb-new-app-role2.png#lightbox)
+    
+      設定資源 app 後，您必須建立用戶端應用程式，並在用戶端應用程式的 API 許可權中新增以上所設定的應用程式角色，以授與存取資源 app 的許可權。 
+    
+      > [!NOTE]
+      > 若要查看如何授與用戶端應用程式的許可權，請參閱 [快速入門：設定用戶端應用程式來存取 WEB API](/azure/active-directory/develop/quickstart-configure-app-access-web-apis)。
+    
+    下列螢幕擷取畫面顯示將許可權授與用戶端應用程式的區段。
+    
+    * 新增許可權：
+    
+      > [!div class="mx-imgBorder"]
+      > [![顯示新增許可權之選項的圖像。 ](media/enterprise-web-connector/connectors-enterpriseweb-adding-permissions.png) ](media/enterprise-web-connector/connectors-enterpriseweb-adding-permissions.png#lightbox)
+    
+    * 選取許可權：
+    
+      > [!div class="mx-imgBorder"]
+      > [![顯示選取 API 的區段的圖像。 ](media/enterprise-web-connector/connectors-enterpriseweb-adding-permissions2.png) ](media/enterprise-web-connector/connectors-enterpriseweb-adding-permissions2.png#lightbox)
+    
+    * 新增許可權：
+ 
+      > [!div class="mx-imgBorder"]
+      > [![顯示選取許可權的圖像。 ](media/enterprise-web-connector/connectors-enterpriseweb-adding-permissions3.png) ](media/enterprise-web-connector/connectors-enterpriseweb-adding-permissions3.png#lightbox)
+    
+    指派許可權之後，您將需要移至 [憑證 & 機密] 區段，為此應用程式建立新的用戶端密碼。
+    複製頁面中顯示的用戶端密碼值，因為它不會再次顯示。 稍後使用此應用程式的應用程式識別碼做為用戶端識別碼，此應用程式中的機密為用戶端密碼和第一個應用程式的應用程式識別碼，以系統管理中心的資源識別碼。
+    
+    **Windows 驗證** 只可用於代理程式模式。 它需要使用者名稱、網域和密碼。 您必須在 [使用者 **名稱** ] 欄位中提供使用者名稱與網域，格式為下列任何格式：網域 \ 使用者或 username@domain。 必須在 [ **密碼** ] 欄位中輸入密碼。 針對 Windows 驗證，提供的使用者名稱必須也是安裝代理程式的伺服器管理員。
 
 ## <a name="step-3a-add-urls-to-exclude-optional-crawl-restrictions"></a>步驟3a：新增 URLs 以排除 (選擇性編目限制) 
 
