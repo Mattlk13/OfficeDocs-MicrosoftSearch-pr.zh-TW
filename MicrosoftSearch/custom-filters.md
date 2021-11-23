@@ -7,17 +7,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 ms.localizationpriority: medium
+ms.date: 11/22/2021
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 管理 SERP 上使用的篩選
-ms.openlocfilehash: c614d4b60c746f2e18fdb3352281891ea5134373
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: 21751b88751286eb347f27093adff19034e18b2d
+ms.sourcegitcommit: a181e405ebc6d97060999d4a93b520e6659dad67
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375751"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61137303"
 ---
 # <a name="manage-filters"></a>管理篩選
 
@@ -44,20 +45,21 @@ ms.locfileid: "59375751"
 ## <a name="create-organization-level-filters"></a>建立組織層級篩選
 
 1. 在  [Microsoft 365 系統管理中心](https://admin.microsoft.com/)中，移至 [ [**縱向**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)]
-2. 選取您想要建立篩選的慣用垂直，然後按一下 [ **編輯**]。  
-3. 流覽至豎直的嚮導中的 [篩選] 步驟。
-4. 按一下 [ **新增篩選** ] 以設定可精簡搜尋 managed 屬性上的篩選器。
-5. 新增篩選後，您可以檢查並儲存垂直。
+1. 選取您想要建立篩選的慣用垂直，然後按一下 [ **編輯**]。  
+1. 流覽至豎直的嚮導中的 [篩選] 步驟。
+1. 按一下 [ **新增篩選** ] 以設定可精簡搜尋 managed 屬性上的篩選器。
+1. 新增篩選後，您可以檢查並儲存垂直。
 
 ## <a name="create-sharepoint-site-level-filters"></a>建立 SharePoint 網站層級篩選
 
-1. 在 [SharePoint 系統管理中心](https://sharepoint.com/)，移至設定。
-2. 尋找 [Microsoft 搜尋] 區段，然後 **為此網站集合選取 [設定 Microsoft 搜尋**]。
-3. 在功能窗格中，移至 [自訂經驗]，然後選取 [  **縱向**]。
-4. 選取您慣用的垂直方向以建立篩選，然後按一下 [ **編輯**]。
-5. 流覽至豎直的嚮導中的 [篩選] 步驟。
-6. 按一下 [ **新增篩選** ] 以設定可精簡搜尋 managed 屬性上的篩選器。
-7. 新增篩選後，您可以檢查並儲存垂直。
+1. 在您要管理縱向的 SharePoint 網站中，按一下齒輪以開啟 [設定] 面板。
+1. 選取 [ **網站資訊**]，然後選取 [ **查看所有網站設定**]。  
+1. 尋找 [Microsoft 搜尋] 區段，然後選取 [ **設定搜尋設定**]。
+1. 在功能窗格中，移至 Microsoft 搜尋底下的 [自訂經驗]，然後選取 [ **縱向**]。
+1. 選取您慣用的垂直方向以建立篩選，然後按一下 [ **編輯**]。
+1. 流覽至豎直的嚮導中的 [篩選] 步驟。
+1. 按一下 [ **新增篩選** ] 以設定可精簡搜尋 managed 屬性上的篩選器。
+1. 新增篩選後，您可以檢查並儲存垂直。
 
 ## <a name="filter-across-multiple-properties"></a>跨多個屬性進行篩選
 
@@ -66,7 +68,7 @@ ms.locfileid: "59375751"
  | 連線 | 屬性	 | 別名 |
  | --- | --- | --- |
  | 服務現在 | 擁有者 | 作者 |
- | Jira | Publisher | 作者 |
+ | Jira | 發行者 | 作者 |
 
 ## <a name="important-details"></a>重要詳細資料
 
