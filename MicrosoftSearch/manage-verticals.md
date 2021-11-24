@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 在 [結果] 頁面上管理搜尋縱向
-ms.openlocfilehash: c4cff0d16977bfe7b321edceb1c3b23322bc503c
-ms.sourcegitcommit: d2bb36b6d3102b08ced93faa5e102bdb7e7e1e5f
+ms.openlocfilehash: 73f181380d70df70bc384a88d86b26497a4a108a
+ms.sourcegitcommit: 31e14ef43eb3861e19077a8f52fa6a88c81918ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60720630"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61152570"
 ---
 # <a name="manage-search-verticals"></a>管理搜尋行業
 
@@ -45,7 +45,7 @@ ms.locfileid: "60720630"
 您可以新增與您組織相關的搜尋行業。 例如，您可以根據每個部門所需的資訊類型，為行銷相關的內容及另一個銷售人員建立垂直。 您可以新增縱向，以顯示由 Graph 連接器或從 SharePoint 編制索引的內容結果。
 
 > [!NOTE]
-> 為 SharePoint 內容來源新增縱向是在預覽中，僅供目標版本使用者使用。  
+> 變更 deafult 的縱向及新增 SharePoint 內容來源的縱向，都是在預覽中，僅供目標版本使用者使用。  
 > 
 ## <a name="create-or-modify-search-verticals"></a>建立或修改搜尋縱向
 

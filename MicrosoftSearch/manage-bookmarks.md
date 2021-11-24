@@ -7,18 +7,19 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 ms.localizationpriority: medium
+ms.date: 11/23/2021
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: 建立和更新大量編輯 Microsoft 搜尋書簽結果的書簽和方式
-ms.openlocfilehash: 613ff71a4108579c1bcd7158fb2571063a420e56
-ms.sourcegitcommit: d2bb36b6d3102b08ced93faa5e102bdb7e7e1e5f
+ms.openlocfilehash: 8cef31b8b11127caaefde4df9c03375e637b6c4c
+ms.sourcegitcommit: 31e14ef43eb3861e19077a8f52fa6a88c81918ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60720593"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61152561"
 ---
 # <a name="manage-bookmarks"></a>管理書籤
 
@@ -58,7 +59,7 @@ ms.locfileid: "60720593"
 
 ### <a name="import-sharepoint-results"></a>匯入 SharePoint 結果
 
-如果您的組織在 SharePoint 中設定升級的結果，您可以將您租使用者的已升級結果中的標題、URLs 和描述匯入 Microsoft 搜尋，並讓您的使用者可以使用匯入的內容。 在大多數情況下，匯入 SharePoint 結果只需要數分鐘。 如果您要匯入大量結果，可能需要長達48小時。 這是一種簡單的方法，可快速填入搜尋結果，讓使用者更有效率。 建議您使用從 SharePoint 升級的結果做為參考，以瞭解如何命名及建立相關的搜尋結果。
+如果您的組織在 SharePoint 中設定升級的結果，您可以將您租使用者的已升級結果中的標題、URLs 和描述匯入 Microsoft 搜尋，並讓您的使用者可以使用匯入的內容。 這是一種簡單的方法，可快速填入搜尋結果，讓使用者更有效率。 建議您使用從 SharePoint 升級的結果做為參考，以瞭解如何命名及建立相關的搜尋結果。 在大多數情況下，匯入 SharePoint 結果只需要幾分鐘，但如果您要匯入大量結果，可能需要長達48小時。 當匯入完成後，新的書簽會有 "建議" 狀態;然後您可以查看書簽，並視需要加以發佈或編輯。
 
 ### <a name="add-default-and-suggested-bookmarks"></a>新增預設和建議的書簽
 
