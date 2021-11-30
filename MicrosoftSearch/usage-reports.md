@@ -14,21 +14,21 @@ search.appverid:
 - MET150
 - MOE150
 description: 複查 Microsoft 搜尋流量報告
-ms.openlocfilehash: 1f2afa6e2c7691aa3284ae017913827761981529
-ms.sourcegitcommit: ca6f0488b842e7fc0d98c7b84b2b8bc5817d3e7b
+ms.openlocfilehash: d8322921b9008f9000c035d21a06cc5aa9d87d8c
+ms.sourcegitcommit: 31b48dace4cf397f72bf28d7ec1e239e0f8a431c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60224865"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61234412"
 ---
-# <a name="microsoft-search-usage-reports"></a>Microsoft 搜尋使用報告
+# <a name="microsoft-search-usage-reports"></a>Microsoft 搜尋使用方式報告
 
 搜尋使用方式報告可讓您深入瞭解搜尋在組織中的運作方式。 從這些報告產生的洞察力會協助您採取動作，讓使用者更有意義和 delightful 的體驗。
 
 > [!IMPORTANT]
 > Microsoft 搜尋使用狀況報告目前正在預覽中
 
-[Microsoft 搜尋使用狀況報告](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights)包括從 SharePoint Home 所執行的搜尋所產生的圖形和資料表，該搜尋會從 Home (中的 URL 以/SharePoint .aspx) 、Office .com 及 Microsoft 搜尋 Bing 搜尋方塊中。 您可以看到過去31天、每天或每月過去一年的資料。 這些報告只會產生，所以需要一些時間才能累算歷史資料。
+[Microsoft 搜尋使用狀況報告](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights)包含從搜尋所產生的圖形和表格，該搜尋會從 SharePoint Home (所執行的網站，該網站的 URL 會以/SharePoint .aspx) 、Office .com 及 Microsoft 搜尋于 Bing 工作] 索引標籤搜尋方塊中。 您可以看到過去31天、每天或每月過去一年的資料。 這些報告只會產生，所以需要一些時間才能累算歷史資料。
 
 > [!div class="mx-imgBorder"]
 > ![搜尋使用方式報告儀表板。](media/usage-reports/usage_reports_v2.png)
