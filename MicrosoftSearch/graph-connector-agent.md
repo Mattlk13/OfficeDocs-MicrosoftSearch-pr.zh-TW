@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 部署代理程式
-ms.openlocfilehash: 9994b84c8db05b6b269edb6f5b6f463ab8da1529
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: bade23388c29ffc53a522d5a598df4e60660067e
+ms.sourcegitcommit: e55aea150be7161685550a9f05636c7820059882
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375742"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61282629"
 ---
 # <a name="microsoft-graph-connector-agent"></a>Microsoft Graph connector 代理程式
 
@@ -65,7 +65,7 @@ ms.locfileid: "59375742"
 
 6. 選取 [ **Microsoft Graph** ]，然後選取 [**應用程式許可權**]。
 
-7. 從許可權搜尋 "ReadWrite ExternalItem" 和「Directory. all」，然後選取 [ **新增許可權**]。
+7. 在 [許可權] 中搜尋 "ReadWrite ExternalItem"、"OwnedBy" 和 [ReadWrite ExternalConnection]，然後選取 [ **新增許可權**]。
 
 8. 選取 **[授與「TenantName] 的系統管理員同意** ，並選取 [ **是**]。
 
@@ -123,7 +123,7 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 
 3. 開啟 **應用程式註冊** ，然後從功能窗格中選取 **憑證和密碼** 。 複製憑證指紋。
 
-:::image type="content" alt-text="在左窗格中選取憑證和機密時，thumbrint 憑證的清單。" source="media/onprem-agent/certificates.png" lightbox="media/onprem-agent/certificates.png":::
+:::image type="content" alt-text="在左窗格中選取憑證和密碼時的指紋憑證清單。" source="media/onprem-agent/certificates.png" lightbox="media/onprem-agent/certificates.png":::
 
 ##### <a name="step-3-assign-the-certificate-to-the-agent"></a>步驟3：將憑證指派給代理程式
 

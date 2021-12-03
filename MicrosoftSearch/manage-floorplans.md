@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 搜尋中的「平面圖」功能可協助使用者找出大樓中的人員、辦公室和其他功能。
-ms.openlocfilehash: 1f61bc8e4b045c908cc076dc4c646b3e6bf26d0b
-ms.sourcegitcommit: c31a189fa7cad7b1055824d0aa5fbc19e8a7193a
+ms.openlocfilehash: b210f8aa58bb1edc83f77e03c5efe1b90f2758b9
+ms.sourcegitcommit: e55aea150be7161685550a9f05636c7820059882
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60102718"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61282644"
 ---
 # <a name="manage-floor-plans"></a>管理基底計畫
 
@@ -43,7 +43,9 @@ Microsoft 搜尋中的地面計畫，可協助使用者在大樓內找到人員�
 
 ## <a name="add-floor-plans"></a>新增平面計畫
 
-請遵循下列步驟，設定 Microsoft 搜尋中的底價方案回答。
+觀賞影片以取得新增平面圖的答案，並遵循下列步驟。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWPJt7]
 
 ### <a name="step-1-determine-your-building-codes"></a>步驟1：判斷您的大樓代碼
 
@@ -130,7 +132,7 @@ Floor 計畫檔案必須採用 DWG 格式，以支援文字標籤。 當文字�
 
 ### <a name="step-8-optional-specify-location-patterns"></a>步驟8： (選用) 指定位置模式
 
-上傳平面圖後，會議室文字標籤會與使用者設定檔中的辦公室位置進行比較。 如果 office 位置或文字標籤不會持續遵循 [步驟 2](#step-2-review-your-floor-plans) 和 [步驟 3](#step-3-update-office-locations-on-user-profiles)中建議的命名模式，請使用 [ **指定位置模式** ] 畫面新增詳細資訊以完成對應。 位置模式是用來從 AAD office 位置提取底價、翼和會議室資訊。
+上傳平面圖後，會議室文字標籤會與使用者設定檔中的辦公室位置進行比較。 如果 office 位置或文字標籤不會持續遵循 [步驟 2](#step-2-review-your-floor-plans) 和 [步驟 3](#step-3-update-office-locations-on-user-profiles)中建議的命名模式，請使用 [ **指定位置模式** ] 畫面新增詳細資訊以完成對應。 位置模式是用來從 AAD 辦公室位置提取底價、翼和會議室資訊。
 
 > [!div class="mx-imgBorder"]
 > ![指定位置模式螢幕擷取畫面。](media/floor-plans/floorplans-locationpattern.png)
@@ -139,7 +141,7 @@ Floor 和翼是選用的，只需要會議室，您可以視需要略過位置�
 
 ## <a name="update-floor-plans"></a>更新基底計畫
 
-在您更新現有的地面計畫之前，請確定您的 AAD office 位置都是最新的，而且您已等候48小時供任何 AAD 更新處理。 若要更新地面計畫，請移至 [平面圖]，選取 [建立地面計畫]，然後選取 [ **編輯**]。 如果地面計畫變更了結構，由於裝修為範例，請移除舊檔案，然後上傳併發行新的 DWG 檔案。
+在您更新現有的地面計畫之前，請確定您的 AAD office 位置都是最新的，而且您已等候48小時，供任何 AAD 更新處理。 若要更新地面計畫，請移至 [平面圖]，選取 [建立地面計畫]，然後選取 [ **編輯**]。 如果地面計畫變更了結構，由於裝修為範例，請移除舊檔案，然後上傳併發行新的 DWG 檔案。
 
 > [!NOTE]
 > 當使用者移至已對應的地面時，您不需要更新 floor 方案。 只要更新其使用者設定檔，以反映新的 office 位置：
@@ -243,7 +245,7 @@ Floor 和翼是選用的，只需要會議室，您可以視需要略過位置�
 
 **A：** 不。 如果您遵循 [步驟 2](#step-2-review-your-floor-plans) 和 [步驟 3](#step-3-update-office-locations-on-user-profiles)中標籤和 office 位置的格式設定建議，並在 [步驟 7](#step-7-upload-floor-plans)中完成專案1-8，您就不需要指定位置模式。
 
-不過，如果您的使用者仍未進行對應，或是您不滿意對應，請完成選用 [步驟 8](#step-8-optional-specify-location-patterns)。 在步驟8中，您必須為該組建程式碼定義 Azure AD 中找到的每個 *唯一* 位置模式。 例如，您正在上傳組建 A 的地面計畫，其具有1000辦事處。 組建中的辦公室使用五種不同的位置模式。指定位置模式時，您必須定義在 Azure AD 中顯示的五種模式，以進行大樓。
+不過，如果您的使用者仍未進行對應，或是您不滿意對應，請完成選用 [步驟 8](#step-8-optional-specify-location-patterns)。 在步驟8中，您必須定義在 Azure AD 中為該組建程式碼找到的每個 *唯一* 位置模式。 例如，您正在上傳組建 A 的地面計畫，其具有1000辦事處。 組建中的辦公室使用五種不同的位置模式。指定位置模式時，您必須定義在您的 Azure AD 中所出現的五種模式。
 
 **問：** 我是否可以為會議室、會議室或未獲指派人員的共用空間建立底價計畫答案？
 
@@ -251,7 +253,7 @@ Floor 和翼是選用的，只需要會議室，您可以視需要略過位置�
 
 **問：** 我已完成新增平面圖的所有步驟。 為何不會出現在 Microsoft 搜尋結果中？
 
-**A：** 在搜尋結果頁面的中央會出現「平面圖」答案的連結。 當其答案比對搜尋意圖時，可能會發生這種排名類型。 如果結果頁面上沒有顯示任何資訊，請確認搜尋遵循支援的查詢模式： [office 名稱]、[使用者名稱] 或「在 AAD 中顯示的辦公室位置」。 不支援以部分或模糊的字比對平面計畫搜尋。
+**A：** 在搜尋結果頁面的中央會出現「平面圖」答案的連結。 當其答案比對搜尋意圖時，可能會發生這種排名類型。 如果結果頁面上沒有顯示任何資訊，請確認搜尋遵循支援的查詢模式： office 名稱、使用者名稱或辦公室位置，如 AAD 中所示。 不支援以部分或模糊的字比對平面計畫搜尋。
 
 **問：** 我已新增組織之工作區的 floor 計畫。 在 Outlook 中預約工作空間時，為何不會出現？
 
@@ -285,7 +287,7 @@ Floor 的 DWG 檔案具有相同隔間的文字標籤：
 
 在第二個審閱階段中，Microsoft 搜尋會略過使用者辦公室位置的大樓代碼值，然後再次嘗試，以符合 office 位置和文字標籤， (F121 及21，F1-25 和 25) 。 第二次評審會顯示零個位置已對應。 您需要繼續對應。 此時，系統會提示您指定位置模式。
 
-當您指定位置模式時，您不需要為每個 office 新增資訊，只針對您的 Azure AD 中顯示的 *唯一模式* 。 在此階段中，Microsoft 搜尋會決定大樓的所有唯一位置模式，但不限於您上傳的平面圖。 在此案例中，使用者有兩個唯一的位置模式。 您會看到每個模式隨機挑選的位置。 輸入對應的 floor 和房間值：
+當您指定位置模式時，您不需要為每個辦公室新增資訊，只需要為 Azure AD 中顯示的 *唯一模式*。 在此階段中，Microsoft 搜尋會決定大樓的所有唯一位置模式，但不限於您上傳的平面圖。 在此案例中，使用者有兩個唯一的位置模式。 您會看到每個模式隨機挑選的位置。 輸入對應的 floor 和房間值：
 
 |位置|&nbsp;|Floor|翼形或區域|房間|
 |:-----|:-----|:-----|:-----|:-----|
