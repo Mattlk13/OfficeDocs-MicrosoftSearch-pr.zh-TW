@@ -12,19 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 為 Microsoft 搜尋新增自訂的 Microsoft Edge 快捷方式 Bing 或關閉組織的這些快捷方式
-ms.openlocfilehash: 30c9ba1e4317eedaf065045f14cb02efa38a0e72
-ms.sourcegitcommit: 25a757bf487e054580103ae979e60ba78cf1eecb
+ms.openlocfilehash: dd25998af85c4502700a81a5fa071d8d017f06c4
+ms.sourcegitcommit: 7fb5717fd97f1e836ee3bcf572e7f2bda2093d59
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60462067"
+ms.lasthandoff: 12/04/2021
+ms.locfileid: "61306528"
 ---
 # <a name="customize-address-bar-shortcuts-for-microsoft-edge"></a>自訂 Microsoft Edge 的網址列快捷方式
 
 協助您的使用者在從 Microsoft Edge 位址列進行搜尋時，保持焦點和尋找工作結果的速度。 預設會啟用兩個快捷方式：「工作」和您組織的慣用或簡短名稱。 在 [Microsoft Edge 位址] 列中，使用者可以輸入關鍵字，然後按 tab 鍵。 位址列會指出他們在您的組織內搜尋。 當他們輸入其搜尋並按 Enter 鍵時，他們會看到具有相關答案和結果的搜尋結果頁面。 您可以新增兩個自訂快捷方式關鍵字。
-
-> [!NOTE]
-> 本文適用于 Microsoft Edge Beta 通道版本96或更新版本。
 
 ## <a name="manage-shortcuts-and-keywords"></a>管理快捷方式和關鍵字
 
