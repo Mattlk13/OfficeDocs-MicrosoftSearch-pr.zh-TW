@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 深入瞭解美國政府雲端客戶的 Microsoft 搜尋功能可用性
-ms.openlocfilehash: c2d0e53cf9158e19515e99104c58766403b854cc
-ms.sourcegitcommit: d2bb36b6d3102b08ced93faa5e102bdb7e7e1e5f
+ms.openlocfilehash: aec7790d9e35792ccfdf889af4d6a0bd6c02a2cb
+ms.sourcegitcommit: 36dc65ce83b5634476701530f6c486ebddef9386
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60720639"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320368"
 ---
 # <a name="microsoft-search-for-us-government-environments"></a>適用于美國政府環境的 Microsoft 搜尋
 
@@ -48,6 +48,7 @@ GCC 客戶，Microsoft 搜尋 in Bing 預設為關閉。 搜尋管理員可以�
 | 搜尋建議 | 是 | 否 | 否  |
 | Bing 中 Microsoft 搜尋的搜尋管理控制項 | 是 | 否 | 否  |
 | Bing 上的 Enterprise 首頁 | 是 | 否 | 否  |
+| 深入解析 | 否 | 否 | 否  |
 | 書簽答案 (系統管理員-策劃)  | 是 | 否 | 否  |
 | Q&(系統管理員-策劃的答案)  | 是 | 否 | 否  |
 | 縮寫的答案 | 否 | 否 | 否  |
@@ -57,5 +58,6 @@ GCC 客戶，Microsoft 搜尋 in Bing 預設為關閉。 搜尋管理員可以�
 | 行動存取 | 是 | 否 | 否  |
 | 圖表連接器 | 否 | 否 | 否  |
 | 同盟連接器 | 否 | 否 | 否  |
+
 
 為了回應美國公開部門的獨特、不斷演變的需求，Microsoft 已建立 Office 365 美國政府方案 (或 Office 365 政府版) 。 如需這些環境特有的服務說明和功能概述，請參閱[Office 365 政府版](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government)。
