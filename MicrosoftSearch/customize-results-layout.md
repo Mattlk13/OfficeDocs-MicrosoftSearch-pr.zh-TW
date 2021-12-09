@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用適應性卡，建立配置以查看自訂的搜尋結果
-ms.openlocfilehash: 44808d1dba8d765ba67fcd0c3dcf6f186a0b774c
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: 4120d9a1a979b57ce8e6c34d93a585d07c440605
+ms.sourcegitcommit: 33d23aac77c3f6a66f1509c4d44d8d1ed462d92a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375748"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61356997"
 ---
 <!-- markdownlint-disable no-hard-tabs -->
 # <a name="create-a-layout-to-customize-search-results"></a>建立版式以自訂搜尋結果
@@ -38,55 +38,67 @@ ms.locfileid: "59375748"
 
 ### <a name="design-the-layout"></a>設計版面配置
 
-在這個範例中，我們會顯示具有頁首、連結及描述文字的版面配置。
+在這個範例中，我們會顯示具有頁首、標誌、連結及描述文字的版面配置。
 
 ![具有標頭、連結及描述的版面配置範例。](media/Verts-ExampleLayout.png)
 
 以下是版面配置的關聯 JSON 檔案：
 
 ```json
-{
-    "type": "AdaptiveCard",
-    "version": "1.3",
-    "body": [
-        {
-            "type": "ColumnSet",
-            "columns": [
-                {
-                    "type": "Column",
-                    "width": 8,
-                    "items": [
-                        {
-                            "type": "TextBlock",
-                            "text": "Contoso Marketing Analysis - Q3 FY18",
-                            "color": "Accent",
-                            "size": "Medium",
-                            "spacing": "None",
-                            "weight": "Bolder"
-                        },
-                        {
-                            "type": "TextBlock",
-                            "text": "https://contoso.com/hr/link",
-                            "spacing": "None",
-                            "color": "Dark",
-                            "weight": "Bolder"
-                        },
-                        {
-                            "type": "TextBlock",
-                            "text": "Marketing team at Contoso.., and looking at the Contoso Marketing documents on the team site. This contains the data from FY20 and will taken over to FY21...Marketing Planning is ongoing for FY20..",
-                            "wrap": true,
-                            "maxLines": 2,
-                            "spacing": "Medium"
-                        }
-                    ],
-                    "horizontalAlignment": "Center",
-                    "spacing": "None"
-                }
-            ]
-        }
-    ],
-    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
-}
+{ 
+    "type": "AdaptiveCard", 
+    "version": "1.3", 
+    "body": [ 
+        { 
+            "type": "ColumnSet", 
+            "columns": [ 
+                { 
+                    "type": "Column", 
+                    "width": "auto", 
+                    "items": [ 
+                        { 
+                            "type": "Image", 
+                            "url": "https://searchuxcdn.blob.core.windows.net/designerapp/images/OOTBLayouts/search.png", 
+                            "altText": "Thumbnail image", 
+                            "horizontalAlignment": "center", 
+                            "size": "small" 
+                        } 
+                    ], 
+                    "horizontalAlignment": "center" 
+                }, 
+                { 
+                    "type": "Column", 
+                    "width": 10, 
+                    "items": [ 
+                        { 
+                            "type": "TextBlock", 
+                            "text": "[Contoso Solutions](https://contoso.com)", 
+                            "weight": "bolder", 
+                            "color": "accent", 
+                            "size": "medium", 
+                            "maxLines": 3 
+                        }, 
+                        { 
+                            "type": "TextBlock", 
+                            "text": "[https://contoso.com](https://contoso.com)", 
+                            "weight": "bolder", 
+                            "spacing": "small", 
+                            "maxLines": 3 
+                        }, 
+                        { 
+                            "type": "TextBlock", 
+                            "text": "Marketing team at Contoso.., and looking at the Contoso Marketing documents on the team site. This contains the data from FY20 and will taken over to FY21...Marketing Planning is ongoing for FY20..", 
+                            "maxLines": 3, 
+                            "wrap": true 
+                        } 
+                    ], 
+                    "spacing": "medium" 
+                } 
+            ] 
+        } 
+    ], 
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json" 
+} 
 ```
 
 ### <a name="separate-the-data-from-the-layout"></a>分隔資料與版面配置
@@ -96,61 +108,70 @@ ms.locfileid: "59375748"
 以下是系結資料後的版面配置 JSON：
 
 ```json
-{
-    "type": "AdaptiveCard",
-    "version": "1.3",
-    "body": [
-        {
-            "type": "ColumnSet",
-            "columns": [
-                {
-                    "type": "Column",
-                    "width": 8,
-                    "items": [
-                        {
-                            "type": "TextBlock",
-                            "text": "[${title}](${titleUrl})",
-                            "color": "Accent",
-                            "size": "Medium",
-                            "spacing": "None",
-                            "weight": "Bolder"
-                        },
-                        {
-                            "type": "TextBlock",
-                            "text": "${link}",
-                            "spacing": "None",
-                            "color": "Dark",
-                            "weight": "Bolder"
-                        },
-                        {
-                            "type": "TextBlock",
-                            "text": "${description}",
-                            "wrap": true,
-                            "maxLines": 2,
-                            "spacing": "Medium"
-                        }
-                    ],
-                    "horizontalAlignment": "Center",
-                    "spacing": "None"
-                }
-            ]
-        }
-    ],
-    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
-}
+{ 
+    "type": "AdaptiveCard", 
+    "version": "1.3", 
+    "body": [ 
+        { 
+            "type": "ColumnSet", 
+            "columns": [ 
+                { 
+                    "type": "Column", 
+                    "width": "auto", 
+                    "items": [ 
+                        { 
+                            "type": "Image", 
+                            "url": "https://searchuxcdn.blob.core.windows.net/designerapp/images/OOTBLayouts/search.png", 
+                            "altText": "Thumbnail image", 
+                            "horizontalAlignment": "center", 
+                            "size": "small" 
+                        } 
+                    ], 
+                    "horizontalAlignment": "center" 
+                }, 
+                { 
+                    "type": "Column", 
+                    "width": 10, 
+                    "items": [ 
+                        { 
+                            "type": "TextBlock", 
+                            "text": "[${title}](${titleLink})", 
+                            "weight": "bolder", 
+                            "color": "accent", 
+                            "size": "medium", 
+                            "maxLines": 3 
+                        }, 
+                        { 
+                            "type": "TextBlock", 
+                            "text": "[${titleLink}](${titleLink})", 
+                            "weight": "bolder", 
+                            "spacing": "small", 
+                            "maxLines": 3 
+                        }, 
+                        { 
+                            "type": "TextBlock", 
+                            "text": "${description}", 
+                            "maxLines": 3, 
+                            "wrap": true 
+                        } 
+                    ], 
+                    "spacing": "medium" 
+                } 
+            ] 
+        } 
+    ], 
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json" 
+} 
 ```
 
 資料範例：在 **預覽模式** 中，指定 **範例資料編輯器** 中的範例資料，以查看資料繫結卡。
 
 ```json
-{
-
-    "title": "Contoso Marketing Analysis - Q3 FY18",
-    "titleUrl": "https://contoso.com/hr/link",
-    "link": "https://contoso.com/hr/link",
-    "description": "Marketing team, and looking at the Contoso Marketing documents on the team site. Yo can't see right...Marketing Planning presentation?"
-
-}
+{ 
+    "title": "Contoso Solutions", 
+    "titleLink": "https://contoso.com", 
+    "description": "Marketing team at Contoso.., and looking at the Contoso Marketing documents on the team site. This contains the data from FY20 and will taken over to FY21...Marketing Planning is ongoing for FY20.." 
+} 
 ```
 
 ## <a name="map-the-layout-to-the-result-properties"></a>將版面配置對應至結果屬性
@@ -172,6 +193,7 @@ ms.locfileid: "59375748"
 ### <a name="do"></a>要
 
 - 若要使用靜態連結的徽標和 result 屬性，請編輯範本，以在版面配置中提供標誌連結。
+- 建議使用方形徽標，以確保正確對齊結果。 若要避免 pixelation，請使用具有最小大小32px 的標誌（由32px）。
 - 針對結果 JSON 中所用 result 屬性沒有傳回資料的情況，驗證結果版面配置。 若 `$when` 屬性不包含資料，請使用條件來隱藏元素。  
 - 請確定 `$when` condition 和 result 屬性的資料類型相符。 例如， `Number` `Text` 在條件中不會比較 `$when` 。  
 - 設計結果版面配置時，請考慮主題需求。  
