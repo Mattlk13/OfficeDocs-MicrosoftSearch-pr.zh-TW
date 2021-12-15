@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 深入瞭解 Microsoft 搜尋的優點、其優點，以及哪些應用程式支援 Microsoft 搜尋。
-ms.openlocfilehash: 29a6db642ac9cc787b8cbec45aec609f55722206
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: 52e67e9a6e1ef506adb6e3869674273b11fc071c
+ms.sourcegitcommit: eb4e151450b60aac003364e19cd532872e0f93a7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375824"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61509960"
 ---
 # <a name="overview-of-microsoft-search"></a>Microsoft 搜尋概觀
 
@@ -27,7 +27,7 @@ Microsoft 搜尋可協助使用者找出正確的答案、人員和內容，以�
 
 - 使用者會收到他們從中搜尋的應用程式 **上下文** 中的相關結果。 例如，在[Microsoft Outlook](https://www.microsoft.com/outlook)中搜尋時，他們會發現電子郵件，而不是[SharePoint](http://sharepoint.com/)網站。 在 SharePoint 中搜尋時，他們會尋找網站、頁面和檔案時。
 - 無論使用者使用哪個應用程式，Microsoft Search 都是 **個人** 的。 Microsoft 搜尋使用[Microsoft Graph](https://developer.microsoft.com/graph/)中的真知灼見，顯示與每位使用者相關的結果。 每個使用者可能會看到不同的結果，即使他們搜尋相同文字亦然。 他們只會看到他們已有權存取的結果，Microsoft 搜尋不會變更許可權。
-- 使用者不需要記住資訊的所在位置。 例如，使用者在[Microsoft Word](https://products.office.com/word)中工作，並且想要重複使用從其[OneDrive](https://onedrive.live.com/about/)同事共用之簡報中的資訊。 您不需要切換 OneDrive 和搜尋該簡報，只需要從 Word 搜尋即可。
+- 使用者不需要記住資訊的所在位置。 例如，使用者在[Microsoft Word](https://products.office.com/word)中工作，並且想要重複使用從其[OneDrive](https://onedrive.live.com/about/)同事共用之簡報中的資訊。 您不需要切換至 OneDrive 和搜尋該簡報，可以從 Word 進行搜尋。
 - 在 [Bing](https://bing.com) 中時，使用者可以取得來自公用網站與來自其組織內的結果。
 
 ## <a name="what-users-see"></a>使用者看到的內容
@@ -36,11 +36,11 @@ Microsoft 搜尋可協助使用者找出正確的答案、人員和內容，以�
 
 ![使用標題列中 Microsoft 搜尋] 方塊的應用程式視窗的螢幕擷取畫面。](media/Headings_520.png)
 
-當使用者在 **搜尋** 方塊中按一下時，搜尋會根據其在 Office 365 中的先前活動，並根據組織中的趨勢內容來建議結果。 他們最近使用過的檔案、最近使用過的命令和其共同作業的動作，都是搜尋所考慮之活動的範例。 當使用者在 **搜尋** 方塊中開始輸入時，建議的結果更新。 使用者可以從 **搜尋** 方塊直接開啟搜尋結果。 以下是[SharePoint](http://sharepoint.com/)中的搜尋範例。
+當使用者在 **搜尋** 方塊中按一下時，搜尋會根據其在 Office 365 中的先前活動，並根據組織中的趨勢內容來建議結果。 搜尋會考慮活動，例如最近使用的檔案、最近使用的命令，以及共同合作的人員。 當使用者在 **搜尋** 方塊中開始輸入時，建議的結果更新。 使用者可以從 **搜尋** 方塊直接開啟搜尋結果。 以下是[SharePoint](http://sharepoint.com/)中的搜尋範例。
 
 ![包含查詢及建議結果的 Microsoft 搜尋方塊的螢幕擷取畫面。](media/SERP_text_520.png)
 
-如果 [搜尋] 方塊中的建議不是使用者所尋找的，請 **輸入** 開啟完整的結果清單。 使用者可以使用中繼資料，例如最後修改專案的人員，以及專案的位置，以及預覽專案，以判斷其是否為要尋找的專案。
+如果 [搜尋] 方塊中的建議不是使用者所尋找的，請 **輸入** 開啟完整的結果清單。 使用者可以使用中繼資料，例如上次修改專案的人員，以及專案的位置和位置，以判斷其是否為所要尋找的專案。
 
 ![Microsoft 搜尋結果頁面的螢幕擷取畫面。](media/search_box.png)
 
@@ -64,22 +64,28 @@ Microsoft 搜尋可協助使用者找出正確的答案、人員和內容，以�
 
 **新增外部內容**– Microsoft Graph 連接器可讓您將外部內容移至索引。 使用連接器，從 Microsoft 365 以外的資料和檔案豐富搜尋體驗。 [Microsoft Graph 連接器的概述](connectors-overview.md)
 
-**自訂使用者經驗** –您可以透過使用縱向和其他設定，自訂使用者經驗。 [自訂 Microsoft 搜尋頁面](customize-search-page.md)
+**自訂使用者經驗** –您可以使用縱向和其他設定自訂使用者經驗。 [自訂 Microsoft 搜尋頁面](customize-search-page.md)
 
 ## <a name="what-content-is-searched"></a>搜尋的內容
 
-Microsoft 搜尋會顯示您的組織在 Microsoft 365 中儲存的內容，或透過連接器編制索引的內容。 Microsoft 搜尋不會跨承租人搜尋或顯示其他組織共用的內容結果。 如果您的組織已使用雲端混合式搜尋設定混合式 SharePoint 環境，Microsoft 搜尋會傳回線上和內部部署 SharePoint 內容的搜尋結果，包含您已連線到 SharePoint 伺服器環境的任何外部內容。 [深入了解混合式搜尋環境](/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint)。
+Microsoft 搜尋會顯示您的組織已儲存在 Microsoft 365 中或已透過連接器編制索引的內容。 Microsoft 搜尋不會在承租人間搜尋，或顯示其他組織共用的內容結果。 如果您的組織已使用雲端混合式搜尋設定混合式 SharePoint 環境，Microsoft 搜尋會傳回線上和內部部署 SharePoint 內容的搜尋結果，包含您已連線到 SharePoint 伺服器環境的任何外部內容。 [深入了解混合式搜尋環境](/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint)。
 
-使用者可以從其他位置取得相同的搜尋結果，也會取得來自網際網路的結果。
+使用者將取得從其他位置取得的相同搜尋結果，以及在 Bing 使用 Microsoft 搜尋時，也會取得來自網際網路的結果。
 
 ## <a name="how-microsoft-search-works"></a>Microsoft 搜尋的運作方式
 
 當使用者搜尋時，Microsoft Search 會處理查詢，並從較大的片語剖析搜尋意圖，以使用人工智慧 (AI) 學習使用者新增到查詢，但不影響其搜尋意圖的常用多餘片語。 舉例來說，當使用者搜尋「如何變更我的密碼」，我們會截掉查詢中較不重要的字詞，並依據較相關的項目 (例如「變更密碼」) 來進行觸發。  
 使用者有 **權限** 查看的搜尋結果會顯示在搜尋結果頁面上。 Microsoft Search 會依據相關性，使用智慧型排序演算法以排序結果。
 
-## <a name="how-microsoft-search-in-bing-protects-your-company-data"></a>Bing 中的 Microsoft 搜尋如何保護您的公司資料
+## <a name="privacy"></a>隱私權
+在 Microsoft 搜尋只有使用者有權查看的內容會出現在搜尋結果中。 例如，使用者可能具有查看檔案的許可權，因為使用者已建立該檔案，該使用者已與其共用，或具有包含該使用者的較大群組，或其儲存在使用者有權存取的資料夾或位置。
+> [!NOTE]
+> 深入瞭解 Bing 中的 Microsoft 搜尋如何在[Bing 的 Microsoft 搜尋安全性和隱私權](security-for-search.md)中保護公司資料。
 
-[Bing 中 Microsoft 搜尋的安全性和隱私權](security-for-search.md)
+當人員在 SharePoint 中 Microsoft 搜尋的人員進行篩選時，會看到來自已篩選人員已被篩選的內容，以及他們具有查看許可權的結果。 如果已篩選的人員或其組織已在 Microsoft Graph 中關閉專案洞察力，則人員只會看到來自已篩選人員與其共用之內容的結果，或是來自其所處理的內容。 深入瞭解專案真知灼見。
+
+當組織中的許多人員在 Outlook、SharePoint 和 Office 中搜尋相同的 Microsoft 搜尋內容時，您的系統管理員就能看到該查詢是常見的，但不是搜尋的使用者。 您可以使用此資訊來定義哪些資源是常見查詢的良好結果，並使您的組織更能進行搜尋。 深入瞭解在 [規劃內容](plan-your-content.md)時提供答案。
+
 
 ## <a name="see-also"></a>請參閱
 
