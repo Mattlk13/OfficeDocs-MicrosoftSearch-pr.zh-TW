@@ -7,31 +7,27 @@ ms.topic: article
 ms.service: mssearch
 audience: Admin
 ms.audience: Admin
-ms.date: 09/24/2021
+ms.date: 12/15/2021
 ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 複查 Microsoft 搜尋流量報告
-ms.openlocfilehash: d8322921b9008f9000c035d21a06cc5aa9d87d8c
-ms.sourcegitcommit: 31b48dace4cf397f72bf28d7ec1e239e0f8a431c
+ms.openlocfilehash: 43ff7d32d2d6a08ac38eb13fc879c2ebf3b863be
+ms.sourcegitcommit: 6b49dced8c0c157110ceb38e678e969c76f80107
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61234412"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61558686"
 ---
 # <a name="microsoft-search-usage-reports"></a>Microsoft 搜尋使用方式報告
 
 搜尋使用方式報告可讓您深入瞭解搜尋在組織中的運作方式。 從這些報告產生的洞察力會協助您採取動作，讓使用者更有意義和 delightful 的體驗。
 
-> [!IMPORTANT]
-> Microsoft 搜尋使用狀況報告目前正在預覽中
+[Microsoft 搜尋使用狀況報告](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights)包含從搜尋所產生的圖形和表格，該搜尋會從 SharePoint Home (所執行的網站，該網站的 URL 會以/SharePoint .aspx) 、Office .com 及 Microsoft 搜尋于 Bing 工作] 索引標籤搜尋方塊中。 您可以看到過去31天、每天或每月過去一年的資料。
 
-[Microsoft 搜尋使用狀況報告](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights)包含從搜尋所產生的圖形和表格，該搜尋會從 SharePoint Home (所執行的網站，該網站的 URL 會以/SharePoint .aspx) 、Office .com 及 Microsoft 搜尋于 Bing 工作] 索引標籤搜尋方塊中。 您可以看到過去31天、每天或每月過去一年的資料。 這些報告只會產生，所以需要一些時間才能累算歷史資料。
-
-> [!div class="mx-imgBorder"]
-> ![搜尋使用方式報告儀表板。](media/usage-reports/usage_reports_v2.png)
+:::image type="content" source="media/usage-reports/usage_reports_v2.png" alt-text="搜尋使用方式報告儀表板。" lightbox="media/usage-reports/usage_reports_v2.png":::
 
 ## <a name="overview-of-search-reports"></a>搜尋報告概述
 

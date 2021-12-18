@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 搜尋的 Microsoft Graph 連接器的概覽
-ms.openlocfilehash: 2dec2d17479368bc6d85c0a5bd275461a4114800
-ms.sourcegitcommit: 02d4f91210d992da080fd39d5b60f8cf30d8f0b2
+ms.openlocfilehash: 8bf63ba36032cbc0934f6d8120eddcdee69344b3
+ms.sourcegitcommit: 6b49dced8c0c157110ceb38e678e969c76f80107
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60238392"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61558677"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -84,7 +84,7 @@ Microsoft 提供9個連接器和我們的生態系統合作夥伴已透過100以
 
 ### <a name="build-your-own-microsoft-graph-connector"></a>建立您自己的 Microsoft Graph 連接器
 
-您可以根據意願建立您自己的連接器。 如需建立連接器的詳細資訊，請參閱[建立第一個自訂的 Microsoft Graph 連接器](/graph/connecting-external-content-build-quickstart)。
+您可以根據意願建立您自己的連接器。 如需建立連接器的開發人員檔，請參閱[Microsoft Graph 連接器概述](/graph/connecting-external-content-connectors-overview)。 如需建立連接器的快速入門，請參閱[組建第一個自訂的 Microsoft Graph 連接器](/graph/connecting-external-content-build-quickstart)。
 
 ## <a name="how-do-i-manage-my-connections"></a>如何管理連線？
 
