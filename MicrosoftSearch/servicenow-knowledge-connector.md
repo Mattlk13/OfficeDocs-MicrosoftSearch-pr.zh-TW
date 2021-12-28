@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 ServiceNow 知識 Graph 連接器
-ms.openlocfilehash: 0b0f20e281df8bac7e5cfb34617a3a6ff7ba13e9
-ms.sourcegitcommit: 4491c35630670318e3f3c86dd826eb607bc08a86
+ms.openlocfilehash: 6ebb02722748647c97d958af4fa3e32eef128259
+ms.sourcegitcommit: a114582439cfbde49250b585a0e1281082f64596
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60970023"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61612241"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -135,7 +135,7 @@ ms.locfileid: "60970023"
 
 現在，您已具備 Azure 入口網站所需的所有資訊。 下表提供資訊的快速摘要。
 
-屬性 | 描述 
+屬性	 | 描述 
 --- | ---
 目錄識別碼 (租使用者識別碼)  | 步驟 3 Azure Active Directory 租使用者的唯一識別碼。
  (用戶端識別碼的應用程式識別碼)  | 在步驟3中註冊之應用程式的唯一識別碼。
@@ -272,5 +272,15 @@ Graph 連接器可能無法到達網路防火牆之後的 ServiceNow 實例。 �
 
 #### <a name="24-access-permissions-not-working-as-expected"></a>2.4。 存取權未如預期般運作
 如果您觀察套用至搜尋結果的存取權限中的差異，請在 [管理知識庫和文章存取](https://docs.servicenow.com/bundle/rome-servicenow-platform/page/product/knowledge-management/concept/user-access-knowledge.html)中的使用者準則中驗證 access 流程圖表。
+
+### <a name="3-issues-with-only-people-with-access-to-this-data-source-permission"></a>3. *只有存取此資料來源許可權的人員才* 會發生問題
+
+#### <a name="31-unable-to-choose-only-people-with-access-to-this-data-source"></a>3.1 無法自行選擇 *存取此資料來源的人員*
+
+如果服務帳戶對「[步驟3：連線設定](#step-3-connection-settings)」中的必要資料表沒有讀取權限，您可能無法選擇 [*只有存取此資料來源的人員*] 選項。 檢查服務帳戶是否可以讀取 *索引及支援使用者準則許可權* 功能下所述的表格。
+
+#### <a name="32-user-mapping-failures"></a>3.2 使用者對應失敗
+
+ ServiceNow Azure Active Directory 中沒有 M365 使用者的使用者帳戶不會對應。 非使用者，服務帳戶應該會失敗使用者對應。 在 [連線詳細資料] 視窗的 [身分識別狀態] 區域中，可以存取使用者對應失敗的數目。 失敗使用者對應的記錄可從 [錯誤] 索引標籤下載。
 
 如果您有任何其他問題，或想要提供意見反應，請寫信給我們 [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors)

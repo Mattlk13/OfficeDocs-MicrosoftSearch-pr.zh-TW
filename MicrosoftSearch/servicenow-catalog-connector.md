@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 ServiceNow 目錄 Graph 連接器
-ms.openlocfilehash: 2ca9a0a2f378d03ae7f96f7d310d91bae6d52fac
-ms.sourcegitcommit: f16e61bde8dbacd84565e29032b600d0724604ab
+ms.openlocfilehash: 411987037994ac96f0bbfaac1dd88abe9252fde4
+ms.sourcegitcommit: a114582439cfbde49250b585a0e1281082f64596
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60332985"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61612250"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -65,7 +65,7 @@ ms.locfileid: "60332985"
  
 - 基本驗證 
 - ServiceNow OAuth (建議) 
-- Azure ADOpenID 連線
+- Azure AD OpenID 連線
 
 ## <a name="step-31-basic-authentication"></a>步驟3.1：基本驗證
 
@@ -256,7 +256,7 @@ ServiceNow Catalog Graph connector 在其最新版本中有下列限制：
 Graph 連接器會使用代表服務帳戶取得的存取權杖，以進行編目。 存取權杖每12小時會更新一次。 確定服務帳戶密碼在發佈連線之後未變更。 如果密碼變更，您可能需要重新驗證連線。
 
 #### <a name="23-check-if-servicenow-instance-behind-firewall"></a>2.3。 檢查防火牆背後 ServiceNow 實例是否
-Graph如果連接器位於網路防火牆之後，連接器可能無法與您的 ServiceNow 實例取得聯繫。 您將需要明確允許存取 Graph Connector service。 您可以在下表中找到 Graph 連接器服務的公用 IP 位址範圍。 根據您的租使用者區域，將其新增至您的 ServiceNow 實例網路允許清單。
+Graph 連接器可能無法到達網路防火牆之後的 ServiceNow 實例。 您將需要明確允許存取 Graph Connector service。 您可以在下表中找到 Graph 連接器服務的公用 IP 位址範圍。 根據您的租使用者區域，將其新增至您的 ServiceNow 實例網路允許清單。
 
  環境 | 區域 | 範圍
 --- | --- | ---
@@ -266,5 +266,15 @@ Graph如果連接器位於網路防火牆之後，連接器可能無法與您的
 
 #### <a name="24-access-permissions-not-working-as-expected"></a>2.4。 存取權未如預期般運作
 如果您觀察套用至搜尋結果的存取權限中的差異，請確認使用者準則設定 [將使用者準則套用至目錄專案](https://docs.servicenow.com/bundle/orlando-it-service-management/page/product/service-catalog-management/task/t_AppUserCritItemsCat.html)。
+
+### <a name="3-issues-with-only-people-with-access-to-this-data-source-permission"></a>3. *只有存取此資料來源許可權的人員才* 會發生問題
+
+#### <a name="31-unable-to-choose-only-people-with-access-to-this-data-source"></a>3.1 無法自行選擇 *存取此資料來源的人員*
+
+如果服務帳戶對「[步驟3：連線設定](#step-3-connection-settings)」中的必要資料表沒有讀取權限，您可能無法選擇 [*只有存取此資料來源的人員*] 選項。 檢查服務帳戶是否可以讀取 *索引及支援使用者準則許可權* 功能下所述的表格。
+
+#### <a name="32-user-mapping-failures"></a>3.2 使用者對應失敗
+
+ ServiceNow Azure Active Directory 中沒有 M365 使用者的使用者帳戶不會對應。 非使用者，服務帳戶應該會失敗使用者對應。 在 [連線詳細資料] 視窗的 [身分識別狀態] 區域中，可以存取使用者對應失敗的數目。 失敗使用者對應的記錄可從 [錯誤] 索引標籤下載。
 
 如果您有任何其他問題，或想要提供意見反應，請寫信給我們 [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors)
