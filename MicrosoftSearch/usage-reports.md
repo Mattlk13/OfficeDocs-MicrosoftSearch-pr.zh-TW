@@ -7,27 +7,27 @@ ms.topic: article
 ms.service: mssearch
 audience: Admin
 ms.audience: Admin
-ms.date: 12/15/2021
+ms.date: 01/04/2022
 ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 複查 Microsoft 搜尋流量報告
-ms.openlocfilehash: 43ff7d32d2d6a08ac38eb13fc879c2ebf3b863be
-ms.sourcegitcommit: 6b49dced8c0c157110ceb38e678e969c76f80107
+ms.openlocfilehash: 18f41397ba6490add9a86f4b9beedcafb246f97d
+ms.sourcegitcommit: c53585e119ada9875816d35423e6babcf2534652
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61558686"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61787975"
 ---
 # <a name="microsoft-search-usage-reports"></a>Microsoft 搜尋使用方式報告
 
 搜尋使用方式報告可讓您深入瞭解搜尋在組織中的運作方式。 從這些報告產生的洞察力會協助您採取動作，讓使用者更有意義和 delightful 的體驗。
 
-[Microsoft 搜尋使用狀況報告](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights)包含從搜尋所產生的圖形和表格，該搜尋會從 SharePoint Home (所執行的網站，該網站的 URL 會以/SharePoint .aspx) 、Office .com 及 Microsoft 搜尋于 Bing 工作] 索引標籤搜尋方塊中。 您可以看到過去31天、每天或每月過去一年的資料。
+[Microsoft 搜尋使用狀況報告](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights)包含從搜尋所產生的圖形和表格，該搜尋會從 SharePoint Home (所執行的網站，該網站的 URL 會以/SharePoint .aspx) 、Office .com 及 Microsoft 搜尋于 Bing 工作] 索引標籤搜尋方塊中。 您可以看到過去7天、14天、31天或每月的資料（去年）。
 
-:::image type="content" source="media/usage-reports/usage_reports_v2.png" alt-text="搜尋使用方式報告儀表板。" lightbox="media/usage-reports/usage_reports_v2.png":::
+:::image type="content" source="media/usage-reports/usage-reports-v3.png" alt-text="顯示 [搜尋使用狀況] 圖表和表格的報表儀表板。" lightbox="media/usage-reports/usage-reports-v3.png":::
 
 ## <a name="overview-of-search-reports"></a>搜尋報告概述
 
@@ -45,24 +45,4 @@ ms.locfileid: "61558686"
 
 當您流覽至 [使用狀況報告] 頁面時，所有報告都可供查看。 您可以使用日期篩選器挑選要查看的特定日或月份。
 
-下載報告可讓您查看更多時間範圍內的報告。 按一下 [下載箭號]，然後選取 [ **過去31天** ] 或 [ **最近12個月**]。 報表會下載成 Excel 試算表。 如果您選取過去31天，試算表會每日有個別的索引標籤。 過去12個月下載將每月都有一個 tab 鍵。
-
-## <a name="frequently-asked-questions"></a>常見問題集
-
-**當我選取過去31天或過去12個月時，我為何必須選擇特定的一天或特定月份。**
-
-Microsoft search 流量報告中的 [行事曆] 視圖是兩個步驟的處理常式。 先從下拉式清單中選取日期範圍 (過去31天或過去12個月內) ，然後選取 [開始日] 或 [月]。
-
-上、放棄和失敗的查詢表會顯示從一天或一個月份所選擇的結果。
-
-**何時會看到過去7天、過去30天的匯總資料，等等 ...？**
-
-我們正在考慮這種類型的匯總，並簡化未來版本報告的資料範圍篩選。
-
-**為什麼我無法透過不同的應用程式 (來源來查看使用狀況報告的明細) ？**
-
-目前不提供依來源篩選的功能。 報告會合並搜尋 SharePoint Home 和 Office .com。 我們的下一個版本將會包含來源篩選，因此您可以看到每個應用程式特有的計量。
-
-**其他的使用方式報告篩選？**
-
-我們正在處理更多篩選器，可協助您的組織更細微地瞭解搜尋使用方式。 例如，您將可以查看特定地理位置或部門的查詢磁片區。
+下載報告可讓您查看更多時間範圍內的報告。 報表會根據選取的日期篩選，下載為 Excel 試算表。 如果您選擇 [7]、[14] 或 [31 天]，試算表每日會有個別的索引標籤。 過去12個月下載將每月都有一個 tab 鍵。

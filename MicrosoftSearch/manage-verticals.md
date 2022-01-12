@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 在 [結果] 頁面上管理搜尋縱向
-ms.openlocfilehash: 7dd2568853b8f92f17f99526fe103b00d7979c12
-ms.sourcegitcommit: e741f85b79453bd2ac67d47c9077cab416746444
+ms.openlocfilehash: 9dfb906a84e42d4fc277a53b2cafd988c5c1f496
+ms.sourcegitcommit: c53585e119ada9875816d35423e6babcf2534652
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221899"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61787964"
 ---
 # <a name="manage-search-verticals"></a>管理搜尋行業
 
@@ -44,9 +44,6 @@ ms.locfileid: "61221899"
 ## <a name="custom-verticals"></a>自訂的縱向
 您可以新增與您組織相關的搜尋行業。 例如，您可以根據每個部門所需的資訊類型，為行銷相關的內容及另一個銷售人員建立垂直。 您可以新增縱向，以顯示由 Graph 連接器或從 SharePoint 編制索引的內容結果。
 
-> [!NOTE]
-> 變更預設的行業及新增 SharePoint 內容來源的縱向，只會在預覽中使用，而且只能供目標版本使用者使用。  
-> 
 ## <a name="create-or-modify-search-verticals"></a>建立或修改搜尋縱向
 
 「垂直管理經驗」是由嚮導驅動，您可以逐步指導您定義要搜尋之內容的豎直名稱、內容來源及範圍。 您可以使用一組有限的 [關鍵字查詢語言 (KQL) ](#keyword-query-language-kql) 來定義指定內容來源的垂直搜尋範圍。 您也可以在組織和網站層級，將篩選新增至現成和自訂的行業。 如需篩選的詳細資訊，請參閱 [管理篩選器](/microsoftsearch/custom-filters)。
