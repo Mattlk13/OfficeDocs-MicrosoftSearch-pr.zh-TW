@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 ServiceNow 知識 Graph 連接器
-ms.openlocfilehash: 6ebb02722748647c97d958af4fa3e32eef128259
-ms.sourcegitcommit: a114582439cfbde49250b585a0e1281082f64596
+ms.openlocfilehash: 094d0d7979d371e493e5fde9adfe01909397758d
+ms.sourcegitcommit: b91abc0a7e743a80bedb9d1510ae2789a376a6fc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/28/2021
-ms.locfileid: "61612241"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62039867"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -170,7 +170,7 @@ ServiceNow 實例需要下列設定：
    應用程式 | 全域
    使用者宣告 | 子
    使用者欄位 | 使用者識別碼
-   啟用 JTI 宣告驗證 | 已停用
+   啟用 JTI 宣告驗證 | 停用
 
 5. 選取 [提交並更新 OAuth OIDC 實體表單]。
 
@@ -282,5 +282,9 @@ Graph 連接器可能無法到達網路防火牆之後的 ServiceNow 實例。 �
 #### <a name="32-user-mapping-failures"></a>3.2 使用者對應失敗
 
  ServiceNow Azure Active Directory 中沒有 M365 使用者的使用者帳戶不會對應。 非使用者，服務帳戶應該會失敗使用者對應。 在 [連線詳細資料] 視窗的 [身分識別狀態] 區域中，可以存取使用者對應失敗的數目。 失敗使用者對應的記錄可從 [錯誤] 索引標籤下載。
+
+### <a name="4-issues-with-user-criteria-access-flow"></a>4. 使用者準則存取流程的問題
+
+如果您在 ServiceNow 和 Microsoft 搜尋之間看到使用者準則驗證的差異，請將 `glide.knowman.block_access_with_no_user_criteria` 系統屬性設定為 `no` 。
 
 如果您有任何其他問題，或想要提供意見反應，請寫信給我們 [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors)
