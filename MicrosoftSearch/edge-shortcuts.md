@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 為 Microsoft 搜尋新增自訂的 Microsoft Edge 快捷方式 Bing 或關閉組織的這些快捷方式
-ms.openlocfilehash: 8f65f54b923126c0d4101a31ecb59ee858119ef8
-ms.sourcegitcommit: 36dc65ce83b5634476701530f6c486ebddef9386
+ms.openlocfilehash: 4ca170e4169fda5ad397a53458b27c77b3723df4
+ms.sourcegitcommit: 0a35b2e1c60b8c1a8ef9d2503a09cdb82edb2e59
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61320377"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62083252"
 ---
 # <a name="customize-address-bar-shortcuts-for-microsoft-edge"></a>自訂 Microsoft Edge 的網址列快捷方式
 
@@ -32,9 +32,13 @@ ms.locfileid: "61320377"
 2. 在 [Microsoft 搜尋 Bing 設定] 下，選取 [**變更設定**]。
 3. 在 Bing 面板的 Microsoft 搜尋中，預設會選取 [**啟用 Bing 快捷方式中的 Microsoft 搜尋**]。 若要停用這些快捷方式，請清除此核取方塊。
 4. 在 [搜尋關鍵字] 欄位中，輸入一個或兩個以上的關鍵字。 您可以包含空格和特殊字元。
-5. 選取 [儲存 **]**。
+5. 選取 **[儲存]**。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
+
+**問：關鍵字無法使用。怎麼了？**
+
+**A：** 在 [Microsoft Edge 位址] 列中，輸入 edge://settings/search，以移至您的搜尋設定。 確認已啟用 [ **使用我的輸入字元顯示搜尋和網站建議** ]。 您也可以使用 Microsoft Edge 的群組原則來啟用搜尋建議。 若要深入瞭解，請參閱 [SearchSuggestEnabled](/deployedge/microsoft-edge-policies#searchsuggestenabled)。
 
 **問：這些快捷方式是否只支援英文關鍵字？**
 
