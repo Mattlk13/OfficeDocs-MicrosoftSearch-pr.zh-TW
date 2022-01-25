@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
 description: 個別尋找及更新答案，或使用 Microsoft 搜尋工具&一次即可編輯 Q。
-ms.openlocfilehash: 2250db51849e28c49a4b6b194b4ceedcc0423f3b
-ms.sourcegitcommit: bbeccfde0c02a79481ac78ecaddc44ca7ff11407
+ms.openlocfilehash: e59ca0e02574dc516e0f84e32576a96c28d72296
+ms.sourcegitcommit: 6b43febf400322128c3788fa817cacb3a1985419
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62160957"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62213541"
 ---
 # <a name="manage-qas"></a>管理問與答
 
@@ -107,4 +107,4 @@ Q&可以有多個關鍵字，並與其他答案共用相同的關鍵字，但無
 
 **問：搜尋時，Q&的關鍵字比對書簽的工作是否相同？**
 
-**A：**  如果是 Q&，則只支援基本層級的關鍵字比對英文關鍵字。 書簽支援更強健的關鍵字匹配層級。 針對書簽，會使用深入學習模型來判斷不同搜尋關鍵字的相似性。
+**A：** 在 Q&As 時，**自動** 比對類似的關鍵字功能是以替代關鍵字（派生自 Bing 搜尋記錄檔）字典為基礎。 字典主要支援英文。 針對書簽答案，此功能會使用深入學習模型來判斷不同搜尋關鍵字的類似程度，並提供更強健的關鍵字比對。
