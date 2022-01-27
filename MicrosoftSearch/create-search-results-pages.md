@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: mssearch
 ms.localizationpriority: medium
 description: 建立您自己的 SharePoint Online 網站的搜尋結果頁面
-ms.openlocfilehash: 0ce4d1240308bfafa232e553dbf2cce0c1b5eb96
-ms.sourcegitcommit: d3afe3c34067e2d9d7200f71592cd68a2c23d484
+ms.openlocfilehash: 0f021c7ae86f5c8f43f7e2782d94f3bef0b470d8
+ms.sourcegitcommit: 2a21cd3eb00671cb97ac1b2cf719b75d718f0f95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61237112"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62229943"
 ---
 # <a name="create-a-custom-search-results-page-in-sharepoint-online"></a>在 SharePoint Online 中建立自訂搜尋結果頁面
 
@@ -50,7 +50,5 @@ ms.locfileid: "61237112"
 自訂搜尋結果頁面也可以使用[SharePoint 架構查詢延伸](/sharepoint/dev/spfx/building-search-extensions)，在將查詢傳送至搜尋引擎之前修改查詢。
 
 ## <a name="additional-resources"></a>其他資源
-
-若要深入瞭解自訂結果頁面，請參閱我們的 [Ignite 2019 搜尋自訂和開發會話](https://myignite.techcommunity.microsoft.com/sessions/85238?source=sessions)。
 
 針對「開放來源」專案、開始使用 Microsoft 搜尋 APIs，以及更多自訂及擴充性範例，請造訪[GitHub 上的 Microsoft 搜尋](https://github.com/microsoft-search)。
