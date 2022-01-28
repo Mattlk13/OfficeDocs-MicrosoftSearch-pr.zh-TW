@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 第一次設定 Microsoft Search。
-ms.openlocfilehash: b1ddc3c32036b1fe3b86d38926bec86f626736f4
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: 0f3fb9b0bcfc259d6e065d375b77f771a997977e
+ms.sourcegitcommit: f94444a2286f41790c4d8f4d93cdd156468958b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375785"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62249488"
 ---
 # <a name="set-up-microsoft-search"></a>設定 Microsoft Search
 
@@ -48,7 +48,7 @@ Microsoft Search 預設會對支援它的所有 Microsoft 應用程式開啟，�
 
 ## <a name="step-2-create-answers"></a>步驟2：建立答案
 
-Microsoft Search 會提供工具給系統管理員，讓其用來為使用者建立功能強大的搜尋體驗。 在 Microsoft 搜尋中，系統管理員可以使用三個不同的搜尋內容來建立更好的搜尋體驗，並改善內容的 "findability"：
+Microsoft Search 會提供工具給系統管理員，讓其用來為使用者建立功能強大的搜尋體驗。 您可以 curate 不同類型的答案，以提供使用者搜尋的高可信度結果。
 
 書簽是最常使用的答案類型。 他們會將使用者查詢的最佳結果提升至搜尋結果的最上層，讓使用者能輕鬆找到他們所要尋找的專案。
 可供所有人使用的資訊性內容;例如，公司的相關資訊、Windows 與 Office 應用程式的相關資訊等等。組織中的人員一般會在日常工作中搜尋的內容。 常見的工作相關搜尋包括員工福利、時間與支出報告、提交訂購單和取得 IT 服務協助等。
