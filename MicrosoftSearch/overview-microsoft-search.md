@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 深入瞭解 Microsoft 搜尋的優點、其優點，以及哪些應用程式支援 Microsoft 搜尋。
-ms.openlocfilehash: 52e67e9a6e1ef506adb6e3869674273b11fc071c
-ms.sourcegitcommit: eb4e151450b60aac003364e19cd532872e0f93a7
+ms.openlocfilehash: b5189503ce961374989b5f7d8099ad772cb446ee
+ms.sourcegitcommit: 1a7108fa8ed7fcc05edc04f888f427d459bc4aa1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61509960"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62281219"
 ---
 # <a name="overview-of-microsoft-search"></a>Microsoft 搜尋概觀
 
@@ -78,11 +78,17 @@ Microsoft 搜尋會顯示您的組織已儲存在 Microsoft 365 中或已透過�
 使用者有 **權限** 查看的搜尋結果會顯示在搜尋結果頁面上。 Microsoft Search 會依據相關性，使用智慧型排序演算法以排序結果。
 
 ## <a name="privacy"></a>隱私權
-在 Microsoft 搜尋只有使用者有權查看的內容會出現在搜尋結果中。 例如，使用者可能具有查看檔案的許可權，因為使用者已建立該檔案，該使用者已與其共用，或具有包含該使用者的較大群組，或其儲存在使用者有權存取的資料夾或位置。
+在 Microsoft 搜尋只有使用者有權查看的內容會出現在搜尋結果中。 例如，使用者可能具有查看檔案的許可權，因為使用者已建立該檔案，該檔案是與使用者共用，或具有包含使用者的較大群組，或是儲存在使用者有權存取的資料夾或位置。
 > [!NOTE]
 > 深入瞭解 Bing 中的 Microsoft 搜尋如何在[Bing 的 Microsoft 搜尋安全性和隱私權](security-for-search.md)中保護公司資料。
 
-當人員在 SharePoint 中 Microsoft 搜尋的人員進行篩選時，會看到來自已篩選人員已被篩選的內容，以及他們具有查看許可權的結果。 如果已篩選的人員或其組織已在 Microsoft Graph 中關閉專案洞察力，則人員只會看到來自已篩選人員與其共用之內容的結果，或是來自其所處理的內容。 深入瞭解專案真知灼見。
+當人員在 SharePoint 中篩選人員時，會看到來自已篩選人員已進行的內容，以及他們具有查看許可權的結果。 如果已篩選的人員或其組織已在 Microsoft Graph 中關閉專案洞察力，則人員只會看到來自已篩選人員與其共用之內容的結果，或是來自其所處理的內容。 深入瞭解專案真知灼見。
+
+當使用者在 Outlook 中取得搜尋的結果、SharePoint 線上及 Office .com 時，所發出的查詢會記錄在其搜尋記錄中。 使用者的搜尋記錄是個人的，不會與您的組織或 Microsoft 共用。 其搜尋記錄可協助他們快速取得先前找到的專案。 在使用者輸入查詢時，其搜尋記錄中的相符專案會在搜尋框中向下建議。  
+
+使用者可以隨時查看其搜尋歷程記錄。 他們也可以隨時清除其歷程記錄。 這兩項動作都是由其工作或學校帳戶 (https://myaccount.microsoft.com) 的我的帳戶入口網站執行。 移至[設定 & 隱私權] 頁面](https://myworkaccount.microsoft.com/privacy)上，開啟 [Microsoft 搜尋] 區段。 無法暫停記錄史。
+
+Outlook 搜尋記錄會包含其在 Outlook、Outlook 的行動及 Outlook 網頁版的搜尋。 它會為所有三個端點提供相同的建議查詢。 在 SharePoint 網站上的搜尋、SharePoint 開始頁面上和 Office .com 首頁上會合並成一個記錄，並在 [SharePoint 開始] 頁面或 [Office .com] 首頁上搜尋時，會建議您回復相同的查詢。 當使用者在 SharePoint 網站上進行搜尋時，並不會提供歷史查詢。
 
 當組織中的許多人員在 Outlook、SharePoint 和 Office 中搜尋相同的 Microsoft 搜尋內容時，您的系統管理員就能看到該查詢是常見的，但不是搜尋的使用者。 您可以使用此資訊來定義哪些資源是常見查詢的良好結果，並使您的組織更能進行搜尋。 深入瞭解在 [規劃內容](plan-your-content.md)時提供答案。
 

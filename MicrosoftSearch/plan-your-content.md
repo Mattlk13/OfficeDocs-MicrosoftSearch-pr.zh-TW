@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: bb9d90b6-6c86-4b19-9235-3bd9b19826ab
 description: 在您使用 Microsoft Search 時提供品質良好的內容，無需額外資源
-ms.openlocfilehash: 4382bac3ab8833cc8967e9ebb7ea607bdfcef7f1
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: 2ae344863628f64591e9152716da3a142a08708a
+ms.sourcegitcommit: 1a7108fa8ed7fcc05edc04f888f427d459bc4aa1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375821"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62281210"
 ---
 # <a name="plan-your-content"></a>規劃內容
 
@@ -129,9 +129,3 @@ ms.locfileid: "59375821"
 了解過去 90 天哪些搜尋擁有最多曝光數。 曝光數是指在搜尋結果中檢視頁面的次數。 [查詢排行榜] 卡片會顯示每個結果類型的前 25 個使用者搜尋、搜尋的曝光數總計和其點閱率 (CTR)。 使用此報告可識別搜尋查詢量，以判定出現大量和少量搜尋活動的查詢。
 
 低搜尋次數可能表示使用者的不滿意度，可能是因為使用者不是要尋找這些搜尋內容，或使用不同的關鍵字來尋找該內容。 CTR 會顯示使用者選取提升結果的頻率，以及您的查詢規則和結果如何對使用者有幫助。 低 CTR 表示使用者找到內容，但判斷內容不符合其搜尋。 在這種情況下，系統管理員也可以決定檢閱內容，並確保其與使用者的搜尋對應，並更新標題、描述及關鍵字，以符合使用者的搜尋查詢。
-
-### <a name="analyze-impressions-by-result-type"></a>依據結果類型分析曝光數
-
-[結果類型的曝光數分佈] 卡片中的易讀圖表會顯示不同時間範圍內的曝光數。 時間軸會顯示結果類型的每日曝光數。 判斷哪個結果類型最常或最少使用。 最少使用特定結果類型並不表示該結果類型不好。 它只是顯示使用者如何使用搜尋結果。
-
-使用者會使用此報告來了解使用者所使用的結果類型，以及一段時間中使用者行為的任何變更。 如果使用者偏好特定的結果類型，系統管理員可能會決定要建立更多個相同類型的搜尋結果，或檢閱使用者不使用的結果類型，以確保那些關鍵字適當。
