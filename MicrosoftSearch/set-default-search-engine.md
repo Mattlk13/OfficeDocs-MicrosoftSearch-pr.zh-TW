@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: ee40010e-5d7f-4ba8-a3f8-d240dab3af6d
 description: 了解如何將 Bing 設定為公司使用 Microsoft Search 的預設搜尋引擎。
-ms.openlocfilehash: 5feef972d5c61c9cefba6981084e005271b39f15
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: 4e0436c5170321ba50e64954f1e2fbb5d4f15623
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375788"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62493977"
 ---
 # <a name="make-bing-the-default-search-engine"></a>讓 Bing 成為預設搜尋引擎
   

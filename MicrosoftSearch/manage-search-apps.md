@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理組織的 bot 開發人員所發佈的搜尋應用程式
-ms.openlocfilehash: 9bcd80ae20e8cdcffbcf64f4dfad4e2fc3b199f7
-ms.sourcegitcommit: d2bb36b6d3102b08ced93faa5e102bdb7e7e1e5f
+ms.openlocfilehash: 28c68f0ae8fd53c46f5139f2cd836de2dd89f7be
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60723250"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62492250"
 ---
 # <a name="manage-search-apps-preview"></a>管理搜尋應用程式 (預覽) 
 

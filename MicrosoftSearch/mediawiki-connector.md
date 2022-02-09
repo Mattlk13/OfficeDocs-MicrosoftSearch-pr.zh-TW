@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 MediaWiki Graph 連接器
-ms.openlocfilehash: 7e1c308eb1785dd7fec23fac7e9002957a0d50ca
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: aa2b34c39155aaa55115f4cdf934a2ce713f5576
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375825"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62493356"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -51,7 +51,7 @@ MediaWiki Graph connector 可讓您的組織從使用 MediaWiki 軟體所建立�
 
 如果您選擇 [ **基本** ] 做為驗證類型，您將需要提供 wiki 的使用者 **名稱** 和 **密碼** 。
 
-如果您選擇 **OAuth 2.0 AAD** 作為驗證類型，您將需要提供 wiki 安裝的 **資源識別碼** 。 您也需要提供在 AAD 應用程式註冊頁面上產生的 **用戶端識別碼** 和 **用戶端密碼** 。
+如果您選擇 **OAuth 2.0 AAD** 做為驗證類型，您將需要提供 wiki 安裝的 **資源識別碼**。 您也需要提供在 AAD 應用程式註冊] 頁面上產生的 **用戶端識別碼** 和 **用戶端密碼**。
 
 ## <a name="step-4-manage-search-permissions"></a>步驟4：管理搜尋許可權
 

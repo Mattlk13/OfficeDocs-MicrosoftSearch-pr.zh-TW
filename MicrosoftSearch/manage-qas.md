@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
 description: 個別尋找及更新答案，或使用 Microsoft 搜尋工具&一次即可編輯 Q。
-ms.openlocfilehash: e59ca0e02574dc516e0f84e32576a96c28d72296
-ms.sourcegitcommit: 6b43febf400322128c3788fa817cacb3a1985419
+ms.openlocfilehash: 29fb434376b9cdb1e69b5654f08d541287969fed
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62213541"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62492358"
 ---
 # <a name="manage-qas"></a>管理問與答
 

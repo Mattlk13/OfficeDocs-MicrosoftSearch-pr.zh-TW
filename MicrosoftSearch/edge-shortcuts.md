@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 為 Microsoft 搜尋新增自訂的 Microsoft Edge 快捷方式 Bing 或關閉組織的這些快捷方式
-ms.openlocfilehash: 4ca170e4169fda5ad397a53458b27c77b3723df4
-ms.sourcegitcommit: 0a35b2e1c60b8c1a8ef9d2503a09cdb82edb2e59
+ms.openlocfilehash: 5a3352ebfd382fe482974f4f9d768a10973ce4bf
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62083252"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62491135"
 ---
 # <a name="customize-address-bar-shortcuts-for-microsoft-edge"></a>自訂 Microsoft Edge 的網址列快捷方式
 

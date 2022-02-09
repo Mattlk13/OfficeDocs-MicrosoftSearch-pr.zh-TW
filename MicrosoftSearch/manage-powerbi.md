@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: 管理搜尋結果中顯示 Power BI 報表及資料的方式
-ms.openlocfilehash: 14b294fcec7d9c7cb3e1951414ab8795fd2cace7
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: d4f7d7f07bbe2f78058593c85761eed0bc153cc5
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59334492"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62492793"
 ---
 # <a name="manage-power-bi-answers"></a>管理 Power BI 的答案
 
@@ -40,7 +40,7 @@ Microsoft 搜尋使用者可以從 [Windows] 搜尋方塊、SharePoint、Office 
 * `<topic>`Power BI 度量或 Power BI 度量`<topic>`
 * `<topic>`Power BI 計分卡或 Power BI 計分卡`<topic>`
 
-`<topic>`請以上述範例取代您所需的資訊，例如銷售、使用方式、容量、2021、Q1 等等，以查看 Power BI 的相關結果。
+請以上述範例取代 `<topic>` 您所需的資訊，例如銷售、使用方式、容量、2021、Q1 等等，以查看 Power BI 的相關結果。
 
 :::image type="content" source="media/powerbi-answers/powerbi-serp.png" alt-text="具有 Power BI 的答案及垂直之 SERP 的螢幕擷取畫面。" border="true":::
 

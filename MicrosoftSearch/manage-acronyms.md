@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 在 Microsoft 搜尋中建立和更新縮寫的答案
-ms.openlocfilehash: b7b3272ba98bbce7d43562811389df0a35e9f7a2
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: aab7dc3c93f868fdbd748d88706b383cb3ecc3db
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375718"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62490730"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>在 Microsoft 搜尋中管理縮寫的答案
 
@@ -29,10 +29,10 @@ ms.locfileid: "59375718"
 
 Microsoft 搜尋使用者可以在[Bing](https://Bing.com)、 [SharePoint](https://products.office.com/sharepoint/collaboration)、 [Office 365](https://Office.com)、Outlook 網頁版、Outlook mobile (Android) 以及 Teams 行動 (iOS 和 Android) 中取得定義。 在 [ **搜尋** ] 方塊中，使用者輸入如下範例的查詢：
 
-- *何謂* DNN
+- *什麼* DNN
 - *定義* DNN
 - DNN *定義*
-- *展開* DNN
+- *擴大* DNN
 - DNN *擴充*
 - *的意義* DNN
 - DNN *表示*

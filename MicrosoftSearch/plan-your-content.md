@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: bb9d90b6-6c86-4b19-9235-3bd9b19826ab
 description: 在您使用 Microsoft Search 時提供品質良好的內容，無需額外資源
-ms.openlocfilehash: 2ae344863628f64591e9152716da3a142a08708a
-ms.sourcegitcommit: 1a7108fa8ed7fcc05edc04f888f427d459bc4aa1
+ms.openlocfilehash: 52928a4358b1fe58ff603f82e0b512536bb66ade
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62281210"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62493540"
 ---
 # <a name="plan-your-content"></a>規劃內容
 

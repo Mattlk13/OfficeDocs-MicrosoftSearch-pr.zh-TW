@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 深入瞭解 Microsoft 搜尋的優點、其優點，以及哪些應用程式支援 Microsoft 搜尋。
-ms.openlocfilehash: b5189503ce961374989b5f7d8099ad772cb446ee
-ms.sourcegitcommit: 1a7108fa8ed7fcc05edc04f888f427d459bc4aa1
+ms.openlocfilehash: 666442c9c35faeee13ffb3e5388d754e631e1fc7
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62281219"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62493421"
 ---
 # <a name="overview-of-microsoft-search"></a>Microsoft 搜尋概觀
 
@@ -27,7 +27,6 @@ Microsoft 搜尋可協助使用者找出正確的答案、人員和內容，以�
 
 - 使用者會收到他們從中搜尋的應用程式 **上下文** 中的相關結果。 例如，在[Microsoft Outlook](https://www.microsoft.com/outlook)中搜尋時，他們會發現電子郵件，而不是[SharePoint](http://sharepoint.com/)網站。 在 SharePoint 中搜尋時，他們會尋找網站、頁面和檔案時。
 - 無論使用者使用哪個應用程式，Microsoft Search 都是 **個人** 的。 Microsoft 搜尋使用[Microsoft Graph](https://developer.microsoft.com/graph/)中的真知灼見，顯示與每位使用者相關的結果。 每個使用者可能會看到不同的結果，即使他們搜尋相同文字亦然。 他們只會看到他們已有權存取的結果，Microsoft 搜尋不會變更許可權。
-- 使用者不需要記住資訊的所在位置。 例如，使用者在[Microsoft Word](https://products.office.com/word)中工作，並且想要重複使用從其[OneDrive](https://onedrive.live.com/about/)同事共用之簡報中的資訊。 您不需要切換至 OneDrive 和搜尋該簡報，可以從 Word 進行搜尋。
 - 在 [Bing](https://bing.com) 中時，使用者可以取得來自公用網站與來自其組織內的結果。
 
 ## <a name="what-users-see"></a>使用者看到的內容

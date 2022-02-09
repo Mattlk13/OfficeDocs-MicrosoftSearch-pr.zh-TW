@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理 SERP 上使用的篩選
-ms.openlocfilehash: 21751b88751286eb347f27093adff19034e18b2d
-ms.sourcegitcommit: a181e405ebc6d97060999d4a93b520e6659dad67
+ms.openlocfilehash: 8119130e907b79da786ffafa670ad9b664db676c
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2021
-ms.locfileid: "61137303"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62491203"
 ---
 # <a name="manage-filters"></a>管理篩選
 
@@ -68,7 +68,7 @@ ms.locfileid: "61137303"
  | 連線 | 屬性	 | 別名 |
  | --- | --- | --- |
  | 服務現在 | 擁有者 | 作者 |
- | Jira | 發行者 | 作者 |
+ | Jira | Publisher | 作者 |
 
 ## <a name="important-details"></a>重要詳細資料
 

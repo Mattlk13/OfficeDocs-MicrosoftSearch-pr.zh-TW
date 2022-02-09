@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理搜尋結果頁面上的結果類型
-ms.openlocfilehash: eb0c00cbc05f899a31cd961d89147ac63c97e82c
-ms.sourcegitcommit: 02d4f91210d992da080fd39d5b60f8cf30d8f0b2
+ms.openlocfilehash: 177719b7d0a7971c8c9be87f1cdb0b5baca07a45
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60238419"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62492289"
 ---
 # <a name="manage-result-types"></a>管理結果類型
 
@@ -32,7 +32,7 @@ ms.locfileid: "60238419"
 建立您自己的 [搜尋結果版面](customize-results-layout.md) 配置，並在建立結果類型時覆寫預設搜尋結果版面配置。 搜尋結果類型是導致不同類型的搜尋結果顯示方式不同的規則。 其包含下列參數：
 
 - **一或多個條件**  若要比較每個搜尋結果。 例如內容來源及標題等條件。
-- 用於符合條件之搜尋結果的 **結果版面** 配置   。 產生的版面配置會控制符合條件的結果在搜尋結果頁面上的顯示方式。
+- 用於符合條件之搜尋結果的 **結果版面**   配置。 產生的版面配置會控制符合條件的結果在搜尋結果頁面上的顯示方式。
 
 您可以針對垂直顯示的內容使用多種結果類型。 當您將多個內容來源組合成單一垂直時，這可能很重要。 即使只有一種內容類型時，也可以用於更 impactful 的版面配置。 例如，在顯示事件詳細資料的垂直中，您可以自訂「高嚴重性」事件，使其具有比「低嚴重性」事件更明顯的色彩。 若要這麼做，可以在 **Rules** 區段中的 ' 嚴重性 ' 屬性上定義條件。
 
@@ -55,7 +55,7 @@ ms.locfileid: "60238419"
 5. 若要新增結果類型，請按一下 [ **新增**]。 或者，若要編輯結果類型，請選取清單中的結果類型。
 6. 修改結果類型之後，您可以檢查並儲存結果類型。
 
-## <a name="troubleshooting"></a>疑難排解
+## <a name="troubleshooting"></a>正在疑難排解
 
 以下是您可能會看到的常見問題清單，以及修正這些問題的動作。
 

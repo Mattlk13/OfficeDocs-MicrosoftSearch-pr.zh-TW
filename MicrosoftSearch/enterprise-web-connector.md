@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Enterprise 的網站 Graph 連接器 Microsoft 搜尋
-ms.openlocfilehash: 2ea3d4aba6ff04ff3aa2a4dc84933caa76d0da6e
-ms.sourcegitcommit: 4491c35630670318e3f3c86dd826eb607bc08a86
+ms.openlocfilehash: 13391bc35e8ce3484c174547e5ccb832d7314f8a
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60970042"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62491126"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -200,7 +200,7 @@ Enterprise 網站連接器只支援完整重新整理。 這表示連接器會�
 遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="troubleshooting"></a>疑難排解
+## <a name="troubleshooting"></a>正在疑難排解
 
 當閱讀網站內容時，編目可能會遇到一些來源錯誤，這些錯誤是由下列詳細的錯誤碼所代表。 若要取得錯誤類型的詳細資訊，請在選取連接後，移至 [ **錯誤詳細資料** ] 頁面。 選取 **錯誤碼** 以查看更詳細的錯誤。 此外，請參閱 [管理您的連接器](./manage-connector.md) 以深入瞭解。
 

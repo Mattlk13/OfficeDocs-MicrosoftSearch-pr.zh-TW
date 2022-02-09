@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 在具有教育和企業服務方案的組織中，系統管理員可以選取搜尋經驗（無論是學校或工作），使用者會在使用者搜尋 Bing 時看到。
-ms.openlocfilehash: 55cac728fe5630605dd04d47bdee3c487bd87cea
-ms.sourcegitcommit: bafd15a17ca20bac0f2c5f65e36ef81262eafc06
+ms.openlocfilehash: 531474dce7d073a34f8d865d5f874b25f181c53a
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2021
-ms.locfileid: "59448776"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62493384"
 ---
 # <a name="select-a-school-or-work-search-experience-preview"></a>選取學校或工作搜尋體驗 (預覽) 
 

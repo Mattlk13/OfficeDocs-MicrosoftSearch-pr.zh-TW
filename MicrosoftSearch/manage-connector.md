@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理 Microsoft 搜尋的 Microsoft Graph 連接器。
-ms.openlocfilehash: dd82114ff6aa651b57ce1941685840906ecf7318
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: bbeba973ef60a119dcc17a69eaf6497da453e8cb
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59334493"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62490626"
 ---
 # <a name="monitor-your-connections"></a>監控您的連線
 

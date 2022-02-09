@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 在 [結果] 頁面上管理搜尋縱向
-ms.openlocfilehash: 9dfb906a84e42d4fc277a53b2cafd988c5c1f496
-ms.sourcegitcommit: c53585e119ada9875816d35423e6babcf2534652
+ms.openlocfilehash: 15378e6e8ac672fecb49519dafc87dbf4b9f7995
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61787964"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62489872"
 ---
 # <a name="manage-search-verticals"></a>管理搜尋行業
 
@@ -164,7 +164,7 @@ ms.locfileid: "61787964"
 - 組織中的來賓使用者看不到縱向修改和新的縱向。 
 - 不支援縱向重新排序 
 
-## <a name="troubleshooting"></a>疑難排解
+## <a name="troubleshooting"></a>正在疑難排解
 
 以下列出您可能會遇到的常見問題，以及修正這些問題的動作。
 

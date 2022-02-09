@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 ServiceNow 知識 Graph 連接器
-ms.openlocfilehash: 094d0d7979d371e493e5fde9adfe01909397758d
-ms.sourcegitcommit: b91abc0a7e743a80bedb9d1510ae2789a376a6fc
+ms.openlocfilehash: 0a6e5c6018d8c29ecd311b5a8d6d35ddfeaa25f9
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62039867"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62492634"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -85,7 +85,7 @@ ms.locfileid: "62039867"
 
 欄位 | 描述 | 建議值 
 --- | --- | ---
-名稱 | 識別您需要 OAuth 存取之應用程式的唯一值。 | Microsoft 搜尋
+姓名 | 識別您需要 OAuth 存取之應用程式的唯一值。 | Microsoft 搜尋
 用戶端識別碼 | 應用程式的唯讀、自動產生的唯一識別碼。 當實例要求存取權杖時，會使用用戶端識別碼。 | NA
 用戶端密碼 | 使用此共用的機密字串，ServiceNow 實例和 Microsoft 搜尋會授權彼此進行通訊。 | 遵循安全性最佳作法，將密碼當做密碼對待。
 重新導向 URL | 授權伺服器重新導向所需的回撥 URL。 | https://gcs.office.com/v1.0/admin/oauth/callback
@@ -152,7 +152,7 @@ ServiceNow 實例需要下列設定：
 
    欄位 | 描述 | 建議值
    --- | --- | ---
-   名稱 | 識別 OAuth OIDC 實體的唯一名稱。 | Azure AD
+   姓名 | 識別 OAuth OIDC 實體的唯一名稱。 | Azure AD
    用戶端識別碼 | 在協力廠商 OAuth OIDC server 中註冊之應用程式的用戶端識別碼。 實例在要求存取權杖時使用用戶端識別碼。 | Application (Client) ID 從步驟3。
    用戶端密碼 | 在協力廠商 OAuth OIDC server 中註冊之應用程式的用戶端密碼。 | 步驟3的用戶端密碼。 b
 
@@ -246,7 +246,7 @@ ServiceNow 知識 Graph 連接器在其最新版本中有下列限制：
 - *只有存取此資料來源功能的使用者才可* 在 [管理搜尋許可權] 底下執行 [僅限 [使用者準則](https://hi.service-now.com/kb_view.do?sysparm_article=KB0550924) ] 許可權。 任何其他類型的存取權限都不會套用到搜尋結果中。
 - 目前的版本不支援具有高級腳本的使用者準則。 任何具有這類訪問限制的知識文章，都將會以「拒絕所有人」存取權來編制索引，也就是說，直到我們支援它們時，才會顯示在搜尋結果中。
 
-## <a name="troubleshooting"></a>疑難排解
+## <a name="troubleshooting"></a>正在疑難排解
 在發佈連線後，自訂 [結果] 頁面，您可以在系統 [管理中心](https://admin.microsoft.com)的 [**資料來源**] 索引標籤底下查看狀態。 若要瞭解如何進行更新和刪除，請參閱 [管理您的連接器](manage-connector.md)。
 您可以在下面找到常見問題的疑難排解步驟。
 ### <a name="1-unable-to-login-due-to-single-sign-on-enabled-servicenow-instance"></a>1. 由於單一 Sign-On 已啟用 ServiceNow 實例而無法登入
@@ -285,6 +285,6 @@ Graph 連接器可能無法到達網路防火牆之後的 ServiceNow 實例。 �
 
 ### <a name="4-issues-with-user-criteria-access-flow"></a>4. 使用者準則存取流程的問題
 
-如果您在 ServiceNow 和 Microsoft 搜尋之間看到使用者準則驗證的差異，請將 `glide.knowman.block_access_with_no_user_criteria` 系統屬性設定為 `no` 。
+如果您在 ServiceNow 和 Microsoft 搜尋之間看到使用者準則驗證的差異，請將系統屬性設定 `glide.knowman.block_access_with_no_user_criteria` 為 `no` 。
 
 如果您有任何其他問題，或想要提供意見反應，請寫信給我們 [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors)

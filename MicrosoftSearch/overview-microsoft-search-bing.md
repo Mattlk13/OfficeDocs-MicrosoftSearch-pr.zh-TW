@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 深入瞭解 Bing 中的 Microsoft 搜尋，包括您的使用者看到的體驗，以及如何簡化存取。
-ms.openlocfilehash: df8968de5dd8ede05e190d50fc26186f3934fa11
-ms.sourcegitcommit: bd79449e3fcae2cb730828d99245704cc2f0bab1
+ms.openlocfilehash: b21019d93a1875d33671dce3ee0d4a601f3a64d2
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "60805149"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62493393"
 ---
 # <a name="overview-of-microsoft-search-in-bing"></a>Bing 中的 Microsoft 搜尋綜述
 
@@ -42,7 +42,7 @@ Bing 中的 Microsoft 搜尋會將 Microsoft 搜尋和 Bing 網頁搜尋的功�
 |:-----|:-----|
 |Bing 首頁|所有結果頁面|
 |[工作](https://www.bing.com/work) 搜尋開始頁面|工作結果頁面|
-|[Windows搜索](https://support.microsoft.com/windows/search-for-anything-anywhere-b14cc5bf-c92a-1e73-ea18-2845891e6cc8)|內部網站、檔、所有結果或工作或學校結果頁面，視其選取的相符|
+|[Windows 搜尋](https://support.microsoft.com/windows/search-for-anything-anywhere-b14cc5bf-c92a-1e73-ea18-2845891e6cc8)|內部網站、檔、所有結果或工作或學校結果頁面，視其選取的相符|
 |Microsoft Edge 位址列|所有結果頁面|
 |[Microsoft Edge 工作快捷方式](/microsoftsearch/edge-shortcuts)|工作結果頁面|
 |Microsoft Edge 新的] 索引標籤頁面|所有結果頁面|
@@ -84,7 +84,7 @@ Microsoft 搜尋的設計目的是讓內部資訊在您的使用者搜尋的任�
 
 **預設首頁**：設定 Bing 為組織的預設首頁，不會從位址列中搜尋工作或學校，但提供任何簡易的方式可以存取 bing.com。 如需詳細資訊，請參閱[將 Bing .com 設定為預設的首頁](set-default-homepage.md)。
 
-## <a name="security-and-privacy"></a>安全性與隱私權
+## <a name="security-and-privacy"></a>安全性及隱私權
 
 Bing 中 Microsoft 搜尋會使用增強的安全性和隱私權措施，協助保護貴組織的資料和使用者。 如需詳細資訊，請參閱[Bing 中 Microsoft 搜尋的安全性和隱私權](security-for-search.md)，以及[Bing 中 Microsoft 搜尋如何保證資訊安全](https://support.microsoft.com/office/how-microsoft-search-in-bing-helps-keep-your-info-secure-cbce46ae-bb1f-4d0e-86f1-5984f4589113)。
 

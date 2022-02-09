@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 適用于 Microsoft 搜尋的 Microsoft Graph 連接器公開預覽的授權需求和價格
-ms.openlocfilehash: d4601e06d49ec860652d42517c79af2343c9b6ec
-ms.sourcegitcommit: bafd15a17ca20bac0f2c5f65e36ef81262eafc06
+ms.openlocfilehash: 369d5fd1fc1cdab4f58db6c0716adc9786f2df9d
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2021
-ms.locfileid: "59448626"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62489885"
 ---
 <!---Previous ms.author: rusamai --->
 

@@ -9,10 +9,16 @@ ms.topic: article
 ms.service: mssearch
 localization_priority: Normal
 search.appverid:
-  - BFB160
-  - MET150
-  - MOE150
+- BFB160
+- MET150
+- MOE150
 description: 設定 Microsoft 搜尋的 Confluence 內部部署 Graph 連接器
+ms.openlocfilehash: b9679aaeedae0bc672cce5d5459619b93561f95f
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62491529"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -167,7 +173,7 @@ Confluence 內部部署 Graph 連接器可對 **所有人** 或 **只有存取�
 
 在發佈連線後，您必須自訂搜尋結果頁面。 若要瞭解如何自訂搜尋結果，請參閱 [自訂搜尋結果頁面](/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page)。
 
-## <a name="troubleshooting"></a>疑難排解
+## <a name="troubleshooting"></a>正在疑難排解
 
 設定連接器和其可能原因時，可能會出現的常見錯誤如下所示。
 

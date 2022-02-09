@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 複查 Microsoft 搜尋流量報告
-ms.openlocfilehash: 18f41397ba6490add9a86f4b9beedcafb246f97d
-ms.sourcegitcommit: c53585e119ada9875816d35423e6babcf2534652
+ms.openlocfilehash: f8136a9670941a689fc3ceb545c3fb527f4681b1
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61787975"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62493375"
 ---
 # <a name="microsoft-search-usage-reports"></a>Microsoft 搜尋使用方式報告
 

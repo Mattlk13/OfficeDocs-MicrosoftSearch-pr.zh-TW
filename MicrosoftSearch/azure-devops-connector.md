@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 Azure DevOps Graph 連接器
-ms.openlocfilehash: a89b9d433cf78c1207fc4cad13e70cc59a9fdc06
-ms.sourcegitcommit: d2bb36b6d3102b08ced93faa5e102bdb7e7e1e5f
+ms.openlocfilehash: 2eb7f3990b0daa2a64cab1e994b6f8089213645c
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60720578"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62491905"
 ---
 <!---Previous ms.author: shgrover --->
 
@@ -141,7 +141,7 @@ Azure DevOps 連接器支援完整和累加編目的更新排程。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
-## <a name="troubleshooting"></a>疑難排解
+## <a name="troubleshooting"></a>正在疑難排解
 在設定連接器時或在編目期間，發現下列常見錯誤及其可能的原因。
 
 | 步驟 | 錯誤訊息 | 可能的原因 (s)  |

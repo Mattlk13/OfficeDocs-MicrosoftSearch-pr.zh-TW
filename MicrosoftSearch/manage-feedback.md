@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 在 Microsoft 搜尋中查看並處理使用者意見反應
-ms.openlocfilehash: 5e30a5fcf55ecc86addb5e892049f8273c350951
-ms.sourcegitcommit: bd79449e3fcae2cb730828d99245704cc2f0bab1
+ms.openlocfilehash: 5f9b5d0232bca243a54cf142073a3702579a495c
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "60805165"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62492082"
 ---
 # <a name="managing-user-feedback"></a>管理使用者意見反應
 

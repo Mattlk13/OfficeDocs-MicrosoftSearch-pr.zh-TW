@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 在傳統 SharePoint 頁面上使用 Microsoft 搜尋
-ms.openlocfilehash: 5b9c40da63ccf3b28cf2d61282763d3d4f62f867
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: 7487054f7f2b2ae9c283fa570de66794377badc0
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375713"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62490692"
 ---
 # <a name="classic-pages-and-microsoft-search"></a>傳統頁面和 Microsoft 搜尋
 

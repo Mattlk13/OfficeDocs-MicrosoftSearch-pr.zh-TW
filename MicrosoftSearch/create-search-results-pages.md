@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: mssearch
 ms.localizationpriority: medium
 description: 建立您自己的 SharePoint Online 網站的搜尋結果頁面
-ms.openlocfilehash: 0f021c7ae86f5c8f43f7e2782d94f3bef0b470d8
-ms.sourcegitcommit: 2a21cd3eb00671cb97ac1b2cf719b75d718f0f95
+ms.openlocfilehash: 1b26839845065de72789b5cdd99addc5d2b27c24
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62229943"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62491292"
 ---
 # <a name="create-a-custom-search-results-page-in-sharepoint-online"></a>在 SharePoint Online 中建立自訂搜尋結果頁面
 

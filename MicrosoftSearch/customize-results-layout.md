@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用適應性卡，建立配置以查看自訂的搜尋結果
-ms.openlocfilehash: 4120d9a1a979b57ce8e6c34d93a585d07c440605
-ms.sourcegitcommit: 33d23aac77c3f6a66f1509c4d44d8d1ed462d92a
+ms.openlocfilehash: 0c53f5fb5eb6fb45c4b1fad9cc32217b21e61bc4
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61356997"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62491184"
 ---
 <!-- markdownlint-disable no-hard-tabs -->
 # <a name="create-a-layout-to-customize-search-results"></a>建立版式以自訂搜尋結果
@@ -194,11 +194,11 @@ ms.locfileid: "61356997"
 
 - 若要使用靜態連結的徽標和 result 屬性，請編輯範本，以在版面配置中提供標誌連結。
 - 建議使用方形徽標，以確保正確對齊結果。 若要避免 pixelation，請使用具有最小大小32px 的標誌（由32px）。
-- 針對結果 JSON 中所用 result 屬性沒有傳回資料的情況，驗證結果版面配置。 若 `$when` 屬性不包含資料，請使用條件來隱藏元素。  
-- 請確定 `$when` condition 和 result 屬性的資料類型相符。 例如， `Number` `Text` 在條件中不會比較 `$when` 。  
+- 針對結果 JSON 中所用 result 屬性沒有傳回資料的情況，驗證結果版面配置。 `$when`若屬性不包含資料，請使用條件來隱藏元素。  
+- 請確定 condition 和 result 屬性的資料類型 `$when` 相符。 例如，在條件中 `$when` 不會比較。 `Number` `Text`  
 - 設計結果版面配置時，請考慮主題需求。  
 - 請確定 `Textblock`   元素可以處理動態內容。 您可以使用 `wrap` 和 `maxLines` 元素屬性來達到此目的。
-- 使用在 Markdown 中時，正確地格式化日期 `{DATE()}` 。  
+- 使用 `{DATE()}` 在 Markdown 中時，正確地格式化日期。  
 
 ### <a name="dont"></a>不要
 

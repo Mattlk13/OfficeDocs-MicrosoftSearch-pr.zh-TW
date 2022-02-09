@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 搜尋中的「平面圖」功能可協助使用者找出大樓中的人員、辦公室和其他功能。
-ms.openlocfilehash: 8e035d90d9764022d798bef88369a87115bce5ea
-ms.sourcegitcommit: 7fb5717fd97f1e836ee3bcf572e7f2bda2093d59
+ms.openlocfilehash: ade90103427bdd431ecf5c3093a991a7c96ce122
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2021
-ms.locfileid: "61306537"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62492496"
 ---
 # <a name="manage-floor-plans"></a>管理基底計畫
 
@@ -156,7 +156,7 @@ Floor 和翼是選用的，只需要會議室，您可以視需要略過位置�
 
 若要刪除單一的平面圖，請移至 [地面方案](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans) ，然後選取組建。 接下來，選取地面計畫，然後選取 [ **移除**]。 若要刪除大樓的所有地面計畫，請移至 [ [位置](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)]，選取組建，然後選取 [ **刪除**]。  
 
-## <a name="troubleshooting"></a>疑難排解
+## <a name="troubleshooting"></a>正在疑難排解
 
 | 步驟 | 錯誤訊息 | 類型 | 動作 |
 |:-----|:-----|:-----|:-----|
@@ -187,7 +187,7 @@ Floor 和翼是選用的，只需要會議室，您可以視需要略過位置�
 
 **A：** 為了獲得最佳結果，DWG 文字標籤應該是一個包含底價數目的單行、翼號 (if 相關) 和房間號碼，依序排列。 下列範例會使用2或 CITY CENTER 做為組建程式碼。
 <!-- markdownlint-disable no-inline-html -->
-|會議室標籤類型|Floor|翼/區域|房間|範例文本標籤|建立程式碼/文字標籤 (Office 位置) |
+|會議室標籤類型|Floor|翼/區域|辦公室|範例文本標籤|建立程式碼/文字標籤 (Office 位置) |
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |具有底價和房間號碼|1| |173|1173|2/1173|
 || 21| |45|21045|2/21045|
@@ -291,7 +291,7 @@ Floor 的 DWG 檔案具有相同隔間的文字標籤：
 
 當您指定位置模式時，您不需要為每個辦公室新增資訊，只需要為 Azure AD 中顯示的 *唯一模式*。 在此階段中，Microsoft 搜尋會決定大樓的所有唯一位置模式，但不限於您上傳的平面圖。 在此案例中，使用者有兩個唯一的位置模式。 您會看到每個模式隨機挑選的位置。 輸入對應的 floor 和房間值：
 
-|位置|&nbsp;|Floor|翼形或區域|房間|
+|位置|&nbsp;|Floor|翼形或區域|辦公室|
 |:-----|:-----|:-----|:-----|:-----|
 |DesignB/F123| |F1 | |至|
 |DesignB/F1-26| |F1| |-26|

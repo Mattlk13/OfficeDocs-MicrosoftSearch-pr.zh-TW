@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 連接器詳細資料和錯誤
-ms.openlocfilehash: 05e4d9def857e61cd411a0dd93cfa32984c337ec
-ms.sourcegitcommit: f945096a91c3a9c2a007f72f21a3a039ee02d66d
+ms.openlocfilehash: 47b53ad8b1202ca32b4ebc372324e3ec864d6097
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2021
-ms.locfileid: "60275428"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62491489"
 ---
 <!-- markdownlint-disable no-inline-html -->
 

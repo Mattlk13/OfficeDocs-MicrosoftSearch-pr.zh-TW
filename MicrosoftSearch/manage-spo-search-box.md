@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 如何在 SharePoint 網站上自訂搜尋框體驗
-ms.openlocfilehash: b5d58dd5a241ccf2ada556c44ec0ea5479ea2e2b
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: ae9ba9a83730963f02f9beb7e06d2372767d1e0a
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59334480"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62492813"
 ---
 # <a name="search-box-settings-on-sharepoint-sites"></a>SharePoint 網站上的搜尋方塊設定
 
@@ -95,7 +95,7 @@ Set-PnPSearchSettings -Scope Site -SearchBoxInNavBar Hidden
 您可以針對指定的網站或網站集合變更搜尋方塊所顯示的提示。 這是在開始輸入文字之前，出現在搜尋方塊中的文字。 當您已設定自訂結果頁面或以其他方式變更搜尋行為時，這可協助您指導使用者如何進行搜尋。
 
 > [!NOTE]
-> 若要進行這項變更，您必須允許以租使用者管理員的身分在網站上執行自訂腳本，此為預設不允許的使用者。 如需 https://docs.microsoft.com/sharepoint/allow-or-prevent-custom-script 詳細資訊，請參閱。 您可以在必要時，允許執行自訂腳本，進行變更，然後再回復至禁止網站的腳本。
+> 若要進行這項變更，您必須允許以租使用者管理員的身分在網站上執行自訂腳本，此為預設不允許的使用者。 如需詳細資訊，請參閱 https://docs.microsoft.com/sharepoint/allow-or-prevent-custom-script 。 您可以在必要時，允許執行自訂腳本，進行變更，然後再回復至禁止網站的腳本。
 
 若要變更特定網站的此設定，請執行下列命令：
 

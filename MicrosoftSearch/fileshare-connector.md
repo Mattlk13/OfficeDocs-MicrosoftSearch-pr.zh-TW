@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: 設定 Microsoft 搜尋的檔案共用 Graph 連接器
-ms.openlocfilehash: 874b522cb54288b531cbbc63e12f232a8a68939e
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: ca9961289b7147ac8ec12b5436cb4da5dec5910a
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375746"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62491027"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -76,7 +76,7 @@ ms.locfileid: "59375746"
 
 #### <a name="full-network-path-of-filefolder-or-regular-expression-to-limit-indexing"></a>要限制索引的檔案/資料夾或正則運算式的完整網路路徑 
 
-在 [網路路徑] 中 (\\) 的特殊字元之前的逸出字元 \\ 。 範例：針對路徑 \\ \\ CONTOSO \\ file \\ SHAREDFOLDER，正確的輸入方式是 \\ \\ \\ \\ CONTOSO \\ \\ file \\ \\ SHAREDFOLDER
+在 [網路路徑] 中 (\\) 的特殊字元 \\ 之前的逸出字元。 範例：針對路徑 \\ CONTOSO file SHAREDFOLDER，正確的輸入方式是 \\ \\ \\ \\ CONTOSO \\ \\ file SHAREDFOLDER \\ \\ \\ \\ \\
 
 您可以在[這裡](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference)找到撰寫正則運算式的規則
 

@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: mssearch
 ms.localizationpriority: medium
 description: 管理在搜尋結果中顯示 Dynamics 365 內容的方式
-ms.openlocfilehash: 79d2450d15c8597ced66c2903e273efa18a9629f
-ms.sourcegitcommit: 245830f51e4edc99baf0922053c3d9a9733c7893
+ms.openlocfilehash: 509a5e5a81747c643cfce51ce6ad1ae63bc22f48
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60907640"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62490437"
 ---
 # <a name="dynamics-365-federation-search-preview"></a>Dynamics 365 同盟搜尋 (預覽) 
 

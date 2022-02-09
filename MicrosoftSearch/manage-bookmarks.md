@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: 建立和更新大量編輯 Microsoft 搜尋書簽結果的書簽和方式
-ms.openlocfilehash: 8cef31b8b11127caaefde4df9c03375e637b6c4c
-ms.sourcegitcommit: 31e14ef43eb3861e19077a8f52fa6a88c81918ea
+ms.openlocfilehash: a8523a29870ce9e2cff7d93f09eabdb3ebc417b3
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61152561"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62492191"
 ---
 # <a name="manage-bookmarks"></a>管理書籤
 

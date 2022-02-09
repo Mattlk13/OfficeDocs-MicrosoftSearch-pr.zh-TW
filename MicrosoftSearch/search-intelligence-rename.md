@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: 在管理導覽中將 Microsoft 搜尋重新命名為搜尋 & 情報
-ms.openlocfilehash: a2dc33751e8888a57c60c3d9a88694ecefd8313d
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: fd0cf67cefa41632369c2fafb7102fdd5529078e
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701919"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62493918"
 ---
 # <a name="search--intelligence"></a>搜尋 & 情報
 
-Microsoft 搜尋管理目前位於 **設定** Microsoft 搜尋底下的 [Microsoft 365 系統管理中心](https://admin.microsoft.com)中  >  **[](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)。** 我們正在將導覽重新命名為 **[搜尋 & 情報](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)。**
+Microsoft 搜尋管理目前位於 **設定**  >  **[Microsoft 搜尋](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)** 底下的 [Microsoft 365 系統管理中心](https://admin.microsoft.com)中。 我們正在將導覽重新命名為 **[搜尋 & 情報](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)。**
 
 > [!Important]
 > 這項變更將會在2020年10月1日向客戶進行首展，並在幾周後接觸所有客戶。

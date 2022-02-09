@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 連接器結果聚簇體驗的詳細資料
-ms.openlocfilehash: f815c52681a7fc2027b587be980b5e9125e04917
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: 80536d08ef7aedfb85803ea2bac2253a4e693ad6
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375820"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62493098"
 ---
 # <a name="graph-connectors-result-cluster"></a>Graph 連接器結果叢集
 

@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
 ROBOTS: NoIndex
 description: 將 Microsoft 搜尋搜尋方塊新增至您的內部網路網站或頁面，以取得相關的搜尋建議並快速尋找工作結果。
-ms.openlocfilehash: d9f730eee98291d64e1f860c67be3eb7aa52a4a8
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: 61bd7901b82cd81fb6da97e4376f2d9468f3ec3f
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375720"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62492053"
 ---
 # <a name="add-a-search-box-to-your-intranet-site"></a>將搜尋方塊新增至您的內部網路網站
 
@@ -124,4 +124,4 @@ ms.locfileid: "59375720"
 
 ## <a name="inprivate-mode-and-conditional-access"></a>InPrivate 模式和條件式存取
 
-如果在 InPrivate 視窗中開啟頁面或網站，就會停用內嵌搜尋方塊。 此外，在 Microsoft Edge 中使用 Azure AD 條件式存取支援，Bing 在使用 InPrivate 模式時不支援 AAD 登入。 如需 Edge 中的條件式存取的詳細資訊，請參閱[Microsoft Edge 和條件式存取](/deployedge/ms-edge-security-conditional-access#accessing-conditional-access-protected-resources-in-microsoft-edge)。 
+如果在 InPrivate 視窗中開啟頁面或網站，就會停用內嵌搜尋方塊。 此外，在 Microsoft Edge 中使用 Azure AD 條件式存取支援時，Bing .com 在使用 InPrivate 模式時不支援 AAD 登入。 如需 Edge 中的條件式存取的詳細資訊，請參閱[Microsoft Edge 和條件式存取](/deployedge/ms-edge-security-conditional-access#accessing-conditional-access-protected-resources-in-microsoft-edge)。 

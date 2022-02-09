@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Graph 連接器的設定概觀
-ms.openlocfilehash: f3e622abbc54103a47a06c587a1d20190639504c
-ms.sourcegitcommit: 02d4f91210d992da080fd39d5b60f8cf30d8f0b2
+ms.openlocfilehash: bb3879730234f7393c98bdc4be6cb8ca06d14dcf
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60238437"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62491837"
 ---
 <!-- Previous ms.author: monaray -->
 
@@ -89,15 +89,15 @@ ms.locfileid: "60238437"
 
 您可以選擇 Microsoft 搜尋所編制索引的屬性。
 
-ServiceNow 查詢可用於在資料按 Microsoft 搜尋編制索引之前加以篩選。這可讓您更深入地控制可搜尋的資料。 若要深入瞭解 ServiceNow 查詢，請參閱 [瞭解 ServiceNow 查詢](https://go.microsoft.com/fwlink/?linkid=2151447)。
+ServiceNow 查詢可用於在資料按 Microsoft 搜尋編制索引之前加以篩選; 這樣可讓您更多控制可搜尋的資料。 若要深入瞭解 ServiceNow 查詢，請參閱 [瞭解 ServiceNow 查詢](https://go.microsoft.com/fwlink/?linkid=2151447)。
 
 ## <a name="step-5-manage-search-permissions"></a>步驟5：管理搜尋許可權
 
  (ACLs 的存取控制清單) 決定組織中的哪些使用者可以存取每個專案。  
 
-某些連接器（如[Microsoft SQL](MSSQL-connector.md)和[Azure Data Lake 儲存體 Gen2](azure-data-lake-connector.md)本身支援[Azure Active Directory (Azure AD) ](/azure/active-directory/) ACLs）。
+有些連接器（如[Microsoft SQL](MSSQL-connector.md)和[Azure Data Lake 儲存體 Gen2](azure-data-lake-connector.md)本身支援[Azure Active Directory (Azure AD) ](/azure/active-directory/) ACLs）。
 
-其他如[ServiceNow 知識](servicenow-knowledge-connector.md)的連接器[，ServiceNow 目錄](servicenow-catalog-connector.md)、 [Azure DevOps](azure-devops-connector.md)和[Salesforce](salesforce-connector.md)支援非 Azure AD 使用者和群組的同步處理。  
+其他如[ServiceNow 知識](servicenow-knowledge-connector.md)的連接器， [ServiceNow Catalog](servicenow-catalog-connector.md)、 [Azure DevOps](azure-devops-connector.md)和[Salesforce](salesforce-connector.md)支援非 Azure AD 使用者和群組的同步處理。  
 
 選取 [所有人] 可讓組織中的每個人都看到來自此資料來源的搜尋結果。
 
@@ -198,7 +198,7 @@ ServiceNow 查詢可用於在資料按 Microsoft 搜尋編制索引之前加以�
 
 在系統 [管理中心](https://admin.microsoft.com)的 [**連接器**] 索引標籤下，移至您發佈的連線清單。 若要瞭解如何進行更新和刪除，請參閱 [管理您的連接器](manage-connector.md)。
 
-## <a name="troubleshooting"></a>疑難排解
+## <a name="troubleshooting"></a>正在疑難排解
 <!---Insert troubleshooting recommendations for this data source-->
 閱讀資料來源的連接器特定資訊。
 

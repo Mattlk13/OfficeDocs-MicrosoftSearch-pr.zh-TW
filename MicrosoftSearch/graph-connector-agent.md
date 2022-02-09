@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 部署代理程式
-ms.openlocfilehash: bade23388c29ffc53a522d5a598df4e60660067e
-ms.sourcegitcommit: e55aea150be7161685550a9f05636c7820059882
+ms.openlocfilehash: 9137886501a27fa2754f02004a54dd823e46272c
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61282629"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62490869"
 ---
 # <a name="microsoft-graph-connector-agent"></a>Microsoft Graph connector 代理程式
 
@@ -26,7 +26,7 @@ ms.locfileid: "61282629"
 
 ## <a name="installation"></a>安裝
 
-請從安裝精靈下載最新版的 Graph 連接器代理程式 [https://aka.ms/GCAdownload](https://aka.ms/gcadownload) ，然後安裝軟體。 使用下列所述機器的建議設定，軟體最多可以處理三個連接。 超過該數目的任何連線可能會降低代理程式上所有連接的效能。
+請從 [https://aka.ms/GCAdownload](https://aka.ms/gcadownload) 安裝精靈下載最新版的 Graph 連接器代理程式，然後安裝軟體。 使用下列所述機器的建議設定，軟體最多可以處理三個連接。 超過該數目的任何連線可能會降低代理程式上所有連接的效能。
 
 建議的設定：
 
@@ -55,7 +55,7 @@ ms.locfileid: "61282629"
 
 1. 移至 [Azure 入口網站](https://portal.azure.com) ，並使用系統管理員認證登入以供租使用者使用。
 
-2. 流覽至  ->  功能窗格中 Azure Active Directory 的 **應用程式註冊**，然後選取 [新增] [**註冊**]。
+2. 流覽至功能窗格中 **Azure Active Directory**  ->  的 **應用程式註冊**，然後選取 [新增] [**註冊**]。
 
 3. 提供應用程式的名稱，然後選取 [ **註冊**]。
 
@@ -137,7 +137,7 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 
 4. 安裝憑證之後，請透過 [開始] 功能表開啟 **管理電腦憑證**。
 
-5. 選取 [**個人** 憑證] 底下的新安裝憑證  >  ****。
+5. 選取 [**個人**  >  **憑證**] 底下的新安裝憑證。
 
 6. 以滑鼠右鍵按一下 [cert]，然後選取 [**所有任務**  >  **管理私密金鑰**] 選項。
 
@@ -147,7 +147,7 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 
 9. 在 [許可權] 對話方塊中按一下 [確定]。 代理程式機器現在已設定為讓代理程式使用憑證來產生權杖。
 
-## <a name="troubleshooting"></a>疑難排解
+## <a name="troubleshooting"></a>正在疑難排解
 
 ### <a name="installation-failure"></a>安裝失敗
 

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
 description: 隨著時間，您可能會需要更新位置的狀態和內容以讓它保持相關。
-ms.openlocfilehash: 0c93e29c8c899a4b70a30cf97354cf00fc19667f
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: 39366e467db09f3a680d1a5fef889b12233a88c9
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59334484"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62492487"
 ---
 # <a name="manage-locations"></a>管理位置
 

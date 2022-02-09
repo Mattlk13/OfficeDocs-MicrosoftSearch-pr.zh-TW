@@ -59,7 +59,7 @@ additionalContent:
               url: manage-search-apps.md
         - title: 管理資料來源
           links:
-            - text: Graph連接器概述
+            - text: Graph 連接器概述
               url: connectors-overview.md
             - text: 設定 Graph 連接器
               url: configure-connector.md

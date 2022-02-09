@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 Salesforce Graph 連接器
-ms.openlocfilehash: c2679002affe494ba31777718d265b5526b744c0
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: f2e7eb500e83ba996122a78a9593fca475d58317
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375817"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62492911"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -116,11 +116,11 @@ salesforce Graph connector 可讓您的組織為您的 Salesforce 實例中的�
 
 ## <a name="step-5-manage-search-permissions"></a>步驟5：管理搜尋許可權
 
-您必須選擇哪一使用者會看到來自此資料來源的搜尋結果。 如果您只允許特定 Azure Active Directory (Azure ad) 或非 Azure ad 使用者看到搜尋結果，請確定您對應的是識別碼。
+您必須選擇哪一使用者會看到來自此資料來源的搜尋結果。 如果只允許特定 Azure Active Directory (Azure AD) 或非 Azure AD 使用者看到搜尋結果，請確定您對應的是識別碼。
 
 ### <a name="step-5a-select-permissions"></a>步驟5：選取許可權
 
-您可以選擇從您的 Salesforce 實例中 (ACLs) 來攝取存取控制清單，或允許組織中的每個人都看到來自此資料來源的搜尋結果。 ACLs 可以包含 Azure Active Directory (AAD) 身分識別， (從 azure ad 同盟到 Salesforce) 的使用者、非 Azure ad 身分識別 (在 Azure AD) 中具有對應身分識別的原生使用者，或兩者皆有。
+您可以選擇從您的 Salesforce 實例中 (ACLs) 來攝取存取控制清單，或允許組織中的每個人都看到來自此資料來源的搜尋結果。 ACLs 可以包含 Azure Active Directory (AAD) 身分 (的使用者，Azure AD 從) 到 Salesforce Azure AD 的使用者、非 (的身分識別，Azure AD 在) 中具有對應身分身分識別的原生使用者，或兩者。
 
 >[!NOTE]
 >如果您使用的協力廠商身分識別提供者（如 Ping 識別碼或 secureAuth），則應該選取「非 AAD」做為身分識別類型。
@@ -128,13 +128,13 @@ salesforce Graph connector 可讓您的組織為您的 Salesforce 實例中的�
 > [!div class="mx-imgBorder"]
 > ![選取由系統管理員已完成的 [許可權] 畫面。管理員已選取 [只有存取此資料來源的人員] 選項，而且已從識別類型的下拉式功能表中選取「AAD」。](media/salesforce-connector/sf6.png)
 
-如果您選擇從您的 Salesforce 實例或為身分識別類型選取 "非 AAD" 的 ACL，請參閱 [Map 您的非 AZURE AD](map-non-aad.md) 身分識別，以取得對應身分識別的指示。
+如果您選擇從您的 Salesforce 實例中攝取 ACL，並為身分識別類型選取 [非 AAD]，請參閱[對應您的非 Azure AD](map-non-aad.md)身分識別，以取得對應身分識別的指示。
 
 ### <a name="step-5b-map-aad-identities"></a>步驟5： b：對應 AAD 身分識別
 
-如果您選擇從您的 Salesforce 實例中攝取 ACL 並為身分識別類型選取「AAD」，請參閱 [對應 AZURE AD](map-aad.md) 身分識別，以取得對應身分識別的指示。 若要瞭解如何設定適用于 Salesforce 的 Azure AD SSO，請參閱本 [教學](/azure/active-directory/saas-apps/salesforce-tutorial)課程。
+如果您選擇從 Salesforce 實例中攝取一個 ACL，並為身分識別類型選取「AAD」，請參閱[對應您的 Azure AD](map-aad.md)身分識別，以取得對應身分識別的指示。 若要瞭解如何設定 Salesforce 的 Azure AD SSO，請參閱本[教學](/azure/active-directory/saas-apps/salesforce-tutorial)課程。
 
-### <a name="apply-user-mapping-to-sync-your-salesforce-identities-to-azure-ad-identities"></a>套用使用者對應，將您的 Salesforce 身分識別同步處理至 Azure AD 身分識別
+### <a name="apply-user-mapping-to-sync-your-salesforce-identities-to-azure-ad-identities"></a>套用使用者對應，將您的 Salesforce 身分識別同步處理 Azure AD 身分識別
 
 在此影片中，您可以看到對您的 salesforce 實例進行驗證的程式、將非 Azure Active Directory 身分同步處理至您的 Azure Active Directory 身分識別，以及套用適當的安全性 trimmings 至您的 salesforce 專案。
 
@@ -189,7 +189,7 @@ Salesforce 連接器只支援目前完全編目的重新整理排程。
     - MobilePhone
     - 電子郵件
     - 類型
-    - 職稱
+    - 標題
     - AccountId
     - AccountName
     - AccountUrl

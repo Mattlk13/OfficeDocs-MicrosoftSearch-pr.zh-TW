@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用 Bing 中的 Microsoft 搜尋提供授權使用者的資訊，以保護公司的資料和使用者。
-ms.openlocfilehash: bf3629b2508c705d19e3b7b772c6f3672063a6f1
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: 5d9ce2fb7cd40c8437ba8929170477bac0aac65e
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375813"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62493559"
 ---
 # <a name="security-and-privacy-for-microsoft-search-in-bing"></a>Bing 中 Microsoft 搜尋的安全性和隱私權
 

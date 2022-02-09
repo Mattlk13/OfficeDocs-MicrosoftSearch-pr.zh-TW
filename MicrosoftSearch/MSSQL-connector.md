@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 為 Microsoft 搜尋設定 Azure SQL 和 Microsoft SQL Graph 連接器。
-ms.openlocfilehash: ae953d55de4a4f5e8afc32cc6b55f6e0b32e2811
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: f980206967da1cee53f52f001a3b938d01719547
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375727"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62489908"
 ---
 <!---Previous ms.author: vivg --->
 
@@ -141,14 +141,14 @@ instructions.-->
 
 建立浮水印的查詢程式碼片段，如下列範例所示：
 
-- `WHERE (CreatedDateTime > @watermark)`. 使用保留的關鍵字來引用浮水印欄名稱 `@watermark` 。 如果浮水印欄的排序次序是遞增的，請使用 `>` ，否則請使用 `<` 。
+- `WHERE (CreatedDateTime > @watermark)`. 使用保留的關鍵字 `@watermark` 來引用浮水印欄名稱。 如果浮水印欄的排序次序是遞增的，請使用 `>` ，否則請 `<` 使用。
 - `ORDER BY CreatedDateTime ASC`. 在 [浮水印] 欄上以遞增或遞減順序排序。
 
 在下一個影像所示的設定中， `CreatedDateTime` 是選取的 [浮水印] 欄。 若要取得第一批列，請指定 [浮水印] 資料行的資料類型。 在此情況下，資料類型為 `DateTime` 。
 
 ![浮水印欄設定。](media/MSSQL-watermark.png)
 
-第 **一個查詢** 會使用： "CreatedDateTime > 1753 年1月1日，00:00:00" (最小值 DateTime 的資料類型) 。 提取第一個批次之後， `CreatedDateTime` 如果資料列是以遞增順序排序，則會將批次中傳回的最高值儲存為檢查點。 範例是 03:00:00 2019 年3月1日。 然後，在查詢中使用「CreatedDateTime > 三月份1，2019 03:00:00」提取下一批 **N** 列。
+第 **一個查詢** 會使用： "CreatedDateTime > 1753 年1月1日，00:00:00" (最小值 DateTime 的資料類型) 。 提取第一個批次之後，如果資料列是以遞增順序排序，則會將批次中傳回的最高值 `CreatedDateTime` 儲存為檢查點。 範例是 03:00:00 2019 年3月1日。 然後，在查詢中使用「CreatedDateTime > 三月份1，2019 03:00:00」提取下一批 **N** 列。
 
 ### <a name="skipping-soft-deleted-rows-optional"></a>跳過虛刪除的列 (選用) 
 
@@ -213,7 +213,7 @@ Create your own verticals and result types, so end users can view search results
 
 To learn more about how to create your verticals and MRTs, see [Search results page customization](customize-search-page.md).-->
 
-## <a name="troubleshooting"></a>疑難排解
+## <a name="troubleshooting"></a>正在疑難排解
 
 以下是設定連接器時所觀察到的常見錯誤及其可能的原因。
 
@@ -228,5 +228,5 @@ SQL 連接器在預覽版本中有這些限制：
 
 - Microsoft SQL Server 連接器：內部部署資料庫必須執行 SQL Server 版本2008或更新版本。
 - 主控 azure SQL 資料庫) 的 Microsoft 365 訂閱和 Azure 訂閱 (必須位於相同的 Azure Active Directory 內。
-- 只有使用使用者主要名稱 (UPN) 、Azure Active Directory (Azure AD) 或 Active Directory 安全性才能支援 ACLs。
+- 只有使用使用者主要名稱 (UPN) 、Azure Active Directory (Azure AD) ，或 Active Directory 安全性才能支援 ACLs。
 - 不支援在資料庫欄中編制豐富內容的索引。 這類內容的範例為 HTML、JSON、XML、blob 及檔 parsings，以資料庫資料欄中的連結形式存在。

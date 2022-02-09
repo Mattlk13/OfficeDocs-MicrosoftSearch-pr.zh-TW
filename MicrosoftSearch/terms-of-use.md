@@ -1,5 +1,5 @@
 ---
-title: Microsoft 搜尋公開預覽：使用條款
+title: Microsoft 搜尋公開預覽版：使用條款
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 適用于 Microsoft 搜尋的 Microsoft Graph 連接器公開預覽的法律條款及條件
-ms.openlocfilehash: 5230048ad0eb52353621dbfcecc74fd8f4d2f0a6
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: 89b5cb895edac8b10cfa6819a10aaf5511b1ec0d
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375781"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62494006"
 ---
 <!---Previous ms.author: anfowler --->
 

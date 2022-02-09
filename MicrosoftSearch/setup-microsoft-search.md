@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 第一次設定 Microsoft Search。
-ms.openlocfilehash: 0f3fb9b0bcfc259d6e065d375b77f771a997977e
-ms.sourcegitcommit: f94444a2286f41790c4d8f4d93cdd156468958b7
+ms.openlocfilehash: 628a0d1731e4962e2029af1c8fd7f6a2202e5728
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62249488"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62492989"
 ---
 # <a name="set-up-microsoft-search"></a>設定 Microsoft Search
 

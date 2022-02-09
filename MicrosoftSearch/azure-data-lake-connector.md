@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 為 Microsoft 搜尋設定 Azure Data Lake 儲存體 Gen2 Graph connector
-ms.openlocfilehash: f60de4252e514f84bc92daf4ea65c535cf40a13d
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: d9df82addafe6d112e2306e76dd73f522da57b15
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375724"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62491994"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -49,9 +49,9 @@ azure data lake 儲存體 Gen2 Graph connector 可讓組織中的使用者搜尋
 
 如果您不想要在主要儲存連接字串) 中提供 **AccountKey** (參數，請將存取權授與下列角色的 Graph 連接器服務：
 
-* 儲存體Blob 資料讀取器
+* 儲存體 Blob 資料讀取器
 * 儲存體佇列資料參與者
-* 儲存體Blob Delegator
+* 儲存體 Blob Delegator
 
 流覽至您 Azure 儲存體帳戶的 [**存取控制**] 索引標籤，然後依照其中的指示授與下列應用程式的存取權：
 

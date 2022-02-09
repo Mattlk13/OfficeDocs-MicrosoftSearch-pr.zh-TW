@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 Atlassian Jira Graph 連接器
-ms.openlocfilehash: 1edc5adec820aea9a3cb9b1a23dec0791b291495
-ms.sourcegitcommit: d2bb36b6d3102b08ced93faa5e102bdb7e7e1e5f
+ms.openlocfilehash: e472717fd0f6d8df1fc7e6b3fe52cecd91eadb5c
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60720621"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62490721"
 ---
 # <a name="atlassian-jira-graph-connector-preview"></a>Atlassian Jira Graph connector (preview) 
 
@@ -64,11 +64,11 @@ Atlassian Jira Graph connector 可讓您的組織建立 Jira 問題的索引。 
 下列步驟提供如何註冊應用程式的指導方針：
 
 1. 使用您的 Atlassian Jira 系統管理員帳戶登入 [Atlassian 開發人員主控台](https://developer.atlassian.com/console/myapps/) 。
-2. 按一下 `Create` 並選取 `OAuth 2.0 integration`
+2. `Create`按一下並選取`OAuth 2.0 integration`
 3. 為應用程式提供適當的名稱，並建立新的應用程式。
-4. `Permissions`從左側的功能窗格流覽至。 按一下 [是] `Add` `Jira platform REST API` 。 新增後，按一下 `Configure` 並新增下列範圍- `View Jira issue data` 、 `Manage Jira global settings` 和 `View user profiles` 。
-5. `Authorization`從左側的功能窗格流覽至。 新增回撥 URL `https://gcs.office.com/v1.0/admin/oauth/callback` 並儲存變更。
-6. `Settings`從左側的功能窗格流覽至。 您將會收到 `Client ID` 及 `Secret` 至此頁面。
+4. 從左側的功能窗格流覽至 `Permissions` 。 `Jira platform REST API`按一下 `Add` [是]。 新增後，按一下 `Configure` 並新增下列範圍- `View Jira issue data` 、 `Manage Jira global settings` 和 `View user profiles` 。
+5. 從左側的功能窗格流覽至 `Authorization` 。 新增回撥 URL `https://gcs.office.com/v1.0/admin/oauth/callback` 並儲存變更。
+6. 從左側的功能窗格流覽至 `Settings` 。 您將會收到 `Client ID` 及 `Secret` 至此頁面。
 
 在註冊具有上述詳細資料的應用程式時，您將取得 **用戶端識別碼** 和 **密碼**。 完成 [連線設定] 步驟，使用這些步驟。
 
@@ -131,7 +131,7 @@ Atlassian Jira Graph connector 支援完整和累加編目的更新排程。
 
 遵循一般 [設定指示](./configure-connector.md)。
 
-## <a name="troubleshooting"></a>疑難排解
+## <a name="troubleshooting"></a>正在疑難排解
 以下是設定連接器或編目時所看到的常見錯誤清單，以及可能的原因。
 
 | 步驟 | 錯誤訊息 | 可能的原因 (s)  |

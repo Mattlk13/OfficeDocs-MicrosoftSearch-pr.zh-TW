@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 深入瞭解美國政府雲端客戶的 Microsoft 搜尋功能可用性
-ms.openlocfilehash: aec7790d9e35792ccfdf889af4d6a0bd6c02a2cb
-ms.sourcegitcommit: 36dc65ce83b5634476701530f6c486ebddef9386
+ms.openlocfilehash: 487d19e83a90c18ed70b1cc891b8ea60cd6b7a88
+ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61320368"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62492930"
 ---
 # <a name="microsoft-search-for-us-government-environments"></a>適用于美國政府環境的 Microsoft 搜尋
 
