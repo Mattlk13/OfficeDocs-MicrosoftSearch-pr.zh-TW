@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 在 [結果] 頁面上管理搜尋縱向
-ms.openlocfilehash: 15378e6e8ac672fecb49519dafc87dbf4b9f7995
-ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
+ms.openlocfilehash: 6385b9f09356e7b4baedfc6ed968f1198696b42e
+ms.sourcegitcommit: acc24e01c99242fef7401de079bd6060cb1ba301
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62489872"
+ms.lasthandoff: 02/11/2022
+ms.locfileid: "62540327"
 ---
 # <a name="manage-search-verticals"></a>管理搜尋行業
 
@@ -162,7 +162,8 @@ ms.locfileid: "62489872"
 - 自訂的縱向不會出現在 Microsoft 搜尋的行動裝置視圖上。 
 - 在 [人員] 垂直上不支援新增查詢。 
 - 組織中的來賓使用者看不到縱向修改和新的縱向。 
-- 不支援縱向重新排序 
+- 不支援縱向重新排序。
+- 在 Bing 中的 Microsoft search 中，所有索引標籤的垂直重新命名功能都不受支援。
 
 ## <a name="troubleshooting"></a>正在疑難排解
 
