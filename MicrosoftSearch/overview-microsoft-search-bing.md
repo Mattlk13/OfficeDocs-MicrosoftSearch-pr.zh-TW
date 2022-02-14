@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 深入瞭解 Bing 中的 Microsoft 搜尋，包括您的使用者看到的體驗，以及如何簡化存取。
-ms.openlocfilehash: b21019d93a1875d33671dce3ee0d4a601f3a64d2
-ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
+ms.openlocfilehash: f8e1e98f9c48d8780c4b8011244f4b5a2d333060
+ms.sourcegitcommit: 488ecdae00dabd7bf26d0dab43b684fd0909782a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62493393"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805511"
 ---
 # <a name="overview-of-microsoft-search-in-bing"></a>Bing 中的 Microsoft 搜尋綜述
 
@@ -42,10 +42,12 @@ Bing 中的 Microsoft 搜尋會將 Microsoft 搜尋和 Bing 網頁搜尋的功�
 |:-----|:-----|
 |Bing 首頁|所有結果頁面|
 |[工作](https://www.bing.com/work) 搜尋開始頁面|工作結果頁面|
+|[學校](https://www.bing.com/school) 搜尋開始頁面|學校結果頁面|
 |[Windows 搜尋](https://support.microsoft.com/windows/search-for-anything-anywhere-b14cc5bf-c92a-1e73-ea18-2845891e6cc8)|內部網站、檔、所有結果或工作或學校結果頁面，視其選取的相符|
 |Microsoft Edge 位址列|所有結果頁面|
 |[Microsoft Edge 工作快捷方式](/microsoftsearch/edge-shortcuts)|工作結果頁面|
 |Microsoft Edge 新的] 索引標籤頁面|所有結果頁面|
+|[Microsoft Edge 擴充](/microsoftsearch/edge-shortcuts)|工作結果頁面|
 |內部網路或內部應用程式上的[內嵌搜尋](/microsoftsearch/add-a-search-box-to-your-intranet-site)方塊|「工作或學校結果」頁面|
 
 ## <a name="getting-started-with-microsoft-search-in-bing"></a>Bing 中 Microsoft 搜尋入門
@@ -73,6 +75,12 @@ Microsoft 搜尋的設計目的是讓內部資訊在您的使用者搜尋的任�
 ![包含內嵌搜尋方塊和搜尋建議的網際網路入口網站。](media/msb-overview/embedded-search-box-intranet.png)
 
 使用簡單的腳本，您可以新增自訂的搜尋方塊，甚至將其指引至自訂的垂直。 若要深入瞭解，請參閱 [將搜尋方塊新增至您的內部網路網站](add-a-search-box-to-your-intranet-site.md)。
+
+## <a name="add-the-microsoft-search-extension-to-google-chrome"></a>將 Microsoft 搜尋分機新增至 Google Chrome
+
+如果您的組織使用 Google Chrome，則 Microsoft 搜尋延伸功能可讓使用者輕鬆存取其瀏覽器的工作結果。 您不需要變更任何搜尋或瀏覽器的預設值。 如需使用「群組原則」來部署副檔名的相關資訊，請參閱 (Windows) 在 Chrome Enterprise 及教育版說明網站上的[設定鑲邊應用程式和擴充原則](https://support.google.com/chrome/a/answer/7532015)。
+
+使用者也可以從[Chrome 線上應用程式商店](https://chrome.google.com/webstore/detail/microsoft-search/fahnnnailfccbjpdjeafekniiaflekca)新增 Microsoft 搜尋的分機號碼。
 
 ## <a name="set-defaults-to-make-searching-work-or-school-easier"></a>將預設值設為便於搜尋工作或學校
 

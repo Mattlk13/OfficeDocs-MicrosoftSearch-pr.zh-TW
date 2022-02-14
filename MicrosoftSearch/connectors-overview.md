@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 搜尋的 Microsoft Graph 連接器的概覽
-ms.openlocfilehash: 601bbe971d32de63a7a424acd39fbac83725939c
-ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
+ms.openlocfilehash: 5db2fab05e16b8c6c9f739c156e893ff12f503c0
+ms.sourcegitcommit: 488ecdae00dabd7bf26d0dab43b684fd0909782a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62491341"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805529"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -106,7 +106,6 @@ Microsoft 提供9個連接器和我們的生態系統合作夥伴已透過100以
 * [Azure DevOps 連接器](azure-devops-connector.md)
 * [Confluence 內部部署連接器](confluence-onpremises-connector.md)
 * [ServiceNow 目錄連接器](servicenow-catalog-connector.md)
-* [管理自訂篩選](custom-filters.md)
 * [垂直中的多個連接](customize-search-page.md#multiple-connections-in-a-vertical)
 
 ## <a name="how-do-i-customize-and-configure-search-results"></a>如何自訂及設定搜尋結果？
