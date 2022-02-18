@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理 SERP 上使用的篩選
-ms.openlocfilehash: eea4a3a12995342249750c547519ca13c4d7bd91
-ms.sourcegitcommit: 488ecdae00dabd7bf26d0dab43b684fd0909782a
+ms.openlocfilehash: f28fea1df77619bae41b03ee24017b86bff18a25
+ms.sourcegitcommit: c1ee09ba098a87b484060719ea482c512b9957ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62805520"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62892889"
 ---
 # <a name="manage-filters"></a>管理篩選
 
@@ -62,16 +62,15 @@ ms.locfileid: "62805520"
 
 您可以使用一或多個內容來源來建立縱向。 當以多個內容來源設定垂直時，精簡器的屬性清單會顯示每個可精簡搜尋屬性所屬的內容來源。 通用 managed 屬性會根據名稱 (或別名) 和資料類型進行合併。 篩選也可以在這些一般屬性上進行設定。 若要執行此操作，您可以在通用別名上建立篩選，以在不同的連線上使用別名來源屬性。 例如，您可以建立別名 **，使其** 跨越 ServiceNow 和 Jira 連線，如下所示：
 
- | 連線 | 屬性	 | 別名 |
+ | 連線 | 屬性 | 別名 |
  | --- | --- | --- |
  | 服務現在 | 擁有者 | 作者 |
- | Jira | 發行者 | 作者 |
+ | Jira | Publisher | 作者 |
 
 ## <a name="important-details"></a>重要詳細資料
 
-- 篩選只可以新增至自訂的縱向。 新的篩選器無法新增至現成的縱向縱向，像所有的檔案、人員、網站和新聞。
 - 篩選可在 Text 和 DateTime 屬性上進行設定。
-- 您的總數限制為50個篩選。
+- 在下拉式清單中，篩選會顯示最多50個值。
 - 無法調整 box 篩選的順序。
 - 篩選器不支援 OneDrive 內容。 對應于來自 OneDrive 內容之搜尋結果的篩選值，不會出現在篩選上。
 - 自訂篩選值會顯示從 SharePoint 內容的選項，而非從某個磁片磁碟機內容。例如，如果您為「author」建立自訂篩選，而且 SharePoint 內容包含的結果只來自 author、「張瑾」和「OneDrive」內容，只會從名為「John」的作者取得結果，所以 Author 自訂篩選只會顯示「張瑾雯」為唯一的選項。
