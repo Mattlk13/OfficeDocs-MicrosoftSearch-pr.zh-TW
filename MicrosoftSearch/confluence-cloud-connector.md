@@ -13,21 +13,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 Confluence Cloud Graph connector
-ms.openlocfilehash: c2143ac36a8be70a4bf1f725005b273c4f749469
-ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
+ms.openlocfilehash: 08c3f903a051edf33a498562810ad4e2c170c955
+ms.sourcegitcommit: 83f0c6e944da18605f371c92bce2ab2c8d570214
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62491568"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63347916"
 ---
 <!---Previous ms.author: kam1 --->
 
 # <a name="confluence-cloud-graph-connector"></a>Confluence Cloud Graph Connector
 
 Confluence Cloud Graph connector 可讓您的組織為 Confluence 內容編制索引。 在您設定 Confluence 網站的連接器與索引資料之後，使用者就可以在 Microsoft 搜尋中搜尋這些內容。
-
->[!NOTE]
->Confluence 雲端 Graph 連接器通常會由2022年2月14日提供。  
 
 本文適用于 Microsoft 365 系統管理員或任何設定、執行及監視 Confluence Cloud Graph connector 的人員。 它補充了[設定 Graph 連接器](configure-connector.md)文章中提供的一般指示。 若尚未這麼做，請閱讀整個設定 Graph 連接器文章，以瞭解一般的設定程式。
 
@@ -63,11 +60,19 @@ Confluence Cloud Graph connector 可讓您的組織為 Confluence 內容編制�
 下列步驟提供如何註冊應用程式的指導方針：
 
 1. 使用您的 Atlassian Confluence 系統管理員帳戶登入 [Atlassian 開發人員主控台](https://developer.atlassian.com/console/myapps/) 。
-2. `Create`按一下並選取`OAuth 2.0 integration`
+2. 按一下 [ **建立** ] 和 [選取 `OAuth 2.0 integration` ]。
 3. 為應用程式提供適當的名稱，並建立新的應用程式。
-4. 從左側的功能窗格流覽至 `Permissions` 。 `Confluence API`按一下 `Add` [是]。 新增後，按一下 `Configure` 並新增下列範圍- `Read Confluence space summary` 、 `Read content permission in Confluence` `Read Confluence content properties` `Read Confluence content summary` `Read user` `Read Confluence detailed content` `Read user groups` 、、、、和。 `Search Confluence content and space summaries`
-5. 從左側的功能窗格流覽至 `Authorization` 。 新增回撥 URL `https://gcs.office.com/v1.0/admin/oauth/callback` 並儲存變更。
-6. 從左側的功能窗格流覽至 `Settings` 。 您將會收到 `Client ID` 及 `Secret` 至此頁面。
+4. 從左側的功能窗格流覽至 `Permissions` 。 按一下 [ **新增** `Confluence API` ]。 新增後，按一下 [ **設定**]、[ **編輯範圍** ]，然後選取下列範圍。
+
+| **範圍名稱** | **代碼** | **描述** |
+| ------------ | ------------ | ------------ |
+| 查看內容詳細資料 | `read:content-details:confluence` | 編目符合準則的內容
+| View groups | `read:group:confluence` | 存取內容的群組許可權
+| 查看使用者詳細資料 | `read:user:confluence` | 存取個別使用者詳細資料以支援許可權
+
+5. 按一下 [儲存]。
+6. 從左側的功能窗格流覽至 `Authorization` 。 新增回撥 URL `https://gcs.office.com/v1.0/admin/oauth/callback` 並儲存變更。
+7. 從左側的功能窗格流覽至 `Settings` 。 您將會收到 `Client ID` 及 `Secret` 至此頁面。
 
 在註冊具有上述詳細資料的應用程式時，您將取得 **用戶端識別碼** 和 **密碼**。 完成 [連線設定] 步驟，使用這些步驟。
 
@@ -121,7 +126,7 @@ Confluence Cloud Graph connector 可對  **所有人** 或 **只有存取此�
 
 在發佈連線後，您必須自訂搜尋結果頁面。 若要瞭解如何自訂搜尋結果，請參閱 [自訂搜尋結果頁面](/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page)。
 
-## <a name="troubleshooting"></a>正在疑難排解
+## <a name="troubleshooting"></a>疑難排解
 
 設定連接器時看到常見的錯誤，其可能的原因如下所示。
 

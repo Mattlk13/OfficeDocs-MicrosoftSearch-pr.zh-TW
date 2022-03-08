@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 ServiceNow 知識 Graph 連接器
-ms.openlocfilehash: 0a6e5c6018d8c29ecd311b5a8d6d35ddfeaa25f9
-ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
+ms.openlocfilehash: f4009fe41d9c24d27489f1b8780095da6f8325ef
+ms.sourcegitcommit: 83f0c6e944da18605f371c92bce2ab2c8d570214
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62492634"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63347931"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -85,16 +85,16 @@ ms.locfileid: "62492634"
 
 欄位 | 描述 | 建議值 
 --- | --- | ---
-姓名 | 識別您需要 OAuth 存取之應用程式的唯一值。 | Microsoft 搜尋
+名稱 | 識別您需要 OAuth 存取之應用程式的唯一值。 | Microsoft 搜尋
 用戶端識別碼 | 應用程式的唯讀、自動產生的唯一識別碼。 當實例要求存取權杖時，會使用用戶端識別碼。 | NA
 用戶端密碼 | 使用此共用的機密字串，ServiceNow 實例和 Microsoft 搜尋會授權彼此進行通訊。 | 遵循安全性最佳作法，將密碼當做密碼對待。
 重新導向 URL | 授權伺服器重新導向所需的回撥 URL。 | https://gcs.office.com/v1.0/admin/oauth/callback
 標誌 URL | 包含應用程式標誌之圖像的 URL。 | NA
 作用中 | 選取此核取方塊，讓應用程式登錄成為使用中。 | 設定為 active
-重新整理權杖生命週期 | 重新整理權杖有效的秒數。 根據預設，重新整理權杖會在100天內到期 (8640000 秒) 。 | 31536000 (1 年) 
+重新整理權杖生命週期 | 重新整理權杖有效的秒數。 根據預設，重新整理權杖會在100天內到期 (8640000 秒) 。 | 31536000 (一年) 
 存取權杖使用壽命 | 存取權杖有效的秒數。 | 43200 (12 小時) 
 
-輸入用戶端識別碼和用戶端密碼以連接至您的實例。 連接後，請使用 ServiceNow 帳號憑證來驗證編目的許可權。 帳戶至少應具備 **知識** 角色。 請參閱「 [步驟3：連線設定](#step-3-connection-settings) 」的開頭中的表格，以提供更多 ServiceNow 表記錄的讀取權，以及索引使用者準則許可權。
+輸入用戶端識別碼和用戶端密碼以連接至您的實例。 連接後，請使用 ServiceNow 帳號憑證來驗證編目的許可權。 帳戶至少應具備 **知識** 角色。 請參閱「 [步驟3：連線設定](#step-3-connection-settings) 」一開始的表格，以提供更多 ServiceNow 表記錄的讀取權，以及索引使用者準則許可權。
 
 ## <a name="step-33-azure-ad-openid-connect"></a>步驟3.3： Azure AD OpenID 連線
 
@@ -152,7 +152,7 @@ ServiceNow 實例需要下列設定：
 
    欄位 | 描述 | 建議值
    --- | --- | ---
-   姓名 | 識別 OAuth OIDC 實體的唯一名稱。 | Azure AD
+   名稱 | 識別 OAuth OIDC 實體的唯一名稱。 | Azure AD
    用戶端識別碼 | 在協力廠商 OAuth OIDC server 中註冊之應用程式的用戶端識別碼。 實例在要求存取權杖時使用用戶端識別碼。 | Application (Client) ID 從步驟3。
    用戶端密碼 | 在協力廠商 OAuth OIDC server 中註冊之應用程式的用戶端密碼。 | 步驟3的用戶端密碼。 b
 
@@ -189,7 +189,7 @@ ServiceNow 實例需要下列設定：
 
 ### <a name="step-336-enable-knowledge-role-for-the-servicenow-account"></a>步驟3.3.6：啟用 ServiceNow 帳戶的知識角色
 
-存取您用 ServiceNow 主體識別碼建立的 ServiceNow 帳戶做為使用者識別碼並指派知識角色。 您可以在這裡找到將角色指派給 ServiceNow 帳戶的指示， [將角色指派給使用者](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)。 請參閱「 [步驟3：連線設定](#step-3-connection-settings) 」的開頭中的表格，以提供更多 ServiceNow 表記錄的讀取權，以及索引使用者準則許可權。
+存取您用 ServiceNow 主體識別碼建立的 ServiceNow 帳戶做為使用者識別碼並指派知識角色。 您可以在這裡找到將角色指派給 ServiceNow 帳戶的指示， [將角色指派給使用者](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)。 請參閱「 [步驟3：連線設定](#step-3-connection-settings) 」一開始的表格，以提供更多 ServiceNow 表記錄的讀取權，以及索引使用者準則許可權。
 
 使用應用程式識別碼做為用戶端識別碼 (從步驟3。系統管理中心) 中的) 和用戶端密碼 (，以使用 ServiceNow Azure AD OpenID 來驗證您的連線實例。
 
@@ -246,10 +246,10 @@ ServiceNow 知識 Graph 連接器在其最新版本中有下列限制：
 - *只有存取此資料來源功能的使用者才可* 在 [管理搜尋許可權] 底下執行 [僅限 [使用者準則](https://hi.service-now.com/kb_view.do?sysparm_article=KB0550924) ] 許可權。 任何其他類型的存取權限都不會套用到搜尋結果中。
 - 目前的版本不支援具有高級腳本的使用者準則。 任何具有這類訪問限制的知識文章，都將會以「拒絕所有人」存取權來編制索引，也就是說，直到我們支援它們時，才會顯示在搜尋結果中。
 
-## <a name="troubleshooting"></a>正在疑難排解
+## <a name="troubleshooting"></a>疑難排解
 在發佈連線後，自訂 [結果] 頁面，您可以在系統 [管理中心](https://admin.microsoft.com)的 [**資料來源**] 索引標籤底下查看狀態。 若要瞭解如何進行更新和刪除，請參閱 [管理您的連接器](manage-connector.md)。
 您可以在下面找到常見問題的疑難排解步驟。
-### <a name="1-unable-to-login-due-to-single-sign-on-enabled-servicenow-instance"></a>1. 由於單一 Sign-On 已啟用 ServiceNow 實例而無法登入
+### <a name="1-unable-to-log-in-due-to-single-sign-on-enabled-servicenow-instance"></a>1. 因單一 Sign-On 啟用 ServiceNow 實例而無法登入
 
 如果您的組織已啟用單一 Sign-On (SSO) ServiceNow，您可能無法使用服務帳戶進行記錄。 您可以新增<em> `login.do` </em>至 ServiceNow 實例 URL，以開啟使用者名稱和密碼基礎的登入。 例子。 `https://<your-organization-domain>.service-now.com./login.do` 
 
@@ -271,19 +271,47 @@ Graph 連接器可能無法到達網路防火牆之後的 ServiceNow 實例。 �
 促使 | 亞太地區 | 52.139.188.212/30、20.43.146.44/30 
 
 #### <a name="24-access-permissions-not-working-as-expected"></a>2.4。 存取權未如預期般運作
+
 如果您觀察套用至搜尋結果的存取權限中的差異，請在 [管理知識庫和文章存取](https://docs.servicenow.com/bundle/rome-servicenow-platform/page/product/knowledge-management/concept/user-access-knowledge.html)中的使用者準則中驗證 access 流程圖表。
 
-### <a name="3-issues-with-only-people-with-access-to-this-data-source-permission"></a>3. *只有存取此資料來源許可權的人員才* 會發生問題
+### <a name="3-change-the-url-of-the-knowledge-article-to-view-it-in-the-support-portal"></a>3. 變更知識文章的 URL，以在支援入口網站中進行查看
 
-#### <a name="31-unable-to-choose-only-people-with-access-to-this-data-source"></a>3.1 無法自行選擇 *存取此資料來源的人員*
+ServiceNow 知識 Graph 連接器會使用格式中的 `<instance_url>/kb_view.do?sys_kb_id<sysId>` sys_id 計算 AccessUrl 屬性。 它會在後端系統檢視中開啟知識文章。 如果您想要將文章重新導向至不同的 URL，請遵循下列指示。
+#### <a name="31-edit-your-result-type"></a>3.1 編輯您的結果類型
+在 [自訂] 索引標籤 Microsoft 365 系統管理中心的「*搜尋 & 情報*」區段中，流覽以編輯為您的 ServiceNow 知識連線設定的結果類型。
+![編輯結果類型](media/servicenow-knowledge-connector/edit-result-type.png)
+
+在 [編輯結果類型] 對話方塊開啟時，按一下 [結果版面配置] 區段旁邊的 [ **編輯** ]。 
+![編輯結果版面配置](media/servicenow-knowledge-connector/edit-result-type-2.png)
+
+#### <a name="32-find-the-items-block"></a>3.2 找出專案區塊
+尋找包含 text 屬性 `shortDescription` 及 `AccessUrl` values 的 items 區塊。
+
+![編輯結果類型中的專案區塊](media/servicenow-knowledge-connector/edit-result-type-3.png)
+
+#### <a name="33-edit-accessurl-property"></a>3.3 編輯 AccessUrl 屬性
+
+若要變更目的地 URL，請編輯 `AccessUrl` 專案區塊中的 text 屬性部分。 例如，如果 ServiceNow 知識庫文章應重新導向至 `https://contoso.service-now.com/sp` 服務 URL 入口前置詞所在的位置 `sp` ，請遵循下列步驟。
+
+**原始值** | **新值**
+--- | ---
+`"[{shortdescription}]({AccessUrl})"` | `"[{shortdescription}](https://contoso.service-now.com/sp?id=kb_article_view&sysparm_article={number})"`
+
+這裡 `number` 是知識文章編號屬性。 在建立連線期間，應將其標記為 [管理架構] 畫面中的 [已 *檢索* ]。
+
+完成檢查您的結果類型更新及命中 **提交**。 請一兩分鐘，以拿出所做的變更。 您的搜尋結果現在應該會重新導向至所需的 URLs。
+
+### <a name="4-issues-with-only-people-with-access-to-this-data-source-permission"></a>4. *只有存取此資料來源許可權的人員才* 會發生問題
+
+#### <a name="41-unable-to-choose-only-people-with-access-to-this-data-source"></a>4.1 無法自行選擇 *存取此資料來源的人員*
 
 如果服務帳戶對「[步驟3：連線設定](#step-3-connection-settings)」中的必要資料表沒有讀取權限，您可能無法選擇 [*只有存取此資料來源的人員*] 選項。 檢查服務帳戶是否可以讀取 *索引及支援使用者準則許可權* 功能下所述的表格。
 
-#### <a name="32-user-mapping-failures"></a>3.2 使用者對應失敗
+#### <a name="42-user-mapping-failures"></a>4.2 使用者對應失敗
 
  ServiceNow Azure Active Directory 中沒有 M365 使用者的使用者帳戶不會對應。 非使用者，服務帳戶應該會失敗使用者對應。 在 [連線詳細資料] 視窗的 [身分識別狀態] 區域中，可以存取使用者對應失敗的數目。 失敗使用者對應的記錄可從 [錯誤] 索引標籤下載。
 
-### <a name="4-issues-with-user-criteria-access-flow"></a>4. 使用者準則存取流程的問題
+### <a name="5-issues-with-user-criteria-access-flow"></a>5. 使用者準則訪問流程的問題
 
 如果您在 ServiceNow 和 Microsoft 搜尋之間看到使用者準則驗證的差異，請將系統屬性設定 `glide.knowman.block_access_with_no_user_criteria` 為 `no` 。
 
