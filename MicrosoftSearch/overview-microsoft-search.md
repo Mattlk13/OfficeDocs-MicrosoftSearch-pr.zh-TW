@@ -7,17 +7,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 ms.localizationpriority: medium
+ms.date: 03/11/2022
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 深入瞭解 Microsoft 搜尋的優點、其優點，以及哪些應用程式支援 Microsoft 搜尋。
-ms.openlocfilehash: 666442c9c35faeee13ffb3e5388d754e631e1fc7
-ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
+ms.openlocfilehash: 4f23b5d454de3e803a3cfced04bd13609012b94b
+ms.sourcegitcommit: 7cf1aac92e3d46008be647c16a14460fa43642ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62493421"
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "63438867"
 ---
 # <a name="overview-of-microsoft-search"></a>Microsoft 搜尋概觀
 
@@ -45,7 +46,7 @@ Microsoft 搜尋可協助使用者找出正確的答案、人員和內容，以�
 
 ## <a name="benefits-of-microsoft-search"></a>Microsoft Search 的優點
 
-**從任何 Microsoft Search 方塊跨 Microsoft 365 搜尋** - 使用者可以從任何 Microsoft Search 方塊搜尋，並快速回到他們執行的動作。 Microsoft 搜尋會將 Office 365 中的資料來源的結果彙集在一起，包括[SharePoint](http://sharepoint.com/)、 [Microsoft OneDrive for Business](https://onedrive.live.com/about/business/)及[Microsoft Exchange Server](https://products.office.com/exchange/microsoft-exchange-server)。
+**從任何 Microsoft Search 方塊跨 Microsoft 365 搜尋** - 使用者可以從任何 Microsoft Search 方塊搜尋，並快速回到他們執行的動作。 Microsoft 搜尋會將 Office 365 中的資料來源的結果彙集在一起，包括[SharePoint](http://sharepoint.com/)、 [Microsoft OneDrive 商務](https://onedrive.live.com/about/business/)和[Microsoft Exchange](https://products.office.com/exchange/microsoft-exchange-server)。
 
 **易於搜尋**– Microsoft 搜尋會根據使用者在 Office 365 中的先前活動，在 **搜尋** 方塊中向右推薦結果。
 
@@ -77,6 +78,7 @@ Microsoft 搜尋會顯示您的組織已儲存在 Microsoft 365 中或已透過�
 使用者有 **權限** 查看的搜尋結果會顯示在搜尋結果頁面上。 Microsoft Search 會依據相關性，使用智慧型排序演算法以排序結果。
 
 ## <a name="privacy"></a>隱私權
+
 在 Microsoft 搜尋只有使用者有權查看的內容會出現在搜尋結果中。 例如，使用者可能具有查看檔案的許可權，因為使用者已建立該檔案，該檔案是與使用者共用，或具有包含使用者的較大群組，或是儲存在使用者有權存取的資料夾或位置。
 > [!NOTE]
 > 深入瞭解 Bing 中的 Microsoft 搜尋如何在[Bing 的 Microsoft 搜尋安全性和隱私權](security-for-search.md)中保護公司資料。
@@ -85,12 +87,11 @@ Microsoft 搜尋會顯示您的組織已儲存在 Microsoft 365 中或已透過�
 
 當使用者在 Outlook 中取得搜尋的結果、SharePoint 線上及 Office .com 時，所發出的查詢會記錄在其搜尋記錄中。 使用者的搜尋記錄是個人的，不會與您的組織或 Microsoft 共用。 其搜尋記錄可協助他們快速取得先前找到的專案。 在使用者輸入查詢時，其搜尋記錄中的相符專案會在搜尋框中向下建議。  
 
-使用者可以隨時查看其搜尋歷程記錄。 他們也可以隨時清除其歷程記錄。 這兩項動作都是由其工作或學校帳戶 (https://myaccount.microsoft.com) 的我的帳戶入口網站執行。 移至[設定 & 隱私權] 頁面](https://myworkaccount.microsoft.com/privacy)上，開啟 [Microsoft 搜尋] 區段。 無法暫停記錄史。
+使用者可以隨時查看其搜尋歷程記錄。 他們也可以隨時清除其歷程記錄。 這兩項動作都是由其工作或學校帳戶的 [我的帳戶入口網站](https://myaccount.microsoft.com) 執行。 移至[設定 & 隱私權] 頁面](https://myworkaccount.microsoft.com/privacy)上，開啟 [Microsoft 搜尋] 區段。 無法暫停記錄史。
 
 Outlook 搜尋記錄會包含其在 Outlook、Outlook 的行動及 Outlook 網頁版的搜尋。 它會為所有三個端點提供相同的建議查詢。 在 SharePoint 網站上的搜尋、SharePoint 開始頁面上和 Office .com 首頁上會合並成一個記錄，並在 [SharePoint 開始] 頁面或 [Office .com] 首頁上搜尋時，會建議您回復相同的查詢。 當使用者在 SharePoint 網站上進行搜尋時，並不會提供歷史查詢。
 
 當組織中的許多人員在 Outlook、SharePoint 和 Office 中搜尋相同的 Microsoft 搜尋內容時，您的系統管理員就能看到該查詢是常見的，但不是搜尋的使用者。 您可以使用此資訊來定義哪些資源是常見查詢的良好結果，並使您的組織更能進行搜尋。 深入瞭解在 [規劃內容](plan-your-content.md)時提供答案。
-
 
 ## <a name="see-also"></a>請參閱
 
