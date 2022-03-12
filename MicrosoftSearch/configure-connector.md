@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Graph 連接器的設定概觀
-ms.openlocfilehash: bb3879730234f7393c98bdc4be6cb8ca06d14dcf
-ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
+ms.openlocfilehash: ed022208377c7f61c9cdb06a26775d94430ad4b8
+ms.sourcegitcommit: ea0da3cedc18a08a0a9ccae89c0aa85f4e80bd7a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62491837"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63459670"
 ---
 <!-- Previous ms.author: monaray -->
 
@@ -83,7 +83,7 @@ ms.locfileid: "62491837"
 
 設定連線設定的程式會根據資料來源的類型而有所不同。 請參閱您想要新增至租使用者的資料來源類型的 [連接器特定資訊](/microsoftsearch/servicenow-connector#step-31-basic-authentication) ，以在安裝程式中完成此步驟。  
 
-若要深入瞭解連線至內部部署資料來源的詳細資訊，請參閱 [安裝內部部署資料閘道](/data-integration/gateway/service-gateway-install)。
+若要深入瞭解連線至內部部署資料來源的詳細資訊，請參閱[Setup Graph Connector Agent](/microsoftsearch/graph-connector-agent)。
 
 ## <a name="step-4-select-properties"></a>步驟4：選取屬性
 
@@ -198,7 +198,7 @@ ServiceNow 查詢可用於在資料按 Microsoft 搜尋編制索引之前加以�
 
 在系統 [管理中心](https://admin.microsoft.com)的 [**連接器**] 索引標籤下，移至您發佈的連線清單。 若要瞭解如何進行更新和刪除，請參閱 [管理您的連接器](manage-connector.md)。
 
-## <a name="troubleshooting"></a>正在疑難排解
+## <a name="troubleshooting"></a>疑難排解
 <!---Insert troubleshooting recommendations for this data source-->
 閱讀資料來源的連接器特定資訊。
 
