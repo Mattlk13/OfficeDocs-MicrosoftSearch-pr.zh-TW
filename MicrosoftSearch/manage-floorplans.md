@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 搜尋中的「平面圖」功能可協助使用者找出大樓中的人員、辦公室和其他功能。
-ms.openlocfilehash: ade90103427bdd431ecf5c3093a991a7c96ce122
-ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
+ms.openlocfilehash: 143d50ca117fc2dd4eea83cb2b9432fc0f1ebd13
+ms.sourcegitcommit: 2382d4e533627f172d9216c9b1d1d14bf1a703f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62492496"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63495058"
 ---
 # <a name="manage-floor-plans"></a>管理基底計畫
 
@@ -35,12 +35,7 @@ Microsoft 搜尋中的地面計畫，可協助使用者在大樓內找到人員�
 - Workspace-1
 - B1/1.20
 
-當使用者搜尋會議室名稱或位置時，他們會看到在底價計畫應答上標示的興趣點。
-
-> [!div class="mx-imgBorder"]
-> ![使用相關點標記的底層計畫，顯示會議室位置。](media/floor-plans/floor-plan-answer.png)> 
-
-當他們搜尋人員的辦公室時，他們會看到類似的答案，也就是標記上的人員的設定檔影像。
+當使用者搜尋某人的 office 時，他們會看到標記，該位置上有個人的設定檔影像。 當他們搜尋會議室或工作區時，他們會看到類似的答案。
 
 > [!div class="mx-imgBorder"]
 > ![使用相關點標記的平面圖，顯示辦公室位置。](media/floor-plans/floorplans-officelocation.png)> 
@@ -63,7 +58,7 @@ Floor 計畫檔案必須採用 DWG 格式，以支援文字標籤。 當文字�
 |:-----:|:-----:|:-----:|
 |![使用會議室標籤的 Floor 平面圖。](media/floor-plans/floorplans-textandroomlabels.png)|![具有文字標籤，但沒有會議室標籤的 Floor 平面圖。](media/floor-plans/floorplans-textnoroomlabels.png)|![沒有文字標籤的平面圖。](media/floor-plans/floorplans-nolabels.png)|
 
-最佳作法是，DWG 文字標籤應包含底價編號、翼號 (如相關) 和房間號碼，依序排列。 如需更多的文字標籤格式範例，請參閱 [FAQs](#frequently-asked-questions) ，以及查看和更新 DWG 檔案的相關資訊。
+最佳作法是，DWG 文字標籤應包含底價編號、翼號 (如相關) 和房間號碼，依序排列。 為了獲得最佳結果，這些元素不應該與其他元素（如線條、方塊或箭號）群組。 如需更多的文字標籤格式範例，請參閱 [FAQs](#frequently-asked-questions) ，以及查看和更新 DWG 檔案的相關資訊。
 
 ### <a name="step-3-update-office-locations-on-user-profiles"></a>步驟3：更新使用者設定檔上的 office 位置
 
@@ -98,7 +93,7 @@ Floor 計畫檔案必須採用 DWG 格式，以支援文字標籤。 當文字�
 
 在您可以上傳平面計畫之前，必須建立 office 位置的索引。 這個一次性作業可能需要長達48個小時才能完成。 總時間將取決於您的組織的大小。
 
-在系統 [管理中心](https://admin.microsoft.com)中，移至 [ [**Floor 方案**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans)]，然後選取 [ **開始編制索引**]。 如果您未看到此通知，表示您的組織已完成此步驟。
+在系統 [管理中心](https://admin.microsoft.com)中，移至 [ [**Floor 方案**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans)]，然後選取 [ **開始編制索引**]。 如果您看不到 [按鈕]，表示您的組織已完成此步驟。
 
 ### <a name="step-7-upload-floor-plans"></a>步驟7： Upload 基底計畫
 
@@ -134,7 +129,7 @@ Floor 計畫檔案必須採用 DWG 格式，以支援文字標籤。 當文字�
 
 ### <a name="step-8-optional-specify-location-patterns"></a>步驟8： (選用) 指定位置模式
 
-上傳平面圖後，會議室文字標籤會與使用者設定檔中的辦公室位置進行比較。 如果 office 位置或文字標籤不會持續遵循 [步驟 2](#step-2-review-your-floor-plans) 和 [步驟 3](#step-3-update-office-locations-on-user-profiles)中建議的命名模式，請使用 [ **指定位置模式** ] 畫面新增詳細資訊以完成對應。 位置模式是用來從 AAD 辦公室位置提取底價、翼和會議室資訊。
+上傳平面計畫時，DWG 文字標籤會與使用者設定檔中的 office 位置進行比較。 如果 office 位置或文字標籤不會持續遵循 [步驟 2](#step-2-review-your-floor-plans) 和 [步驟 3](#step-3-update-office-locations-on-user-profiles)中建議的命名模式，請使用 [ **指定位置模式** ] 畫面新增詳細資訊以完成對應。 位置模式是用來從 Azure AD 辦公室位置提取底價、翼和會議室資訊。
 
 > [!div class="mx-imgBorder"]
 > ![指定位置模式螢幕擷取畫面。](media/floor-plans/floorplans-locationpattern.png)
@@ -143,7 +138,7 @@ Floor 和翼是選用的，只需要會議室，您可以視需要略過位置�
 
 ## <a name="update-floor-plans"></a>更新基底計畫
 
-在您更新現有的地面計畫之前，請確定您的 AAD office 位置都是最新的，而且您已等候48小時，供任何 AAD 更新處理。 若要更新地面計畫，請移至 [平面圖]，選取 [建立地面計畫]，然後選取 [ **編輯**]。 如果地面計畫變更了結構，由於裝修為範例，請移除舊檔案，然後上傳併發行新的 DWG 檔案。
+在您更新現有的地面計畫之前，請確定您的 Azure AD office 位置都是最新的，而且您已等候48小時，供任何 Azure AD 更新處理。 若要更新地面計畫，請移至 [平面圖]，選取 [建立地面計畫]，然後選取 [ **編輯**]。 如果地面計畫變更了結構，由於裝修為範例，請移除舊檔案，然後上傳併發行新的 DWG 檔案。
 
 > [!NOTE]
 > 當使用者移至已對應的地面時，您不需要更新 floor 方案。 只要更新其使用者設定檔，以反映新的 office 位置：
@@ -156,7 +151,7 @@ Floor 和翼是選用的，只需要會議室，您可以視需要略過位置�
 
 若要刪除單一的平面圖，請移至 [地面方案](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans) ，然後選取組建。 接下來，選取地面計畫，然後選取 [ **移除**]。 若要刪除大樓的所有地面計畫，請移至 [ [位置](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)]，選取組建，然後選取 [ **刪除**]。  
 
-## <a name="troubleshooting"></a>正在疑難排解
+## <a name="troubleshooting"></a>疑難排解
 
 | 步驟 | 錯誤訊息 | 類型 | 動作 |
 |:-----|:-----|:-----|:-----|
@@ -185,7 +180,7 @@ Floor 和翼是選用的，只需要會議室，您可以視需要略過位置�
 
 **問：** DWG 檔案中的文字標籤的最佳格式是什麼？
 
-**A：** 為了獲得最佳結果，DWG 文字標籤應該是一個包含底價數目的單行、翼號 (if 相關) 和房間號碼，依序排列。 下列範例會使用2或 CITY CENTER 做為組建程式碼。
+**A：** 為了獲得最佳結果，DWG 文字標籤應該是一個包含底價數目的單行、翼號 (if 相關) 和房間號碼，依序排列。 為了獲得最佳結果，這些元素不應該與其他元素（如線條、方塊或箭號）群組。 下列範例會使用2或 CITY CENTER 做為組建程式碼。
 <!-- markdownlint-disable no-inline-html -->
 |會議室標籤類型|Floor|翼/區域|辦公室|範例文本標籤|建立程式碼/文字標籤 (Office 位置) |
 |:-----|:-----|:-----|:-----|:-----|:-----|
@@ -207,7 +202,7 @@ Floor 和翼是選用的，只需要會議室，您可以視需要略過位置�
 
 **A：** 建議的 DWG 文字標籤包含底價編號，但不是必要的，請參閱 [步驟 2](#step-2-review-your-floor-plans)中的命名模式。 此外，您仍應該在使用者的連絡人資訊中包含底價編號做為辦公室位置的一部分。 在上傳 DWG 檔案之後，您必須使用選用的 [ **指定位置模式** ] 畫面，以完成這些非標準標籤的對應過程。
 
-例如，包含房間號碼，但沒有底價編號的 DWG 檔案，看起來可能類似如下：
+例如，包含房間號碼，但沒有底價編號的 DWG 檔案，看起來可能類似如下圖所示：
 
 > [!div class="mx-imgBorder"]
 > ![具有房間編號但沒有底價編號的地面計畫。](media/floor-plans/floorplans-nofloors.png)
@@ -255,7 +250,7 @@ Floor 和翼是選用的，只需要會議室，您可以視需要略過位置�
 
 **問：** 我已完成新增平面圖的所有步驟。 為何不會出現在 Microsoft 搜尋結果中？
 
-**A：** 在搜尋結果頁面的中央會出現「平面圖」答案的連結。 當其答案比對搜尋意圖時，可能會發生這種排名類型。 如果結果頁面上沒有顯示任何資訊，請確認搜尋遵循支援的查詢模式： office 名稱、使用者名稱或辦公室位置，如 AAD 中所示。 不支援以部分或模糊的字比對平面計畫搜尋。
+**A：** 在搜尋結果頁面的中央會出現「平面圖」答案的連結。 當其答案比對搜尋意圖時，可能會發生這種排名類型。 如果結果頁面上沒有顯示任何資訊，請確認搜尋遵循支援的查詢模式： office 名稱、使用者名稱或辦公室位置，如 Azure AD 中所示。 不支援以部分或模糊的字比對平面計畫搜尋。
 
 **問：** 我已新增組織之工作區的 floor 計畫。 在 Outlook 中預約工作空間時，為何不會出現？
 
@@ -285,7 +280,7 @@ Floor 的 DWG 檔案具有相同隔間的文字標籤：
 - 0.25
 - 得到
 
-由於使用者設定檔上顯示的辦公室位置和對應的文字標籤之間的差異 (DesignB/F121 和21、DesignB/F1-25 和 25) ，Microsoft 搜尋無法與其相符。 上傳檔案後，初始檢查會顯示零個位置已對應。 繼續對應，然後在 [連結辦公室位置] 階段中，輸入大樓程式碼 DesignB。
+由於使用者設定檔上顯示的辦公室位置和對應的文字標籤之間的差異 (DesignB/F121 和21、DesignB/F1-25 和 25) ，Microsoft 搜尋無法與其相符。 上載檔案時，初始檢查會顯示零個位置已對應。 繼續對應，然後在 [連結辦公室位置] 階段中，輸入大樓程式碼 DesignB。
 
 在第二個審閱階段中，Microsoft 搜尋會略過使用者辦公室位置的大樓代碼值，然後再次嘗試，以符合 office 位置和文字標籤， (F121 及21，F1-25 和 25) 。 第二次評審會顯示零個位置已對應。 您需要繼續對應。 此時，系統會提示您指定位置模式。
 
