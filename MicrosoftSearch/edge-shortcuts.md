@@ -7,17 +7,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 localization_priority: Normal
+ms.date: 03/15/2022
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 為 Microsoft 搜尋新增自訂的 Microsoft Edge 快捷方式 Bing 或關閉組織的這些快捷方式
-ms.openlocfilehash: 5a3352ebfd382fe482974f4f9d768a10973ce4bf
-ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
+ms.openlocfilehash: ea8192677ca1c796638bdf2143c8dcab3671f066
+ms.sourcegitcommit: 218d744886c0dd983396a9ab357f392b57ae5f71
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62491135"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63514995"
 ---
 # <a name="customize-address-bar-shortcuts-for-microsoft-edge"></a>自訂 Microsoft Edge 的網址列快捷方式
 
@@ -29,10 +30,10 @@ ms.locfileid: "62491135"
 ## <a name="manage-shortcuts-and-keywords"></a>管理快捷方式和關鍵字
 
 1. 在[Microsoft 365 系統管理中心](https://admin.microsoft.com)中，移至 [設定[]。](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/configurations)
-2. 在 [Microsoft 搜尋 Bing 設定] 下，選取 [**變更設定**]。
-3. 在 Bing 面板的 Microsoft 搜尋中，預設會選取 [**啟用 Bing 快捷方式中的 Microsoft 搜尋**]。 若要停用這些快捷方式，請清除此核取方塊。
+2. 在 Bing 快捷方式的 [Microsoft 搜尋] 底下，選取 [**變更**]。
+3. 在面板中，啟用預設會選取 **Bing 快捷方式中的 Microsoft 搜尋**。 若要停用這些快捷方式，請清除此核取方塊。
 4. 在 [搜尋關鍵字] 欄位中，輸入一個或兩個以上的關鍵字。 您可以包含空格和特殊字元。
-5. 選取 **[儲存]**。
+5. 選取 [儲存 **]**。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 

@@ -7,18 +7,18 @@ ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
 ms.localizationpriority: medium
-ms.date: 03/11/2022
+ms.date: 03/15/2022
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 取得有關企業搜尋和 Microsoft Search 常見問題的解答
-ms.openlocfilehash: a16e7acfbc3110e70da0a725325781311c8dca51
-ms.sourcegitcommit: 7cf1aac92e3d46008be647c16a14460fa43642ea
+ms.openlocfilehash: d7e4fd55377a1bc8e344abd32c09c79b21f23ae7
+ms.sourcegitcommit: 218d744886c0dd983396a9ab357f392b57ae5f71
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2022
-ms.locfileid: "63438858"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63515004"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 # <a name="frequently-asked-questions"></a>常見問題集
@@ -64,7 +64,7 @@ Microsoft 365 透過[來賓存取](/microsoft-365/solutions/collaborate-with-peo
 
 ## <a name="how-do-i-turn-microsoft-search-in-bing-on-or-off"></a>如何開啟或關閉 Bing 中的 Microsoft 搜尋？
 
-大多陣列織（包括企業和教育版） Bing 中 Microsoft 搜尋預設為開啟。 若要在 Bing 中開啟 Microsoft 搜尋，請移至 Microsoft 365 系統管理中心中[的 [設定](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/configurations)] 頁面。 在 [Bing 設定] 下的 [Microsoft 搜尋] 下，選擇 [**變更設定**]，然後開啟 [**允許您的組織在 Bing 使用 Microsoft 搜尋**]。 這種變更需要長達24小時才會生效。
+大多陣列織（包括企業和教育版） Bing 中 Microsoft 搜尋預設為開啟。 若要在 Bing 中開啟 Microsoft 搜尋，請移至 Microsoft 365 系統管理中心中[的 [設定](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/configurations)] 頁面。 在 [Microsoft 搜尋 Bing 設定] 中，選擇 [**變更**]，然後選取 [**在組織中 Bing 啟用 Microsoft 搜尋**]。 這種變更需要長達24小時才會生效。
 
 若此設定為 [關閉]，當使用者搜尋 Bing、Windows 搜尋或 Microsoft Edge 時，不會收到內部結果。 在 Bing 中關閉 Microsoft 搜尋不會停止或防止內部內容新增至您的搜尋索引。 它只會停用 Bing 進入 Microsoft 搜尋的進入點。 若要尋找答案和內部結果，使用者將需要使用其他進入點，例如 SharePoint 線上或 Office 365 應用程式。
 

@@ -1,5 +1,5 @@
 ---
-title: '選取學校或工作搜尋體驗 (預覽) '
+title: 選取學校或工作搜尋經驗
 ms.author: dawholl
 author: dawholl
 manager: jeffkizn
@@ -7,25 +7,26 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 localization_priority: Normal
+ms.date: 03/15/2022
 search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 在具有教育和企業服務方案的組織中，系統管理員可以選取搜尋經驗（無論是學校或工作），使用者會在使用者搜尋 Bing 時看到。
-ms.openlocfilehash: 531474dce7d073a34f8d865d5f874b25f181c53a
-ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
+description: 在具有教育和企業服務方案的組織中，系統管理員可以選擇搜尋體驗使用者在 Bing 搜尋時所看到的功能。
+ms.openlocfilehash: f7dc41dbe95d9b4eca9e3669c874931244d1142e
+ms.sourcegitcommit: 218d744886c0dd983396a9ab357f392b57ae5f71
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62493384"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63515013"
 ---
-# <a name="select-a-school-or-work-search-experience-preview"></a>選取學校或工作搜尋體驗 (預覽) 
+# <a name="select-a-school-or-work-search-experience"></a>選取學校或工作搜尋經驗
 
 如果您的組織有教育和企業服務方案，您可以為使用者（學校或公司）的 Bing 體驗選擇 Microsoft 搜尋。 因為此設定會套用至所有使用者，所以建議您選取與組織中大部分人員相符的選項。
 
 1. 在[Microsoft 365 系統管理中心](https://admin.microsoft.com)中，移至 [設定[]。](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/configurations)
-1. 在 [Microsoft 搜尋 Bing 的工作或學校] 底下，選取 [**變更設定**]。
-1. 在面板中，選取搜尋體驗（「學校搜尋」或「工作搜尋」）。 可能需要長達72小時，此變更才會顯示在 Bing 中。
+1. 在 [Microsoft 搜尋 Bing 的工作或學校] 中，選取 [**變更**]。
+1. 在面板中，選取搜尋體驗（「 **學校搜尋** 」或「 **工作搜尋**」）。 可能需要長達72小時，此變更才會顯示在 Bing 中。
 
 ## <a name="differences-between-school-and-work-search"></a>學校與工作搜尋之間的差異
 
