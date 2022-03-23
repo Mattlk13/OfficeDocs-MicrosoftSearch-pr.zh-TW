@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 為 Microsoft 搜尋設定 Azure Data Lake 儲存體 Gen2 Graph connector
-ms.openlocfilehash: d9df82addafe6d112e2306e76dd73f522da57b15
-ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
+ms.openlocfilehash: c4059b10aeae82b23f77cf0ffeaf41d8a54fe2aa
+ms.sourcegitcommit: f1c1c75f541d6caca9b34090ce79e3405b772afb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62491994"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63713026"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -63,6 +63,13 @@ azure data lake 儲存體 Gen2 Graph connector 可讓組織中的使用者搜尋
 在未來可能會新增 Graph 連接器服務中即時處理變更的支援。 在此情況下，我們會監視儲存在佇列中 Azure 儲存體變更通知。 您必須使用與 Azure 儲存體帳戶相同的帳戶建立佇列。
 
 建立佇列之後，請移至佇列頁面上的 [ **事件** ] 索引標籤，以設定 **事件訂閱**。 選擇佇列將要接收的所有 Blob 事件，並將該佇列連接至 Azure 儲存體帳戶。
+
+### <a name="test-the-connection"></a>測試連接
+
+按一下 [ **測試** 連線] 按鈕以測試連接
+
+> [!NOTE]
+> **測試** 連線必須成功，您才能移至下一個設定區段。 ADLS gen 2 啟用的儲存體帳戶 **必須** 至少有一個容器 **，** 至少有一個檔案包含在其中， **測試** 連線才能成功。 如果內容不存在，就會產生 connection 錯誤。
 
 ## <a name="step-4-assign-property-labels"></a>步驟4：指派屬性標籤
 

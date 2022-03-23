@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: 建立和更新大量編輯 Microsoft 搜尋書簽結果的書簽和方式
-ms.openlocfilehash: a8523a29870ce9e2cff7d93f09eabdb3ebc417b3
-ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
+ms.openlocfilehash: 7401d7af4a4f384ad11ef9d2feb414b7dcb6d734
+ms.sourcegitcommit: f1c1c75f541d6caca9b34090ce79e3405b772afb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62492191"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63713035"
 ---
 # <a name="manage-bookmarks"></a>管理書籤
 
@@ -98,7 +98,7 @@ ms.locfileid: "62492191"
 
 若要防止書簽書簽複製錯誤：
 
-- 請勿將重複的 URL 用於不同的書簽。 如果將 URL 指派給其他書簽，而且嘗試從匯入檔案重新加入，您會收到錯誤。 這也適用于其他類型的答卷的重複 URLs。
+- 請勿將重複的 URLs 用於不同的書簽。 如果將 URL 指派給其他書簽，而且嘗試從匯入檔案重新加入，您會收到錯誤。 這也適用于其他類型的答卷的重複 URLs。
 - 更新現有的書簽時，請使用 [ *書簽識別碼* ] 欄。 您可以更新現有書簽的任何其他屬性，例如關鍵字或描述，但您應確定 *書簽識別碼* 位於匯入檔案的適當欄中。 如果 *書簽識別碼* 存在，則不會將它視為新的新增，也不會處理成錯誤。
 
 ### <a name="publish-or-review-recommended-bookmarks"></a>發佈或查看建議的書簽
