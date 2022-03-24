@@ -1,5 +1,5 @@
 ---
-title: On-Premises 代理程式
+title: Graph 連接器代理程式
 ms.author: rusamai
 author: rsamai
 manager: jameslau
@@ -12,21 +12,23 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 部署代理程式
-ms.openlocfilehash: 9137886501a27fa2754f02004a54dd823e46272c
-ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
+description: Graph 連接器代理程式使用 Microsoft 建立的連接器為檔案共用、SQL、Confluence 等建立內部部署內容的索引。
+ms.openlocfilehash: a2808c1315212f1868aa429de1ca21ea23c48c42
+ms.sourcegitcommit: e629a74a7b51d6e575d1642ea19534f5595af79b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62490869"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63775980"
 ---
-# <a name="microsoft-graph-connector-agent"></a>Microsoft Graph connector 代理程式
+# <a name="microsoft-graph-connector-agent"></a>Microsoft Graph Connector 代理程式
 
 使用部署連接器時，需要安裝 *Microsoft Graph 連接器代理程式* 軟體。 它可讓內部部署資料和連接器 APIs 之間進行安全的資料傳輸。 本文將引導您完成安裝和設定代理程式的步驟。
 
 ## <a name="installation"></a>安裝
 
-請從 [https://aka.ms/GCAdownload](https://aka.ms/gcadownload) 安裝精靈下載最新版的 Graph 連接器代理程式，然後安裝軟體。 使用下列所述機器的建議設定，軟體最多可以處理三個連接。 超過該數目的任何連線可能會降低代理程式上所有連接的效能。
+ (GCA) [https://aka.ms/GCAdownload](https://aka.ms/gcadownload) 下載最新版本的 Graph 連接器代理程式，並使用安裝精靈安裝軟體。 GCA 軟體的版本資訊可于[這裡](./graph-connector-agent-releases.md)取得
+
+使用下列所述機器的建議設定，Graph 連接器代理程式實例最多可以處理三個連接。 超過該數目的任何連線可能會降低代理程式上所有連接的效能。
 
 建議的設定：
 
@@ -36,7 +38,7 @@ ms.locfileid: "62490869"
 * 16 GB 的 RAM，2 GB 的磁碟空間
 * 透過443對資料來源和網際網路的網路存取
 
-安裝代理程式之後，如果您組織的 proxy 伺服器或防火牆封鎖與未知網域的通訊，請將下列專案新增至 [允許] 清單。
+如果您組織的 proxy 伺服器或防火牆封鎖與未知網域的通訊，請將下列規則新增至 ' allow」清單。
 
 1. *.servicebus.windows.net
 2. events.data.microsoft.com
@@ -53,7 +55,7 @@ ms.locfileid: "62490869"
 
 ### <a name="create-an-app"></a>建立應用程式
 
-1. 移至 [Azure 入口網站](https://portal.azure.com) ，並使用系統管理員認證登入以供租使用者使用。
+1. 移至 [Azure 入口網站](https://portal.azure.com) ，並使用租使用者的系統管理員認證登入。
 
 2. 流覽至功能窗格中 **Azure Active Directory**  ->  的 **應用程式註冊**，然後選取 [新增] [**註冊**]。
 
@@ -79,13 +81,13 @@ ms.locfileid: "62490869"
 
 #### <a name="configuring-the-client-secret-for-authentication"></a>設定用戶端密碼進行驗證
 
-1. 移至 [Azure 入口網站](https://portal.azure.com) ，並使用系統管理員認證登入以供租使用者使用。
+1. 移至 [Azure 入口網站](https://portal.azure.com) ，並使用租使用者的系統管理員認證登入。
 
 2. 從功能窗格開啟 **應用程式註冊** ，然後移至適當的應用程式。 在 [ **管理**] 下，選取 [ **憑證和機密**]。
 
 3. 選取 [ **新增用戶端密碼** ]，然後選取密碼到期期限。 複製產生的密碼並加以儲存，因為它不會再次顯示。
 
-4. 使用此用戶端密碼和應用程式識別碼來設定代理程式。 您無法在代理程式的 [ **名稱** ] 欄位中使用空格。 會接受字母數位字元。
+4. 使用此用戶端密碼和應用程式識別碼來設定代理程式。 您不能在代理程式的 [ **名稱** ] 欄位中使用空格。 會接受字母數位字元。
 
 #### <a name="using-a-certificate-for-authentication"></a>使用憑證進行驗證
 
@@ -147,20 +149,20 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 
 9. 在 [許可權] 對話方塊中按一下 [確定]。 代理程式機器現在已設定為讓代理程式使用憑證來產生權杖。
 
-## <a name="troubleshooting"></a>正在疑難排解
+## <a name="troubleshooting"></a>疑難排解
 
 ### <a name="installation-failure"></a>安裝失敗
 
-若安裝失敗，請執行下列步驟來檢查安裝記錄檔： msiexec/i "< msi # A1\GcaInstaller.msi"/L * V "< 目的地路徑 > \install.log" 的路徑。 如果錯誤無法解析，請使用記錄檔以 MicrosoftGraphConnectorsFeedback@service.microsoft.com 支援。
+在安裝失敗的情況下，請執行下列步驟來檢查安裝記錄檔： msiexec/i "< msi # A1\GcaInstaller.msi"/L * V "< 目的地路徑 > \install.log" 的路徑。 如果錯誤無法解析，請使用記錄檔來支援 MicrosoftGraphConnectorsFeedback@service.microsoft.com。
 
 ### <a name="registration-failure"></a>註冊失敗
 
-如果登入 config 應用失敗，錯誤為「登入失敗」。 請按一下 [登入] 按鈕，再試一次。 在瀏覽器驗證成功之後，請開啟 services.msc，並檢查 GcaHostService 是否正在執行中。 如果不是，請手動啟動。
+如果登入至 config 應用程式失敗，並出現「登入失敗，請按一下登入」按鈕，再試一次。」。 在瀏覽器驗證成功之後，請開啟 services.msc，並檢查 GcaHostService 是否正在執行中。 如果不是，請手動啟動。
 
-如果服務無法啟動，錯誤為「因為登入失敗而無法啟動服務」，請檢查虛擬帳戶 NT Service\GcaHostService 是否有權在機器上以服務的身分登入。 如需相關指示，請查看 [此連結](/windows/security/threat-protection/security-policy-settings/log-on-as-a-service) 。 [！注意] 如果新增使用者或群組的選項會在本機使用者管理員許可權指派中灰顯，則表示嘗試新增此帳戶的使用者在此機器上沒有系統管理員許可權，或有群組原則覆寫此項。 必須更新群組原則，才能允許主機服務登入為服務。
+當服務無法啟動時，錯誤是「因為登入失敗而無法啟動服務」，請檢查 virtual account： NT Service\GcaHostService 是否有權登入機器上的服務。 如需相關指示，請查看 [此連結](/windows/security/threat-protection/security-policy-settings/log-on-as-a-service) 。 [！注意] 如果新增使用者或群組的選項在本機使用者管理員許可權指派中為灰色，表示嘗試新增此帳戶的使用者在此機器上沒有系統管理員許可權，或是有群組原則覆寫此項。 必須更新群組原則，以允許主機服務以服務的身分登入。
 
 ### <a name="connection-failure"></a>連接失敗
 
-如果使用「測試連線」動作建立連線時，發生錯誤 ' 請檢查 username/password 和 datasource 路徑 ' 時，即使提供的使用者名稱和密碼正確，也請確認使用者帳戶對安裝 Graph 連接器代理程式的機器具有互動登入許可權。 請參閱 [登錄原則管理](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) 的檔，以檢查登入許可權。 此外，請確定資料來源和代理程式機器位於相同的網路上。
+在建立與錯誤 ' 請檢查 username/password 和 datasource 路徑 ' 時的「測試連線」動作失敗時，即使提供的使用者名稱和密碼正確，也請確認使用者帳戶對安裝 Graph 連接器代理程式的機器具有互動登入許可權。 請參閱 [登錄原則管理](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) 的檔，以檢查登入許可權。 此外，請確定資料來源和代理程式機器位於相同的網路上。
 
-如果連線失敗，錯誤為 "1011：無法存取或離線 Graph connector 代理程式]。請登入安裝代理程式的機器，並在未執行代理程式的情況下，將其啟動。 如果連線持續失敗，請確認在註冊期間提供給代理程式的憑證或用戶端密碼未到期且具有必要許可權。
+在發生失敗時建立連線： "1011：無法存取或離線使用 Graph connector 代理程式]。請登入安裝代理程式的機器，如果尚未執行代理程式，請將其啟動。 如果連線持續失敗，請確認在註冊期間提供給代理程式的憑證或用戶端密碼未到期且具有必要許可權。
