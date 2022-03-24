@@ -43,11 +43,11 @@ items:
             href: connectors-overview.md
           - name: 連接器庫
             href: connectors-gallery.md
-          - name: 設定 Microsoft 連接器
+          - name: 設定 Microsoft 建立的連接器
             items:
               - name: 設定概觀
                 href: configure-connector.md
-              - name: 設定圖形連接器代理程式
+              - name: 設定 Graph 連接器代理程式
                 href: graph-connector-agent.md
               - name: 對應非 Azure AD 身分識別
                 href: map-non-aad.md
