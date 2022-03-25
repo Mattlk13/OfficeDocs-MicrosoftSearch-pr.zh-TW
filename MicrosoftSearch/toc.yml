@@ -47,8 +47,12 @@ items:
             items:
               - name: 設定概觀
                 href: configure-connector.md
-              - name: 設定 Graph 連接器代理程式
-                href: graph-connector-agent.md
+              - name: 部署連接器
+                items:
+                  - name: Graph 連接器代理程式設定
+                    href: graph-connector-agent.md
+                  - name: Graph 連接器代理程式發行歷程記錄
+                    href: graph-connector-agent-releases.md
               - name: 對應非 Azure AD 身分識別
                 href: map-non-aad.md
               - name: 對應 Azure AD 身分識別
@@ -65,7 +69,7 @@ items:
                     href: confluence-cloud-connector.md
                   - name: 'Confluence 內部部署 (預覽) '
                     href: confluence-onpremises-connector.md
-                  - name: 'Jira 雲端 (預覽) '
+                  - name: Jira Cloud
                     href: jira-connector.md
                   - name: 企業網站
                     href: enterprise-web-connector.md
