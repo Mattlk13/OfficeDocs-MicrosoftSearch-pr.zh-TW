@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 ServiceNow 知識 Graph 連接器
-ms.openlocfilehash: f4009fe41d9c24d27489f1b8780095da6f8325ef
-ms.sourcegitcommit: 83f0c6e944da18605f371c92bce2ab2c8d570214
+ms.openlocfilehash: 1b76523cb5a76a3e28b9d16e99cd6c2b17be9adb
+ms.sourcegitcommit: 205f2b9c7ba9ea2371088c5e978afdf7752ef92f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63347931"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64464848"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -135,7 +135,7 @@ ms.locfileid: "63347931"
 
 現在，您已具備 Azure 入口網站所需的所有資訊。 下表提供資訊的快速摘要。
 
-屬性	 | 描述 
+屬性 | 描述 
 --- | ---
 目錄識別碼 (租使用者識別碼)  | 步驟 3 Azure Active Directory 租使用者的唯一識別碼。
  (用戶端識別碼的應用程式識別碼)  | 在步驟3中註冊之應用程式的唯一識別碼。
@@ -305,7 +305,7 @@ ServiceNow 知識 Graph 連接器會使用格式中的 `<instance_url>/kb_view.d
 
 #### <a name="41-unable-to-choose-only-people-with-access-to-this-data-source"></a>4.1 無法自行選擇 *存取此資料來源的人員*
 
-如果服務帳戶對「[步驟3：連線設定](#step-3-connection-settings)」中的必要資料表沒有讀取權限，您可能無法選擇 [*只有存取此資料來源的人員*] 選項。 檢查服務帳戶是否可以讀取 *索引及支援使用者準則許可權* 功能下所述的表格。
+如果服務帳戶在 [步驟3：連線設定](#step-3-connection-settings)中沒有必要表格的「讀取」許可權，您可能無法選擇 [*只有存取此資料來源的人員*] 選項。 檢查服務帳戶是否可以讀取 *索引及支援使用者準則許可權* 功能下所述的表格。
 
 #### <a name="42-user-mapping-failures"></a>4.2 使用者對應失敗
 

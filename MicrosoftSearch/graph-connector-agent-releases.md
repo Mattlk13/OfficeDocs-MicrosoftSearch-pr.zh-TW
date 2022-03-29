@@ -10,12 +10,12 @@ ms.service: mssearch
 ms.localizationpriority: medium
 search.appverid: ''
 description: Graph Connector Agent 的發行歷程記錄，用來使用 Microsoft 建立 Graph 連接器來索引內部部署資料來源
-ms.openlocfilehash: a513149297f0cb66642aa26829d94cbb0c65d7ac
-ms.sourcegitcommit: e629a74a7b51d6e575d1642ea19534f5595af79b
+ms.openlocfilehash: f559da49a562d6d055cb390f93efeffdc1e20f3b
+ms.sourcegitcommit: 5ad76c7c92f375ff6c88fc28eab0f7b5679b4939
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775990"
+ms.locfileid: "63996756"
 ---
 # <a name="release-history-for-microsoft-graph-connector-agent"></a>Microsoft Graph connector 代理程式的發行歷程記錄
 
@@ -25,8 +25,12 @@ ms.locfileid: "63775990"
 
 [下載最新的 Graph 連接器代理程式](https://aka.ms/gcadownload)
 
-### <a name="version-1500-16-feb-2022"></a>[版本 1.5.0.0](https://aka.ms/gcadownload) (*16 年2月 2022*) 
-* 更新用戶端機密 & 憑證並用於驗證的能力 
+### <a name="version-1510-21-mar-2022"></a>[版本 1.5.1.0](https://aka.ms/gcadownload) (*21 年3月 2022*) 
+* Bug 修正及可靠性改進功能
+* 變更「Enterprise 網站」連接器的預設屬性標籤指派
+
+### <a name="version-1500-16-feb-2022"></a>版本 1.5.0.0 (*16 年2月 2022*) 
+* 更新用於驗證之用戶端機密 & 憑證的能力 
 * OAuth 2.0 對內部部署連接器的支援 
 * 支援 OneNote ( 的分析。一個) 檔 
 * 在分析 word 檔案時，已修正的問題 (.doc *&) PowerPoint 檔案的上次修改日期 (.ppt*)  

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 適用于 Microsoft 搜尋的 Microsoft Graph 連接器公開預覽的授權需求和價格
-ms.openlocfilehash: 369d5fd1fc1cdab4f58db6c0716adc9786f2df9d
-ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
+ms.openlocfilehash: 9d4d67e4af7d9c87eda2427ca17ea91406af92bc
+ms.sourcegitcommit: 205f2b9c7ba9ea2371088c5e978afdf7752ef92f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62489885"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64464830"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -61,5 +61,5 @@ ms.locfileid: "62489885"
 5. 選取 [ **立即查看**]。
 
 > [!NOTE]
-> 目前，Microsoft Graph 連接器只支援最多7000000個索引配額的專案，包括所有內建于 Microsoft 365 或 Office 365 E5 授權的內建配額。 此平臺未來會支援較高的限制。 如有任何問題，請與 Microsoft 支援部門或您的 Microsoft 客戶經理聯繫。
+> 目前，Microsoft Graph 連接器只支援最多50000000個索引配額的專案，包括所有內建于 Microsoft 365 或 Office 365 E5 授權的內建配額。 此平臺未來會支援較高的限制。 如有任何問題，請與 Microsoft 支援部門或您的 Microsoft 客戶經理聯繫。
 > 預覽連接器不會以配額為依據，當連接器成為可供使用時，它就會開始計數總索引配額。

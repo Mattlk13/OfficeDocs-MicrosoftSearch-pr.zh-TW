@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Graph 連接器代理程式使用 Microsoft 建立的連接器為檔案共用、SQL、Confluence 等建立內部部署內容的索引。
-ms.openlocfilehash: a2808c1315212f1868aa429de1ca21ea23c48c42
-ms.sourcegitcommit: e629a74a7b51d6e575d1642ea19534f5595af79b
+ms.openlocfilehash: 1282add056393179e0dda88b4b60f8be210e2dc1
+ms.sourcegitcommit: b0fff1c58aad93615816b059457dcfd257b3a5bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775980"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64404899"
 ---
 # <a name="microsoft-graph-connector-agent"></a>Microsoft Graph Connector 代理程式
 
@@ -33,6 +33,7 @@ ms.locfileid: "63775980"
 建議的設定：
 
 * Windows 10，Windows Server 2016 R2 以上
+* [.Net Framework 4.7.2 版](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472)
 * [.NET Core Desktop Runtime 3.1 (x64) ](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 * 8核心，3 GHz
 * 16 GB 的 RAM，2 GB 的磁碟空間
@@ -42,7 +43,7 @@ ms.locfileid: "63775980"
 
 1. *.servicebus.windows.net
 2. events.data.microsoft.com
-3. HTTPs://<span>microsoftonline。</span>Com
+3. https://<span>login.microsoftonline.</span>com
 4. HTTPs://<span>gc。</span>com
 5. HTTPs://<span>graph。</span>com
 
@@ -67,7 +68,7 @@ ms.locfileid: "63775980"
 
 6. 選取 [ **Microsoft Graph** ]，然後選取 [**應用程式許可權**]。
 
-7. 在 [許可權] 中搜尋 "ReadWrite ExternalItem"、"OwnedBy" 和 [ReadWrite ExternalConnection]，然後選取 [ **新增許可權**]。
+7. 在 [許可權] 中搜尋 "ReadWrite ExternalItem"、"OwnedBy" 和 [ReadWrite ExternalItem]，然後選取 [ **新增許可權**]。
 
 8. 選取 **[授與「TenantName] 的系統管理員同意** ，並選取 [ **是**]。
 

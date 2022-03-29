@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 Confluence Cloud Graph connector
-ms.openlocfilehash: 08c3f903a051edf33a498562810ad4e2c170c955
-ms.sourcegitcommit: 83f0c6e944da18605f371c92bce2ab2c8d570214
+ms.openlocfilehash: 3041151258b6539fc081b991c85bd6ed3fb3aa50
+ms.sourcegitcommit: 205f2b9c7ba9ea2371088c5e978afdf7752ef92f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63347916"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64464839"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -70,7 +70,7 @@ Confluence Cloud Graph connector 可讓您的組織為 Confluence 內容編制�
 | View groups | `read:group:confluence` | 存取內容的群組許可權
 | 查看使用者詳細資料 | `read:user:confluence` | 存取個別使用者詳細資料以支援許可權
 
-5. 按一下 [儲存]。
+5. 按一下 **[儲存]**。
 6. 從左側的功能窗格流覽至 `Authorization` 。 新增回撥 URL `https://gcs.office.com/v1.0/admin/oauth/callback` 並儲存變更。
 7. 從左側的功能窗格流覽至 `Settings` 。 您將會收到 `Client ID` 及 `Secret` 至此頁面。
 

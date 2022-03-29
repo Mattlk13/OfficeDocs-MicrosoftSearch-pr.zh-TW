@@ -13,18 +13,21 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 搜尋的 Microsoft Graph 連接器的概覽
-ms.openlocfilehash: 5db2fab05e16b8c6c9f739c156e893ff12f503c0
-ms.sourcegitcommit: 488ecdae00dabd7bf26d0dab43b684fd0909782a
+ms.openlocfilehash: 56f932bf090837efbd9128fd65fc04ad66768100
+ms.sourcegitcommit: 214ff6bb8e22320b4ac45c5cddbe7c37b3df923b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62805529"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64504035"
 ---
 <!---Previous ms.author: monaray --->
 
 # <a name="overview-of-microsoft-graph-connectors"></a>Microsoft Graph 連接器的概述
 
 [Microsoft 搜尋](./overview-microsoft-search.md)會索引所有的[Microsoft 365](https://www.microsoft.com/microsoft-365)資料，讓使用者可供搜尋。 透過 Microsoft Graph connector，您的組織可以為協力廠商資料編制索引，使其出現在 Microsoft 搜尋結果中。 這項功能可展開 Microsoft 365 生產力應用程式中可搜尋的內容來源類型，以及更廣泛的 Microsoft 生態用。 協力廠商資料可以位於內部部署或公用或私人雲端。
+
+下列影片說明 Microsoft 搜尋體驗的 Graph 連接器安裝程式。
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4SjFa]
 
 <!---link Microsoft Graph reference in line 19 when we have access to relevant documentation--->
 
@@ -70,12 +73,13 @@ Microsoft 提供9個連接器和我們的生態系統合作夥伴已透過100以
 * [Confluence Cloud](confluence-cloud-connector.md)
 * [Confluence 內部部署](confluence-onpremises-connector.md)
 * [企業網站](enterprise-web-connector.md)
+* [Jira Cloud](jira-connector.md)
 * [MediaWiki](mediawiki-connector.md)
 * [檔案共用](fileshare-connector.md)
 * [Oracle SQL](OracleSQL-connector.md)
 * [Salesforce](salesforce-connector.md)
 * [ServiceNow 知識](servicenow-knowledge-connector.md)
-* [ServiceNow 目錄 (預覽) ](servicenow-catalog-connector.md)
+* [ServiceNow 目錄](servicenow-catalog-connector.md)
 
 [Microsoft Graph 連接器圖庫](https://www.microsoft.com/microsoft-search/connectors)包含每個連接器的簡短描述。 如果您已準備好將其中一個資料來源連線至您的租使用者，請務必閱讀套用至資料來源之 Microsoft 安裝連接器中的 [安裝程式概述](configure-connector.md) 及其他任何文章。
 
@@ -105,7 +109,6 @@ Microsoft 提供9個連接器和我們的生態系統合作夥伴已透過100以
 
 * [Azure DevOps 連接器](azure-devops-connector.md)
 * [Confluence 內部部署連接器](confluence-onpremises-connector.md)
-* [ServiceNow 目錄連接器](servicenow-catalog-connector.md)
 * [垂直中的多個連接](customize-search-page.md#multiple-connections-in-a-vertical)
 
 ## <a name="how-do-i-customize-and-configure-search-results"></a>如何自訂及設定搜尋結果？

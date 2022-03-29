@@ -13,21 +13,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定 Microsoft 搜尋的 ServiceNow 目錄 Graph 連接器
-ms.openlocfilehash: 802b8d909d23a449d0688ebe1b81ea809e059471
-ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
+ms.openlocfilehash: 8390487a1bf4fc489cee05c4edeacadebd17c31d
+ms.sourcegitcommit: 214ff6bb8e22320b4ac45c5cddbe7c37b3df923b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62489517"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64504034"
 ---
 <!---Previous ms.author: kam1 --->
 
-# <a name="servicenow-catalog-graph-connector-preview"></a>ServiceNow 目錄 Graph 連接器 (預覽) 
+# <a name="servicenow-catalog-graph-connector"></a>ServiceNow 目錄 Graph 連接器
 
 使用 Microsoft Graph Connector ServiceNow 時，您的組織可以[服務](https://www.servicenow.com/products/it-service-automation-applications/service-catalog.html)所有使用者都能看見的目錄專案，或以組織內的使用者準則許可權加以限制的目錄專案。 從 ServiceNow 設定連接器和索引內容之後，使用者可以從任何 Microsoft 搜尋用戶端搜尋這些目錄專案。
-
->[!NOTE]
->ServiceNow Catalog Graph Connector 位於預覽中。 如果您想要取得儘早的試用權，請使用 [<b> 此表單 </b>](https://forms.office.com/r/QyYwQQY2EX)註冊。  
 
 本文適用于 Microsoft 365 系統管理員或任何設定、執行及監視 ServiceNow 目錄 Graph 連接器的人員。 它會補充[設定 Graph 連接器](configure-connector.md)文章中提供的一般指示。 若尚未這麼做，請閱讀整個設定 Graph 連接器文章，以瞭解一般的設定程式。
 
@@ -79,7 +76,7 @@ ms.locfileid: "62489517"
 
 欄位 | 描述 | 建議值 
 --- | --- | ---
-姓名 | 識別您需要 OAuth 存取之應用程式的唯一值。 | Microsoft 搜尋
+名稱 | 識別您需要 OAuth 存取之應用程式的唯一值。 | Microsoft 搜尋
 用戶端識別碼 | 應用程式的唯讀、自動產生的唯一識別碼。 當實例要求存取權杖時，會使用用戶端識別碼。 | NA
 用戶端密碼 | 使用此共用的機密字串，ServiceNow 實例和 Microsoft 搜尋會授權彼此進行通訊。 | 遵循安全性最佳作法，將密碼當做密碼對待。
 重新導向 URL | 授權伺服器重新導向所需的回撥 URL。 | https://gcs.office.com/v1.0/admin/oauth/callback
@@ -88,7 +85,7 @@ ms.locfileid: "62489517"
 重新整理權杖生命週期 | 重新整理權杖有效的秒數。 根據預設，重新整理權杖會在100天內到期 (8640000 秒) 。 | 31536000 (1 年) 
 存取權杖使用壽命 | 存取權杖有效的秒數。 | 43200 (12 小時) 
 
-輸入用戶端識別碼和用戶端密碼以連接至您的實例。 連接後，請使用 ServiceNow 帳號憑證來驗證編目的許可權。 帳戶至少應具有 **目錄** 角色。 請參閱「 [步驟3：連線設定](#step-3-connection-settings) 」的開頭中的表格，以提供更多 ServiceNow 表記錄的讀取權，以及索引使用者準則許可權。
+輸入用戶端識別碼和用戶端密碼以連接至您的實例。 連接後，請使用 ServiceNow 帳號憑證來驗證編目的許可權。 帳戶至少應具有 **目錄** 角色。 請參閱「 [步驟3：連線設定](#step-3-connection-settings) 」一開始的表格，以提供更多 ServiceNow 表記錄的讀取權，以及索引使用者準則許可權。
 
 ## <a name="step-33-azure-ad-openid-connect"></a>步驟3.3： Azure AD OpenID 連線
 
@@ -129,7 +126,7 @@ ms.locfileid: "62489517"
 
 現在，您已具備 Azure 入口網站所需的所有資訊。 下表提供資訊的快速摘要。
 
-屬性	 | 描述 
+屬性 | 描述 
 --- | ---
 目錄識別碼 (租使用者識別碼)  | 步驟 3 Azure Active Directory 租使用者的唯一識別碼。
  (用戶端識別碼的應用程式識別碼)  | 在步驟3中註冊之應用程式的唯一識別碼。
@@ -146,7 +143,7 @@ ServiceNow 實例需要下列設定：
 
    欄位 | 描述 | 建議值
    --- | --- | ---
-   姓名 | 識別 OAuth OIDC 實體的唯一名稱。 | Azure AD
+   名稱 | 識別 OAuth OIDC 實體的唯一名稱。 | Azure AD
    用戶端識別碼 | 在協力廠商 OAuth OIDC server 中註冊之應用程式的用戶端識別碼。 實例在要求存取權杖時使用用戶端識別碼。 | Application (Client) ID 從步驟3。
    用戶端密碼 | 在協力廠商 OAuth OIDC server 中註冊之應用程式的用戶端密碼。 | 步驟3的用戶端密碼。 b
 
@@ -183,7 +180,7 @@ ServiceNow 實例需要下列設定：
 
 ### <a name="step-336-enable-catalog-role-for-the-servicenow-account"></a>步驟3.3.6：啟用 ServiceNow 帳戶的目錄角色
 
-存取您用 ServiceNow 主體識別碼建立的 ServiceNow 帳戶做為使用者識別碼並指派目錄角色。 您可以在這裡找到將角色指派給 ServiceNow 帳戶的指示， [將角色指派給使用者](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)。 請參閱「 [步驟3：連線設定](#step-3-connection-settings) 」的開頭中的表格，以提供更多 ServiceNow 表記錄的讀取權，以及索引使用者準則許可權。
+存取您用 ServiceNow 主體識別碼建立的 ServiceNow 帳戶做為使用者識別碼並指派目錄角色。 您可以在這裡找到將角色指派給 ServiceNow 帳戶的指示， [將角色指派給使用者](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)。 請參閱「 [步驟3：連線設定](#step-3-connection-settings) 」一開始的表格，以提供更多 ServiceNow 表記錄的讀取權，以及索引使用者準則許可權。
 
 使用應用程式識別碼做為用戶端識別碼 (從步驟3。系統管理中心) 中的) 和用戶端密碼 (，以使用 ServiceNow Azure AD OpenID 來驗證您的連線實例。
 
@@ -240,10 +237,10 @@ ServiceNow Catalog Graph connector 在其最新版本中有下列限制：
 - 不支援在目錄類別上設定的使用者準則許可權。 
 - 目前的版本不支援具有高級腳本的使用者準則。 任何具有這種存取限制的目錄專案都會以「拒絕所有人」存取的方式編制索引，也就是說，除非我們支援，否則這些專案不會出現在搜尋結果中。
 
-## <a name="troubleshooting"></a>正在疑難排解
+## <a name="troubleshooting"></a>疑難排解
 在發佈連線後，自訂 [結果] 頁面，您可以在系統 [管理中心](https://admin.microsoft.com)的 [**資料來源**] 索引標籤底下查看狀態。 若要瞭解如何進行更新和刪除，請參閱 [管理您的連接器](manage-connector.md)。
 您可以在下面找到常見問題的疑難排解步驟。
-### <a name="1-unable-to-login-due-to-single-sign-on-enabled-servicenow-instance"></a>1. 由於單一 Sign-On 已啟用 ServiceNow 實例而無法登入
+### <a name="1-unable-to-log-in-due-to-single-sign-on-enabled-servicenow-instance"></a>1. 因單一 Sign-On 啟用 ServiceNow 實例而無法登入
 
 如果您的組織已啟用單一 Sign-On (SSO) ServiceNow，您可能無法使用服務帳戶進行記錄。 您可以新增<em> `login.do` </em>至 ServiceNow 實例 URL，以開啟使用者名稱和密碼基礎的登入。 例子。 `https://<your-organization-domain>.service-now.com./login.do` 
 

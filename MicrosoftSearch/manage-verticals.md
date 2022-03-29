@@ -7,18 +7,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 ms.localizationpriority: medium
-ms.date: 10/27/2021
+ms.date: 03/15/2022
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 在 [結果] 頁面上管理搜尋縱向
-ms.openlocfilehash: 6385b9f09356e7b4baedfc6ed968f1198696b42e
-ms.sourcegitcommit: acc24e01c99242fef7401de079bd6060cb1ba301
+ms.openlocfilehash: 3d0d418a1705270ce1004f1d5d51f4ba21a50c90
+ms.sourcegitcommit: 5ad76c7c92f375ff6c88fc28eab0f7b5679b4939
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2022
-ms.locfileid: "62540327"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63996765"
 ---
 # <a name="manage-search-verticals"></a>管理搜尋行業
 
@@ -96,15 +96,15 @@ ms.locfileid: "62540327"
 |排除來自封存網站的結果           |不 (路徑:HTTP//contoso。 .com/封存或路徑:HTTP//contoso。 .com/CompanyArchive) |
 | 排除以檔案類型屬性為基礎的結果 | 不 (FileType： htm) |  
 
+使用垂直的 [KQL 查詢] 區段中的變數，以提供動態資料做為垂直查詢的輸入。 「設定檔」和「查詢字串」是可使用的查詢變數類型。
+
 #### <a name="profile-query-variables"></a>設定檔查詢變數
 
-使用垂直的 [KQL 查詢] 區段中的變數，以提供動態資料做為垂直查詢的輸入。 您可以使用設定檔查詢變數，讓搜尋結果成為已登入使用者的上下文。 設定檔查詢變數會從已登入使用者的 [設定檔](/graph/api/resources/profile)中取得值。
-
-例如，若要為使用者建立「票據」垂直，以尋找所指派的支援票證，您可以在 [管理] 頁面中的垂直建立期間，于 [查詢] 區段中指定下列查詢：  
+您可以使用設定檔查詢變數，將搜尋結果 coNtextualize 至已登入的使用者。 設定檔查詢變數會從已登入使用者的 [設定檔](/graph/api/resources/profile)中取得值。 例如，若要建立「票據」垂直供使用者尋找所指派的支援票證，您可以在 [管理] 頁面的 [查詢] 區段中指定下列查詢。
 
 `AssignedTo:{Profile.accounts.userPrincipalName}`
 
-這種語言會縮小搜尋結果，只顯示受託人為執行搜尋之使用者的專案。
+這會裁切搜尋結果，只顯示指派給執行搜尋之人員的專案。
 
 [設定檔資源](/graph/api/resources/profile) 公開屬性做為集合。 例如，電子郵件地址相關的資訊會透過電子郵件集合、工作職位集合等方式公開。 使用者設定檔中所有可用的屬性都會公開為查詢變數。
 
@@ -156,16 +156,40 @@ ms.locfileid: "62540327"
 | 3     | {?MyProperty： {Profile. 電子郵件}}  |  這不會解決，因為 *電子郵件* 是物件。 "？" 運算子會忽略未解析的查詢變數。 在查詢堆疊上進一步傳遞時，將會移除此變數。   |
 | 4  | {&#124;MyProperty： {Profile. Type}}    |   ( (MyProperty： "官方" ) 或 (MyProperty： "非官方" ) 或 (MyProperty： "personal" ) )     |
 
+#### <a name="query-string-variables"></a>查詢字串變數
+
+您可以使用查詢字串變數，根據使用者與 SharePoint 網站的互動來篩選搜尋結果。 查詢字串變數可讓您在搜尋 URL 中傳遞金鑰-值對，以確保搜尋結果是根據這些值自訂。 例如，假設您有一個在專案中提供資訊的 SharePoint 網站，該網站具有顯示進行中工作的簡易網頁元件。 按一下「進行中」網頁元件，將使用者連結至「工作專案」搜尋類別，其中的結果會經過精煉，只顯示標記為 **InProgress** 的專案。
+
+若要執行此動作，可在 [管理] 頁面的 [查詢] 區段中指定下列查詢。
+
+`Status:{QueryString.state}`
+
+您必須更新 SharePoint 網站按鈕網頁元件上的 URL，才能傳遞下列鍵值對 HTTPs：//{您的網域}。 SharePoint .com/sites/{site name}/_layouts/15/search.aspx/{vertical-id}？ state = InProgress
+
+查詢狀態： {QueryString state} 會解析為狀態： InProgress。
+
+以下是更多有關查詢字串擴充的範例。
+
+| #         | 查詢語法 | URL 語法 | 傳回值 |
+| --------- | --------- | --------- | --------- |
+| 1    | MyProperty： {QueryString state}  |   HTTPs//{您的網域}. sharepoint .com/site/{site name}/_layouts/15/search.aspx/{vertical-ID}？ state = InProgress  |   MyProperty： InProgress  |
+| 第 | MyProperty： {QueryString state} 或 MyProperty： {QueryString priority}   |    HTTPs//{您的網域}. sharepoint .com/site/{site name}/_layouts/15/search.aspx/{vertical-ID}？ state = InProgress&priority = 1 |   MyProperty： InProgress 或 MyProperty：1  |
+| 3     | {?MyProperty： {QueryString state}}  |  HTTPs//{您的網域}. sharepoint .com/site/{site name}/_layouts/15/search.aspx/{vertical-ID}？State = InProgress   |   無法解析此狀態，因為 Querystring 是區分大小寫的。  "？" 運算子會忽略未解析的查詢變數。 在查詢堆疊上進一步傳遞時，將會移除此變數。  |
+| 4  | { \| MyProperty： {QueryString state}}    |  HTTPs//{您的網域}. sharepoint .com/site/{site name}/_layouts/15/search.aspx/{vertical-ID}？ state = InProgress，已關閉    |    (MyProperty： InProgress) 或 (MyProperty：已關閉)   <br /> \|運算子是用來解析 muti 值變數。 變數的值應使用逗號分隔符號傳遞，如 URL 語法中所示。 |
+| 5 | {MyProperty： {QueryString state}}    |  HTTPs//{您的網域}. sharepoint .com/site/{site name}/_layouts/15/search.aspx/{vertical-ID}？ state = InProgress，已關閉   |   MyProperty： InProgress <br /> 在這裡，只會從 URL 挑選出狀態的第一個值，因為查詢語法不會將它定義為多重值變數。 |
+
+
 ## <a name="limitations"></a>限制
 - 在修改後，語言當地語系化不適用於 box 縱向的名稱。 
 - KQL 不適用於從使用者 OneDrive 所呈現的內容。 
-- 自訂的縱向不會出現在 Microsoft 搜尋的行動裝置視圖上。 
+- 自訂的縱向不會出現在 Microsoft 搜尋的行動裝置視圖。 
 - 在 [人員] 垂直上不支援新增查詢。 
 - 組織中的來賓使用者看不到縱向修改和新的縱向。 
 - 不支援縱向重新排序。
-- 在 Bing 中的 Microsoft search 中，所有索引標籤的垂直重新命名功能都不受支援。
+- Bing 中的 Microsoft 搜尋不支援所有索引標籤的垂直重命名。
+- Bing 中的 Microsoft 搜尋不支援查詢字串變數。
 
-## <a name="troubleshooting"></a>正在疑難排解
+## <a name="troubleshooting"></a>疑難排解
 
 以下列出您可能會遇到的常見問題，以及修正這些問題的動作。
 
