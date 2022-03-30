@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 在 [結果] 頁面上管理搜尋縱向
-ms.openlocfilehash: 3d0d418a1705270ce1004f1d5d51f4ba21a50c90
-ms.sourcegitcommit: 5ad76c7c92f375ff6c88fc28eab0f7b5679b4939
+ms.openlocfilehash: c0dc37afd7f5d7b17957a03727b0d433a612981c
+ms.sourcegitcommit: 4f0db9154cf90b1b65232592164196850e547bf8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63996765"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64505582"
 ---
 # <a name="manage-search-verticals"></a>管理搜尋行業
 
@@ -65,7 +65,7 @@ ms.locfileid: "63996765"
 
 ## <a name="view-the-vertical-in-the-search-result-page"></a>在搜尋結果頁面中查看垂直
 
-搜尋[結果版面](manage-result-types.md)配置是在搜尋類別頁面上轉譯的 Graph 連接器結果所需。 在確保有適當的結果版面配置時，您可以啟用搜尋類別。 在您啟用垂直時，會有幾個小時的延遲，您才能進行查看。 您可以將 cacheClear = true 新增至 SharePoint 和 Office 中的 URL，以便立即查看垂直方向。 在 Bing 中，append &features = uncachedVerticals 至工作垂直 URL，以立即查看垂直。
+搜尋[結果版面](manage-result-types.md)配置是在搜尋類別頁面上轉譯的 Graph 連接器結果所需。 在確保有適當的結果版面配置時，您可以啟用搜尋類別。 在您啟用或更新垂直時，會有幾個小時的延遲，您才可以在 [搜尋] 頁面上查看變更。 您可以將 cacheClear = true 新增至 SharePoint 和 Office 中的 URL，以便立即查看變更。 在 Bing 中，append &features = uncachedVerticals 至工作垂直 URL，以立即查看變更。
 
 > [!NOTE]
 > 從行動網頁瀏覽器中查看時，已新增的縱向不會顯示在[SharePoint](https://sharepoint.com/)和[Office](https://office.com)上。
