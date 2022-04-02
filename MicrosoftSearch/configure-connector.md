@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Graph 連接器的設定概觀
-ms.openlocfilehash: ed022208377c7f61c9cdb06a26775d94430ad4b8
-ms.sourcegitcommit: ea0da3cedc18a08a0a9ccae89c0aa85f4e80bd7a
+ms.openlocfilehash: 0d9c38b3a4c63c584cbd4259b66da5cd5e4946e0
+ms.sourcegitcommit: 970b51fe4f1fb513c5e1fbb43ea27568547b25e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63459670"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64570173"
 ---
 <!-- Previous ms.author: monaray -->
 
@@ -93,9 +93,9 @@ ServiceNow 查詢可用於在資料按 Microsoft 搜尋編制索引之前加以�
 
 ## <a name="step-5-manage-search-permissions"></a>步驟5：管理搜尋許可權
 
- (ACLs 的存取控制清單) 決定組織中的哪些使用者可以存取每個專案。  
+存取控制清單 (ACLs) 決定組織中的哪些使用者可以存取每個專案。  
 
-有些連接器（如[Microsoft SQL](MSSQL-connector.md)和[Azure Data Lake 儲存體 Gen2](azure-data-lake-connector.md)本身支援[Azure Active Directory (Azure AD) ](/azure/active-directory/) ACLs）。
+有些連接器（如[Microsoft SQL](MSSQL-connector.md)和[Azure Data Lake Storage Gen2](azure-data-lake-connector.md) ）本身支援[Azure Active Directory (Azure AD) ](/azure/active-directory/) ACLs。
 
 其他如[ServiceNow 知識](servicenow-knowledge-connector.md)的連接器， [ServiceNow Catalog](servicenow-catalog-connector.md)、 [Azure DevOps](azure-devops-connector.md)和[Salesforce](salesforce-connector.md)支援非 Azure AD 使用者和群組的同步處理。  
 
@@ -182,6 +182,9 @@ ServiceNow 查詢可用於在資料按 Microsoft 搜尋編制索引之前加以�
 * 連線的架構尚未更新 (尚未支援架構更新) 。
 
 使用 **增量** 重新整理，搜尋引擎只可以處理和編制自上次成功編目之後所建立或修改的專案。 因此，並非內容來源中的所有資料都是重新編制索引。 增量式重新整理最適合偵測內容、中繼資料、許可權及其他更新的工作。
+
+> [!NOTE]
+> 增量式編目不支援處理目前 **許可權** 的更新。
 
 重新整理的速度會比完整重新整理快許多，因為未處理未變更的專案。 不過，如果您選擇執行累加重新整理，您仍然需要定期執行完整重新整理，以維護內容來源與搜尋索引之間的正確資料同步處理。
 

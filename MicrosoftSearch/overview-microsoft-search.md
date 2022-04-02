@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 深入瞭解 Microsoft 搜尋的優點、其優點，以及哪些應用程式支援 Microsoft 搜尋。
-ms.openlocfilehash: 4f23b5d454de3e803a3cfced04bd13609012b94b
-ms.sourcegitcommit: 7cf1aac92e3d46008be647c16a14460fa43642ea
+ms.openlocfilehash: 0d98103c5428b0c2ad48a22db91b4126c3e5082d
+ms.sourcegitcommit: acbdfe102e59e8731fb410edc0e9cbb9c2c76f76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2022
-ms.locfileid: "63438867"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64590424"
 ---
 # <a name="overview-of-microsoft-search"></a>Microsoft 搜尋概觀
 
@@ -46,7 +46,7 @@ Microsoft 搜尋可協助使用者找出正確的答案、人員和內容，以�
 
 ## <a name="benefits-of-microsoft-search"></a>Microsoft Search 的優點
 
-**從任何 Microsoft Search 方塊跨 Microsoft 365 搜尋** - 使用者可以從任何 Microsoft Search 方塊搜尋，並快速回到他們執行的動作。 Microsoft 搜尋會將 Office 365 中的資料來源的結果彙集在一起，包括[SharePoint](http://sharepoint.com/)、 [Microsoft OneDrive 商務](https://onedrive.live.com/about/business/)和[Microsoft Exchange](https://products.office.com/exchange/microsoft-exchange-server)。
+**從任何 Microsoft Search 方塊跨 Microsoft 365 搜尋** - 使用者可以從任何 Microsoft Search 方塊搜尋，並快速回到他們執行的動作。 Microsoft 搜尋會從 Office 365 中的資料來源彙集結果，包括[SharePoint](http://sharepoint.com/)、 [Microsoft 商務用 OneDrive](https://onedrive.live.com/about/business/)及[Microsoft Exchange](https://products.office.com/exchange/microsoft-exchange-server)。
 
 **易於搜尋**– Microsoft 搜尋會根據使用者在 Office 365 中的先前活動，在 **搜尋** 方塊中向右推薦結果。
 
@@ -83,7 +83,7 @@ Microsoft 搜尋會顯示您的組織已儲存在 Microsoft 365 中或已透過�
 > [!NOTE]
 > 深入瞭解 Bing 中的 Microsoft 搜尋如何在[Bing 的 Microsoft 搜尋安全性和隱私權](security-for-search.md)中保護公司資料。
 
-當人員在 SharePoint 中篩選人員時，會看到來自已篩選人員已進行的內容，以及他們具有查看許可權的結果。 如果已篩選的人員或其組織已在 Microsoft Graph 中關閉專案洞察力，則人員只會看到來自已篩選人員與其共用之內容的結果，或是來自其所處理的內容。 深入瞭解專案真知灼見。
+當人員在 SharePoint 中篩選人員時，會看到來自已篩選人員已進行的內容，以及他們具有查看許可權的結果。 如果已篩選的人員或其組織已在 Microsoft Graph 中關閉專案洞察力，則人員只會看到來自已篩選人員與其共用之內容的結果，或是來自其所處理的內容。 [深入瞭解專案真知灼見](/graph/item-insights-overview)。
 
 當使用者在 Outlook 中取得搜尋的結果、SharePoint 線上及 Office .com 時，所發出的查詢會記錄在其搜尋記錄中。 使用者的搜尋記錄是個人的，不會與您的組織或 Microsoft 共用。 其搜尋記錄可協助他們快速取得先前找到的專案。 在使用者輸入查詢時，其搜尋記錄中的相符專案會在搜尋框中向下建議。  
 
