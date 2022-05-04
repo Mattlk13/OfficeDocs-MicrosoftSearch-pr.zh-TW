@@ -1,5 +1,5 @@
 ---
-title: 'Dynamics 365 同盟搜尋 (預覽) '
+title: 'Dynamics 365 會產生 Microsoft 搜尋 (Preview) '
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -7,108 +7,102 @@ ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 ms.localizationpriority: medium
-description: 管理在搜尋結果中顯示 Dynamics 365 內容的方式
-ms.openlocfilehash: 509a5e5a81747c643cfce51ce6ad1ae63bc22f48
-ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
+ms.date: 05/03/2022
+description: 管理 Dynamics 365 內容在搜尋結果中的顯示方式
+ms.openlocfilehash: 4d234ffe67f6f4ed2eeb03cb89e7c4d23e36e53b
+ms.sourcegitcommit: 00c673527e6806c9652c8e3de76ab4f6522b7c23
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62490437"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65187182"
 ---
-# <a name="dynamics-365-federation-search-preview"></a>Dynamics 365 同盟搜尋 (預覽) 
+# <a name="dynamics-365-results-in-microsoft-search-preview"></a>Dynamics 365 會產生 Microsoft 搜尋 (Preview) 
 
-## <a name="microsoft-search-federation-and-connectors"></a>Microsoft 搜尋同盟和連接器
+Microsoft Dynamics 365 是一系列智慧型商務應用程式，專為企業資源規劃和客戶關係管理所設計。 透過 Dynamics 365 產生Microsoft 搜尋，使用者可以輕鬆地找到儲存在 Dynamics 365 中最相關的客戶和商務資料。 Dynamics 365 連接器提供一些主要優點：
 
-為了讓 Microsoft 搜尋更有用，我們正在引進 Microsoft 搜尋同盟。 透過同盟搜尋，組織可以在 Microsoft 搜尋中存取這些案例中的資料：
+* **容易使用：** 使用者可以輕鬆快速地尋找儲存在 Dynamics 365 中的重要資訊，而不需要流覽至新的應用程式或頁面。
+* **易於尋找：** Bing.com、Office.com 和 SharePoint 中的使用者可以看到 Dynamics 365 內容。
+* **內建資料保護：** Dynamics 365 結果只會針對具有已連線實例存取權的使用者顯示。 
+* **快速設定：** 輕鬆設定及維護與 Dynamics 365 實例的搜尋連線。
+* **整合搜尋體驗：** 為了維持一致的體驗，Dynamics 365 結果會在所有搜尋進入點之間保持一致。 無論您在何處搜尋，都會以相同的外觀和風格取得相同的結果。
 
-* 系統中遵循嚴格合規性需求的資料
-* 無法留下系統界限的資料
-* 儲存在部署上的敏感性資料，您的組織不想要在雲端上建立索引
+我們的 Dynamics 365 連接器目前處於預覽狀態。 如果您有興趣加入預覽版，請在 [aka.ms/D365-ACS-Preview-MicrosoftSearch](https://aka.ms/D365-ACS-Preview-MicrosoftSearch)中讓我們知道。
 
-透過同盟搜尋連線存取的資料不會在 Microsoft 搜尋中編制索引。 此外，您也可以使用 Microsoft 的內建連接器，輕鬆設定同盟搜尋連線。 我們的 Dynamics 365 connector 目前正在預覽中。 如果您有興趣加入預覽，請在 [aka.ms/D365FederationSearchPreview](https://aka.ms/D365FederationSearchPreview)中告知我們。 如需發行時間範圍，請參閱[Microsoft 搜尋藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Search)。
+## <a name="user-experience"></a>使用者體驗
 
-## <a name="dynamics-365-federation-connector"></a>Dynamics 365 同盟連接器
+Dynamics 365 答案會出現在所有Microsoft 搜尋畫布的搜尋結果中，包括 SharePoint Online、Bing 和 Office。
 
-Microsoft Dynamics 365 是一線智慧商務應用程式，專為企業資源規劃及客戶關係管理而設計。 透過 Dynamics 365 同盟，Microsoft 搜尋提供無縫的搜尋體驗，讓使用者可以輕鬆地找出 Dynamics 365 中所儲存的最相關客戶和商務資料。 Dynamics 365 同盟連接器提供一些重要優點：
+:::image type="content" alt-text="SharePoint、Bing 和 Office 上的 Dynamics 365 解答螢幕擷取畫面。" source="media/dynamics365/dynamics365-answer.png" lightbox="media/dynamics365/dynamics365-answer.png":::
 
-* **易於管理：** 簡化處理以設定及維護 Dynamics 365 實例的搜尋連線。
-* **便於使用：** 使用者可以輕鬆快捷地找到以 Dynamics 365 儲存的重要資訊，包括帳戶、連絡人、開啟的機會等等。
-* **更豐富的內容：** 若要讓 Dynamics 365 搜尋結果更有用，包含潛在客戶、連絡人及帳戶詳細資料等重要資訊。
-* **內建資料保護：** Dynamics 365 結果只會針對具有連線的實例存取權的使用者顯示。
-* **整合的搜尋體驗：** 為了維持統一的體驗，Dynamics 365 的結果在所有搜尋專案點間都是一致的。 不論您在哪裡搜尋，都可以使用相同的外觀與風格取得相同的結果。
+從答案中，使用 [更多 Dynamics 365 結果] 連結可輕鬆查看更多 **Dynamics 365 搜尋結果** 。 它會將使用者帶至專用的 Dynamics 365 結果頁面，其中包含更多與其查詢相關的結果。
 
-## <a name="what-users-experience"></a>使用者經驗
+:::image type="content" alt-text="Dynamics 365 垂直的螢幕擷取畫面，以及SharePoint、Bing和Office的結果。" source="media/dynamics365/dynamics365-vertical.png" lightbox="media/dynamics365/dynamics365-vertical.png":::
 
-Dynamics 365 的答案會出現在所有 Microsoft 搜尋畫布上的搜尋結果中，包括 SharePoint 線上、Bing 和 Office。
-
-:::image type="content" alt-text="SharePoint、Bing 及 Office 的 Dynamics 365 回應的螢幕擷取畫面。" source="media/dynamics365/dynamics365-answer.png" lightbox="media/dynamics365/dynamics365-answer.png":::
-
-從問題的答案中，使用 [ **更多 dynamics 365 結果** ] 連結可輕鬆查看更多 dynamics 365 搜尋結果。 它會將使用者帶到專用的 Dynamics 365 結果頁面，並提供與查詢相關的更多結果。
-
-:::image type="content" alt-text="Dynamics 365 的螢幕擷取畫面，以及 SharePoint、Bing 及 Office 的結果。" source="media/dynamics365/dynamics365-vertical.png" lightbox="media/dynamics365/dynamics365-vertical.png":::
-
-按一下或攻絲任何結果會開啟 Dynamics 365 並顯示詳細資訊。
+按一下或點選任何結果會開啟 Dynamics 365，並顯示詳細資訊。
 
 :::image type="content" alt-text="Dynamics 365 中詳細資料頁面的螢幕擷取畫面。" source="media/dynamics365/dynamics365-detail-page.png" lightbox="media/dynamics365/dynamics365-detail-page.png":::
 
-不管您的使用者從何處開始搜尋，其經驗都會是一致的，讓他們能夠快速找到最相關的 Dynamics 365 結果。 請參閱 Microsoft 組建2021影片以取得示範。
+無論您的使用者從何處開始搜尋，其體驗都會一致，並可讓他們快速找到最相關的 Dynamics 365 結果。 查看我們的 Microsoft Build 2021 影片以取得示範。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4P83t]
 
-## <a name="supported-query-patterns"></a>支援的查詢模式
+### <a name="supported-query-patterns"></a>支援的查詢模式
 
-使用 Microsoft 搜尋來尋找 Dynamics 365 結果時，會支援自然語言和產品名稱查詢。 此外，Dynamics 365 查詢不區分大小寫。 使用自然語言模式，透過客戶名稱或位置以及其他經常使用的查詢來尋找連絡人、帳戶及機遇。 以下是一些範例：
+使用者會在專用的 Dynamics 365 和所有垂直上看到結果。 任一垂直上的 Dynamics 365 搜尋都不區分大小寫。
+
+在 Dynamics 365 垂直版上，搜尋支援 Dynamics 365 應用程式中使用的相同語言，包括 AND、OR 和 NOT 等簡單運算子。 如需詳細資訊，請 [參閱使用運算子](/power-apps/user/relevance-search#working-with-operators)。
+
+在 [全部] 垂直上，當使用者搜尋 Dynamics 結果時，會觸發 Dynamics 答案。 自然語言查詢 (依名稱或位置包含一般實體的查詢，例如，包含 Dynamics 應用程式名稱的) 和查詢可以觸發答案。 以下是一些範例：
 
 * 神秘是 Contoso 的連絡人
-* Contoso 的開啟機會
-* 西雅圖的開啟機遇
 * 西雅圖的帳戶是什麼
-* 西雅圖的連絡人
-* 這個月的潛在客戶即將結束
-* 高優先順序的通話
+* 高優先順序通話
 * 連絡人遺失的電子郵件
+* D365 連絡人
+* Contoso Dynamics Sales
 
-產品名稱模式支援 Dynamics 365 應用程式的範圍，並會觸發 Dynamics 365 的結果，不論其在查詢中的出現位置為何：
+## <a name="admin-experience"></a>系統管理員體驗
 
-* D365
-* Dynamics 365
-* Dynamics 365
-* Dynamics CRM
-* Dynamics Sales
-* Dynamics Service
-* Dynamics Field Service
-* Dynamics 客戶服務
-* Dynamics Marketing
-* Dynamics CE
-* Dynamics 客戶參與
-* 客戶接洽
+在 Dynamics 365 連接器中，您可以輕鬆地設定、自訂和編輯。 如果您在使用預覽連接器時有意見反應或問題，請 [與我們連絡](https://aka.ms/Dynamics365ConnectorFeedback)。
 
-## <a name="configure-the-dynamics-365-connector"></a>設定 Dynamics 365 連接器
+### <a name="configure"></a>設定
 
-使用此簡單設定，您可以為組織中的人員啟用 Dynamics 365 同盟搜尋體驗。 若要成功設定此連線，建議您先確認這些設定，再開始執行下列作業：
+透過這個簡單的設定，您可以為組織中的人員啟用 Dynamics 365 結果Microsoft 搜尋。 若要成功設定此連線，建議您在開始之前先確認這些設定：
 
-* Dataverse 搜尋是針對您想要連接的 Dynamics 365 環境啟用。 如需詳細資訊，請參閱 [Configure Dataverse search for 您的環境](/power-platform/admin/configure-relevance-search-organization)。
-* 設定連接器的搜尋管理具有 Dynamics 365 的有效存取權。 如需詳細資訊，請參閱 [指派授權](/power-platform/admin/assign-licenses)。
+* 已針對您想要連線的 Dynamics 365 環境啟用 Dataverse 搜尋。 如需詳細資訊， [請參閱為您的環境設定 Dataverse 搜尋](/power-platform/admin/configure-relevance-search-organization)。
+* 設定連接器的搜尋系統管理員具有使用 Dynamics 365 的正確授權。 如需詳細資訊， [請參閱指派授權](/power-platform/admin/assign-licenses)。
+* 搜尋系統管理員具有您想要設定之 Dynamics 365 環境的系統管理員存取權。 如需詳細資訊，請 [參閱將使用者新增至環境](/power-platform/admin/add-users-to-environment)。
 
-驗證這些設定之後，請遵循下列步驟來設定連接器：
+確認這些設定之後，請遵循下列步驟來設定連接器：
 
-1. 在[Microsoft 365 系統管理中心](https://admin.microsoft.com)中，移至 [[資料來源](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/connectors)]。
+1. 在[Microsoft 365 系統管理中心](https://admin.microsoft.com)中，移至[[資料來源]](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/connectors)。
 
-2. 在 [Microsoft 應用程式和服務] 區段的 [Microsoft Dynamics 365] 底下，選取 [ **管理** ] 以開啟 [microsoft dynamics 365] 面板。
+2. 在 [Microsoft 應用程式和服務] 區段的 [Microsoft Dynamics 365] 下，選取 [ **管理** ] 以開啟 [Microsoft Dynamics 365] 面板。
 
-3. 啟動組織的連接器。
+3. 為您的組織啟用連接器。
 
-4. 在 [ **端點** ] 清單中，選取您的 Dynamics 365 環境。
+4. 在 [ **端點] 清單中** ，選取您的 Dynamics 365 環境。
 
-5. 在 [ **連接名稱**] 中，輸入此連線的描述性名稱。
+5. 在 [ **連線名稱]** 中，輸入此連線的描述性名稱。
 
-6. 檢查並選取 [同意] 核取方塊。
+6. 檢閱並選取同意核取方塊。
 
-7. 選取 [ **儲存** ] 以完成連接設定。
+7. 選 **取 [儲存** ] 以完成連線設定。
 
-:::image type="content" alt-text="Microsoft 365 系統管理中心中 Dynamics 365 設定面板的螢幕擷取畫面。" source="media/dynamics365/dynamic365-connection-setup.png" lightbox="media/dynamics365/dynamic365-connection-setup.png":::
+:::image type="content" alt-text="Microsoft 365 系統管理中心中 Dynamics 365 安裝面板的螢幕擷取畫面。" source="media/dynamics365/dynamic365-connection-setup.png" lightbox="media/dynamics365/dynamic365-connection-setup.png":::
 
 > [!TIP]
-> 為了澄清使用者可以在搜尋類別中找到的內容類型，我們建議您更新垂直名稱。 若要自訂 Dynamics 365 垂直的名稱，請按一下 [ **編輯垂直**]。 如需詳細資訊，請參閱 [管理搜尋行業](/microsoftsearch/manage-verticals)。
+> 若要厘清使用者可在搜尋垂直中找到的內容類型，建議您更新垂直名稱。 若要自訂 Dynamics 365 垂直的名稱，請按一下 **[編輯垂直]**。 如需詳細資訊，請 [參閱管理垂直搜尋](/microsoftsearch/manage-verticals)。
 
-當設定完成時，只有具有有效 Dynamics 365 授權的使用者和存取互連的 Dynamics 365 環境，才會顯示 Dynamics 365 的答案和垂直。 任何時候，您都可以變更連線端點環境或停用連接。
+安裝程式完成時，專用的 Dynamics 365 垂直和答案最多可能需要 24 小時才會出現。 Dynamics 結果只會針對具有有效 Dynamics 365 授權和已連線 Dynamics 365 環境存取權的使用者顯示。 您可以隨時變更連線端點環境或停用連線。
+
+### <a name="customize"></a>自訂
+
+透過 Dataverse 搜尋快速尋找檢視，您可以修改可搜尋的實體和欄位。 您也可以自訂要針對每個實體類型顯示的欄位。 對快速尋找檢視所做的變更會出現在Microsoft 搜尋結果和您的 Dynamics 365 應用程式中。 如需修改快速尋找檢視的相關資訊，請 [參閱選取每個資料表的可搜尋欄位和篩選](/power-platform/admin/configure-relevance-search-organization#select-searchable-fields-and-filters-for-each-table)。
+
+### <a name="edit"></a>編輯
+
+啟用連線之後，您可以修改端點和連線名稱。 在 [[資料來源](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/connectors)] 的已設定連線下方，選取 [ **編輯** ] 進行變更。
+:::image type="content" alt-text="Microsoft 365 系統管理中心中 Dynamics 365 連接器 [編輯] 按鈕和麵板的螢幕擷取畫面。" source="media/dynamics365/dynamics365-edit-connector.png" lightbox="media/dynamics365/dynamics365-edit-connector.png":::
+
+若要停用連線，請清除 [ **為您的組織啟用此聯** 機] 核取方塊和 [ **儲存]**。

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Graph連接器代理程式，使用 Microsoft 建置的檔案共用、SQL、Confluence 等連接器為內部部署內容編制索引。
-ms.openlocfilehash: e3104b561b378f23376993d7b09a8a46eebacd5d
-ms.sourcegitcommit: ddea687f19d19efd1c8ecb7877756b9e8891e259
+ms.openlocfilehash: 6c9a96ae4e59bb8bec93949bec3794dd985787c9
+ms.sourcegitcommit: 00c673527e6806c9652c8e3de76ab4f6522b7c23
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64757712"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65187198"
 ---
 # <a name="microsoft-graph-connector-agent"></a>Microsoft Graph連接器代理程式
 
@@ -68,7 +68,12 @@ ms.locfileid: "64757712"
 
 6. 依 **序選取 [Microsoft Graph**] 和 [**應用程式許可權]**。
 
-7. 從許可權中搜尋 「ExternalItem.ReadWrite.All」、「Directory.Read.All」 和 「ExternalConnection.ReadWrite.OwnedBy」，然後選取 [ **新增許可權]**。
+7. 搜尋下列許可權，然後選取 **[新增許可權]**。
+
+   | **權限** | **當 是所需的許可權時** |
+   | ------------- | -------------|
+   | [ExternalItem.ReadWrite.OwnedBy](/graph/permissions-reference#application-permissions-52) | 需要一直連線 |
+   | [Directory.Read.All](/graph/permissions-reference#application-permissions-23) | 檔案共用、MS SQL 和 Oracle SQL連接器的必要專案 |
 
 8. 選 **取 [TenantName] 的 [授與系統管理員同意]** ，然後選取 [ **是]** 來確認。
 
@@ -150,7 +155,7 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 
 9. 按一下 [許可權] 對話方塊上的 [確定]。 代理程式電腦現在已設定為讓代理程式使用憑證產生權杖。
 
-## <a name="troubleshooting"></a>疑難排解
+## <a name="troubleshooting"></a>正在疑難排解
 
 ### <a name="installation-failure"></a>安裝失敗
 
