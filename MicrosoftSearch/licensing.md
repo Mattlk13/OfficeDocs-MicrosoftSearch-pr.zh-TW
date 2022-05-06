@@ -1,5 +1,5 @@
 ---
-title: 授權需求和價格
+title: Microsoft Graph連接器授權需求和定價
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,54 +12,56 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 適用于 Microsoft 搜尋的 Microsoft Graph 連接器公開預覽的授權需求和價格
-ms.openlocfilehash: 9d4d67e4af7d9c87eda2427ca17ea91406af92bc
-ms.sourcegitcommit: 205f2b9c7ba9ea2371088c5e978afdf7752ef92f
+description: 適用于 Microsoft 搜尋 的 Microsoft Graph 連接器的授權需求和定價。
+ms.openlocfilehash: 12638ba745479461110e252d0efbe8b1ad2642e3
+ms.sourcegitcommit: b64b0ba3f779359fad24000c253a542ea92d053b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64464830"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65245788"
 ---
 <!---Previous ms.author: rusamai --->
 
-# <a name="license-requirements-and-pricing"></a>授權需求和價格
+# <a name="license-requirements-and-pricing"></a>授權需求和定價
 
-本文適用于全球性或計費系統管理員，想要瞭解如何為其組織購買更多 Graph 連接器配額。
+本文適用于想要瞭解如何為其組織購買更多 Microsoft Graph連接器配額的全域或計費系統管理員。
 
-任何有效的 **Microsoft 365 或 Office 365 授權** 可讓您在搜尋結果中查看連接器中的資料。
+任何有效的 **Microsoft 365或Office 365授權**，都可讓您在搜尋結果中檢視連接器的資料。
 
 > [!TIP]
-> **Microsoft Graph 連接器促銷代碼**：如果您沒有可用的索引配額，且想要嘗試使用 microsoft Graph 連接器，現在您可以從您的 microsoft 帳戶管理員要求 **促銷代碼**。 使用促銷代碼時，您將會收到六個月的試用版。
+> **Microsoft Graph連接器促銷碼**：如果您沒有可用的索引配額，而且想要嘗試 Microsoft Graph連接器，現在您可以向 Microsoft 帳戶管理員要求 **Promo 程式碼**。 透過促銷碼，您會獲得六個月的試用期。
 
 >[!IMPORTANT]
->所有 Microsoft 的 Graph 連接器皆為免費。 不過，您需要有足夠的索引配額，才能從這些連接器中攝取內容。
+>Microsoft 的所有連接器都是免費的。 不過，您必須有足夠的索引配額，才能從這些連接器內嵌內容。
 
-若要使用 Graph 連接器來索引內容，您需要有足夠的索引配額。 您可以透過下列方式取得 Graph 連接器索引配額：
+若要使用 Microsoft Graph 連接器為內容編制索引，您需要有足夠的索引配額。 Microsoft Graph連接器索引配額可透過下列方式取得：
 
-- 內建的權利
+- 內建權利
 - 購買附加元件索引配額
 
-## <a name="entitlement-built-into-microsoft-365-or-office-365-e5-licenses"></a>內建 Microsoft 365 或 Office 365 E5 授權的權利
+## <a name="entitlement-built-into-microsoft-365-or-office-365-e5-licenses"></a>Microsoft 365或Office 365 E5授權內建的權利
 
-下列授權包含500個索引配額專案的權利，這些專案會向您的組織提供來自 Graph 連接器之 ingesting 內容的配額：
+下列授權包含 500 個專案的索引配額權利，這會計入貴組織從 Microsoft Graph 連接器擷取內容的配額：
 
-* Microsoft 365 E5 或 Office 365 E5
+* Microsoft 365 E5或Office 365 E5
 * [Microsoft Viva Topics](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab)
 
-例如，如果您的組織有 100 Microsoft 365 E5 授權，則您的組織有 100 x 500 = 50000 專案值得 Graph 連接器索引配額。
+例如，如果您的組織有 100 個Microsoft 365 E5授權，則您的組織會有 100 x 500 = 50，000 個專案的 Microsoft Graph連接器索引配額。
 
 <!---Comment requested in PR#143--->
-請注意，Microsoft 365 A5 或 Office 365 A5 不包含此權利。
+> [!NOTE]
+> Microsoft 365 A5和Office 365 A5不包含此權利。
 
 ## <a name="purchase-of-add-on-index-quota"></a>購買附加元件索引配額
-若要購買更多 Graph 連接器配額與您的 Microsoft 帳戶管理員取得聯繫，或完成下列步驟：
+若要購買更多 Microsoft Graph連接器配額，請連絡您的 Microsoft 帳戶管理員或完成下列步驟：
 
-1. 在 **Microsoft 365 系統管理中心**： HTTPs://<span>admin。</span>com 導覽功能表，移至 **帳單 > 購買服務**。
-2. 在 [購買服務] 頁面的底部，選取 [ **附加** 元件]。
-3. 選取 [**額外的 Graph 連接器容量**]。
-4. 選取 [ **購買** ]，然後完成您的訂單喜好設定。
-5. 選取 [ **立即查看**]。
+1. 在 **[Microsoft 365 系統管理中心](https://admin.microsoft.com)** 中，移至 **[帳單>購買服務]**。
+2. 在 [購買服務] 頁面底部，選取 [ **附加元件]**。
+3. 選 **取 [額外Graph連接器容量]**。
+4. 選 **取 [購買**]，然後完成訂單喜好設定。
+5. 選 **取 [立即取出]**。
 
 > [!NOTE]
-> 目前，Microsoft Graph 連接器只支援最多50000000個索引配額的專案，包括所有內建于 Microsoft 365 或 Office 365 E5 授權的內建配額。 此平臺未來會支援較高的限制。 如有任何問題，請與 Microsoft 支援部門或您的 Microsoft 客戶經理聯繫。
-> 預覽連接器不會以配額為依據，當連接器成為可供使用時，它就會開始計數總索引配額。
+> 目前，Microsoft Graph連接器僅支援最多 5000 萬個專案的總索引配額，其中包括與Microsoft 365或Office 365 E5授權配套的任何內建配額。 此平臺在未來支援更高的限制。 如果您有任何問題，請連絡 Microsoft 支援服務或您的 Microsoft 帳戶管理員。
+>
+> 預覽連接器不會計入配額;連接器正式推出之後，就會開始計算索引配額總計。
