@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解您的組織如何使用 Microsoft Graph 連接器為協力廠商資料編制索引，使其出現在Microsoft 搜尋結果中。
-ms.openlocfilehash: 5d5401e80971e7299abcaa1a0686390940133577
-ms.sourcegitcommit: b64b0ba3f779359fad24000c253a542ea92d053b
+ms.openlocfilehash: 26cd17e326e76080f7de512de83adc12f6797fd5
+ms.sourcegitcommit: 37f5f4c4740686da5b73267b4cfcabea3b84f00a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65245770"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "65269995"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -28,9 +28,6 @@ ms.locfileid: "65245770"
 
 下列影片說明Microsoft 搜尋體驗的 Microsoft Graph 連接器設定程式。
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4SjFa]
-
-下列影片說明Microsoft 搜尋體驗的Graph連接器設定程式。
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4SjFa]
 
 <!---link Microsoft Graph reference in line 19 when we have access to relevant documentation--->
