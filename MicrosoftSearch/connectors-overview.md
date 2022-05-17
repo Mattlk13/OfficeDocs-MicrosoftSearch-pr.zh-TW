@@ -2,7 +2,7 @@
 title: 適用于 Microsoft 搜尋 的 Microsoft Graph 連接器概觀
 ms.author: mecampos
 author: mecampos
-manager: umas
+manager: lsheppard
 audience: Admin
 ms.audience: Admin
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解您的組織如何使用 Microsoft Graph 連接器為協力廠商資料編制索引，使其出現在Microsoft 搜尋結果中。
-ms.openlocfilehash: edaed9cac3b958f06533541703e0985953cda79f
-ms.sourcegitcommit: 91bc28dd7b3e20f3b52961b6e6a1c8586dec9e1a
+ms.openlocfilehash: 1ce2229cabe2b805daf7b65a9227401cf55c0a85
+ms.sourcegitcommit: 6ff032e46055eacf0f7f77c753965b6433f50117
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/17/2022
-ms.locfileid: "65439820"
+ms.locfileid: "65442508"
 ---
 <!---Previous ms.author: monaray --->
 

@@ -1,8 +1,8 @@
 ---
-title: Azure DevOps工作專案Graph連接器Microsoft 搜尋
+title: Azure DevOps工作專案適用于 Microsoft 搜尋 的 Microsoft Graph 連接器
 ms.author: mecampos
 author: mecampos
-manager: umas
+manager: lsheppard
 audience: Admin
 ms.audience: Admin
 ms.topic: article
@@ -12,24 +12,24 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 設定 Microsoft 搜尋 的Azure DevOps Graph連接器
-ms.openlocfilehash: 4c84183c438a3e0a378b5911b92cb802d1ed4afd
-ms.sourcegitcommit: 91bc28dd7b3e20f3b52961b6e6a1c8586dec9e1a
+description: 設定適用于 Microsoft 搜尋 的 Azure DevOps 工作專案 Microsoft Graph 連接器
+ms.openlocfilehash: af0e439e6600a65db53e2dc336c2ba98dcb5a720
+ms.sourcegitcommit: 6ff032e46055eacf0f7f77c753965b6433f50117
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/17/2022
-ms.locfileid: "65439829"
+ms.locfileid: "65442517"
 ---
 <!---Previous ms.author: shgrover --->
 
-# <a name="azure-devops-work-items-graph-connector"></a>Azure DevOps工作專案Graph連接器
+# <a name="azure-devops-work-items-microsoft-graph-connector"></a>Azure DevOps工作專案 Microsoft Graph 連接器
 
 Azure DevOps Graph連接器可讓您的組織在其Azure DevOps服務實例中為工作專案編制索引。 從Azure DevOps設定連接器和索引內容之後，使用者就可以在Microsoft 搜尋中搜尋這些專案。
 
 > [!NOTE]
-> 請閱讀 [**Graph連接器**](configure-connector.md)的安裝程式一文，以瞭解一般Graph連接器設定指示。
+> 請閱讀 [**Microsoft Graph 連接器**](configure-connector.md)的安裝程式一文，以瞭解一般連接器設定指示。
 
-本文適用于設定、執行及監視Azure DevOps Graph連接器的任何人。 它會補充一般設定程式，並顯示僅適用于Azure DevOps Graph連接器的指示。
+本文適用于設定、執行及監視Azure DevOps連接器的任何人。 它會補充一般設定程式，並顯示僅適用于此連接器的指示。
 
 >[!IMPORTANT]
 >Azure DevOps連接器僅支援Azure DevOps雲端服務。 此連接器不支援 Azure DevOps Server 2019、TFS 2018、TFS 2017、TFS 2015 和 TFS 2013。
@@ -50,7 +50,7 @@ Azure DevOps Graph連接器可讓您的組織在其Azure DevOps服務實例中�
 | _檢視分析_ | [Project許可權](/azure/devops/organizations/security/permissions?view=azure-devops&tabs=preview-page#project-level-permissions&preserve-view=true) | 編目Azure DevOps工作專案。 此許可權是需要編制索引之專案的 **必要** 許可權。 |
 | _檢視此節點中的工作專案_ | [區域路徑](/azure/devops/organizations/security/permissions?view=azure-devops&tabs=preview-page#area-path-object-level&preserve-view=true) | 在區域路徑中編目工作專案。 此許可權是 **選擇性的**。 只有那些區域路徑會編目使用者帳戶具有許可權的區域路徑。 |
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟 1：在 Microsoft 365 系統管理中心 中新增Graph連接器
+## <a name="step-1-add-a-connector-in-the-microsoft-365-admin-center"></a>步驟 1：在Microsoft 365 系統管理中心中新增連接器
 
 請遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 

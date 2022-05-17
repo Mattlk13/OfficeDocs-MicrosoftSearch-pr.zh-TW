@@ -5,7 +5,7 @@ items:
         href: overview-microsoft-search.md
       - name: 設定
         href: setup-microsoft-search.md
-      - name: 管理檔與網站的存取權
+      - name: 管理檔案和網站的存取權
         href: manage-access-files-sites.md
       - name: 美國政府環境
         href: microsoft-search-us-government-environments.md
@@ -31,27 +31,27 @@ items:
         href: manage-locations.md
       - name: Power BI
         href: manage-powerbi.md
-      - name: Q&
+      - name: 問與答
         href: manage-qas.md
       - name: 搜尋應用程式
         href: manage-search-apps.md
   - name: 資料來源
     items:
-      - name: 圖表連接器
+      - name: Microsoft Graph 連接器
         items:
           - name: 概觀
             href: connectors-overview.md
           - name: 連接器庫
             href: connectors-gallery.md
-          - name: 設定 Microsoft 建立的連接器
+          - name: 設定 Microsoft 建置的連接器
             items:
               - name: 設定概觀
                 href: configure-connector.md
-              - name: 部署連接器
+              - name: 內部部署連接器
                 items:
-                  - name: Graph 連接器代理程式設定
+                  - name: 連接器代理程式設定
                     href: graph-connector-agent.md
-                  - name: Graph 連接器代理程式發行歷程記錄
+                  - name: 連接器代理程式發行歷程記錄
                     href: graph-connector-agent-releases.md
               - name: 對應非 Azure AD 身分識別
                 href: map-non-aad.md
@@ -99,7 +99,7 @@ items:
         href: manage-dynamics365.md
   - name: 自訂和設定
     items:
-      - name: 管理縱向
+      - name: 管理垂直
         href: manage-verticals.md
       - name: 管理結果類型
         href: manage-result-types.md
@@ -125,11 +125,11 @@ items:
             href: overview-microsoft-search-bing.md
           - name: 安全性和隱私權
             href: security-for-search.md
-          - name: 自訂 Microsoft Edge 的網址列快捷方式
+          - name: 自訂 Microsoft Edge 的網址列捷徑
             href: edge-shortcuts.md
           - name: 將搜尋方塊新增至您的內部網路網站
             href: add-a-search-box-to-your-intranet-site.md
-          - name: 選取學校或工作搜尋經驗
+          - name: 選取學校或工作搜尋體驗
             href: select-work-school-search-experience.md
           - name: 讓 Microsoft Edge 成為預設瀏覽器
             href: /deployedge/edge-default-browser
