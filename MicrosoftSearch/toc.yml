@@ -61,7 +61,7 @@ items:
                 items:
                   - name: Azure Data Lake Storage Gen2
                     href: azure-data-lake-connector.md
-                  - name: Azure DevOps (預覽)
+                  - name: Azure DevOps工作專案
                     href: azure-devops-connector.md
                   - name: Azure SQL 和 Microsoft SQL Server
                     href: MSSQL-connector.md
