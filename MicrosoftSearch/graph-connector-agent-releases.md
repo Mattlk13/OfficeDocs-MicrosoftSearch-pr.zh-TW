@@ -10,12 +10,12 @@ ms.service: mssearch
 ms.localizationpriority: medium
 search.appverid: ''
 description: Microsoft Graph連接器代理程式的發行歷程記錄，可用來使用 Microsoft 建置的連接器為內部部署資料來源編制索引
-ms.openlocfilehash: e894a79b7e0e078424838c1c1397c76f1c49bb6f
-ms.sourcegitcommit: 6ff032e46055eacf0f7f77c753965b6433f50117
+ms.openlocfilehash: 0dc8c7ee10ff3df2f676d35c0e1c16a8143330c9
+ms.sourcegitcommit: 93ef03e710ad7cc55bd6c4a8e3d4923b1b8023cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65442528"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65620507"
 ---
 # <a name="release-history-for-microsoft-graph-connector-agent"></a>Microsoft Graph 連接器代理程式的發行歷程記錄
 
@@ -25,7 +25,11 @@ ms.locfileid: "65442528"
 
 [下載最新Graph連接器代理程式](https://aka.ms/gcadownload)
 
-### <a name="version-1510-21-mar-2022"></a>[版本 1.5.1.0](https://aka.ms/gcadownload) (*2022 年 3 月 21* 日) 
+### <a name="version-1600-09-may-2022"></a>版本 1.6.0.0 (*2022 年 5 月* 9 日) 
+* 儀表板變更以啟用連接器多個實例的監視
+* 錯誤修正和可靠性改善
+
+### <a name="version-1510-21-mar-2022"></a>版本 1.5.1.0 (*2022 年 3 月 21* 日) 
 * 錯誤修正和可靠性改善
 * 變更 'Enterprise websites' 連接器的預設屬性標籤指派
 
@@ -36,8 +40,8 @@ ms.locfileid: "65442528"
 * 已修正剖析文字檔案 (.doc *) &上次修改PowerPoint檔案日期 (.ppt)* 
 
 ### <a name="version-1400-13-jan-2022"></a>版本 1.4.0.0 (*2022 年 1 月 13* 日) 
-* Bug 修正
-* 一般可靠性改善
+* 支援連接器的多個實例
+* 錯誤修正和可靠性改善
 
 ### <a name="version-1310-28-oct-2021"></a>版本 1.3.1.0 (*2021 年 10 月 28* 日) 
 * 每秒的檔案共用連接器檔改善

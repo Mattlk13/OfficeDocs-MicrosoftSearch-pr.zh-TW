@@ -81,7 +81,7 @@ items:
                     href: OracleSQL-connector.md
                   - name: Salesforce
                     href: salesforce-connector.md
-                  - name: 'ServiceNow 目錄 (預覽) '
+                  - name: ServiceNow 目錄
                     href: servicenow-catalog-connector.md
                   - name: ServiceNow 知識
                     href: servicenow-knowledge-connector.md
