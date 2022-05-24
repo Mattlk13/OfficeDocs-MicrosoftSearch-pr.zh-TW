@@ -1,5 +1,5 @@
 ---
-title: Microsoft 搜尋的檔案共用Graph連接器
+title: 檔案共用 Microsoft Graph連接器
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -14,27 +14,27 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: 設定適用于 Microsoft 搜尋 的檔案共用Graph連接器
-ms.openlocfilehash: 744ccd90795d6aa6fd0c7fd654004871dca3ae95
-ms.sourcegitcommit: 6daf2c9cbd246ee095b2dd731c890ad2819e005b
+ms.openlocfilehash: 487c940327a1a9c4dc3925743e69b32434fc8dfc
+ms.sourcegitcommit: d267711f8e1c68849c99a4aad2bd387214825416
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65598297"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65646031"
 ---
 <!---Previous ms.author: rusamai --->
 
-# <a name="file-share-graph-connector"></a>檔案共用Graph連接器
+# <a name="file-share-microsoft-graph-connector"></a>檔案共用 Microsoft Graph連接器
 
-檔案共用Graph連接器可讓組織中的使用者搜尋內部部署Windows檔案共用。
+檔案共用 Microsoft Graph連接器可讓組織中的使用者搜尋內部部署Windows檔案共用。
 
 > [!NOTE]
-> 請閱讀 [**Graph連接器**](configure-connector.md)的安裝程式一文，以瞭解一般Graph連接器設定程式。
+> 請閱讀 [**Microsoft Graph 連接器**](configure-connector.md)的安裝程式一文，以瞭解一般連接器設定程式。
 
 ## <a name="before-you-get-started"></a>開始之前
 
-### <a name="install-the-graph-connector-agent"></a>安裝Graph連接器代理程式
+### <a name="install-the-microsoft-graph-connector-agent"></a>安裝 Microsoft Graph 連接器代理程式
 
-若要為Windows檔案共用編制索引，您必須安裝並註冊Graph連接器代理程式。 若要深入瞭解，請參閱[安裝Graph連接器代理](graph-connector-agent.md)程式。  
+若要為Windows檔案共用編制索引，您必須安裝並註冊連接器代理程式。 若要深入瞭解，請參閱[安裝 Microsoft Microsoft Graph連接器代理](graph-connector-agent.md)程式。  
 
 ### <a name="content-requirements"></a>內容需求
 
@@ -46,7 +46,7 @@ ms.locfileid: "65598297"
 
 支援的檔案大小上限為 100 MB。 超過 100 MB 的檔案不會編制索引。 後續處理的大小上限為 4 MB。 當檔案的大小達到 4 MB 時，處理就會停止。 因此，檔案中的某些片語可能無法用於搜尋。
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟 1：在 Microsoft 365 系統管理中心 中新增Graph連接器
+## <a name="step-1-add-a-connector-in-the-microsoft-365-admin-center"></a>步驟 1：在Microsoft 365 系統管理中心中新增連接器
 
 請遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -65,7 +65,7 @@ ms.locfileid: "65598297"
 
 ### <a name="preserve-last-access-time"></a>保留上次存取時間
 
-當連接器嘗試編目檔案時，其中繼資料中的「上次存取時間」欄位會更新。 如果您依賴該欄位來進行任何封存和備份解決方案，而不想在連接器存取時加以更新，您可以在 [進階 **設定** ] 頁面中設定此選項。
+當連接器嘗試編目檔案時，其中繼資料中的「上次存取時間」欄位會更新。 如果您依賴該欄位來進行任何封存和備份解決方案，而且您不想在連接器存取它時加以更新，您可以在 [進階 **設定** ] 頁面中設定此選項。
 
 ## <a name="step-4-limits-for-file-indexing"></a>步驟 4：檔案索引的限制
 
@@ -77,13 +77,13 @@ ms.locfileid: "65598297"
 
 #### <a name="based-on-last-modified-date-or-number-of-days-since-last-modification"></a>根據上次修改後的上次修改日期或天數
 
-#### <a name="full-network-path-of-filefolder-or-regular-expression-to-limit-indexing"></a>檔案/資料夾或正則運算式的完整網路路徑，以限制索引編制 
+#### <a name="full-network-path-of-filefolder-or-regular-expression-to-limit-indexing"></a>檔案/資料夾或正則運算式的完整網路路徑，以限制索引編制
 
 在網路路徑中，使用逸出字元 (\\) 特殊字元之前，例如 \\ 。 範例：針對路徑 \\ CONTOSOFILESHAREDFOLDER \\ \\ ，正確的輸入方式為 \\ \\ \\ \\ CONTOSOFILESHAREDFOLDER \\ \\ \\ \\ \\
 
 您可以 [在這裡](/dotnet/standard/base-types/regular-expression-language-quick-reference)找到撰寫正則運算式的規則。
 
-系統管理員也可以提供限制規則的例外狀況。 例外狀況規則的優先順序將會取代限制規則。 以類似的方式，可以為要包含在索引中的專案提供資料夾/檔案路徑來定義例外狀況。
+管理員也能夠提供限制規則的例外狀況。 例外狀況規則的優先順序將會取代限制規則。 以類似的方式，可以為要包含在索引中的專案提供資料夾/檔案路徑來定義例外狀況。
 
 ![限制和例外狀況。](media/file-connector/ExclusionRule.png)
 
@@ -91,7 +91,7 @@ ms.locfileid: "65598297"
 
 您可以在 [管理搜尋許可權] 頁面中選取所需的選項，以根據 [共用存取控制清單] 或 [新技術檔案系統] (NTFS) 存取控制 清單來限制搜尋任何檔案 **的** 許可權。 這些存取控制清單中提供的使用者帳戶和群組必須由 Active Directory (AD) 管理。 如果您使用任何其他系統來管理使用者帳戶，您可以選取 [所有人] 選項，讓使用者在沒有任何存取限制的情況下搜尋所有檔案。 不過，當使用者嘗試開啟檔案時，會套用在來源設定的存取控制。
 
-請注意，當網路上共用資料夾時，Windows 預設會提供共用 ACL 中「每個人」的「讀取」許可權。 根據延伸模組，如果您在 **[管理搜尋** 許可權] 中選擇 [共用 ACL]，使用者將能夠搜尋所有檔案。 如果您想要限制存取權，請移除檔案共用中「所有人」的「讀取」存取權，並只提供所需使用者和群組的存取權。 連接器接著會讀取這些存取限制，並將其套用至搜尋。
+Windows預設會在網路上共用資料夾時，為共用 ACL 中的「所有人」提供「讀取」許可權。 根據延伸模組，如果您在 **[管理搜尋** 許可權] 中選擇 [共用 ACL]，使用者將能夠搜尋所有檔案。 如果您想要限制存取權，請移除檔案共用中「所有人」的「讀取」存取權，並只提供所需使用者和群組的存取權。 連接器接著會讀取這些存取限制，並將其套用至搜尋。
 
 只有在您提供的共用路徑遵循 UNC 路徑格式時，才能選擇 [共用 ACL]。 您可以移至 [共用] 選項下的 [進階共用]，以 UNC 格式建立路徑。
 

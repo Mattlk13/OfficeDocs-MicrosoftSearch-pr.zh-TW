@@ -1,5 +1,5 @@
 ---
-title: 對應 AAD 識別碼
+title: 對應您的 Azure AD 身分識別
 ms.author: monaray
 author: monaray97
 manager: jameslau
@@ -12,58 +12,58 @@ search.appverid:
 - MET150
 - MOE150
 description: 如何對應 AAD 身分識別的步驟
-ms.openlocfilehash: 3125f12ba1197cd65839fa9de2c4713104a3d35d
-ms.sourcegitcommit: 2fc1bc29249d6342a10d85bca291a1bec8bc125c
+ms.openlocfilehash: 266b6660582c3facb3a58961b9b2ab5595156090
+ms.sourcegitcommit: d267711f8e1c68849c99a4aad2bd387214825416
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62489917"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65645998"
 ---
 # <a name="map-your-azure-ad-identities"></a>對應您的 Azure AD 身分識別  
 
-本文將引導您完成將 Azure AD 身分識別對應至資料來源的唯一識別碼 (非 Azure AD 身分識別的步驟，讓您的存取控制清單中的人員 (具有非) 身分) 識別的 ACL Azure AD 可以查看其範圍內的連接器搜尋結果。
+本文將逐步引導您將 Azure AD 身分識別對應至資料來源的唯一識別碼， (非 Azure AD 身分識別) ，讓存取控制清單 (具有非 Azure AD 身分識別的 ACL) 中的人員可以看到其範圍的連接器搜尋結果。
 
-這些步驟只會與使用「存取此資料來源的人」和「AAD」的「搜尋」許可權設定[Microsoft 的「](salesforce-connector.md)搜尋」許可權的搜尋系統管理員相關。 下列步驟會引導您如何將 Azure AD 使用者屬性對應至使用者的 **同盟 IDs**。
+這些步驟只與由 Microsoft 設定[Salesforce](salesforce-connector.md)連接器的搜尋系統管理員有關，且其具有「僅限具有此資料來源存取權的人員」和身分識別類型 「AAD」 的搜尋許可權。 下列步驟會逐步引導您將 Azure AD 使用者屬性對應至使用者的 **同盟識別碼**。
 
 >[!NOTE]
->如果您是在 [搜尋許可權] 畫面上設定 [Salesforce 連接器](salesforce-connector.md)並只選取 [**存取此資料來源的人員** 和身分識別類型 **非 AAD** ]，請參閱 [對應您的非 Azure AD](map-non-aad.md)身分識別文章，以取得如何對應非 Azure AD 身分識別的步驟。  
+>如果您要設定 [Salesforce連接器](salesforce-connector.md)，並在搜尋許可權畫面上選取 [**只有具有此資料來源存取權的人員** 和 **非 AAD** 的身分識別類型] ，請參閱對應 [您的非 Azure AD](map-non-aad.md)身分識別一文，以取得如何對應非 Azure AD 身分識別的步驟。  
 
 ## <a name="steps-for-mapping-your-azure-ad-properties"></a>對應 Azure AD 屬性的步驟
 
-### <a name="1-select-azure-ad-user-properties-to-map"></a>1. 選取要對應的 Azure AD 使用者屬性
+### <a name="1-select-azure-ad-user-properties-to-map"></a>1.選取要對應的 Azure AD 使用者屬性
 
-您可以選取需要對應至同盟識別碼的 Azure AD 屬性。
+您可以選取對應至同盟識別碼所需的 Azure AD 屬性。
 
-您可以從下拉式清單中選取 Azure AD 使用者屬性。 您也可以新增任意數目的 Azure AD 使用者屬性。若要建立組織的同盟識別碼對應，您也可以像您所需的屬性。
+您可以從下拉式清單中選取 Azure AD 使用者屬性。 如果需要這些屬性才能為您的組織建立同盟識別碼對應，您也可以新增任意數量的 Azure AD 使用者屬性。
 
-### <a name="2-create-formula-to-complete-mapping"></a>2. 建立完成對應的公式
+### <a name="2-create-formula-to-complete-mapping"></a>2.建立公式以完成對應
 
-您可以組合 Azure AD 使用者屬性的值，以建立唯一的同盟識別碼。
+您可以合併 Azure AD 使用者屬性的值，以形成唯一的同盟識別碼。
 
-在 [公式] 方塊中，" {0} " 會對應至您所選取的 *第一個* Azure AD 屬性。 " {1} " 會對應至您所選取的 *第二個* Azure AD 屬性。 " {2} " 會對應至 *第三個* Azure AD 屬性等等。  
+在公式方塊中，「 {0} 」 會對應至您選取 *的第一個* Azure AD 屬性。 「 {1} 」 對應至您選取的第 *二* 個 Azure AD 屬性。 「 {2} 」 對應至 *第三* 個 Azure AD 屬性，依此類推。  
 
 以下是一些具有範例正則運算式輸出和公式輸出的公式範例：
 
 | 範例公式                  | 範例使用者的屬性 {0} 值                 | 範例使用者的屬性 {1} 值           | 公式的輸出                  |
 | :------------------- | :------------------- |:---------------|:---------------|
-| {0}.{1}@contoso .com  | firstname | 姓氏 |firstname.lastname@contoso.com
-| {0}@domain .com                 | userid                 |             |userid@domain.com
+| {0}.{1}@contoso.com  | firstname | 姓氏 |firstname.lastname@contoso.com
+| {0}@domain.com                 | userid                 |             |userid@domain.com
 
-在您提供公式後，您可以選擇性地按一下 [ **預覽** ]，以查看資料來源中5個隨機使用者的預覽，並套用各自的使用者對應。 預覽的輸出包含為這些使用者選取的步驟1中所選取的 Azure AD 使用者屬性值，以及該使用者的步驟2中所提供之最後一個公式的輸出。 此外，它也會指出是否可以透過 "Success" 或 "Failed" 圖示，將公式的輸出解析為您租使用者中的 Azure AD 使用者。  
+提供公式之後，您可以選擇性地按一下 **[預覽** ]，查看資料來源中 5 個隨機使用者的預覽，並套用其各自的使用者對應。 預覽的輸出包含步驟 1 中為這些使用者選取的 Azure AD 使用者屬性值，以及該使用者在步驟 2 中所提供最終公式的輸出。 它也會指出公式的輸出是否可透過「成功」或「失敗」圖示解析為租使用者中的 Azure AD 使用者。  
 
 >[!NOTE]
->按一下 [ **預覽**] 之後，如果有一或多個使用者對應的「失敗」狀態，您仍然可以繼續建立連接。 預覽會顯示5個隨機使用者，以及其從您的資料來源對應的映射。 如果您提供的對應未對應所有使用者，您可能會遇到此案例。
+>如果按一下 [ **預覽**] 之後，一或多個使用者對應具有「失敗」狀態，您仍然可以繼續建立連線。 預覽會顯示來自您資料來源的 5 個隨機使用者及其對應。 如果您提供的對應並未對應所有使用者，您可能會遇到這種情況。
 
-## <a name="sample-azure-ad-mapping"></a>範例 Azure AD 對應
+## <a name="sample-azure-ad-mapping"></a>Azure AD 對應範例
 
-請參閱下列快照，以取得樣本 Azure AD 對應。
+如需範例 Azure AD 對應，請參閱下列快照集。
 
-![如何填滿 Azure AD 對應] 頁面的範例快照。](media/aad-mapping.png)
+![如何填寫 Azure AD 對應頁面的範例快照集。](media/aad-mapping.png)
 
 ## <a name="limitations"></a>限制  
 
-- 所有使用者只支援一個對應。 不支援條件式對應。  
+- 所有使用者都只支援一個對應。 不支援條件式對應。  
 
-- 發佈連線後，就無法變更對應。  
+- 發佈連線之後，您就無法變更對應。  
 
-- Azure AD to 同盟識別碼轉換不支援 Azure AD 使用者屬性為 Regex 的運算式。
+- Azure AD 到同盟識別碼轉換不支援針對 Azure AD 使用者屬性的 Regex 型運算式。

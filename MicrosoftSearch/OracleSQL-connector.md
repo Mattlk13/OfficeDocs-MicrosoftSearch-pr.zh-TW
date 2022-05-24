@@ -1,5 +1,5 @@
 ---
-title: 適用于 Microsoft 搜尋 的 Oracle SQL Graph連接器
+title: Oracle SQL Microsoft Graph 連接器
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -13,32 +13,32 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NoIndex
-description: 設定適用于 Microsoft 搜尋 的 Oracle SQL Graph 連接器。
-ms.openlocfilehash: 911f7db41e0311b23ec44675ea75257e25f55f43
-ms.sourcegitcommit: ddea687f19d19efd1c8ecb7877756b9e8891e259
+description: 設定適用于 Microsoft 搜尋 的 Oracle SQL Microsoft Graph 連接器。
+ms.openlocfilehash: dbbb70d77de1140f066e050750e2b076f1f7ff8e
+ms.sourcegitcommit: d267711f8e1c68849c99a4aad2bd387214825416
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64757721"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65645989"
 ---
 <!---Previous ms.author:vivg --->
 
-# <a name="oracle-sql-graph-connector"></a>Oracle SQL Graph連接器
+# <a name="oracle-sql-microsoft-graph-connector"></a>Oracle SQL Microsoft Graph 連接器
 
 Oracle SQL Graph連接器可讓您的組織從內部部署 Oracle 資料庫探索資料並編制索引。 連接器會將指定的內容索引到Microsoft 搜尋。 若要讓索引與來源資料保持在最新狀態，它支援定期完整和累加編目。 使用 Oracle SQL連接器，您也可以限制特定使用者的搜尋結果存取權。
 
 > [!NOTE]
-> 請閱讀 [**Graph連接器**](configure-connector.md)的安裝程式一文，以瞭解一般Graph連接器設定指示。
+> 請閱讀 [**Microsoft 365 系統管理中心文章中的設定 Microsoft Graph 連接器**](configure-connector.md)一文，以瞭解一般 Microsoft Graph 連接器設定指示。
 
 本文適用于設定、執行及監視 Oracle SQL Graph連接器的任何人。 它會補充一般設定程式，並顯示僅適用于 Oracle SQL Graph連接器的指示。 本文也包含 [疑難排解](#troubleshooting) 和 [限制的相關](#limitations)資訊。
 
 ## <a name="before-you-get-started"></a>開始之前
 
-### <a name="install-the-graph-connector-agent"></a>安裝Graph連接器代理程式
+### <a name="install-the-connector-agent"></a>安裝連接器代理程式
 
 若要存取內部部署協力廠商資料，您必須安裝並設定Graph連接器代理程式。 若要深入瞭解，請參閱[安裝Graph連接器代理](graph-connector-agent.md)程式。  
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟 1：在 Microsoft 365 系統管理中心 中新增Graph連接器
+## <a name="step-1-add-a-connector-in-the-microsoft-365-admin-center"></a>步驟 1：在Microsoft 365 系統管理中心中新增連接器
 
 請遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -130,7 +130,7 @@ Oracle SQL Graph連接器可讓您的組織從內部部署 Oracle 資料庫探�
 使用 作為 ACL 時支援下列識別碼類型：
 
 * **UPN)  (使用者主體名稱**：UPN)  (使用者主體名稱是電子郵件地址格式的系統使用者名稱。 例如，UPN (：john.doe@domain.com) 包含使用者名稱 (登入名稱) 、@符號)  (分隔符號，以及 UPN 尾碼)  (功能變數名稱。
-* **Azure Active Directory (AAD) 標識** 符：在Azure AD中，每個使用者或群組都有類似 'e0d3ad3d-0000-1111-2222-3c5f5c52ab9b' 的物件識別碼
+* **Azure Active Directory (AAD) 識別碼**：在 Azure AD 中，每個使用者或群組都有類似 'e0d3ad3d-0000-1111-2222-3c5f5c52ab9b' 的物件識別碼
 * **Active Directory (AD) 安全性標識** 符：在內部部署 AD 安裝程式中，每個使用者和群組都有不可變的唯一安全識別碼，看起來像 'S-1-5-21-3878594291-2115959936-132693609-65242.'
 
 ![用來設定存取控制清單的搜尋許可權設定。](media/MSSQL-ACL2.png)

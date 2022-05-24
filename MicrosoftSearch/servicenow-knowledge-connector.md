@@ -1,5 +1,5 @@
 ---
-title: 適用于 Microsoft 搜尋 的 ServiceNow 知識Graph連接器
+title: ServiceNow Knowledge Microsoft Graph連接器
 ms.author: kam1
 author: TheKarthikeyan
 manager: harshkum
@@ -13,27 +13,26 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定適用于 Microsoft 搜尋 的 ServiceNow 知識Graph連接器
-ms.openlocfilehash: 63cd63395f8c77f1c228adcbc44e11b0d8689995
-ms.sourcegitcommit: 0dfd40bf215ee16d6fed9cde4e9fe1e9896d0e20
+ms.openlocfilehash: 8f839d69563b3c643e3d7dbba80e452f95e49de5
+ms.sourcegitcommit: d267711f8e1c68849c99a4aad2bd387214825416
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65455657"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65645971"
 ---
 <!---Previous ms.author: kam1 --->
 
+# <a name="servicenow-knowledge-microsoft-graph-connector"></a>ServiceNow Knowledge Microsoft Graph連接器
 
-# <a name="servicenow-knowledge-graph-connector"></a>ServiceNow 知識Graph連接器
-
-透過 Microsoft Graph Connector for ServiceNow，您的組織可以編制知識庫文章的索引，這些文章可供所有使用者看到，或受限於組織內的使用者準則許可權。 從 ServiceNow 設定連接器和索引內容之後，使用者可以從任何Microsoft 搜尋用戶端搜尋這些文章。  
+使用適用于 ServiceNow 的 Microsoft Graph連接器，您的組織可以編制知識庫文章的索引，這些文章可供所有使用者看到，或受限於組織內的使用者準則許可權。 從 ServiceNow 設定連接器和索引內容之後，使用者可以從任何Microsoft 搜尋用戶端搜尋這些文章。  
 
 您也可以參閱[這段影片](https://www.youtube.com/watch?v=TVSkJpk1RiE)，以深入瞭解Graph連接器管理搜尋許可權的功能。
 
-本文適用于Microsoft 365系統管理員或設定、執行及監視 ServiceNow Knowledge Graph連接器的任何人。 它會補充[設定Graph連接器](configure-connector.md)一文中提供的一般指示。 如果您尚未這麼做，請閱讀Graph連接器的整個安裝程式一文，以瞭解一般設定程式。
+本文適用于Microsoft 365系統管理員或設定、執行及監視 ServiceNow Knowledge Graph連接器的任何人。 它補充Microsoft 365 系統管理中心文章中設定[Microsoft Graph 連接器中提供的一](configure-connector.md)般指示。 如果您尚未這麼做，請閱讀Graph連接器的整個安裝程式一文，以瞭解一般設定程式。
 
-安裝程式中的每個步驟如下所列，並附上一個附注，指出您應該遵循一般設定指示或僅適用于 ServiceNow Graph 連接器的其他指示，包括[疑難排解](#troubleshooting)和[限制的相關](#limitations)資訊。  
+安裝程式中的每個步驟都列在下方，並附上一個附注，指出您應該遵循一般設定指示或僅適用于 ServiceNow 連接器的其他指示，包括 [疑難排解](#troubleshooting) 和 [限制的相關](#limitations)資訊。  
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟 1：在Microsoft 365 系統管理中心中新增Graph連接器。
+## <a name="step-1-add-a-connector-in-the-microsoft-365-admin-center"></a>步驟 1：在Microsoft 365 系統管理中心中新增連接器。
 請遵循一般 [設定指示](./configure-connector.md)。
 
 ## <a name="step-2-name-the-connection"></a>步驟 2：為連線命名。
@@ -65,11 +64,11 @@ ms.locfileid: "65455657"
 
 
 >[!NOTE]
-> ServiceNow Graph連接器可以編制知識文章和使用者準則許可權的索引，而不需要進階腳本。 如果使用者準則包含進階腳本，所有相關的知識文章都會隱藏在搜尋結果中。
+> ServiceNow Microsoft Graph連接器可以編制知識文章和使用者準則許可權的索引，而不需要進階腳本。 如果使用者準則包含進階腳本，所有相關的知識文章都會隱藏在搜尋結果中。
 
-若要從 ServiceNow 驗證和同步處理內容，請選擇 **三種支援的方法之一** ： 
- 
-- 基本驗證 
+若要從 ServiceNow 驗證和同步處理內容，請選擇 **三種支援的方法之一** ：
+
+- 基本驗證
 - ServiceNow OAuth (建議) 
 - Azure AD OpenID 連線
 
@@ -83,7 +82,7 @@ ms.locfileid: "65455657"
 
 下表提供如何填寫端點建立表單的指引：
 
-欄位 | 描述 | 建議值 
+欄位 | 描述 | 建議值
 --- | --- | ---
 名稱 | 唯一值，識別您需要 OAuth 存取權的應用程式。 | Microsoft 搜尋
 用戶端識別碼 | 應用程式的唯讀、自動產生的唯一識別碼。 實例會在要求存取權杖時使用用戶端識別碼。 | NA
@@ -135,7 +134,7 @@ ms.locfileid: "65455657"
 
 現在您已擁有Azure 入口網站所需的所有資訊。 下表提供資訊的快速摘要。
 
-屬性	 | 描述 
+屬性	 | 描述
 --- | ---
 租使用者識別碼 (目錄識別碼)  | 步驟 3.a 中Azure Active Directory租使用者的唯一識別碼。
 應用程式識別碼 (用戶端識別碼)  | 步驟 3.a 中註冊之應用程式的唯一識別碼。
@@ -205,7 +204,7 @@ ServiceNow 實例需要下列設定：
 
 ServiceNow 連接器支援 **所有人** 或 **只有具有此資料來源存取權的人員可以看見的搜尋許可權**。 已編制索引的資料會出現在搜尋結果中，且組織中的所有使用者或分別可透過使用者準則許可權存取這些資料的使用者可以看到。 如果未啟用使用者準則的知識文章，它會出現在組織中每個人的搜尋結果中。
 
-ServiceNow Graph連接器支援沒有進階腳本的預設使用者準則許可權。 當連接器遇到具有進階腳本的使用者準則時，使用該使用者準則的所有資料都不會出現在搜尋結果中。
+連接器支援沒有進階腳本的預設使用者準則許可權。 當連接器遇到具有進階腳本的使用者準則時，使用該使用者準則的所有資料都不會出現在搜尋結果中。
 
 如果您選擇 **[僅限可存取此資料來源的人員**]，則必須進一步選擇 ServiceNow 實例是否Azure Active Directory (AAD) 布建的使用者或非 AAD 使用者。
 
@@ -241,7 +240,7 @@ ServiceNow Graph連接器支援沒有進階腳本的預設使用者準則許可�
 發佈連線之後，您必須自訂搜尋結果頁面。 若要瞭解如何自訂搜尋結果，請參閱 [自訂搜尋結果頁面](/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page)。
 
 ## <a name="limitations"></a>限制
-ServiceNow Knowledge Graph連接器在其最新版本中具有下列限制：
+ServiceNow Knowledge Microsoft Graph連接器在其最新版本中具有下列限制：
 
 - *只有具有 [* 管理搜尋許可權] 步驟下此資料來源功能存取權的人員，只會處理 [使用者準則](https://hi.service-now.com/kb_view.do?sysparm_article=KB0550924) 許可權。 搜尋結果中將不會套用任何其他類型的存取權限。
 - 目前版本不支援具有進階腳本的使用者準則。 任何具有這類存取限制的知識文章都會編制索引，並拒絕所有人存取，也就是除非我們支援使用者，否則不會在搜尋結果中顯示給任何使用者。
@@ -251,7 +250,7 @@ ServiceNow Knowledge Graph連接器在其最新版本中具有下列限制：
 您可以在下方找到常見問題的疑難排解步驟。
 ### <a name="1-unable-to-log-in-due-to-single-sign-on-enabled-servicenow-instance"></a>1.無法登入，因為已啟用單一Sign-On ServiceNow 實例
 
-如果您的組織已啟用單一Sign-On (SSO) 至 ServiceNow，您可能無法使用服務帳戶登入。 您可以將 新<em> `login.do` </em>增至 ServiceNow 實例 URL，以顯示使用者名稱和密碼型登入。 例子。 `https://<your-organization-domain>.service-now.com./login.do` 
+如果您的組織已啟用單一Sign-On (SSO) 至 ServiceNow，您可能無法使用服務帳戶登入。 您可以將 新<em> `login.do` </em>增至 ServiceNow 實例 URL，以顯示使用者名稱和密碼型登入。 例子。 `https://<your-organization-domain>.service-now.com./login.do`
 
 ### <a name="2-unauthorized-or-forbidden-response-to-api-request"></a>2.未經授權或禁止回應 API 要求
 
@@ -259,16 +258,16 @@ ServiceNow Knowledge Graph連接器在其最新版本中具有下列限制：
 如果您在線上狀態中看到禁止或未經授權的回應，請檢查服務帳戶是否具有 [步驟 3：連線設定](#step-3-connection-settings)中所述資料表的必要存取權。 請檢查資料表中的所有資料行是否具有讀取權限。
 
 #### <a name="22-change-in-account-password"></a>2.2. 變更帳戶密碼
-Graph連接器會使用代表服務帳戶擷取的存取權杖進行編目。 存取權杖會每隔 12 小時重新整理一次。 請確定發佈連線之後，服務帳戶密碼不會變更。 如果密碼有變更，您可能需要重新驗證連線。
+Microsoft Graph連接器會使用代表服務帳戶擷取的存取權杖進行編目。 存取權杖會每隔 12 小時重新整理一次。 請確定發佈連線之後，服務帳戶密碼不會變更。 如果密碼有變更，您可能需要重新驗證連線。
 
 #### <a name="23-check-if-servicenow-instance-behind-firewall"></a>2.3. 檢查防火牆後方的 ServiceNow 實例
-Graph連接器在網路防火牆後方，可能無法連線到您的 ServiceNow 實例。 您必須明確允許存取Graph連接器服務。 您可以在下表中找到Graph連接器服務的公用 IP 位址範圍。 根據您的租使用者區域，將它新增至您的 ServiceNow 實例網路允許清單。
+如果 Microsoft Graph 連接器位於網路防火牆後方，則可能無法連線到您的 ServiceNow 實例。 您必須明確允許存取連接器服務。 您可以在下表中找到連接器服務的公用 IP 位址範圍。 根據您的租使用者區域，將它新增至您的 ServiceNow 實例網路允許清單。
 
 **環境** | **地區** | **Range**
 --- | --- | ---
 PROD | 北美 | 52.250.92.252/30, 52.224.250.216/30
-PROD | 歐洲 | 20.54.41.208/30, 51.105.159.88/30 
-PROD | 亞太地區 | 52.139.188.212/30, 20.43.146.44/30 
+PROD | 歐洲 | 20.54.41.208/30, 51.105.159.88/30
+PROD | 亞太地區 | 52.139.188.212/30, 20.43.146.44/30
 
 #### <a name="24-access-permissions-not-working-as-expected"></a>2.4. 存取權限未如預期般運作
 
@@ -276,7 +275,7 @@ PROD | 亞太地區 | 52.139.188.212/30, 20.43.146.44/30
 
 ### <a name="3-change-the-url-of-the-knowledge-article-to-view-it-in-the-support-portal"></a>3.變更知識文章的 URL 以在支援入口網站中檢視
 
-ServiceNow Knowledge Graph連接器會使用格式的sys_id `<instance_url>/kb_view.do?sys_kb_id<sysId>` 來計算 AccessUrl 屬性。 它會在後端系統檢視中開啟知識文章。 如果您偏好將文章重新導向至不同的 URL，請遵循下列指示。
+ServiceNow Knowledge 連接器會使用格式的sys_id `<instance_url>/kb_view.do?sys_kb_id<sysId>` 來計算 AccessUrl 屬性。 它會在後端系統檢視中開啟知識文章。 如果您偏好將文章重新導向至不同的 URL，請遵循下列指示。
 #### <a name="31-edit-your-result-type"></a>3.1 編輯結果類型
 在 Microsoft 365 系統管理中心 的 *[搜尋&智慧*] 區段的 [自訂] 索引標籤中，流覽以編輯為 ServiceNow 知識連線設定的結果類型。
 ![編輯結果類型](media/servicenow-knowledge-connector/edit-result-type.png)
