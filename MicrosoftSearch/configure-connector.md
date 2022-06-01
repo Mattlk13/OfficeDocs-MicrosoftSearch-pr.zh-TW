@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何設定適用于 Microsoft 搜尋 的 Microsoft Graph 連接器。
-ms.openlocfilehash: 53599659a108b6fee2528de56a567d6df66c2e03
-ms.sourcegitcommit: b64b0ba3f779359fad24000c253a542ea92d053b
+ms.openlocfilehash: 42b2155f37a112b8f1f0af5dad2c41a5691a450d
+ms.sourcegitcommit: 36ef2f409c3c67b3d5cbfa7d1b47c117e1f3266e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65245824"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65798865"
 ---
 <!-- Previous ms.author: monaray -->
 
@@ -37,12 +37,12 @@ ms.locfileid: "65245824"
 7. [管理結構描述](#step-7-manage-schema)
 8. [重新整理設定](#step-8-refresh-settings)
 9. [檢閱連線](#step-9-review-connection)
+10. [自訂搜尋結果頁面](#step-10-customize-the-search-results-page)
 
 本文也包含下列資訊：
 
 * [疑難排解](#troubleshooting)
 * [限制](#limitations)
-* [後續步驟](#next-steps)
 
 > [!NOTE]
 > 所有 Microsoft Graph連接器的安裝程式都很類似，但並不完全相同。 除了閱讀本文，請務必閱讀資料來源的連接器特定資訊。
@@ -96,7 +96,7 @@ ServiceNow 查詢可用來篩選您的資料，再由Microsoft 搜尋編制索�
 
 某些連接器，例如[Microsoft SQL](MSSQL-connector.md)和[Azure Data Lake Storage Gen2](azure-data-lake-connector.md)原生支援[Azure Active Directory (Azure AD) ](/azure/active-directory/) ACL。
 
-[ServiceNow Knowledge](servicenow-knowledge-connector.md)、[ServiceNow Catalog](servicenow-catalog-connector.md)、[Azure DevOps](azure-devops-connector.md)和[Salesforce](salesforce-connector.md)等其他連接器支援非Azure AD使用者和群組的同步處理。  
+[ServiceNow Knowledge、ServiceNow](servicenow-knowledge-connector.md) [Catalog](servicenow-catalog-connector.md)、[Azure DevOps 和 Salesforce](azure-devops-connector.md)等其他連接器支援非 Azure AD 使用者和群組的同步處理。[ ](salesforce-connector.md)  
 
 選取每個人可讓組織中的每個人查看此資料來源的搜尋結果。
 
@@ -196,7 +196,11 @@ ServiceNow 查詢可用來篩選您的資料，再由Microsoft 搜尋編制索�
 
 完成連線之前，您可以視需要檢閱整個組態和編輯設定。 *如果您尚未讀取資料來源的連接器特定資訊，請務必閱讀。* 當您準備好完成連線時，請選取 [ **完成更新]**。
 
-### <a name="confirm-if-the-connection-setup-worked"></a>確認連線設定是否正常運作
+## <a name="step-10-customize-the-search-results-page"></a>步驟 10：自訂搜尋結果頁面
+
+發佈連線之後，您必須使用垂直和結果類型來自訂搜尋結果頁面。 若要瞭解如何自訂搜尋結果，請檢閱如何 [管理垂直](manage-verticals.md) 和 [結果類型](manage-result-types.md)。
+
+## <a name="step-11-confirm-if-the-connection-setup-worked"></a>步驟 11：確認連線設定是否正常運作
 
 在 [系統管理中心的](https://admin.microsoft.com)[**連接器**] 索引標籤下，移至已發佈的連線清單。 若要瞭解如何進行更新和刪除，請參閱 [監視您的連線](manage-connector.md)。
 
@@ -212,7 +216,3 @@ ServiceNow 查詢可用來篩選您的資料，再由Microsoft 搜尋編制索�
 若要瞭解適用于所有資料來源的限制，請參閱[Microsoft Graph 連接器概觀](connectors-overview.md)一文。
 
 請參閱資料來源的連接器特定資訊，以瞭解該特定 Microsoft Graph連接器是否適用其他限制。
-
-## <a name="next-steps"></a>後續步驟
-
-發佈連線之後，您必須使用垂直和結果類型來自訂搜尋結果頁面。 若要瞭解如何自訂搜尋結果，請檢閱如何 [管理垂直](manage-verticals.md) 和 [結果類型](manage-result-types.md)。
