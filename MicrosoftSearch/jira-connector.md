@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定適用于 Microsoft 搜尋 的 Atlassian Jira Cloud Graph連接器
-ms.openlocfilehash: 64d1b7628d37003b04c71a67fa4c289da53234fa
-ms.sourcegitcommit: d267711f8e1c68849c99a4aad2bd387214825416
+ms.openlocfilehash: 04f9aa224ceef0f4ef85c79a10b45ff3902124af
+ms.sourcegitcommit: 574239c0de7693037d5927f7b59af6068bafc5cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65646061"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65864258"
 ---
 # <a name="atlassian-jira-cloud-microsoft-graph-connector"></a>Atlassian Jira Cloud Microsoft Graph連接器
 
@@ -130,7 +130,7 @@ Atlassian Jira 連接器可以為預設問題欄位和自訂建立的問題欄�
 
 ## <a name="step-4-manage-search-permissions"></a>步驟 4：管理搜尋許可權
 
-Atlassian Jira 連接器支援可讓  **任何** 使用者或 **只有具有此資料來源存取權的人員** 看見的搜尋許可權。 如果您選擇 [ **所有人**]，已編制索引的資料會出現在所有使用者的搜尋結果中。 如果您選擇 **[僅限可存取此資料來源的人員**]，則已編制索引的資料會出現在可存取此資料來源之使用者的搜尋結果中。 在 Atlassian Jira 中，安全性許可權是使用包含網站層級群組和專案角色的專案許可權配置來定義。 問題層級安全性也可以使用問題層級許可權配置來定義。
+Atlassian Jira 連接器支援  **「所有人** 」或 **「僅限具有此資料來源存取權的人員**」可看見的搜尋許可權。 如果您選擇 [ **所有人**]，已編制索引的資料會出現在所有使用者的搜尋結果中。 如果您選擇 **[僅限可存取此資料來源的人員**]，則已編制索引的資料會出現在可存取此資料來源之使用者的搜尋結果中。 在 Atlassian Jira 中，安全性許可權是使用包含網站層級群組和專案角色的專案許可權配置來定義。 問題層級安全性也可以使用問題層級許可權配置來定義。
 
 如果您選擇 **[僅限可存取此資料來源的人員**]，則必須進一步選擇 Jira 網站是否Azure Active Directory (Azure AD) 布建的使用者或非 Azure AD 使用者。
 
@@ -162,15 +162,20 @@ Atlassian Jira 連接器支援完整和增量編目的重新整理排程。
 
 發佈連線之後，您必須自訂搜尋結果頁面。 若要瞭解如何自訂搜尋結果，請參閱 [自訂搜尋結果頁面](/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page)。
 
+## <a name="step-9-set-up-search-result-page"></a>步驟 9：設定搜尋結果頁面
+
+發佈連線之後，您必須使用垂直和結果類型來自訂搜尋結果頁面。 若要瞭解如何自訂搜尋結果，請檢閱如何 [管理垂直](manage-verticals.md) 和 [結果類型](manage-result-types.md)。
+您也可以使用 Jira 連接器的 [範例結果配置](jira-connector-result-layout.md) 。 只要複製並貼上結果配置 JSON 即可開始使用。
+
 ## <a name="troubleshooting"></a>疑難排解
 
 以下是在設定連接器或編目期間觀察到的常見錯誤清單，以及其可能的原因。
 
 | 步驟 | 錯誤訊息 | 可能的原因 ()  |
 | ------------ | ------------ | ------------ |
-| 連線設定 | 要求格式不正確或不正確。 | 不正確的 Jira 網站 URL |
-| 連線設定 | 無法連線到 Jira 網站的 Jira 雲端服務。 | 不正確的 Jira 網站 URL |
-| 連線設定 | 用戶端沒有執行動作的許可權。 | 為基本驗證提供的 API 權杖無效 |
+| 連線設定 | 要求格式不正確或不正確。 | 不正確的 Jira 網站 URL。 |
+| 連線設定 | 無法連線到 Jira 網站的 Jira 雲端服務。 | 不正確的 Jira 網站 URL。 |
+| 連線設定 | 用戶端沒有執行動作的許可權。 | 為基本驗證提供的 API 權杖無效。 |
 | 連線設定 | OAuth 快顯視窗中發生「發生錯誤」錯誤。 | 授與 OAuth 應用程式的範圍不相符。 不相符的範圍會列在快顯視窗中。 |
 | 連接器設定後 (編目時間)  | 無法使用資料來源進行驗證。 確認與此資料來源相關聯的認證正確無誤。 | 使用者沒有編目 Jira 所需的一或多個許可權。 |
 | 連接器設定後 (編目時間)  | 您沒有存取此資料來源的許可權。 您可以連絡此資料來源的擁有者以要求許可權。 | 如果您使用 OAuth，應用程式範圍可能已變更，或應用程式可能已過期或已刪除。 <br> 如果您使用基本驗證，API 權杖可能已過期或已刪除。 |
