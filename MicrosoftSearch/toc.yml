@@ -69,7 +69,7 @@ items:
                     href: confluence-cloud-connector.md
                   - name: 'Confluence 內部部署 (預覽) '
                     href: confluence-onpremises-connector.md
-                  - name: 'CSV (預覽) '
+                  - name: CSV
                     href: csv-connector.md
                   - name: Jira Cloud
                     href: jira-connector.md

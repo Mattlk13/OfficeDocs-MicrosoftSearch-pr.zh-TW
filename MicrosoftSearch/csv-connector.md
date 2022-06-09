@@ -1,5 +1,5 @@
 ---
-title: 適用于 Microsoft 搜尋 的 CSV 連接器
+title: 適用于 Microsoft Search 的 CSV 連接器
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,33 +12,33 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 為SharePoint或Azure Data Lake Storage來源設定 Microsoft 搜尋 CSV 連接器。
-ms.openlocfilehash: ad5709d914068e77d65ba406feaf1a289d73d9d5
-ms.sourcegitcommit: d267711f8e1c68849c99a4aad2bd387214825416
+description: 設定適用于 SharePoint 或 Azure Data Lake Storage 來源的 Microsoft Search CSV 連接器。
+ms.openlocfilehash: e564e61a57c76ab2eb010ed533eaee3ac3def74d
+ms.sourcegitcommit: a821305e638808c376708289bd58ad2bb3272e1b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65646104"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65959806"
 ---
-# <a name="csv-connector-preview"></a>CSV 連接器 (預覽) 
+# <a name="csv-connector"></a>CSV 連接器
 
-CSV Graph連接器可讓您的組織從儲存在 SharePoint 程式庫中的 CSV 檔案擷取內容，並Azure Data Lake Storage (ADLS) 。 設定連接器並從這些來源編制內容索引之後，終端使用者就可以在Microsoft 搜尋中找到 CSV 檔案。
+CSV Graph 連接器可讓您的組織從儲存在 SharePoint 文件庫和 Azure Data Lake Storage (ADLS) 中的 CSV 檔案內嵌內容。 設定來自這些來源的連接器和索引內容之後，終端使用者就可以在 Microsoft Search 中找到 CSV 檔案。
 
 > [!NOTE]
-> 請閱讀 [**Graph連接器**](configure-connector.md)的安裝程式一文，以瞭解一般Graph連接器設定指示。
+> 請閱讀 [**Graph 連接器的安裝**](configure-connector.md) 程式一文，以瞭解一般 Graph 連接器設定指示。
 
 本文適用于設定、執行及監視 CSV 連接器的任何人。 它會補充一般設定程式，並顯示僅適用于此連接器的指示。
 
 <!---## Before you get started-->
 ## <a name="before-you-get-started"></a>開始之前
 
-針對SharePoint資料來源，您必須使用 Oauth 組態建立SharePoint應用程式。 針對 ADLS 資料來源，您必須建立 ADLS 儲存體帳戶。
+針對 SharePoint 資料來源，您必須建立具有 Oauth 設定的 SharePoint 應用程式。 針對 ADLS 資料來源，您必須建立 ADLS 儲存體帳戶。
 
-### <a name="create-a-sharepoint-app-with-oauth-configuration"></a>使用 Oauth 設定建立SharePoint應用程式
+### <a name="create-a-sharepoint-app-with-oauth-configuration"></a>使用 Oauth 設定建立 SharePoint 應用程式
 
-確認您想要編制索引的.csv檔案已上傳至SharePoint文件庫。 您可以使用現有的SharePoint網站或建立新的網站。
+確認您想要編制索引的.csv檔案已上傳至 SharePoint 文件庫。 您可以使用現有的 SharePoint 網站或建立新的網站。
 
-#### <a name="create-a-sharepoint-app"></a>建立SharePoint應用程式
+#### <a name="create-a-sharepoint-app"></a>建立 SharePoint 應用程式
 
 1. 移至  `https://Org-Name.sharepoint.com/Site-Name/_layouts/15/appregnew.aspx` 。
 2. 在 [用戶端識別碼] 和 [用戶端密碼] 欄位上，選取 [ **產生]**。
@@ -64,7 +64,7 @@ Set-spotenant –DisableCustomAppAuthentication $false
 #### <a name="complete-the-app-configuration"></a>完成應用程式設定
 
 1. 移至`https://Org-Name.sharepoint.com/Site-Name/_layouts/15/appinv.aspx`。
-2. 在 [應用程式識別碼] 欄位中，貼上SharePoint應用程式的用戶端識別碼，然後選取 **[查閱]**。
+2. 在 [應用程式識別碼] 欄位中，貼上 SharePoint 應用程式的用戶端識別碼，然後選取 **[查閱]**。
 3. 在 [許可權要求 XML] 欄位中，貼上此程式碼，然後選取 [ **建立]**。
 
 ```xml
@@ -81,7 +81,7 @@ Set-spotenant –DisableCustomAppAuthentication $false
 
 當您設定 CSV 連接器時，您必須提供主要儲存體連接字串。 若要尋找它，請開啟您建立的儲存體帳戶，然後選 **取 [存取金鑰]**。 選 **取 [顯示金鑰** ]，然後複製 Key1 的連接字串。
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟 1：在 Microsoft 365 系統管理中心 中新增Graph連接器
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟 1：在 Microsoft 365 系統管理中心新增 Graph 連接器
 
 請遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
@@ -91,7 +91,7 @@ instructions.-->
 
 目前，CSV 連接器僅支援搜尋體驗。
 
-:::image type="content" source="media/csv-connector/csv-connector-search-experiences.png" alt-text="已選取Microsoft 搜尋體驗的 CSV 連接器。" lightbox="media/csv-connector/csv-connector-search-experiences.png":::
+:::image type="content" source="media/csv-connector/csv-connector-search-experiences.png" alt-text="已選取 Microsoft 搜尋體驗的 CSV 連接器。" lightbox="media/csv-connector/csv-connector-search-experiences.png":::
 
 ## <a name="step-3-name-the-connection"></a>步驟 3：為連線命名
 
@@ -101,18 +101,18 @@ instructions.-->
 
 ## <a name="step-4-configure-connection-settings"></a>步驟 4：設定連線設定
 
-SharePoint和 ADLS 的資料來源設定不同。
+SharePoint 和 ADLS 的資料來源設定不同。
 
-### <a name="for-a-sharepoint-source"></a>針對SharePoint來源
+### <a name="for-a-sharepoint-source"></a>針對 SharePoint 來源
 
-1. 在 [資料來源] 設定中，選 **取 [SharePoint**] 作為您的資料來源。
-1. 例如 **，在SharePoint網站** 中，輸入網站 URL `https://Org-Name.sharepoint.com/Site-Name` 。
+1. 在 [資料來源設定] 中，選取 **[SharePoint** ] 作為您的資料來源。
+1. 例如，在 **SharePoint 網站** 中，輸入網站 URL `https://Org-Name.sharepoint.com/Site-Name` 。
 1. 在 **文件庫** 中，輸入儲存.csv檔案的文件庫名稱。
 1. 在 **[驗證類型**] 中，選 **取 [Oauth2.0]， (用戶端認證)**。
-1. 輸入您在建立SharePoint應用程式時複製的用戶端識別碼和用戶端密碼。
+1. 輸入您在建立 SharePoint 應用程式時複製的用戶端識別碼和用戶端密碼。
 1. 選 **取 [測試連線]**。 您應該會收到 **連線成功** 訊息。
 
-:::image type="content" source="media/csv-connector/csv-connector-data-source-settings.png" alt-text="具有SharePoint月臺之資料來源設定的 CSV 連接器。" lightbox="media/csv-connector/csv-connector-data-source-settings.png":::
+:::image type="content" source="media/csv-connector/csv-connector-data-source-settings.png" alt-text="具有 SharePoint 網站資料來源設定的 CSV 連接器。" lightbox="media/csv-connector/csv-connector-data-source-settings.png":::
 
 若要控制檔案層級的存取權，請輸入 Azure AD 使用者或群組。
 
@@ -120,12 +120,12 @@ SharePoint和 ADLS 的資料來源設定不同。
 
 ### <a name="for-an-adls-source"></a>針對 ADLS 來源
 
-1. 在 [資料來源] 設定中，選 **Azure Data Lake Storage (ADLS)** 做為您的資料來源。
+1. 在 [資料來源設定] 中，選取 **[Azure Data Lake Storage (ADLS)** 作為您的資料來源。
 1. 在 **[主要儲存體連接字串**] 中，輸入您複製的連接字串。
 1. 輸入 **[容器名稱** ] 和 **[檔案名]**。
 1. 選 **取 [測試連線]**。 您應該會收到 **連線成功** 訊息。
 
-:::image type="content" source="media/csv-connector/csv-connector-adls-data-source-settings.png" alt-text="CSV 連接器與Azure Data Lake Storage來源的資料來源設定。" lightbox="media/csv-connector/csv-connector-adls-data-source-settings.png":::
+:::image type="content" source="media/csv-connector/csv-connector-adls-data-source-settings.png" alt-text="具有 Azure Data Lake Storage 來源之資料來源設定的 CSV 連接器。" lightbox="media/csv-connector/csv-connector-adls-data-source-settings.png":::
 
 > [!NOTE]
 > 如果您的資料來源包含多個具有相同標頭的.csv檔案，請選取 [ **在位置包含所有 CSV 檔案]**。
