@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 適用于 jira 連接器的結果配置 JSON Microsoft 搜尋
-ms.openlocfilehash: e330c63f90bb53328b46047c93824d773b86db13
-ms.sourcegitcommit: 574239c0de7693037d5927f7b59af6068bafc5cc
+ms.openlocfilehash: 47ef43bc963b8da8414c3c7a5f4df9ed072d43f4
+ms.sourcegitcommit: beb6be57b5b554b47d30e1b0dbc1e1c1aec25650
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65864657"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66113090"
 ---
 # <a name="result-layout-for-jira-graph-connector"></a>Jira Graph 連接器的結果配置
 
@@ -36,21 +36,21 @@ ms.locfileid: "65864657"
 
 > [!NOTE]
 > * 預設會選取下列某些屬性
-> * **需要精簡** 搜尋屬性，才能在搜尋結果範本中顯示內容。 屬性也可以有其他搜尋屬性。  
+> * **需要擷取** 搜尋屬性，才能在搜尋結果範本中顯示內容。 屬性也可以有其他搜尋屬性。  
 
 | 屬性	 | 需要搜尋架構屬性 |
 | -------- | -------- |
-| 標題 | 完善 |
-| 已更新 | 完善 |
-| IssueLink | 完善 |
+| 標題 | 檢索 |
+| 已更新 | 檢索 |
+| IssueLink | 檢索 |
 | 問題描述 | Content 屬性 |
-| IssueStatus | 完善 |
-| IssueIconUrl | 完善 |
-| IssueType | 完善 |
-| ProjectName | 完善 | 
-| 建立時間 | 完善 |
-| AssigneeName | 完善 |
-| IssuePriority | 完善 |
+| IssueStatus | 檢索 |
+| IssueIconUrl | 檢索 |
+| IssueType | 檢索 |
+| ProjectName | 檢索 | 
+| 建立時間 | 檢索 |
+| AssigneeName | 檢索 |
+| IssuePriority | 檢索 |
 
 ## <a name="result-layout"></a>結果配置
 
