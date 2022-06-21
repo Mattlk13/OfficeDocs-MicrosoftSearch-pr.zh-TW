@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理結果頁面上的搜尋垂直
-ms.openlocfilehash: 9c92b78081edf631612aeb85f975c329f3ea9a3b
-ms.sourcegitcommit: 367eae9fa34ba110ceed093d02c7a06b2326bfca
+ms.openlocfilehash: 5bb2871b081097bff78392c71fbac6343f8aa494
+ms.sourcegitcommit: d7837641df3c0459e62ea7a4c518c64486589706
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65249656"
+ms.lasthandoff: 06/20/2022
+ms.locfileid: "66168830"
 ---
 # <a name="manage-search-verticals"></a>管理垂直搜尋
 
@@ -58,7 +58,7 @@ ms.locfileid: "65249656"
 
 1. 在您要管理垂直的SharePoint網站中，按一下齒輪來開啟設定面板。
 1. 選 **取 [網站資訊]**，然後選 **取 [檢視所有網站設定]**。  
-1. 尋找 [Microsoft 搜尋] 區段，然後選取 [ **設定搜尋設定]**。
+1. 尋找 [Microsoft 搜尋] 區段，然後選取 [設定 **搜尋設定]**。
 1. 在流覽窗格中，移至 [自訂體驗]，然後選取 [ **垂直]**。
 1. 選取現有的垂直，然後按一下 **[編輯]** 或按一下 [ **新增** ] 以建立新的垂直。
 1. 設定設定之後，您可以檢閱並儲存垂直。  
@@ -87,7 +87,7 @@ ms.locfileid: "65249656"
 
 ### <a name="keyword-query-language-kql"></a>關鍵字查詢語言 (KQL) 
 
-查詢可以新增至垂直，以縮小搜尋垂直上顯示的結果，方法是使用 [關鍵字查詢語言 (KQL)  (](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)有限的支援) 。 此頁面會列出可用的屬性。 建議您搭配布林運算子使用 free-text 關鍵字和屬性限制來建立KQL。 不支援 XRANK、鄰近運算子和單字等動態排名運算子。
+您可以將查詢新增至垂直，以使用 [關鍵字查詢語言](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) (KQL)  (有限支援) ，縮小搜尋垂直上顯示的結果範圍。 此頁面會列出可用的屬性。 建議您搭配布林運算子使用 free-text 關鍵字和屬性限制來建立KQL。 不支援 XRANK、鄰近運算子和單字等動態排名運算子。
 
 以下是一些範例查詢。
 
@@ -145,7 +145,7 @@ ms.locfileid: "65249656"
 
 - 查詢 `MyProperty: {Profile.emails.address}` 會解析為 *MyProperty：「Megan.Bowen@contoso.com」*。  
 
-- 若要解析 address 屬性的所有值，請使用多重值擴充語法。 查詢 `{|MyProperty:{Profile.emails.address}}` 會解析為 *( (MyProperty：「Megan.Bowen@contoso com」) \.* OR *(MyProperty： 「meganb@hotmail \. com」)* OR  *(MyProperty：「meganb@outlook \. com」) )*。
+- 若要解析 address 屬性的所有值，請使用多重值擴充語法。 查詢 `{|MyProperty:{Profile.emails.address}}` 會解析為 *( (MyProperty：「Megan.Bowen@contoso \. com」)* OR *(MyProperty： 「meganb@hotmail \. com」)* OR  *(MyProperty：「meganb@outlook \. com」) )*。
 
 使用 「|」 運算子來解析多重值變數。 如需設定檔擴充的更多範例，請參閱下表。
 
@@ -153,7 +153,7 @@ ms.locfileid: "65249656"
 | --------- | ------ | --- |
 | 1    | MyProperty：{Profile.emails.address}  |   「Megan \. Bowen@contoso.com」  |
 | 2 | MyProperty：{Profile.emails}   |    {Profile.emails} 因為 *電子郵件* 是物件，所以無法解決此問題。|
-| 3     | {?MyProperty：{Profile.emails}}  |  因為 *電子郵件* 是物件，所以無法解決此問題。 「？」 運算子會忽略未解析的查詢變數。 當進一步向下傳遞查詢堆疊時，將會移除此變數。   |
+| 3    | {?MyProperty：{Profile.emails}}  |  因為 *電子郵件* 是物件，所以無法解決此問題。 「？」 運算子會忽略未解析的查詢變數。 當進一步向下傳遞查詢堆疊時，將會移除此變數。   |
 | 4  | {&#124;MyProperty： {Profile.emails.source.Type}}    |   ( (MyProperty：「official」) OR (MyProperty：「non-official」) OR (MyProperty：「personal」) )     |
 
 #### <a name="query-string-variables"></a>查詢字串變數
@@ -174,14 +174,13 @@ SharePoint網站按鈕網頁元件上的 URL 必須更新，才能將下列機�
 | --------- | --------- | --------- | --------- |
 | 1    | MyProperty：{QueryString.state}  |   HTTPs://{your-domain}.sharepoint.com/sites/{site-name}/_layouts/15/search.aspx/{vertical-ID}？state=InProgress  |   MyProperty：InProgress  |
 | 2 | MyProperty：{QueryString.state} 或 MyProperty：{QueryString.priority}   |    HTTPs://{your-domain}.sharepoint.com/sites/{site-name}/_layouts/15/search.aspx/{vertical-ID}？state=InProgress&priority=1 |   MyProperty：InProgress 或 MyProperty：1  |
-| 3     | {?MyProperty：{QueryString.state}}  |  HTTPs://{your-domain}.sharepoint.com/sites/{site-name}/_layouts/15/search.aspx/{vertical-ID}？State=InProgress   |   此處的狀態將無法解決，因為 QueryStrings 會區分大小寫。  「？」 運算子會忽略未解析的查詢變數。 當進一步向下傳遞查詢堆疊時，將會移除此變數。  |
+| 3    | {?MyProperty：{QueryString.state}}  |  HTTPs://{your-domain}.sharepoint.com/sites/{site-name}/_layouts/15/search.aspx/{vertical-ID}？State=InProgress   |   此處的狀態將無法解決，因為 QueryStrings 會區分大小寫。  「？」 運算子會忽略未解析的查詢變數。 當進一步向下傳遞查詢堆疊時，將會移除此變數。  |
 | 4  | { \| MyProperty： {QueryString.state}}    |  HTTPs://{your-domain}.sharepoint.com/sites/{site-name}/_layouts/15/search.aspx/{vertical-ID}？state=InProgress，Closed    |    (MyProperty：InProgress) OR (MyProperty：Closed)   <br /> 運 \| 算符是用來解析 muti-value 變數。 變數的值應該使用逗號分隔符號傳遞，如 URL 語法所示。 |
 | 5 | {MyProperty： {QueryString.state}}    |  HTTPs://{your-domain}.sharepoint.com/sites/{site-name}/_layouts/15/search.aspx/{vertical-ID}？state=InProgress，Closed   |   MyProperty：InProgress <br /> 這裡只會從 URL 挑選狀態的第一個值，因為查詢語法不會將它定義為多重值變數。 |
 
 
 ## <a name="limitations"></a>限制
 - 語言當地語系化不適用於修改後的現成垂直名稱。 
-- KQL不適用於從使用者OneDrive顯示的內容。 
 - 自訂垂直不會出現在Microsoft 搜尋的行動檢視上。 
 - 人員垂直不支援新增查詢。 
 - 組織中的來賓使用者看不到垂直修改和新的垂直。 
