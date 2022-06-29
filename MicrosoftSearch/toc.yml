@@ -63,6 +63,8 @@ items:
                     href: azure-data-lake-connector.md
                   - name: Azure DevOps 工作專案
                     href: azure-devops-connector.md
+                  - name: Azure DevOps Wiki
+                    href: azure-devops-wiki-connector.md
                   - name: Azure SQL 和 Microsoft SQL Server
                     href: MSSQL-connector.md
                   - name: Confluence Cloud

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Graph連接器檢視詳細資料和錯誤
+title: Microsoft Graph 連接器檢視詳細資料和錯誤
 ms.author: monaray
 author: monaray97
 manager: mnirkhe
@@ -11,19 +11,19 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 以租使用者的搜尋系統管理員身分存取和管理您的 Microsoft Graph連接器。
-ms.openlocfilehash: e0eb3314658143af888ffaed3dd5ce3e9fcc7704
-ms.sourcegitcommit: 73496af8798618fce912b46df8edc8560188aed2
+description: 以租使用者的搜尋系統管理員身分存取和管理 Microsoft Graph 連接器。
+ms.openlocfilehash: e6739304d2d35ce527c4dad4712ecddc8f289611
+ms.sourcegitcommit: cd9d40240399d04eb77250b8b5b116e2d2c1bc70
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65371944"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66531198"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
 # <a name="view-your-connection-details-and-errors"></a>檢視連線詳細資料和錯誤
 
-若要存取和管理您的 Microsoft Graph連接器，您必須被指定為租使用者的搜尋系統管理員。 請連絡您的租使用者系統管理員，以布建您的帳戶以取得搜尋系統管理員角色。
+若要存取和管理您的 Microsoft Graph 連接器，您必須被指定為租使用者的搜尋系統管理員。 請連絡您的租使用者系統管理員，以布建您的帳戶以取得搜尋系統管理員角色。
 
 若要在Microsoft 365 系統管理中心中查看您的聯[機](https://admin.microsoft.com)，請移至 [[資料來源] 索引標籤](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/connectors)。
 
@@ -65,16 +65,23 @@ ms.locfileid: "65371944"
 1008 | 租使用者的總配額使用率已達到其限制。 | 請嘗試刪除連線以釋出部分配額，或調整您的擷取篩選器以產生較少的資料。 如果這些步驟無法解決問題，請連絡 Microsoft 支援服務。
 1009 | 連線的總配額使用率已達到其限制。 | 請嘗試調整您的擷取篩選準則，以帶入較少的資料。 如果此步驟無法解決問題，請連絡 Microsoft 支援服務。
 1010 | 編制非 Azure AD 群組索引的總配額使用率已達到 100 K 的限制。 | 請嘗試刪除連線以釋出部分配額，或調整您的擷取篩選器以產生較少的資料。 如果這些步驟無法解決問題，請連絡 Microsoft 支援服務。
-1011 | Microsoft Graph連接器[代理](graph-connector-agent.md)程式無法連線或離線。 |
+1011 | 無法連線或離線使用 Microsoft [Graph 連接器代理](graph-connector-agent.md) 程式。 |
 1012 | 對連線的驗證因為不支援的驗證模式而失敗。 | 編輯連線以更新連線的驗證設定。
+1015 | 在此代理程式上建立的連線將會因為許可權不足而失敗。 將 ExternalItem.ReadWrite.OwnedBy 許可權授與用於註冊的 Microsoft Azure 應用程式，以允許應用程式在沒有登入使用者的情況下讀取和寫入所有外部專案，並繼續編目。 | 確定用於代理程式註冊的 Azure 應用程式具有 ExternalItem.ReadWrite.OwnedBy 許可權。
+1016 | 在此代理程式上建立的連線將會因為許可權不足而失敗。 將 Directory.Read.All 許可權授與用於註冊的 Microsoft Azure 應用程式，以讀取您組織目錄中的資料並繼續編目。 | 確定用於代理程式註冊的 Azure 應用程式具有 Directory.Read.All 許可權。
 1017 | 無法編制專案索引，因為網路無法使用。 | 還原網路，並等候下一個編目讓專案編制索引。
+1018 | 請確定輸入的使用者帳戶具有安裝 Graph 連接器代理程式之電腦的互動式登入許可權。 | 確定使用者帳戶具有安裝 Graph 連接器代理程式之電腦的互動式登入許可權。 若要深入瞭解，請參閱 [檔](graph-connector-agent.md#connection-failure) 。
+1019 | 連線失敗，因為提供給 GCA 實例的應用程式認證無效或已過期。 請更新認證。 | 檢查與連線相關聯之 GCA 實例的應用程式認證。
+1020 | 與連線相關聯的圖形連接器代理程式無法連線到 GRPC 連接器伺服器。 | GCA 實例無法編目資料來源，因為透過 GRPC 連線到自訂連接器時發生問題。
+1025 | 與此連線相關聯的 Graph 連接器代理程式因重大問題而淘汰，請升級至最新版本。 深入了解：https://aka.ms/gca | 從 下載最新版本，以升級您的 Graph 連接器代理程式版本 https://aka.ms/GCAdownload
+1026 | 連線失敗，因為相關聯的圖形連接器代理程式發生嚴重問題。 升級至最新版本，或連絡支援人員以解決問題。 深入了解：https://aka.ms/gca | 從 下載最新版本，以升級您的 Graph 連接器代理程式版本 https://aka.ms/GCAdownload
 2001 | 索引編制會受到節流，因為佇列中有大量更新。 視佇列而定，更新可能需要一些時間才能完成。 | 等候佇列清除。
 2002 | 編制索引失敗，因為專案格式不支援。 | 如需詳細資訊，請參閱連接器特定檔。
 2003 | 索引失敗，因為專案內容不受支援。 | 如需詳細資訊，請參閱連接器特定檔。
 2004 | 索引失敗，因為專案或檔案大小不受支援。 | 如需詳細資訊，請參閱連接器特定檔。
 2005 | 索引編制失敗，因為 URI 太長。 | 如需詳細資訊，請參閱連接器特定檔。
 2006 | 使用者對應失敗，因為對應公式無效，或沒有具有此屬性的 Azure AD 使用者。 | 嘗試使用不同的對應公式刪除並重新建立連線。 
-2007 | 此專案不會顯示在Microsoft 搜尋中，因為某些沒有許可權檢視此專案的使用者或群組無法編制索引。 | 
+2007 | 此專案不會顯示在 Microsoft Search 中，因為某些沒有檢視此專案的使用者或群組無法編制索引。 | 
 2008 | 連線不能有超過 50，000 個成員的非 Azure AD 群組。 | 嘗試從群組移除使用者，或嘗試從擷取中移除具有該群組的專案 ACLed，然後重新建立連線。
 2009 | 非 Azure AD 群組索引編制會因為大量要求而暫時暫停。 當系統完成處理這些要求時，就會繼續編制索引。 稍後再回頭檢查。 | 
 2010 | 此連線不再有效，因為 Microsoft 已進行更新。 | 刪除連線並建立新的連線。

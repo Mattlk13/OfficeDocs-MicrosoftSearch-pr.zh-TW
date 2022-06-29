@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: bb9d90b6-6c86-4b19-9235-3bd9b19826ab
 description: 在您使用 Microsoft Search 時提供品質良好的內容，無需額外資源
-ms.openlocfilehash: ad8a09c93a45d2da40f0cc11c841a7530e2a19f8
-ms.sourcegitcommit: 931278bea1f163c367276d9e4e0689e51b4fa8d0
+ms.openlocfilehash: 7a1940f0255b1031675c5119889f75ad59cf498f
+ms.sourcegitcommit: cd9d40240399d04eb77250b8b5b116e2d2c1bc70
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64615464"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66531189"
 ---
 # <a name="plan-your-content"></a>規劃內容
 
-**Microsoft 搜尋** 可協助使用者尋找相關的內容。 **Microsoft Search** 是一種能同時安全地搜尋您內部網路與 Web 內容的方式。 只有 Microsoft 能夠提供這種跨網路與組織的整合產品。
+**Microsoft Search** 可協助使用者尋找相關內容。 **Microsoft Search** 是一種能同時安全地搜尋您內部網路與 Web 內容的方式。 只有 Microsoft 能夠提供這種跨網路與組織的整合產品。
 
 搜尋系統管理員會使用其組織和其使用者的知識，讓使用者易於找到相關的內容。
 
@@ -53,9 +53,9 @@ ms.locfileid: "64615464"
 
 要求使用者建議要加入書籤的資源。 除了建議內容之外，要求使用者回報損毀或無效的連結等錯誤。
 
-## <a name="step-3-improve-findability-of-content"></a>步驟 3：改善內容的可尋找性
+## <a name="step-3-improve-findability-of-content-with-answers"></a>步驟 3：使用答案改善內容的可尋找性
 
-在 **Microsoft 搜尋** 中，「搜尋管理員」會建立書簽、Q&A、地點及平面佈置計畫，以提升內容的 findability。 每個搜尋元件都包括標題、URL，和一組能觸發書籤的關鍵字。
+在 **Microsoft Search 中**，搜尋系統管理員會建立書簽、Q&A、位置和樓層方案，以改善內容的可尋找性。 每個搜尋元件都包括標題、URL，和一組能觸發書籤的關鍵字。
 
 ### <a name="titles-and-descriptions"></a>標題和描述
 
