@@ -13,8 +13,15 @@ items:
         href: faqs.md
   - name: 取得深入資訊
     items:
-      - name: 檢視使用狀況報告
+      - name: 搜尋使用情況報告
         href: usage-reports.md
+        items:
+          - name: 查詢報表
+            href: queries-usage-reports.md
+          - name: 使用者報表
+            href: users-search-reports.md
+          - name: 連線分析報告
+            href: connection-analytics-reports.md
       - name: 管理意見反應
         href: manage-feedback.md
   - name: 提供解答
