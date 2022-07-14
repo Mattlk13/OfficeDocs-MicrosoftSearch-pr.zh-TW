@@ -12,13 +12,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 瞭解如何設定適用于 Microsoft 搜尋 的 Microsoft Graph 連接器。
-ms.openlocfilehash: 42b2155f37a112b8f1f0af5dad2c41a5691a450d
-ms.sourcegitcommit: 36ef2f409c3c67b3d5cbfa7d1b47c117e1f3266e
+description: 瞭解如何為 Microsoft Search 設定 Microsoft Graph 連接器。
+ms.openlocfilehash: a3c633d438cb5f2d9b979eeb393bf128bd799b96
+ms.sourcegitcommit: 76364ac777e1ae32df45a66926ff8291584a764f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65798865"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788937"
 ---
 <!-- Previous ms.author: monaray -->
 
@@ -26,7 +26,7 @@ ms.locfileid: "65798865"
 
 # <a name="set-up-microsoft-graph-connectors-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心 中設定 Microsoft Graph 連接器
 
-本文說明在Microsoft 365 系統管理中心中設定 Microsoft Graph 連接器所需的基本[程式。](https://admin.microsoft.com) 基本程序包含下列步驟：
+本文說明在[Microsoft 365 系統管理中心](https://admin.microsoft.com)中設定 Microsoft Graph 連接器所需的基本程式。 基本程序包含下列步驟：
 
 1. [在 Microsoft 365 系統管理中心 中新增 Microsoft Graph 連接器](#step-1-add-a-microsoft-graph-connector-in-the-microsoft-365-admin-center)
 2. [為連線命名](#step-2-name-the-connection)
@@ -45,7 +45,7 @@ ms.locfileid: "65798865"
 * [限制](#limitations)
 
 > [!NOTE]
-> 所有 Microsoft Graph連接器的安裝程式都很類似，但並不完全相同。 除了閱讀本文，請務必閱讀資料來源的連接器特定資訊。
+> 所有 Microsoft Graph 連接器的安裝程式都很類似，但並不完全相同。 除了閱讀本文，請務必閱讀資料來源的連接器特定資訊。
 
 <!---## Before you get started-->
 
@@ -57,15 +57,15 @@ ms.locfileid: "65798865"
 
 1. 在Microsoft 365 系統管理中心中登入您的系統[管理員](https://admin.microsoft.com)帳戶。
 
-2. 在流覽窗格中，選 **取 [設定**]，然後選 **取 [搜尋&智慧]**。 選取 [ [資料來源] 索引標籤](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)。
+2. 在流覽窗格中，選取 [ **設定]**，然後選取 **[搜尋&智慧]**。 選取 [ [資料來源] 索引標籤](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)。
 
 3. 選取 **[+新增**]，然後從可用選項的功能表中選取您選擇的資料來源。
 
    > [!div class="mx-imgBorder"]
-   > ![可用的資料來源包括：ADLS Gen2、Enterprise網站、Microsoft SQL 伺服器、Azure SQL、Oracle SQL 資料庫、ServiceNow 知識、ServiceNow 目錄、檔案共用、Azure DevOps和 MediaWiki。](media/add-connector.png)
+   > ![可用的資料來源包括：ADLS Gen2、企業網站、Microsoft SQL Server、Azure SQL、Oracle SQL 資料庫、ServiceNow 知識、ServiceNow 目錄、檔案共用、Azure DevOps 和 MediaWiki。](media/add-connector.png)
 
 > [!NOTE]
-> 您可以將最多 10 個 Microsoft Graph連線新增至每個租使用者。
+> 您最多可以將十個 Microsoft Graph 連線新增至每個租使用者。
 
 ## <a name="step-2-name-the-connection"></a>步驟 2：命名連線
 
@@ -82,13 +82,14 @@ ms.locfileid: "65798865"
 
 設定連線設定的程式會根據資料來源的類型而有所不同。 如需要新增至租使用者以在安裝程式中完成此步驟的資料來源類型，請參閱 [連接器特定資訊](/microsoftsearch/servicenow-connector#step-31-basic-authentication)。
 
-若要深入瞭解如何連線到內部部署資料來源，請參閱[設定 Microsoft Graph連接器代理程式](/microsoftsearch/graph-connector-agent)。
+若要深入瞭解如何連線到內部部署資料來源，請參閱 [設定 Microsoft Graph 連接器代理程式](/microsoftsearch/graph-connector-agent)。
 
 ## <a name="step-4-select-properties"></a>步驟 4：選取屬性
 
-您可以選擇由Microsoft 搜尋編制索引的屬性。
+您可以選擇由 Microsoft Search 編制索引的屬性。
 
-ServiceNow 查詢可用來篩選您的資料，再由Microsoft 搜尋編制索引;此查詢可讓您更充分掌控可搜尋的資料。 如需詳細資訊，請 [參閱瞭解 ServiceNow 查詢](https://go.microsoft.com/fwlink/?linkid=2151447)。
+> [!NOTE]
+> 若要在建立連線之後更新編目屬性，請參閱 [管理搜尋架構](manage-search-schema.md) 一文。
 
 ## <a name="step-5-manage-search-permissions"></a>步驟 5：管理搜尋許可權
 
@@ -96,13 +97,13 @@ ServiceNow 查詢可用來篩選您的資料，再由Microsoft 搜尋編制索�
 
 某些連接器，例如[Microsoft SQL](MSSQL-connector.md)和[Azure Data Lake Storage Gen2](azure-data-lake-connector.md)原生支援[Azure Active Directory (Azure AD) ](/azure/active-directory/) ACL。
 
-[ServiceNow Knowledge、ServiceNow](servicenow-knowledge-connector.md) [Catalog](servicenow-catalog-connector.md)、[Azure DevOps 和 Salesforce](azure-devops-connector.md)等其他連接器支援非 Azure AD 使用者和群組的同步處理。[ ](salesforce-connector.md)  
+[ServiceNow 知識](servicenow-knowledge-connector.md)、[ServiceNow 目錄](servicenow-catalog-connector.md)、[Azure DevOps 工作專案](azure-devops-connector.md)和[Salesforce](salesforce-connector.md)等其他連接器支援非 Azure AD 使用者和群組的同步處理。  
 
 選取每個人可讓組織中的每個人查看此資料來源的搜尋結果。
 
 ## <a name="step-6-assign-property-labels"></a>步驟 6：指派屬性標籤
 
-您可以在 [指派屬性標籤] 頁面上，將語意標籤指派給來源屬性。 標籤是 Microsoft 提供的已知標籤，可提供語意意義。 它們可讓 Microsoft 將您的連接器資料整合到Microsoft 365體驗，例如增強型搜尋、人員卡片、智慧型探索等等。  
+您可以在 [指派屬性標籤] 頁面上，將語意標籤指派給來源屬性。 標籤是 Microsoft 提供的已知標籤，可提供語意意義。 它們可讓 Microsoft 將您的連接器資料整合到 Microsoft 365 體驗中，例如增強型搜尋、人員卡片、智慧型探索等等。  
 
 下表列出目前支援的標籤及其描述。  
 
@@ -140,14 +141,14 @@ ServiceNow 查詢可用來篩選您的資料，再由Microsoft 搜尋編制索�
 
 您可以設定搜尋架構屬性來控制每個來源屬性的搜尋功能。 搜尋架構可協助判斷搜尋結果頁面上顯示的結果，以及使用者可以檢視和存取的資訊。
 
-搜尋架構屬性包含 **查詢**、 **搜尋**、 **擷取** 和 **精簡的** 選項。 下表列出 Microsoft Graph 連接器支援的每個屬性，並說明其功能。
+搜尋架構屬性包含 **查詢**、 **搜尋**、 **擷取** 和 **精簡的** 選項。 下表列出 Microsoft Graph 連接器所支援的每個屬性，並說明其功能。
 
 搜尋架構屬性 | 函數 | 範例
 --- | --- | ---
-搜索 | 讓屬性的文字內容可供搜尋。 屬性內容包含在全文檢索索引中。 | 如果屬性是 **title**，**則查詢Enterprise** 會傳回答案，其中包含任何文字或標題中 **Enterprise** 字。
-查詢 | 依查詢搜尋特定屬性的相符專案。 接著可以在查詢中以程式設計方式或逐字指定屬性名稱。 |  如果可以查詢 **Title** 屬性，則支援查詢 **Title： Enterprise**。
+搜索 | 讓屬性的文字內容可供搜尋。 屬性內容包含在全文檢索索引中。 | 如果屬性是 **title**， **則 Enterprise** 的查詢會傳回在任何文字或標題中包含 **Enterprise** 一字的答案。
+查詢 | 依查詢搜尋特定屬性的相符專案。 接著可以在查詢中以程式設計方式或逐字指定屬性名稱。 |  如果可以查詢 **Title** 屬性，則支援查詢 **Title： Enterprise** 。
 檢索 | 只有可擷取的屬性可以用於結果類型，並顯示在搜尋結果中。 |
-完善 | 精簡選項可以在結果頁面Microsoft 搜尋使用。 | 如果在連線設定期間標示精簡屬性，則貴組織中的使用者可以在搜尋結果頁面上依 **URL** 進行 [篩選](custom-filters.md)。
+完善 | 精簡選項可在 Microsoft Search 結果頁面上使用為 。 | 如果在連線設定期間標示精簡屬性，則貴組織中的使用者可以在搜尋結果頁面上依 **URL** 進行 [篩選](custom-filters.md)。
 
 除了檔案共用連接器以外，所有連接器都必須手動設定自訂類型。 若要啟用每個欄位的搜尋功能，您需要對應至屬性清單的搜尋架構。 連線設定助理會根據您選擇的來源屬性集合，自動選取搜尋架構。 您可以選取搜尋架構頁面上每個屬性和屬性的核取方塊來修改此架構。
 
@@ -164,11 +165,11 @@ ServiceNow 查詢可用來篩選您的資料，再由Microsoft 搜尋編制索�
 * 只有字串屬性可以標示為可搜尋。
 
 > [!NOTE]
-> 建立連線之後，就 *無法* 修改架構。 若要這樣做，您必須刪除連線並建立新的連線。
+> 若要在建立連線之後更新架構，請參閱 [管理搜尋架構](manage-search-schema.md) 一文。
 
 ## <a name="step-8-refresh-settings"></a>步驟 8：重新整理設定
 
-重新整理間隔會決定資料來源與Microsoft 搜尋之間同步處理資料的頻率。 根據資料的修改頻率和修改類型，每種資料來源都有一組不同的最佳重新整理排程。
+重新整理間隔會決定資料來源與 Microsoft Search 之間同步處理資料的頻率。 根據資料的修改頻率和修改類型，每種資料來源都有一組不同的最佳重新整理排程。
 
 重新整理間隔有兩種類型： **完整重新整理** 和 **累加式重新整理**，但某些資料來源無法使用累加式重新整理。
 
@@ -178,7 +179,7 @@ ServiceNow 查詢可用來篩選您的資料，再由Microsoft 搜尋編制索�
 * 累加式重新整理髮現錯誤，但失敗。
 * ACL 已修改。
 * 編目規則已修改。
-* 連線的架構已更新， (尚不支援) 架構更新。
+* 連線的架構已更新。
 
 透過 **累加式重新整理**，搜尋引擎只能處理自上次成功編目後建立或修改的專案，並編制其索引。 因此，並非內容來源中的所有資料都會重新編制索引。 累加式重新整理最適合用來偵測內容、中繼資料、許可權和其他更新。
 
@@ -213,6 +214,6 @@ ServiceNow 查詢可用來篩選您的資料，再由Microsoft 搜尋編制索�
 
 ## <a name="limitations"></a>限制
 <!---Insert limitations for this data source-->
-若要瞭解適用于所有資料來源的限制，請參閱[Microsoft Graph 連接器概觀](connectors-overview.md)一文。
+若要瞭解適用于所有資料來源的限制，請參閱 [Microsoft Graph 連接器概觀](connectors-overview.md) 一文。
 
-請參閱資料來源的連接器特定資訊，以瞭解該特定 Microsoft Graph連接器是否適用其他限制。
+請參閱資料來源的連接器特定資訊，以瞭解是否有其他限制適用于該特定的 Microsoft Graph 連接器。

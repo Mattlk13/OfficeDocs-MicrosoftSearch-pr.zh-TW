@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解您的組織如何使用 Microsoft Graph 連接器為協力廠商資料編制索引，使其出現在 Microsoft Search 結果中。
-ms.openlocfilehash: 3264c69a5918bfe65360480f5b728cd46faef92e
-ms.sourcegitcommit: 187d9506dc1ffcdffba7bdf86ff77a02ce88dca8
+ms.openlocfilehash: 5dce34bef31534f93f9e77f3852491eda807681a
+ms.sourcegitcommit: 76364ac777e1ae32df45a66926ff8291584a764f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66248349"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788928"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -74,6 +74,7 @@ Microsoft 提供九個 Microsoft Graph 連接器，而我們的生態系統合�
 * [Azure SQL 和 Microsoft SQL Server](MSSQL-connector.md)
 * [Confluence Cloud](confluence-cloud-connector.md)
 * [Confluence 內部部署](confluence-onpremises-connector.md)
+* [CSV](csv-connector.md)
 * [企業網站](enterprise-web-connector.md)
 * [Jira Cloud](jira-connector.md)
 * [MediaWiki](mediawiki-connector.md)
@@ -128,12 +129,8 @@ Microsoft 提供九個 Microsoft Graph 連接器，而我們的生態系統合�
 
 ## <a name="what-are-the-limitations-of-microsoft-graph-connectors"></a>Microsoft Graph 連接器有哪些限制？
 
-* 當您 **發佈** Microsoft Graph 連接器時，可能需要幾分鐘的時間才能建立連線。 在該時間內，連線會將其狀態顯示為擱置中。
-
-* 擷取輸送量會限制在每秒大約四個項目。
-
-* 不支援架構更新。 建立連線設定之後，就無法更新架構。 您只能刪除並重新建立連線。
+* 當您 **發佈** Microsoft Graph 連接器時，可能需要幾分鐘的時間才能建立連線。 在該時間內，連線會將其狀態顯示為「發佈」。
 
 * 有一個連線限制。 每個租用戶最多可以建立 10 個連線。
 
-* 建立連線之後，您就無法編輯或變更連線。 如果您需要變更任何詳細資料，您必須刪除並重新建立連線。
+* 發佈連線之後，支援的編輯功能有限。 如果您需要變更啟用的詳細資料以外的任何詳細資料，您必須刪除並重新建立連線。
