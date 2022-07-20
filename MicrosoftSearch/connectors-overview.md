@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解您的組織如何使用 Microsoft Graph 連接器為協力廠商資料編制索引，使其出現在 Microsoft Search 結果中。
-ms.openlocfilehash: 5dce34bef31534f93f9e77f3852491eda807681a
-ms.sourcegitcommit: 76364ac777e1ae32df45a66926ff8291584a764f
+ms.openlocfilehash: 89d04968d882eabf7ae927507a8cb784bfc62743
+ms.sourcegitcommit: 21391072f80fece9b421c89787812cdaa84324f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66788928"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66888952"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -83,6 +83,7 @@ Microsoft 提供九個 Microsoft Graph 連接器，而我們的生態系統合�
 * [Salesforce](salesforce-connector.md)
 * [ServiceNow 知識](servicenow-knowledge-connector.md)
 * [ServiceNow 目錄](servicenow-catalog-connector.md)
+* [ServiceNow 票證](servicenow-tickets-connector.md)
 
 [Microsoft Graph 連接器資源庫](https://www.microsoft.com/microsoft-search/connectors)包含每個連接器的簡短描述。 If you're ready to connect one of these data sources to your tenant, be sure to read the [Setup overview](configure-connector.md) and any other articles in the Setup connectors by Microsoft section that apply to your data source.
 
@@ -112,7 +113,7 @@ Microsoft 提供九個 Microsoft Graph 連接器，而我們的生態系統合�
 
 * [Confluence 內部部署連接器](confluence-onpremises-connector.md)
 * [Azure DevOps Wiki 連接器](azure-devops-wiki-connector.md)
-* [垂直的多個連接](customize-search-page.md#multiple-connections-in-a-vertical)
+* [ServiceNow Tickets 連接器](servicenow-tickets-connector.md)
 
 ## <a name="how-do-i-customize-and-configure-search-results"></a>如何?自訂和設定搜尋結果？
 
