@@ -126,6 +126,8 @@ items:
         href: result-cluster.md
       - name: 管理篩選
         href: custom-filters.md
+      - name: '管理架構 (預覽) '
+        href: manage-search-schema.md
       - name: SharePoint 中的 Microsoft 搜尋
         items:
           - name: 概觀
