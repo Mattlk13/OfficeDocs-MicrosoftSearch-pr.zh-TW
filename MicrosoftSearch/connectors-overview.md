@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解您的組織如何使用 Microsoft Graph 連接器為協力廠商資料編制索引，使其出現在 Microsoft Search 結果中。
-ms.openlocfilehash: 89d04968d882eabf7ae927507a8cb784bfc62743
-ms.sourcegitcommit: 21391072f80fece9b421c89787812cdaa84324f1
+ms.openlocfilehash: 9f8d834a2c6b9c7e055908300029a539ef311a66
+ms.sourcegitcommit: 2032add1816919c2cbf6acf9fa7682e9ad36f859
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66888952"
+ms.lasthandoff: 08/30/2022
+ms.locfileid: "67461195"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -74,7 +74,8 @@ Microsoft 提供九個 Microsoft Graph 連接器，而我們的生態系統合�
 * [Azure SQL 和 Microsoft SQL Server](MSSQL-connector.md)
 * [Confluence Cloud](confluence-cloud-connector.md)
 * [Confluence 內部部署](confluence-onpremises-connector.md)
-* [CSV](csv-connector.md)
+* [Csv](csv-connector.md)
+* [自訂連接器](/graph/custom-connector-sdk-sample-overview)
 * [企業網站](enterprise-web-connector.md)
 * [Jira Cloud](jira-connector.md)
 * [MediaWiki](mediawiki-connector.md)
