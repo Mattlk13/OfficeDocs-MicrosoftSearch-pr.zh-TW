@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定適用于 Microsoft Search 的 Azure DevOps Wiki Microsoft Graph 連接器
-ms.openlocfilehash: 8ecef0480ed967621360cd7d594b192f5bb79520
-ms.sourcegitcommit: 7cb5fb6aef414c6914818bb6fa94422345f3e173
+ms.openlocfilehash: d7005459982d57476b24313b18c0c06b7899ed92
+ms.sourcegitcommit: 1f8f69a9f7b48880ba23a38ed4bbd84d3e072f04
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65897293"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597035"
 ---
 # <a name="azure-devops-wiki-microsoft-graph-connector-preview"></a>Azure DevOps Wiki Microsoft Graph 連接器 (預覽) 
 
@@ -47,7 +47,7 @@ Azure DevOps Wiki Graph 連接器可讓您的組織在其 Azure DevOps 服務實
 | ------------ | ------------ | ------------ |
 | 檢視專案層級資訊 | [專案許可權](/azure/devops/organizations/security/permissions?view=azure-devops&tabs=preview-page#project-level-permissions&preserve-view=true) | 編目 Azure DevOps 工作專案。 此許可權是需要編制索引之專案的 **必要** 許可權。 |
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟 1：在 Microsoft 365 系統管理中心新增 Graph 連接器
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟 1：在Microsoft 365 系統管理中心中新增 Graph 連接器
 
 請遵循一般 [設定指示](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
@@ -73,8 +73,8 @@ instructions.-->
 --- | --- | ---
 | 公司名稱         | 您的公司名稱。 | 使用適當的值   |
 | 應用程式名稱     | 識別您正在授權之應用程式的唯一值。    | Microsoft 搜尋     |
-| 應用程式網站  | 在連接器設定期間要求存取 Azure DevOps 實例的應用程式 URL。  (必要) 。  | HTTPs:// <span>gcs.office。</span>com/
-| 授權回呼 URL        | 授權伺服器重新導向的必要回呼 URL。 | HTTPs:// <span>gcs.office。</span>com/v1.0/admin/oauth/callback|
+| 應用程式網站  | 在連接器設定期間要求存取 Azure DevOps 實例的應用程式 URL。  (必要) 。  | 針對 **M365 Enterprise**：HTTPs:// <span>gcs.office。</span>com/，</br> 針對 **M365 Government**：HTTPs:// <span> gcsgcc。 <span>office.com/
+| 授權回呼 URL        | 授權伺服器重新導向的必要回呼 URL。 | 針對 **M365 Enterprise**：HTTPs:// <span>gcs.office。</span>com/v1.0/admin/oauth/callback，</br> 針對 **M365 Government**：HTTPs:// <span> gcsgcc.office。 <span>com/v1.0/admin/oauth/callback |
 | 授權的範圍 | 應用程式的存取範圍 | 選取下列範圍：身分識別 (讀取) 、程式碼 (讀取) 、 (讀取) 的權利、專案和小組 (讀取) 、Graph (讀取) 、MemberEntitlement 管理 (讀取) 、Wiki (讀取)  |
 
 >[!IMPORTANT]

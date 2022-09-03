@@ -1,5 +1,5 @@
 ---
-title: Atlassian Jira Cloud Microsoft Graph連接器
+title: Atlassian Jira Cloud Microsoft Graph 連接器
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,17 +12,17 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 設定適用于 Microsoft 搜尋 的 Atlassian Jira Cloud Graph連接器
-ms.openlocfilehash: 04f9aa224ceef0f4ef85c79a10b45ff3902124af
-ms.sourcegitcommit: 574239c0de7693037d5927f7b59af6068bafc5cc
+description: 設定適用于 Microsoft Search 的 Atlassian Jira Cloud Graph 連接器
+ms.openlocfilehash: ebfc621cfcbb9154ec0a762b65232a41f569f9a8
+ms.sourcegitcommit: 1f8f69a9f7b48880ba23a38ed4bbd84d3e072f04
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65864258"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597044"
 ---
-# <a name="atlassian-jira-cloud-microsoft-graph-connector"></a>Atlassian Jira Cloud Microsoft Graph連接器
+# <a name="atlassian-jira-cloud-microsoft-graph-connector"></a>Atlassian Jira Cloud Microsoft Graph 連接器
 
-Atlassian Jira Cloud Microsoft Graph連接器可讓您的組織為 Jira 問題編制索引。 從 Jira 網站設定連接器和索引內容之後，使用者可以在Microsoft 搜尋中搜尋這些專案。
+Atlassian Jira Cloud Microsoft Graph 連接器可讓您的組織為 Jira 問題編制索引。 從 Jira 網站設定連接器和索引內容之後，使用者可以在 Microsoft Search 中搜尋這些專案。
 
 > [!NOTE]
 > 請閱讀Microsoft 365 系統管理中心文章 [**中的設定 Microsoft Graph 連接器**](configure-connector.md)一文，以瞭解一般連接器設定指示。
@@ -34,13 +34,13 @@ Atlassian Jira Cloud Microsoft Graph連接器可讓您的組織為 Jira 問題�
 
 ## <a name="before-you-get-started"></a>開始之前
 
-您必須是組織Microsoft 365租使用者的系統管理員，以及貴組織 Jira 網站的系統管理員。
+您必須是組織 Microsoft 365 租使用者的系統管理員，以及貴組織 Jira 網站的系統管理員。
 
 您需要將下列許可權授與在連接器設定期間使用認證的使用者帳戶：
 
 | 許可權名稱 | 許可權類型 | 的必要專案 |
 | ------------ | ------------ | ------------ |
-| 流覽專案 | [Project許可權](https://support.atlassian.com/jira-cloud-administration/docs/manage-project-permissions/) | 編目 Jira 問題。 此許可權是需要編制索引之專案的 **必要** 許可權。 |
+| 流覽專案 | [專案許可權](https://support.atlassian.com/jira-cloud-administration/docs/manage-project-permissions/) | 編目 Jira 問題。 此許可權是需要編制索引之專案的 **必要** 許可權。 |
 | 問題層級安全性許可權 | [問題層級安全性](https://support.atlassian.com/jira-cloud-administration/docs/configure-issue-security-schemes/) | 編目不同的問題類型。 此許可權是 **選擇性的**。 |
 | 流覽使用者和群組   | [通用權限](https://support.atlassian.com/jira-cloud-administration/docs/manage-global-permissions/) | 搜尋結果的 ACL 修剪。 此許可權是 **選擇性的** ，必須選 `Only people with access to this data source` 取下列步驟 4 中的選項。 |
 | 管理 Jira | [通用權限](https://support.atlassian.com/jira-cloud-administration/docs/manage-global-permissions/) | 搜尋結果的 ACL 修剪。 此許可權是 **選擇性的** ，必須選 `Only people with access to this data source` 取下列步驟 4 中的選項。 |
@@ -58,7 +58,7 @@ Atlassian Jira Cloud Microsoft Graph連接器可讓您的組織為 Jira 問題�
 輸入您帳戶的使用者名稱 (通常是電子郵件識別碼) 和 API 權杖，以使用基本驗證進行驗證。若要深入瞭解如何產生 API 權杖，請參閱 Atlassian 的檔，以瞭解如何 [管理 Atlassian 帳戶的 API 權杖](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/)。
 
 ### <a name="oauth-20"></a>OAuth 2.0
-在 Atlassian Jira 中註冊應用程式，讓Microsoft 搜尋應用程式可以存取實例。 若要深入瞭解，請參閱 Atlassian 支援檔，以瞭解如何 [啟用 OAuth 2.0](https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/#enabling-oauth-2-0--3lo-)。
+在 Atlassian Jira 中註冊應用程式，讓 Microsoft Search 應用程式可以存取實例。 若要深入瞭解，請參閱 Atlassian 支援檔，以瞭解如何 [啟用 OAuth 2.0](https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/#enabling-oauth-2-0--3lo-)。
 
 下列步驟提供如何註冊應用程式的指引：
 
@@ -72,9 +72,9 @@ Atlassian Jira Cloud Microsoft Graph連接器可讓您的組織為 Jira 問題�
    | 1 | 檢視欄位 | `read:field:jira` |
    | 2 | 檢視虛擬人偶 | `read:avatar:jira` |
    | 3 | 檢視專案類別 | `read:project-category:jira` |
-   | 4  | 檢視專案 | `read:project:jira` |
+   | 4 | 檢視專案 | `read:project:jira` |
    | 5 | 讀取欄位組態 | `read:field-configuration:jira` |
-   | 6  | 檢視問題類型 | `read:issue-type:jira` |
+   | 6 | 檢視問題類型 | `read:issue-type:jira` |
    | 7  | 檢視專案屬性 | `read:project.property:jira` |
    | 8  | 檢視使用者 | `read:user:jira` |
    | 9  | 檢視應用程式角色 | `read:application-role:jira` |
@@ -91,7 +91,7 @@ Atlassian Jira Cloud Microsoft Graph連接器可讓您的組織為 Jira 問題�
    | 20 | 檢視許可權配置 | `read:permission-scheme:jira` |
    |  21 | 檢視許可權 | `read:permission:jira` |
 
-5. 從左側的流覽窗格巡覽至 `Authorization` 。 新增回呼 URL `https://gcs.office.com/v1.0/admin/oauth/callback` 並儲存變更。
+5. 從左側的流覽窗格巡覽至 `Authorization` 。 針對 **M365 Government 新增 M365 Enterprise**： `https://gcs.office.com/v1.0/admin/oauth/callback` 的回呼 URL： `https://gcsgcc.office.com/v1.0/admin/oauth/callback` ，並儲存變更。
 6. 從左側的流覽窗格巡覽至 `Settings` 。 您會從此頁面取得 `Client ID` 和 `Secret` 。
 
 使用 **用戶端標識** 符和 **秘密** 完成連線設定步驟。
@@ -132,16 +132,16 @@ Atlassian Jira 連接器可以為預設問題欄位和自訂建立的問題欄�
 
 Atlassian Jira 連接器支援  **「所有人** 」或 **「僅限具有此資料來源存取權的人員**」可看見的搜尋許可權。 如果您選擇 [ **所有人**]，已編制索引的資料會出現在所有使用者的搜尋結果中。 如果您選擇 **[僅限可存取此資料來源的人員**]，則已編制索引的資料會出現在可存取此資料來源之使用者的搜尋結果中。 在 Atlassian Jira 中，安全性許可權是使用包含網站層級群組和專案角色的專案許可權配置來定義。 問題層級安全性也可以使用問題層級許可權配置來定義。
 
-如果您選擇 **[僅限可存取此資料來源的人員**]，則必須進一步選擇 Jira 網站是否Azure Active Directory (Azure AD) 布建的使用者或非 Azure AD 使用者。
+如果您選擇 **[僅限可存取此資料來源的人員**]，則必須進一步選擇 Jira 網站是否具有 Azure Active Directory (Azure AD) 布建的使用者或非 Azure AD 使用者。
 
 若要識別哪個選項適合您的組織：
 
-1. 如果 Jira 使用者的電子郵件識別碼與 **Azure AD** 中使用者的 UPN) UserPrincipalName (**相同** ，請選擇 [Azure AD] 選項。
+1. 如果 Jira 使用者的Email識別碼與 **Azure AD** 中使用者的 USERPrincipalName (UPN) **相同**，請選擇 [Azure AD] 選項。
 2. 如果 Jira 使用者的電子郵件識別碼與 Azure AD 中使用者的電子郵件識別碼 **不同**，請選擇 [非 **Azure AD**] (UPN) 。
 
 >[!NOTE]
-> * 如果您選擇 Azure AD 作為身分識別來源的類型，連接器會將從 Jira 取得的使用者電子郵件識別碼直接對應至 Azure AD 中的 UPN 屬性。
-> * 如果您針對身分識別類型選擇 [非 Azure AD]，請參閱對應 [您的非 Azure AD 身](map-non-Azure AD.md) 分識別以取得對應身分識別的指示。 您可以使用此選項來提供從電子郵件識別碼到 UPN 的正則運算式對應。
+> * 如果您選擇 Azure AD 作為身分識別來源的類型，連接器會將從 Jira 取得的使用者Email識別碼直接對應至 Azure AD 中的 UPN 屬性。
+> * 如果您針對身分識別類型選擇 [非 Azure AD]，請參閱對應 [您的非 Azure AD 身](map-non-Azure AD.md) 分識別以取得對應身分識別的指示。 您可以使用此選項來提供從EMAIL識別碼到 UPN 的對應正則運算式。
 
 ## <a name="step-5-assign-property-labels"></a>步驟 5：指派屬性標籤
 
