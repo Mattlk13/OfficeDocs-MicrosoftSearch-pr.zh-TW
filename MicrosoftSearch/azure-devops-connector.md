@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定適用于 Microsoft Search 的 Azure DevOps 工作專案 Microsoft Graph 連接器
-ms.openlocfilehash: 4a2e9e9af8af5f7183d4837e0b674cbe2d1d93bf
-ms.sourcegitcommit: 1f8f69a9f7b48880ba23a38ed4bbd84d3e072f04
+ms.openlocfilehash: 1e0fecbcac5799c9969f9ce505b329ae897cb653
+ms.sourcegitcommit: 4dd78fdeef7e3eb9c90e22e2a727d0cd8c94a08d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597053"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67610923"
 ---
 <!---Previous ms.author: shgrover --->
 
@@ -49,6 +49,9 @@ Azure DevOps Graph 連接器可讓您的組織在其 Azure DevOps 服務實例�
 | 檢視專案層級資訊 | [專案許可權](/azure/devops/organizations/security/permissions?view=azure-devops&tabs=preview-page#project-level-permissions&preserve-view=true) | 編目 Azure DevOps 工作專案。 此許可權是需要編制索引之專案的 **必要** 許可權。 |
 | _檢視分析_ | [專案許可權](/azure/devops/organizations/security/permissions?view=azure-devops&tabs=preview-page#project-level-permissions&preserve-view=true) | 編目 Azure DevOps 工作專案。 此許可權是需要編制索引之專案的 **必要** 許可權。 |
 | _檢視此節點中的工作專案_ | [區域路徑](/azure/devops/organizations/security/permissions?view=azure-devops&tabs=preview-page#area-path-object-level&preserve-view=true) | 在區域路徑中編目工作專案。 此許可權是 **選擇性的**。 只有那些區域路徑會編目使用者帳戶具有許可權的區域路徑。 |
+
+>[!IMPORTANT]
+>使用者帳戶必須具有 **基本** 存取層級。 若要深入瞭解 Azure DevOps 中的存取層級，請閱讀 [支援的存取層級](/azure/devops/organizations/security/access-levels?view=azure-devops#supported-access-levels)。
 
 ## <a name="step-1-add-a-connector-in-the-microsoft-365-admin-center"></a>步驟 1：在Microsoft 365 系統管理中心中新增連接器
 
@@ -153,6 +156,7 @@ instructions.-->
 | 連接器設定後 (編目時間)  | `The account associated with the connector doesn't have permission to access the item.` | 註冊的應用程式沒有任何必要的 OAuth 範圍。  (附注 - 新的 OAuth 範圍需求 'Analytics：read' 已于 2021 年 8 月 31 日推出)  |
 | 連接器設定後 (編目時間)  | `You don't have permission to access this data source. You can contact the owner of this data source to request permission.` | *已停用透過 OAuth 的協力廠商應用程式存取* 。 請遵循管理 [安全性原則](/azure/devops/organizations/accounts/change-application-access-policies?view=azure-devops#manage-a-policy&preserve-view=true) 的步驟來啟用 OAuth。 |
 | 連接器設定後 (編目時間)  | `Credentials associated with this data source have expired. Renew the credentials and then update the connection` | 已註冊的應用程式可能已刪除或過期。 |
+| 連接器設定後 (編目時間)  | `Item listed but no longer accessible or no longer exists` | 編目帳戶可能遺失「基本」存取層級。 編目因「專案關係人」存取而失敗。 |
 
 <!---## Limitations-->
 <!---Insert limitations for this data source-->

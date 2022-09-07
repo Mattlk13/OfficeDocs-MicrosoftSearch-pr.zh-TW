@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定適用于 Microsoft Search 的 Azure DevOps Wiki Microsoft Graph 連接器
-ms.openlocfilehash: d7005459982d57476b24313b18c0c06b7899ed92
-ms.sourcegitcommit: 1f8f69a9f7b48880ba23a38ed4bbd84d3e072f04
+ms.openlocfilehash: f720073220359486068d8f00c40e436f768f1494
+ms.sourcegitcommit: 4dd78fdeef7e3eb9c90e22e2a727d0cd8c94a08d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597035"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67610932"
 ---
 # <a name="azure-devops-wiki-microsoft-graph-connector-preview"></a>Azure DevOps Wiki Microsoft Graph 連接器 (預覽) 
 
@@ -46,6 +46,9 @@ Azure DevOps Wiki Graph 連接器可讓您的組織在其 Azure DevOps 服務實
 | 許可權名稱 | 許可權類型 | 的必要專案 |
 | ------------ | ------------ | ------------ |
 | 檢視專案層級資訊 | [專案許可權](/azure/devops/organizations/security/permissions?view=azure-devops&tabs=preview-page#project-level-permissions&preserve-view=true) | 編目 Azure DevOps 工作專案。 此許可權是需要編制索引之專案的 **必要** 許可權。 |
+
+>[!IMPORTANT]
+>使用者帳戶必須具有 **基本** 存取層級。 若要深入瞭解 Azure DevOps 中的存取層級，請閱讀 [支援的存取層級](/azure/devops/organizations/security/access-levels?view=azure-devops#supported-access-levels)。
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步驟 1：在Microsoft 365 系統管理中心中新增 Graph 連接器
 
