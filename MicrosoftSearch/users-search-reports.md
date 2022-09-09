@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 檢閱 Microsoft 搜尋使用者使用量報告
-ms.openlocfilehash: e551b77a2c10108bdbed9be78bc5e32923c9a08c
-ms.sourcegitcommit: 2d32579d3f10e38acdcc185fa891b0a43a750489
+ms.openlocfilehash: 97e4f12abaffd9185903e9375343232f742932cf
+ms.sourcegitcommit: fb715a00b73d5dbe29d74a89943582168c65f2d3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66713654"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "67633778"
 ---
 # <a name="microsoft-search-usage-report--users"></a>Microsoft 搜尋使用量報告 – 使用者
 
@@ -75,4 +75,4 @@ ms.locfileid: "66713654"
 [Microsoft 搜尋使用量報告](usage-reports.md)</br>
 [Microsoft 搜尋使用量報告 - 查詢](queries-usage-reports.md)</br>
 [Microsoft 搜尋使用量報告 - 連線分析](connection-analytics-reports.md)</br>
-[檢視新式網站中的搜尋使用量報告](/sharepoint/view-search-usage-reports-modern-sites.md)
+[檢視新式網站中的搜尋使用量報告](/sharepoint/view-search-usage-reports-modern-sites)
