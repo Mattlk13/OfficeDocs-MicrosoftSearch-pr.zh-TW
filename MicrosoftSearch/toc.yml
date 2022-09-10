@@ -110,7 +110,7 @@ items:
             href: terms-of-use.md
       - name: 同盟搜尋連接器
         items:
-          - name: Dynamics 365
+          - name: Dataverse 和 Dynamics 365
             href: manage-dynamics365.md
           - name: Azure 認知搜尋
             href: manage-azure-cognitive-search.md
