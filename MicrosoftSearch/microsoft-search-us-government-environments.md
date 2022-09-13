@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解美國政府雲端客戶的 Microsoft 搜尋功能可用性
-ms.openlocfilehash: 478fc62c2b8355c1bc12876e76b95761408db4b4
-ms.sourcegitcommit: 5d3e9036c9302191a5ed6a141c992666c21738a1
+ms.openlocfilehash: 277ea773b2a7518d564c3bc6587dc91b41fcf477
+ms.sourcegitcommit: cec4c27abf9b9b3a0ffbbeedd588475f51b19e9e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66916256"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67657384"
 ---
 # <a name="microsoft-search-for-us-government-environments"></a>Microsoft 搜尋美國政府環境
 
@@ -41,24 +41,35 @@ Microsoft Search 提供便於使用的熟悉體驗，可協助使用者尋找檔
 
 下表概述 GCC、GCC High 和 DoD 環境中是否提供指定的 Microsoft 搜尋功能。 
 
-| 功能 | GCC | GCC High | DoD  |
-| --------- | --------- | --------- | ---------- |
-| 跨檔案、網站、群組和人員的全組織搜尋 | 是 | 否 | 否  |
-| SharePoint 和 OneDrive 中套件導覽標頭中的搜尋方塊   | 是 | 否 | 否  |
-| 搜尋建議 | 是 | 否 | 否  |
-| 在 Bing 中搜尋 Microsoft Search 的系統管理員控制項 | 是 | 否 | 否  |
-| Bing 上的企業首頁 | 是 | 否 | 否  |
-| 深入解析 | 否 | 否 | 否  |
-| 系統管理員策劃 (書簽解答)  | 是 | 否 | 否  |
-| Q&系統管理員策劃)  (解答 | 是 | 否 | 否  |
-| 縮略字解答 | 否 | 否 | 否  |
-| 樓面規劃答案 | 否 | 否 | 否  |
-| 位置解答 | 否 | 否 | 否  |
-| Power BI 解答 | 否 | 否 | 否  |
-| 行動存取 | 是 | 否 | 否  |
-| 圖表連接器 | 否 | 否 | 否  |
-| 同盟連接器 | 否 | 否 | 否  |
-|搜尋 (垂直、篩選和結果類型的自訂)  | 否 | 否| 否|
-
+| 功能 | Ww | GCC | GCC High | DoD  |
+| --------- |--------- | --------- | --------- | ---------- |
+| 跨檔案、網站、群組和人員的全組織搜尋 |是 | 是 | 否 | 否  |
+| SharePoint、OneDrive 和 Office.com 中套件導覽標頭中的搜尋方塊 | 是 | 是 | 否 | 否  |
+| 搜尋建議 | 是 | 是 | 否 | 否  |
+| 在 Bing 中搜尋 Microsoft Search 的系統管理員控制項 | 是 | 是 | 否 | 否  |
+| Bing 上的企業首頁 | 是 | 是 | 否 | 否  |
+| **答案** | | | | |
+| 行事曆 | 是 | 是 | 否 | 否  |
+| 檔案  | 是 | 是 | 否 | 否  |
+| 人員  | 是 | 是 | 否 | 否  |
+| 系統管理員策劃 (書簽)  | 是 | 是 | 否 | 否  |
+| 系統策劃)  (書簽 | 是 | 否 | 否 | 否  |
+| Q&系統管理員策劃 ()  | 是 | 是 | 否 | 否  |
+|  (系統管理員策劃) 縮略字 | 是 | 是 | 否 | 否  |
+| 系統策劃 (縮寫)  | 是 | 是 | 否 | 否  |
+| 樓面規劃 | 是 | 否 | 否 | 否  |
+| 位置 | 是 | 否 | 否 | 否  |
+| 主題 | 是 | 是 | 否 | 否  |
+| Power BI | 是 | 否 | 否 | 否  |
+| Dynamics 365 | 是 | 否 | 否 | 否  |
+| **資料來源** | | | | |
+| 圖表連接器 | 是 | 無 (2022 年 10 月)  | 否 | 否  |
+| 同盟連接器 | 是 | 是 | 否 | 否  |
+| **深入資訊** | | | | |
+| 流量分析 | 是 | 是 | 否 | 否  |
+| 意見反應 | 是 | 否 | 否 | 否  |
+| **自訂項目** | | | | |
+| 結果類型 | 是 | 無 (2022 年 10 月)  | 否 | 否  |
+| 垂直 | 是 | 無 (2022 年 10 月)  | 否 | 否  |
 
 為了回應美國公共事業的獨特發展需求，Microsoft 已建立Office 365 美國政府方案 (或Office 365 政府版) 。 如需這些環境專屬的服務描述和功能概觀，請[參閱Office 365 政府版](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government)。
