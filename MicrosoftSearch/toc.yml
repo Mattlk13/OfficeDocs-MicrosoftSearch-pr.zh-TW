@@ -48,6 +48,8 @@ items:
         items:
           - name: 概觀
             href: connectors-overview.md
+          - name: 電子檔探索概觀
+            href: compliance-ediscovery.md
           - name: 連接器庫
             href: connectors-gallery.md
           - name: 設定 Microsoft 建置的連接器
