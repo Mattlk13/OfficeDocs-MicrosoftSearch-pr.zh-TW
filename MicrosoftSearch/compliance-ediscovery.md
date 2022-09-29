@@ -13,14 +13,14 @@ search.appverid:
 - MET150
 - MOE150
 description: 電子檔探索的 Microsoft Graph 連接器概觀
-ms.openlocfilehash: f241b482f005e56d8368e1dbe84f9043a562f8e4
-ms.sourcegitcommit: 6ee362000b10ade490631eb707a89a04b51fff47
+ms.openlocfilehash: 99828079217ba02ce167ef482f066b7b513e6cf7
+ms.sourcegitcommit: 4aa2e8328d7071d1d9011b77d9fe31729a994168
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66843842"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68217902"
 ---
-# <a name="microsoft-graph-connectors-overview-for-ediscovery"></a>電子檔探索的 Microsoft Graph 連接器概觀
+# <a name="microsoft-graph-connectors-overview-for-ediscovery-preview"></a>電子檔探索 (Preview) 的 Microsoft Graph 連接器概觀
 
 電子搜索 (eDiscovery) 是識別與傳遞電子資訊的程序，而且此類資訊可在法律案件中做為呈堂證據。 您可以在 Microsoft Purview 中使用電子檔探索工具來搜尋 [Microsoft 365](https://www.microsoft.com/microsoft-365)中的內容。 使用 Microsoft Graph 連接器，您的組織可以編制協力廠商資料的索引，並將其包含在收集、檢閱和匯出的電子檔探索進階案例中。
 
@@ -100,7 +100,7 @@ ms.locfileid: "66843842"
 
 > [!NOTE]
 > 
-> 如需建立和管理 Microsoft Purview 電子檔探索 (Premium) 案例的詳細指引，請參閱在[Microsoft 365 中建立和管理電子檔探索 (Premium) 案例](/microsoft-365/compliance/create-and-manage-advanced-ediscoveryv2-case.md)的檔
+> 如需建立和管理 Microsoft Purview 電子檔探索 (Premium) 案例的詳細指引，請參閱在[Microsoft 365 中建立和管理電子檔探索 (Premium) 案例](/microsoft-365/compliance/create-and-manage-advanced-ediscoveryv2-case)的檔
 
 ### <a name="collect-graph-connectors-content"></a>收集圖形連接器內容 
 
@@ -128,3 +128,7 @@ ms.locfileid: "66843842"
 1. 不支援檢閱圖表連接器內容的範例。
 
 2. 不支援將圖形連接器內容置於合法保留，作為電子檔探索案例的一部分。
+
+## <a name="resources"></a>資源
+
+[使用 Graph 連接器搭配 eDiscovery (Premium) ](/microsoft-365/compliance/ediscovery-graph-connector)
