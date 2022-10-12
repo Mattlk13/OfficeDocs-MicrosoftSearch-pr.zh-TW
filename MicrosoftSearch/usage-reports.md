@@ -9,18 +9,20 @@ audience: Admin
 ms.audience: Admin
 ms.date: ''
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 檢閱 Microsoft Search 使用量報告
 recommendations: false
-ms.openlocfilehash: 2ac2251a7021ecd1ae0a91c87de2337f08602613
-ms.sourcegitcommit: 91455336f86b2fde1c683351eca75d14657c84ba
+ms.openlocfilehash: b3cfcf512691a7e1beb8fb4749f45ccd202a5615
+ms.sourcegitcommit: 6ae319b4da98b45ac2c7cbce15bc1fdc9d799cea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67038030"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68523686"
 ---
 # <a name="microsoft-search-usage-reports"></a>Microsoft 搜尋使用量報告
 

@@ -9,17 +9,19 @@ audience: Admin
 ms.audience: Admin
 ms.date: ''
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 檢閱 Microsoft Search 使用方式連線分析報告。
-ms.openlocfilehash: 516f360e0ff92eb0d1c82964b9e011d5c0484e2d
-ms.sourcegitcommit: fb715a00b73d5dbe29d74a89943582168c65f2d3
+ms.openlocfilehash: 0c558b3acf96e6a09d221348919ba447e1357083
+ms.sourcegitcommit: 6ae319b4da98b45ac2c7cbce15bc1fdc9d799cea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "67633795"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68523668"
 ---
 # <a name="microsoft-search-usage-report--connection-analytics"></a>Microsoft 搜尋使用量報告 – 連線分析
 

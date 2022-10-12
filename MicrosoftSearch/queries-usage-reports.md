@@ -9,17 +9,19 @@ audience: Admin
 ms.audience: Admin
 ms.date: ''
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 檢閱 Microsoft Search 使用量 - 查詢報告
-ms.openlocfilehash: d3743f86c7e18ba5d63cb6fc0d15d4042f5167e5
-ms.sourcegitcommit: fb715a00b73d5dbe29d74a89943582168c65f2d3
+ms.openlocfilehash: 12f7f28b0df7b341c219a68e2e3cef56e44478b3
+ms.sourcegitcommit: 6ae319b4da98b45ac2c7cbce15bc1fdc9d799cea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "67633784"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68523659"
 ---
 # <a name="microsoft-search-usage-report--queries"></a>Microsoft 搜尋使用量報告 – 查詢
 
@@ -126,7 +128,7 @@ ms.locfileid: "67633784"
 |點擊 |查詢 |此搜尋字詞按一下一或多次的查詢總數。 | 
 |URL |結果 |前三個搜尋結果的 URL。 請注意，URL 不適用於書簽、外部內容和其他回應功能。   |
 |顯示名稱|結果 |目前為空白。 未來會使用它來顯示回應專案的檔案名和標題。  |
-|Type (類型) |結果 | 結果類型，例如檔案、書簽或縮寫。|
+|類型 |結果 | 結果類型，例如檔案、書簽或縮寫。|
 |閱聽 |結果 |此查詢顯示此特定結果的次數。  |
 |點選 |結果 | 針對此查詢按一下結果的次數。 |
 |結果的平均位置 |結果  |此查詢的結果所顯示的平均位置。  |
