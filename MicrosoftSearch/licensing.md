@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search 的 Microsoft Graph 連接器授權需求和定價。
-ms.openlocfilehash: f5ba1b3c7b0c92bfefd584272acda251f6cde961
-ms.sourcegitcommit: a958a287f8179d43a3a8c1b2914d4a4c622701f0
+ms.openlocfilehash: 2ab99baa9070b655839dc0e872019cb0f9069203
+ms.sourcegitcommit: 94a974d51388bd82f773c5f2cd738e287798ee9a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67363357"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68559439"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -47,7 +47,8 @@ ms.locfileid: "67363357"
 
 <!---Comment requested in PR#143--->
 > [!NOTE]
-> Microsoft 365 A5和Office 365 A5不包含此權利。
+> * Microsoft 365 A5和Office 365 A5不包含此權利。
+> * 使用 Microsoft Graph 連接器不需要Microsoft 365 E5或Office 365 E5授權。
 
 ## <a name="purchase-of-add-on-index-quota"></a>購買附加元件索引配額
 若要購買更多 Microsoft Graph 連接器配額，請連絡您的 Microsoft 帳戶管理員或完成下列步驟：
