@@ -1,5 +1,5 @@
 ---
-title: Azure SQL和Microsoft SQL Server適用于 Microsoft 搜尋 的 Microsoft Graph 連接器
+title: 適用于 Microsoft Search 的 Azure SQL 和 Microsoft SQL Server Microsoft Graph 連接器
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,34 +12,34 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 設定適用于 Microsoft 搜尋 的 Azure SQL 和 Microsoft SQL Microsoft Graph 連接器。
-ms.openlocfilehash: 3424e32b463843ff7795a1b0fb967293ba735b0e
-ms.sourcegitcommit: 6ff032e46055eacf0f7f77c753965b6433f50117
+description: 設定適用于 Microsoft Search 的 Azure SQL 和 Microsoft SQL Microsoft Graph 連接器。
+ms.openlocfilehash: 75a40c379c1917bff1bd08682eba756c6c84b98a
+ms.sourcegitcommit: eba92df25794376919eb8758b754d1a5557725ad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65442562"
+ms.lasthandoff: 09/21/2022
+ms.locfileid: "67874921"
 ---
 <!---Previous ms.author: vivg --->
 
-# <a name="azure-sql-and-microsoft-sql-server-microsoft-graph-connectors"></a>Azure SQL和Microsoft SQL Server Microsoft Graph 連接器
+# <a name="azure-sql-and-microsoft-sql-server-microsoft-graph-connectors"></a>Azure SQL和 Microsoft SQL Server Microsoft Graph 連接器
 
-Microsoft SQL Server或Azure SQL Microsoft Graph 連接器可讓您的組織從內部部署SQL Server資料庫或裝載于雲端中Azure SQL實例的資料庫，探索並編制資料索引。
-連接器會將指定的內容索引到Microsoft 搜尋。 若要讓索引與來源資料保持在最新狀態，它支援定期完整和累加編目。 透過這些SQL連接器，您也可以限制特定使用者的搜尋結果存取權。
+Microsoft SQL Server或 Azure SQL Microsoft Graph 連接器可讓您的組織從內部部署SQL Server資料庫，或裝載于雲端中Azure SQL實例中的資料庫，探索並編制資料索引。
+連接器會將指定的內容索引至 Microsoft Search。 若要讓索引與來源資料保持在最新狀態，它支援定期完整和累加編目。 透過這些 SQL 連接器，您也可以限制特定使用者的搜尋結果存取權。
 
 > [!NOTE]
-> 請閱讀 [**設定您的 Microsoft Graph 連接器**](configure-connector.md)一文，以瞭解一般Graph連接器設定指示。
+> 請閱讀 [**設定您的 Microsoft Graph 連接器**](configure-connector.md) 一文，以瞭解一般 Graph 連接器設定指示。
 
-本文適用于設定、執行及監視Azure SQL或 Microsoft SQL 伺服器連接器的任何人。 它會補充一般設定程式，並顯示僅適用于Azure SQL和 Microsoft SQL 伺服器連接器的指示。 本文也包含這兩個連接器 [的限制](#limitations) 相關資訊。
+本文適用于設定、執行及監視Azure SQL或 Microsoft SQL Server 連接器的任何人。 它會補充一般設定程式，並顯示僅適用于Azure SQL和 Microsoft SQL Server 連接器的指示。 本文也包含這兩個連接器 [的限制](#limitations) 相關資訊。
 
 ## <a name="before-you-get-started"></a>開始之前
 
-### <a name="install-the-microsoft-graph-connector-agent-required-for-on-premises-microsoft-sql-server-connector-only"></a>僅 (內部部署Microsoft SQL Server連接器需要安裝 Microsoft Graph 連接器代理程式) 
+### <a name="install-the-microsoft-graph-connector-agent-required-for-on-premises-microsoft-sql-server-connector-only"></a>安裝內部部署 Microsoft SQL Server 連接器所需的 Microsoft Graph 連接器代理程式 (僅) 
 
-若要存取內部部署協力廠商資料，您必須安裝並設定連接器代理程式。 若要深入瞭解，請參閱[安裝 Microsoft Graph 連接器代理](graph-connector-agent.md)程式。
+若要存取內部部署協力廠商資料，您必須安裝並設定連接器代理程式。 若要深入瞭解，請參閱 [安裝 Microsoft Graph 連接器代理](graph-connector-agent.md) 程式。
 
 >[!NOTE]
->如果您在設定Microsoft SQL Server連接器時使用Windows 驗證，則您嘗試登入的使用者必須具有安裝連接器代理程式之電腦的互動式登入許可權。 請參閱有關 [登入原則管理](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) 的檔，以檢查登入許可權。
+>如果您在設定 Microsoft SQL Server 連接器時使用Windows 驗證，則您嘗試登入的使用者必須具有安裝連接器代理程式之電腦的互動式登入許可權。 請參閱有關 [登入原則管理](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) 的檔，以檢查登入許可權。
 
 ## <a name="step-1-add-a-connector-in-the-microsoft-365-admin-center"></a>步驟 1：在Microsoft 365 系統管理中心中新增連接器
 
@@ -57,11 +57,11 @@ instructions.-->
 
 ### <a name="register-an-app-for-azure-sql-connector-only"></a>僅針對Azure SQL連接器註冊應用程式 () 
 
-針對Azure SQL連接器，您必須在Azure Active Directory中註冊應用程式，以允許Microsoft 搜尋應用程式存取索引的資料。 若要深入瞭解如何註冊應用程式，請參閱 Microsoft Graph檔，瞭解如何[註冊應用程式](/graph/auth-register-app-v2)。
+針對Azure SQL連接器，您必須在 Azure Active Directory 中註冊應用程式，以允許 Microsoft Search 應用程式存取資料以編制索引。 若要深入瞭解如何註冊應用程式，請參閱 Microsoft Graph 檔，以瞭解如何 [註冊應用程式](/graph/auth-register-app-v2)。
 
-完成應用程式註冊並記下應用程式名稱、應用程式 (用戶端) 識別碼和租使用者識別碼之後，您必須 [產生新的用戶端密碼](/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret)。 用戶端密碼只會顯示一次。 請記得&安全地儲存用戶端密碼。 在 Microsoft 搜尋 中設定新連線時，請使用用戶端識別碼和用戶端密碼。
+完成應用程式註冊並記下應用程式名稱、應用程式 (用戶端) 識別碼和租使用者識別碼之後，您必須 [產生新的用戶端密碼](/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret)。 用戶端密碼只會顯示一次。 請記得&安全地儲存用戶端密碼。 在 Microsoft Search 中設定新連線時，請使用用戶端識別碼和用戶端密碼。
 
-若要將已註冊的應用程式新增至您的Azure SQL Database，您需要：
+若要將已註冊的應用程式新增至Azure SQL資料庫，您需要：
 
 - 登入您的Azure SQL資料庫
 - 開啟新的查詢視窗
@@ -69,31 +69,31 @@ instructions.-->
 - 執行 'exec sp_addrolemember 'db_datareader'、[app name]' 或 'ALTER ROLE db_datareader ADD MEMBER [app name]' 命令，將使用者新增至角色
 
 >[!NOTE]
->若要撤銷在 Azure Active Directory 中註冊之任何應用程式的存取權，請參閱移[除已註冊應用程式的](/azure/active-directory/develop/quickstart-remove-app)Azure 檔。
+>若要撤銷對在 Azure Active Directory 中註冊之任何應用程式的存取權，請參閱有關 [移除已註冊應用程式的](/azure/active-directory/develop/quickstart-remove-app)Azure 檔。
 
 ### <a name="connection-settings"></a>連線設定
 
-若要將Microsoft SQL Server連接器連接到資料來源，您必須設定您要編目的資料庫伺服器和內部部署代理程式。 然後，您可以使用必要的驗證方法連線到資料庫。
+若要將 Microsoft SQL Server連接器連接到資料來源，您必須設定您要編目的資料庫伺服器和內部部署代理程式。 然後，您可以使用必要的驗證方法連線到資料庫。
 
 > [!NOTE]
-> - 您的資料庫必須執行 SQL Server 2008 版或更新版本，Microsoft SQL Server連接器才能連線。
+> - 您的資料庫必須SQL Server 2008 版或更新版本執行，Microsoft SQL Server連接器才能連線。
 > - Azure SQL連接器只允許從與 Microsoft 365 相同的[租](/azure/active-directory/develop/quickstart-create-new-tenant)使用者中擷取Azure SQL實例。 不支援跨租使用者資料流程。
 
-針對Azure SQL連接器，您只需要指定要連線的伺服器名稱或 IP 位址。 Azure SQL連接器僅支援Azure Active Directory Open ID connect (OIDC) 驗證來連線到資料庫。
+針對Azure SQL連接器，您只需要指定要連線的伺服器名稱或 IP 位址。 Azure SQL連接器僅支援 Azure Active Directory Open ID connect (OIDC) 驗證來連線到資料庫。
 
 為了增加安全性，您可以為Azure SQL伺服器或資料庫設定 IP 防火牆規則。 若要深入瞭解如何設定 IP 防火牆規則，請參閱 [IP 防火牆規則](/azure/azure-sql/database/firewall-configure)的相關檔。 在防火牆設定中新增下列用戶端 IP 範圍。
 
-| 區域 | IP 範圍 |
-| ------------ | ------------ |
-| NAM | 52.250.92.252/30, 52.224.250.216/30 |
-| EUR | 20.54.41.208/30, 51.105.159.88/30 |
-| APC | 52.139.188.212/30, 20.43.146.44/30 |
+| 區域 | M365 企業版 | M365 Government
+| ------------ | ------------ | ------------ |
+| NAM | 52.250.92.252/30, 52.224.250.216/30 | 52.245.230.216/30, 20.141.117.64/30
+| EUR | 20.54.41.208/30, 51.105.159.88/30 | NA
+| APC | 52.139.188.212/30, 20.43.146.44/30 | NA
 
-若要搜尋資料庫內容，您必須在設定連接器時指定SQL查詢。 這些SQL查詢必須為您想要編制索引的所有資料庫資料行命名 (，也就是來源屬性) ，包括需要執行才能取得所有資料行的任何SQL聯結。 若要限制對搜尋結果的存取，您必須在設定連接器時，指定) 查詢內) 存取控制清單 SQL (ACL。
+若要搜尋資料庫內容，您必須在設定連接器時指定 SQL 查詢。 這些 SQL 查詢需要將您想要編制索引的所有資料庫資料行命名 (也就是來源屬性) ，包括需要執行才能取得所有資料行的任何 SQL 聯結。 若要限制對搜尋結果的存取，您必須在設定連接器時，指定 SQL 查詢內) 存取控制清單 (ACL。
 
 ## <a name="step-3a-full-crawl-required"></a>步驟 3a：需要完整編目 () 
 
-在此步驟中，您會設定SQL查詢，以執行資料庫的完整編目。 完整編目會選取您要選取 [ **查詢**]、[ **搜尋**] 或 [擷 **取**] 選項的所有資料行或屬性。 您也可以指定 ACL 資料行，將搜尋結果的存取限制為特定使用者或群組。
+在此步驟中，您會設定執行資料庫完整編目的 SQL 查詢。 完整編目會選取您要選取 [ **查詢**]、[ **搜尋**] 或 [擷 **取**] 選項的所有資料行或屬性。 您也可以指定 ACL 資料行，將搜尋結果的存取限制為特定使用者或群組。
 
 > [!Tip]
 > 若要取得您需要的所有資料行，您可以聯結多個資料表。
@@ -106,9 +106,9 @@ instructions.-->
 
 選取資料行，如下列範例查詢所示： `SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted`
 
-請注意，SQL連接器不允許 SELECT 子句中具有非英數位元的資料行名稱。 使用別名，從資料行名稱中移除任何非英數位元。 範例 - SELECT *column_name* AS *columnName*
+請注意，SQL 連接器不允許 SELECT 子句中具有非英數位元的資料行名稱。 使用別名，從資料行名稱中移除任何非英數位元。 範例 - SELECT *column_name* AS *columnName*
 
-若要管理搜尋結果的存取權，您可以在查詢中指定一或多個 ACL 資料行。 SQL連接器可讓您控制每個記錄層級的存取權。 您可以選擇對資料表中的所有記錄擁有相同的存取控制。 如果 ACL 資訊儲存在個別的資料表中，您可能必須在查詢中與這些資料表聯結。
+若要管理搜尋結果的存取權，您可以在查詢中指定一或多個 ACL 資料行。 SQL 連接器可讓您控制每個記錄層級的存取權。 您可以選擇對資料表中的所有記錄擁有相同的存取控制。 如果 ACL 資訊儲存在個別的資料表中，您可能必須在查詢中與這些資料表聯結。
 
 上述查詢中每個 ACL 資料行的使用方式如下所述。 下列清單說明四 **種存取控制機制**。
 
@@ -121,7 +121,7 @@ instructions.-->
 
 ### <a name="supported-data-types"></a>支援的資料類型
 
-下表摘要說明 MS SQL 和 Azure SQL 連接器中支援的SQL資料類型。 資料表也會摘要說明支援的SQL資料類型的索引資料類型。 若要深入瞭解 Microsoft Graph連接器支援的資料類型以編制索引，請參閱[屬性資源類型的](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)檔。
+下表摘要說明 MS SQL 和 Azure SQL 連接器中支援的 SQL 資料類型。 資料表也會摘要說明支援的 SQL 資料類型的索引資料類型。 若要深入瞭解 Microsoft Graph 連接器支援用於編制索引的資料類型，請參閱 [屬性資源類型的](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)檔。
 
 | 類別 | 源資料類型 | 編制資料類型的索引 |
 | ------------ | ------------ | ------------ |
@@ -158,21 +158,21 @@ instructions.-->
 
 ### <a name="full-crawl-manage-search-permissions"></a>完整編目：管理搜尋許可權
 
-選 **取 [管理許可權]** 以選擇指定存取控制機制的各種存取控制 (ACL) 資料行。 選取您在完整編目SQL查詢中指定的資料行名稱。
+選 **取 [管理許可權]** 以選擇指定存取控制機制的各種存取控制 (ACL) 資料行。 選取您在完整編目 SQL 查詢中指定的資料行名稱。
 
 每個 ACL 資料行都應該是多重值資料行。 這些多個識別符值可以使用分號 (;) 、逗號 (、) 等分隔符號來分隔。 您必須在值分隔符號欄位中指定此 **分隔符號** 。
 
 使用 作為 ACL 時支援下列識別碼類型：
 
 - **UPN)  (使用者主體名稱**：UPN)  (使用者主體名稱是電子郵件地址格式的系統使用者名稱。 例如，UPN (：john.doe@domain.com) 包含使用者名稱 (登入名稱) 、@符號)  (分隔符號，以及 UPN 尾碼)  (功能變數名稱。
-- **Azure Active Directory (AAD) 標識** 符：在 Azure AD 中，每個使用者或群組都有類似 'e0d3ad3d-0000-1111-2222-3c5f5c52ab9b' 的物件識別碼。
+- **Azure Active Directory (AAD) 識別碼**：在 Azure AD 中，每個使用者或群組都有類似 'e0d3ad3d-0000-1111-2222-3c5f5c52ab9b' 的物件識別碼。
 - **Active Directory (AD) 安全性標識** 符：在內部部署 AD 安裝程式中，每個使用者和群組都有不可變的唯一安全識別碼，看起來像 'S-1-5-21-3878594291-2115959936-132693609-65242.'
 
 ![用來設定存取控制清單的搜尋許可權設定。](media/MSSQL-ACL2.png)
 
 ## <a name="step-3b-incremental-crawl-optional"></a>步驟 3b：累加編目 (選擇性) 
 
-在這個選擇性步驟中，提供SQL查詢來執行資料庫的累加編目。 使用此查詢時，SQL連接器會決定自上次累加編目之後對資料所做的任何變更。 如同在完整編目中，選取您要選取 [ **查詢**]、[ **搜尋**] 或 [擷取] 選項的所有資料 **行**。 指定您在完整編目查詢中指定的同一組 ACL 資料行。
+在這個選擇性步驟中，提供 SQL 查詢來執行資料庫的累加編目。 使用此查詢時，SQL 連接器會決定自上次累加編目之後對資料所做的任何變更。 如同在完整編目中，選取您要選取 [ **查詢**]、[ **搜尋**] 或 [擷取] 選項的所有資料 **行**。 指定您在完整編目查詢中指定的同一組 ACL 資料行。
 
 下圖中的元件類似于完整編目元件，但有一個例外狀況。 在此情況下，「ModifiedDateTime」 是選取的水位線資料行。 檢閱 [完整的編目步驟](#step-3a-full-crawl-required) ，以瞭解如何撰寫累加編目查詢，並查看下列影像作為範例。
 
@@ -224,9 +224,9 @@ To learn more about how to create your verticals and MRTs, see [Search results p
 
 ## <a name="limitations"></a>限制
 
-SQL連接器在預覽版本中有下列限制：
+SQL 連接器在預覽版本中有下列限制：
 
 - Microsoft SQL Server連接器：內部部署資料庫必須SQL Server 2008 版或更新版本執行。
-- Microsoft 365訂用帳戶和 Azure 訂用帳戶 (裝載Azure SQL資料庫) 必須位於相同的Azure Active Directory內。
+- 裝載Azure SQL資料庫 (Microsoft 365 訂用帳戶和 Azure 訂用帳戶) 必須位於相同的 Azure Active Directory 內。
 - ACL 僅支援使用使用者主體名稱 (UPN) 、Azure Active Directory (Azure AD) 或 Active Directory 安全性。
 - 不支援在資料庫資料行內編制豐富內容的索引。 這類內容的範例包括 HTML、JSON、XML、Blob，以及作為資料庫資料行內連結存在的檔剖析。

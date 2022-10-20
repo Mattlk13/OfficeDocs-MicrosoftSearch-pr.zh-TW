@@ -13,13 +13,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
-description: 建立及更新書簽，以及大量編輯Microsoft 搜尋書簽結果的方式
-ms.openlocfilehash: 6d59250c3e18a2915bb0d6ed9e3c261e12eb0772
-ms.sourcegitcommit: b6d4b0a1d885ff27889349bc4f75fee0dec68da7
+description: 建立及更新書簽，以及大量編輯 Microsoft Search 書簽結果的方式
+ms.openlocfilehash: e135fc681e65c776a6f60fc74d9bea1d3f3da907
+ms.sourcegitcommit: d919133a1d8f9b64956a25eb30e4705574452996
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65678636"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67007882"
 ---
 # <a name="manage-bookmarks"></a>管理書籤
 
@@ -42,7 +42,7 @@ ms.locfileid: "65678636"
 在[Microsoft 365 系統管理中心](https://admin.microsoft.com/)中，移至[[書簽]](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks)，然後選擇您要如何建立新的書簽：
 
 - 新增書簽
-- 匯入SharePoint結果
+- 匯入 SharePoint 結果
 - 新增預設書簽和建議的書簽
 - 匯入書簽
 - 發佈或檢閱建議的書簽
@@ -51,21 +51,21 @@ ms.locfileid: "65678636"
 
 搜尋系統管理員和編輯器可以在Microsoft 365 系統管理中心中新增書簽，並將其發佈或儲存至草稿。 發佈書簽會立即重新整理搜尋索引，讓使用者可以立即探索。 您也可以藉由指定要發佈的日期和時間來排程書簽。
 
-- **已發佈**：書簽可透過Microsoft 搜尋提供給組織的使用者。
+- **已發佈**：書簽可透過 Microsoft Search 提供給組織的使用者。
 - **草稿**：儲存為草稿的書簽不適用於您的使用者。 如果您或其他專案關係人想要在發佈書簽之前先檢閱或更新書簽，請使用此狀態。
 - **已排程**：將在指定的日期和時間發佈的書簽。
 
-您可以使用Microsoft 搜尋內容建立者瀏覽器延伸模組，輕鬆地新增書簽。 只要移至您要新增為書簽的網站，然後選取延伸模組中的 [新增]。 若要安裝 Microsoft Edge 或 Google Chrome 的擴充功能，請移至[Chrome 網頁市集](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)，並將其新增至瀏覽器。
+您可以使用 Microsoft Search 內容建立者瀏覽器延伸模組，輕鬆地新增書簽。 只要移至您要新增為書簽的網站，然後選取延伸模組中的 [新增]。 若要安裝 Microsoft Edge 或 Google Chrome 的擴充功能，請移至 [Chrome 網頁市集](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) ，並將其新增至您的瀏覽器。
 
-### <a name="import-sharepoint-results"></a>匯入SharePoint結果
+### <a name="import-sharepoint-results"></a>匯入 SharePoint 結果
 
-如果您的組織在SharePoint中設定升級結果，您可以從租使用者的升級結果匯入標題、URL 和描述，以在Microsoft 搜尋中提供這些專案。 這是快速填入結果並讓使用者更有效地搜尋的簡單方式。 我們建議使用來自 SharePoint 的升級結果作為參考，以瞭解如何命名和建立相關的搜尋結果。 在大部分情況下，只需要幾分鐘的時間，但如果您要匯入大量結果，最多可能需要 48 小時。 匯入完成時，新的書簽會有「建議」狀態;然後，您可以檢閱書簽，並視需要發佈或編輯它們。
+如果您的組織在 SharePoint 中設定升級結果，您可以從租使用者的升級結果匯入標題、URL 和描述，使其可在 Microsoft Search 中使用。 這是快速填入結果並讓使用者更有效地搜尋的簡單方式。 建議您使用 SharePoint 的升級結果作為參考，以瞭解如何命名和建立相關的搜尋結果。 在大部分情況下，只需要幾分鐘的時間，但如果您要匯入大量結果，最多可能需要 48 小時。 匯入完成時，新的書簽會有「建議」狀態;然後，您可以檢閱書簽，並視需要發佈或編輯它們。
 
 ### <a name="add-default-and-suggested-bookmarks"></a>新增預設和建議的書簽
 
 我們包含一些使用者可能會覺得有用的預設建議書簽，包括 HR、權益、IT 支援、密碼管理等書簽。 檢閱、更新及發佈這些建議的書簽，立即為您的使用者提供高品質的結果。
 
-您的使用者也可以建議想要在Microsoft 搜尋中使用意見反應連結來查看新增的書簽。 這些建議會顯示為建議的書籤。
+您的使用者也可以建議想要在 Microsoft Search 中使用意見反應連結來查看新增的書簽。 這些建議會顯示為建議的書籤。
 
 ### <a name="import-bookmarks"></a>匯入書簽
 
@@ -103,18 +103,18 @@ ms.locfileid: "65678636"
 
 ### <a name="publish-or-review-recommended-bookmarks"></a>發佈或檢閱建議的書簽
 
-若要減少新增書簽所需的手動工作，Microsoft 搜尋可以評估貴組織的SharePoint連結和建議的書簽。 您可以在發佈之前先檢閱它們，或將它們設定為自動發佈。 建議的書簽不需要設定，預設會啟用並設定為自動發佈。 若要隨時變更這些設定，請選取 **[管理書簽** ] 以開啟 [書簽設定] 面板。
+為了減少新增書簽所需的手動工作，Microsoft Search 可以評估組織的 SharePoint 連結，並建議使用書簽。 您可以在發佈之前先檢閱它們，或將它們設定為自動發佈。 建議的書簽不需要設定，預設會啟用並設定為自動發佈。 若要隨時變更這些設定，請選取 **[管理書簽** ] 以開啟 [書簽設定] 面板。
 
-:::image type="content" alt-text="Microsoft 365管理入口網站中建議的書簽設定螢幕擷取畫面。" source="media/bookmarks-recommendedsettings.png":::
+:::image type="content" alt-text="Microsoft 365 系統管理入口網站中建議的書簽設定螢幕擷取畫面。" source="media/bookmarks-recommendedsettings.png":::
 
 > [!NOTE]
-> 手動發佈的書簽會出現在Bing中，並SharePoint結果。 自動發佈的書簽只會出現在Bing結果中。
+> 手動發佈的書簽會出現在 Bing 和 SharePoint 結果中。 自動發佈的書簽只會出現在 Bing 結果中。
 
-如果啟用建議的書簽，建議引擎會評估組織中SharePoint網站，以識別高流量連結。 在初始評估期間之後，建議的書簽會自動發佈或新增至建議的書簽清單。 接著會開始下一個週期—30 天的評估期間，接著自動發佈或新增建議的書簽。
+如果已啟用建議的書簽，建議引擎會評估您組織中的 SharePoint 網站，以識別高流量連結。 在初始評估期間之後，建議的書簽會自動發佈或新增至建議的書簽清單。 接著會開始下一個週期—30 天的評估期間，接著自動發佈或新增建議的書簽。
 
 建議搜尋系統管理員或編輯者定期檢閱這些自動發佈或建議的書簽。 此外，建議書籤永遠不會包括在現有已發佈、已建議、已排程或已排除的書籤中的 URL。
 
-為了確保只有具有存取權的使用者才會看到建議的書簽，所有建議的書簽都會包含存取檢查功能。 使用者永遠不會看到無法存取之SharePoint網站的建議書簽。 存取檢查是由每個建議書簽的 [群組] 設定中 [ **只有具有此連結存取權的人員** ] 選項所控制。
+為了確保只有具有存取權的使用者才會看到建議的書簽，所有建議的書簽都會包含存取檢查功能。 使用者永遠不會看到無法存取之 SharePoint 網站的建議書簽。 存取檢查是由每個建議書簽的 [群組] 設定中 [ **只有具有此連結存取權的人員** ] 選項所控制。
 
 如果建議書簽中的 URL 或 [群組] 設定已變更，則會停止存取檢查。
 
@@ -126,21 +126,25 @@ ms.locfileid: "65678636"
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
-**問：在Microsoft 搜尋發佈之後，需要多久的時間才能在Microsoft 搜尋中顯示書簽？**
+**問：在 Microsoft Search 發佈之後，需要多久的時間才能在 Microsoft Search 中看到書簽？**
 
-**答：** 在發行之後，Microsoft 搜尋會立即提供書簽。
+**答：**  發佈之後，Microsoft Search 會立即提供書簽。
 
 **問：建議的書簽需要多久的時間才會出現？**
 
-**答：** 只有在同時啟用建議的書簽和自動發佈時，建議的書簽才會出現在Microsoft 搜尋中。 在初始評估期間，建議引擎會評估SharePoint流量，以識別適當的書簽，然後自動發佈它們。 發佈之後，它們會立即在Microsoft 搜尋中提供。
+**答：**  只有在同時啟用建議的書簽和自動發佈時，建議的書簽才會出現在 Microsoft Search 中。 在初始評估期間，建議引擎會評估 SharePoint 流量，以識別適當的書簽，然後自動發佈它們。 發佈之後，它們會立即在 Microsoft Search 中提供。
 
-**問：從Microsoft 搜尋結果中移除已刪除的書簽需要多久時間？**
+**問：從 Microsoft Search 結果中移除已刪除的書簽需要多久時間？**
 
 **答**：已刪除的書簽會立即從工作結果中移除。
 
-**問：Microsoft 搜尋建議來自所有語言網站的書簽嗎？**
+**問：可以建立的書簽數目是否有限制？**
 
-**答**：是，不論語言為何，Microsoft 搜尋都可以建議來自任何內部SharePoint網站的書簽。
+**答**：建議將租使用者的書簽數目限制為少於 5，000 個。
+
+**問：Microsoft Search 是否會建議來自所有語言網站的書簽？**
+
+**答**：是，不論語言為何，Microsoft Search 都可以建議來自任何內部 SharePoint 網站的書簽。
 
 **問：我可以停止在搜尋結果中顯示建議的書簽嗎？**
 
@@ -160,7 +164,7 @@ ms.locfileid: "65678636"
 
 **問：哪裡可以找到 Power App 的應用程式識別碼？**
 
-**答**：移至Power Apps網站，並檢視應用程式的 [詳細資料] 窗格。 深入瞭解 [取得應用程式識別碼](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id)。
+**答**：移至 Power Apps 網站，並檢視應用程式的 [詳細資料] 窗格。 深入瞭解 [取得應用程式識別碼](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id)。
 
 **問：如何在書簽設定中決定國家或地區？**
 

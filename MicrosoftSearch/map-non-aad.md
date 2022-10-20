@@ -12,21 +12,21 @@ search.appverid:
 - MET150
 - MOE150
 description: 如何對應非 AAD 身分識別的步驟
-ms.openlocfilehash: 9df439ee860ffec87bb3f3df9f5f4506278c5ca5
-ms.sourcegitcommit: d267711f8e1c68849c99a4aad2bd387214825416
+ms.openlocfilehash: 1ab9223e3978c0126a8132391faa92c677484bb9
+ms.sourcegitcommit: 21391072f80fece9b421c89787812cdaa84324f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65645980"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66888961"
 ---
 # <a name="map-your-non-azure-ad-identities"></a>對應您的非 Azure AD 身分識別  
 
 本文將逐步引導您將非 Azure AD 身分識別對應至您的 Azure AD 身分識別，讓存取控制清單中的人員 (具有非 Azure AD 身分識別的 ACL) 可以看到其範圍的連接器搜尋結果。
 
-這些步驟只與設定[Confluence Cloud](confluence-cloud-connector.md)、[Confluence On-premises](confluence-onpremises-connector.md)、[ServiceNow Knowledge](servicenow-knowledge-connector.md)、[ServiceNow Catalog](servicenow-catalog-connector.md)或[Salesforce](salesforce-connector.md)連接器的搜尋系統管理員相關，Microsoft 具有「僅限具有此資料來源存取權的人員」和身分識別類型「非 AAD」的搜尋許可權。
+這些步驟只與由 Microsoft 設定 [Confluence Cloud](confluence-cloud-connector.md)、 [Confluence On-premises](confluence-onpremises-connector.md)、 [ServiceNow Knowledge](servicenow-knowledge-connector.md)、 [ServiceNow Catalog、ServiceNow](servicenow-catalog-connector.md) [Tickets](servicenow-tickets-connector.md) 或 [Salesforce](salesforce-connector.md) 連接器的搜尋系統管理員相關，且其搜尋許可權為「僅限具有此資料來源存取權的人員」和身分識別類型「非 AAD」。
 
 >[!NOTE]
->如果您要設定Salesforce連接器，並在搜尋許可權畫面上選取 [**只有具有此資料來源存取權的人員** 和身分識別類型 **AAD**]，請參閱對應 [您的 Azure AD](map-aad.md)身分識別一文，以取得如何對應 Azure AD 身分識別的步驟。  
+>如果您要設定 Salesforce 連接器，並在搜尋許可權畫面上選取 **[只有具有此資料來源** 和身分識別類型 **AAD** 的人員]，請參閱對應 [您的 Azure AD](map-aad.md) 身分識別一文，以取得如何對應 Azure AD 身分識別的步驟。  
 
 ## <a name="steps-for-mapping-your-non-azure-ad-properties"></a>對應非 Azure AD 屬性的步驟
 
@@ -44,7 +44,7 @@ ms.locfileid: "65645980"
 
 ### <a name="2-select-non-azure-ad-user-properties-to-map"></a>2.選取要對應的非 Azure AD 使用者屬性
 
-您可以選取從資料來源提取的非 Azure AD 屬性，以套用正則運算式。 若要深入瞭解如何在您的資料來源中找到這些屬性，請參閱[Confluence Cloud](confluence-cloud-connector.md)、[Confluence 內部](confluence-onpremises-connector.md)部署、[ServiceNow 知識](servicenow-knowledge-connector.md)、[ServiceNow 目錄](servicenow-catalog-connector.md)和[Salesforce](salesforce-connector.md)頁面。  
+您可以選取從資料來源提取的非 Azure AD 屬性，以套用正則運算式。 若要深入瞭解如何在資料來源中找到這些屬性，請參閱 [Confluence Cloud](confluence-cloud-connector.md)、 [Confluence 內部](confluence-onpremises-connector.md)部署、 [ServiceNow 知識](servicenow-knowledge-connector.md)、 [ServiceNow 目錄](servicenow-catalog-connector.md)、 [ServiceNow Tickets](servicenow-tickets-connector.md) 和 [Salesforce](salesforce-connector.md) 頁面。  
 
 您可以從下拉式清單中選取非 Azure AD 使用者屬性，並提供要套用在這些使用者屬性值上的正則運算式。
 

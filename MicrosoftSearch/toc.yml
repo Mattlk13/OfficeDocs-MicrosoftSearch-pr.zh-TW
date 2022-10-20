@@ -48,6 +48,8 @@ items:
         items:
           - name: 概觀
             href: connectors-overview.md
+          - name: 電子檔探索概觀
+            href: compliance-ediscovery.md
           - name: 連接器庫
             href: connectors-gallery.md
           - name: 設定 Microsoft 建置的連接器
@@ -96,6 +98,8 @@ items:
                     href: servicenow-catalog-connector.md
                   - name: ServiceNow 知識
                     href: servicenow-knowledge-connector.md
+                  - name: 'ServiceNow Tickets (預覽) '
+                    href: servicenow-tickets-connector.md
           - name: 管理連線
             items:
               - name: 監控連線
@@ -108,7 +112,7 @@ items:
             href: terms-of-use.md
       - name: 同盟搜尋連接器
         items:
-          - name: Dynamics 365
+          - name: Dataverse 和 Dynamics 365
             href: manage-dynamics365.md
           - name: Azure 認知搜尋
             href: manage-azure-cognitive-search.md
@@ -124,6 +128,8 @@ items:
         href: result-cluster.md
       - name: 管理篩選
         href: custom-filters.md
+      - name: '管理架構 (預覽) '
+        href: manage-search-schema.md
       - name: SharePoint 中的 Microsoft 搜尋
         items:
           - name: 概觀
@@ -140,6 +146,8 @@ items:
             href: overview-microsoft-search-bing.md
           - name: 安全性和隱私權
             href: security-for-search.md
+          - name: 使用 Windows 搜尋尋找公司或學校結果
+            href: use-windows-search-find-work-school-results.md
           - name: 自訂 Microsoft Edge 的網址列捷徑
             href: edge-shortcuts.md
           - name: 將搜尋方塊新增至您的內部網路網站

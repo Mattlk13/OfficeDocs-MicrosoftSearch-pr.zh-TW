@@ -13,30 +13,30 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NoIndex
-description: 設定適用于 Microsoft 搜尋 的 Oracle SQL Microsoft Graph 連接器。
-ms.openlocfilehash: dbbb70d77de1140f066e050750e2b076f1f7ff8e
-ms.sourcegitcommit: d267711f8e1c68849c99a4aad2bd387214825416
+description: 設定適用于 Microsoft Search 的 Oracle SQL Microsoft Graph 連接器。
+ms.openlocfilehash: 0cfd725fac5c673aaad2b10b912c30a133efeb89
+ms.sourcegitcommit: 4aa2e8328d7071d1d9011b77d9fe31729a994168
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65645989"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68217911"
 ---
 <!---Previous ms.author:vivg --->
 
 # <a name="oracle-sql-microsoft-graph-connector"></a>Oracle SQL Microsoft Graph 連接器
 
-Oracle SQL Graph連接器可讓您的組織從內部部署 Oracle 資料庫探索資料並編制索引。 連接器會將指定的內容索引到Microsoft 搜尋。 若要讓索引與來源資料保持在最新狀態，它支援定期完整和累加編目。 使用 Oracle SQL連接器，您也可以限制特定使用者的搜尋結果存取權。
+Oracle SQL Graph 連接器可讓您的組織從內部部署 Oracle 資料庫探索資料並編制索引。 連接器會將指定的內容索引至 Microsoft Search。 若要讓索引與來源資料保持在最新狀態，它支援定期完整和累加編目。 使用 Oracle SQL 連接器，您也可以限制特定使用者的搜尋結果存取權。
 
 > [!NOTE]
-> 請閱讀 [**Microsoft 365 系統管理中心文章中的設定 Microsoft Graph 連接器**](configure-connector.md)一文，以瞭解一般 Microsoft Graph 連接器設定指示。
+> 閱讀Microsoft 365 系統管理中心文章 [**中的設定 Microsoft Graph 連接器**](configure-connector.md)一文，以瞭解一般 Microsoft Graph 連接器設定指示。
 
-本文適用于設定、執行及監視 Oracle SQL Graph連接器的任何人。 它會補充一般設定程式，並顯示僅適用于 Oracle SQL Graph連接器的指示。 本文也包含 [疑難排解](#troubleshooting) 和 [限制的相關](#limitations)資訊。
+本文適用于設定、執行及監視 Oracle SQL Graph 連接器的任何人。 它會補充一般設定程式，並顯示僅適用于 Oracle SQL Graph 連接器的指示。 本文也包含 [疑難排解](#troubleshooting) 和 [限制的相關](#limitations)資訊。
 
 ## <a name="before-you-get-started"></a>開始之前
 
 ### <a name="install-the-connector-agent"></a>安裝連接器代理程式
 
-若要存取內部部署協力廠商資料，您必須安裝並設定Graph連接器代理程式。 若要深入瞭解，請參閱[安裝Graph連接器代理](graph-connector-agent.md)程式。  
+若要存取內部部署協力廠商資料，您必須安裝並設定 Graph 連接器代理程式。 若要深入瞭解，請參閱 [安裝 Graph 連接器代理](graph-connector-agent.md) 程式。  
 
 ## <a name="step-1-add-a-connector-in-the-microsoft-365-admin-center"></a>步驟 1：在Microsoft 365 系統管理中心中新增連接器
 
@@ -50,18 +50,22 @@ Oracle SQL Graph連接器可讓您的組織從內部部署 Oracle 資料庫探�
 
 ## <a name="step-3-configure-the-connection-settings"></a>步驟 3：設定連線設定
 
-若要將 Oracle SQL連接器連接到資料來源，您必須設定您要編目的資料庫伺服器和內部部署Graph連接器代理程式。 然後，您可以使用必要的驗證方法連線到資料庫。
+若要將 Oracle SQL 連接器連接到資料來源，您必須設定您要編目的資料庫伺服器和內部部署 Graph 連接器代理程式。 然後，您可以使用必要的驗證方法連線到資料庫。
 
-針對 Oracle SQL連接器，您必須指定主機名稱、埠和服務 (資料庫) 名稱以及慣用的驗證方法、使用者名稱和密碼。
+針對 Oracle SQL 連接器，您必須指定主機名稱、埠和服務 (資料庫) 名稱以及慣用的驗證方法、使用者名稱和密碼。
+
+如果服務名稱無法使用，而且您使用 SID 連線，則可以使用下列其中一個命令來衍生服務名稱， (以 sys 系統管理員身分執行) - 
+* 從 gv$session 中選取SERVICE_NAME，其中 sid 在 (從 v$MYSTAT) 選取 sid;
+* 從雙重選sys_coNtext ('userenv'，'service_name') ;
 
 > [!NOTE]
 > 您的資料庫必須執行 Oracle 資料庫 11g 版或更新版本，連接器才能連線。 連接器支援裝載于 Windows、Linux 和 Azure VM 平臺上的 Oracle 資料庫。
 
-若要搜尋資料庫內容，您必須在設定連接器時指定SQL查詢。 這些SQL查詢必須為您想要編制索引的所有資料庫資料行命名 (，也就是來源屬性) ，包括需要執行才能取得所有資料行的任何SQL聯結。 若要限制對搜尋結果的存取，您必須在設定連接器時，指定) 查詢內) 存取控制清單 SQL (ACL。
+若要搜尋資料庫內容，您必須在設定連接器時指定 SQL 查詢。 這些 SQL 查詢需要將您想要編制索引的所有資料庫資料行命名 (也就是來源屬性) ，包括需要執行才能取得所有資料行的任何 SQL 聯結。 若要限制對搜尋結果的存取，您必須在設定連接器時，指定 SQL 查詢內) 存取控制清單 (ACL。
 
 ## <a name="step-3a-full-crawl-required"></a>步驟 3a：需要完整編目 () 
 
-在此步驟中，您會設定SQL查詢，以執行資料庫的完整編目。 完整編目會選取您要選取 [ **查詢**]、[ **搜尋**] 或 [擷 **取**] 選項的所有資料行或屬性。 您也可以指定 ACL 資料行，將搜尋結果的存取限制為特定使用者或群組。
+在此步驟中，您會設定執行資料庫完整編目的 SQL 查詢。 完整編目會選取您要選取 [ **查詢**]、[ **搜尋**] 或 [擷 **取**] 選項的所有資料行或屬性。 您也可以指定 ACL 資料行，將搜尋結果的存取限制為特定使用者或群組。
 
 > [!Tip]
 > 若要取得您需要的所有資料行，您可以聯結多個資料表。
@@ -74,7 +78,7 @@ Oracle SQL Graph連接器可讓您的組織從內部部署 Oracle 資料庫探�
 
 選取資料行，如下列範例查詢所示： `SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted`
 
-若要管理搜尋結果的存取權，您可以在查詢中指定一或多個 ACL 資料行。 SQL連接器可讓您控制每個記錄層級的存取權。 您可以選擇對資料表中的所有記錄擁有相同的存取控制。 如果 ACL 資訊儲存在個別的資料表中，您可能必須在查詢中與這些資料表聯結。
+若要管理搜尋結果的存取權，您可以在查詢中指定一或多個 ACL 資料行。 SQL 連接器可讓您控制每個記錄層級的存取權。 您可以選擇對資料表中的所有記錄擁有相同的存取控制。 如果 ACL 資訊儲存在個別的資料表中，您可能必須在查詢中與這些資料表聯結。
 
 上述查詢中每個 ACL 資料行的使用方式如下所述。 下列清單說明四 **種存取控制機制**。
 
@@ -87,14 +91,14 @@ Oracle SQL Graph連接器可讓您的組織從內部部署 Oracle 資料庫探�
 
 ### <a name="supported-data-types"></a>支援的資料類型
 
-下表摘要說明 Oracle SQL連接器支援的資料類型。 資料表也會摘要說明支援的SQL資料類型的索引資料類型。 若要深入瞭解 Microsoft Graph連接器支援的資料類型以編制索引，請參閱[屬性資源類型的](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)檔。
+下表摘要說明 Oracle SQL 連接器支援的資料類型。 資料表也會摘要說明支援的 SQL 資料類型的索引資料類型。 若要深入瞭解 Microsoft Graph 連接器支援用於編制索引的資料類型，請參閱 [屬性資源類型的](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)檔。
 
 | 類別 | 源資料類型 | 編制資料類型的索引 |
 | ------------ | ------------ | ------------ |
 | 數位資料類型 | NUMBER (p，0)  | int64 (for p <= 18)  <br> p > 18) 的雙 ( |
 | 浮點數資料類型 | NUMBER (p，s)  <br> FLOAT (p)  | double |
 | 日期資料類型 | 日期 <br> 時間 戳 <br> TIMESTAMP (n)  | datetime |
-| 字元資料類型 | CHAR (n)  <br> VARCHAR <br> VARCHAR2 <br> 長 <br> CLOB <br> NCLOB | 字串 |
+| 字元資料類型 | CHAR (n)  <br> VARCHAR <br> VARCHAR2 <br> 長 <br> Clob <br> NCLOB | 字串 |
 | Unicode 字元資料類型 | NCHAR <br> NVARCHAR | 字串 |
 | RowID 資料類型 | ROWID <br> UROWID | 字串 |
 
@@ -123,7 +127,7 @@ Oracle SQL Graph連接器可讓您的組織從內部部署 Oracle 資料庫探�
 
 ### <a name="full-crawl-manage-search-permissions"></a>完整編目：管理搜尋許可權
 
-選 **取 [管理許可權]** 以選擇指定存取控制機制的各種存取控制 (ACL) 資料行。 選取您在完整編目SQL查詢中指定的資料行名稱。
+選 **取 [管理許可權]** 以選擇指定存取控制機制的各種存取控制 (ACL) 資料行。 選取您在完整編目 SQL 查詢中指定的資料行名稱。
 
 每個 ACL 資料行都應該是多重值資料行。 這些多個識別符值可以使用分號 (;) 、逗號 (、) 等分隔符號來分隔。 您必須在值分隔符號欄位中指定此 **分隔符號** 。
 
@@ -137,7 +141,7 @@ Oracle SQL Graph連接器可讓您的組織從內部部署 Oracle 資料庫探�
 
 ## <a name="step-3b-incremental-crawl-optional"></a>步驟 3b：累加編目 (選擇性) 
 
-在這個選擇性步驟中，提供SQL查詢來執行資料庫的累加編目。 使用此查詢時，SQL連接器會決定自上次累加編目之後對資料所做的任何變更。 如同在完整編目中，選取 **[查詢**]、[ **搜尋**] 或 [ **擷取]** 選項。 指定您在完整編目查詢中指定的同一組 ACL 資料行。
+在這個選擇性步驟中，提供 SQL 查詢來執行資料庫的累加編目。 使用此查詢時，SQL 連接器會決定自上次累加編目之後對資料所做的任何變更。 如同在完整編目中，選取 **[查詢**]、[ **搜尋**] 或 [ **擷取]** 選項。 指定您在完整編目查詢中指定的同一組 ACL 資料行。
 
 下圖中的元件類似于完整編目元件，但有一個例外狀況。 在此情況下，「ModifiedDateTime」 是選取的水位線資料行。 檢閱 [完整的編目步驟](#step-3a-full-crawl-required) ，以瞭解如何撰寫累加編目查詢，並查看下列影像作為範例。
 
@@ -159,9 +163,9 @@ Oracle SQL Graph連接器可讓您的組織從內部部署 Oracle 資料庫探�
 
 ## <a name="step-7-choose-refresh-settings"></a>步驟 7：選擇重新整理設定
 
-Oracle SQL連接器支援完整和增量編目的重新整理排程。 我們建議您設定兩者。
+Oracle SQL 連接器支援完整和增量編目的重新整理排程。 我們建議您設定兩者。
 
-完整編目排程會尋找先前同步至Microsoft 搜尋索引的已刪除資料列，以及移出同步篩選的任何資料列。 當您第一次連線到資料庫時，會執行完整編目來同步處理從完整編目查詢擷取的所有資料列。 若要同步處理新的資料列並進行更新，您需要排程累加編目。
+完整編目排程會尋找先前同步至 Microsoft Search 索引的已刪除資料列，以及移出同步篩選的任何資料列。 當您第一次連線到資料庫時，會執行完整編目來同步處理從完整編目查詢擷取的所有資料列。 若要同步處理新的資料列並進行更新，您需要排程累加編目。
 
 ## <a name="step-8-review-connection"></a>步驟 8：檢閱連線
 
@@ -184,11 +188,11 @@ To learn more about how to create your verticals and MRTs, see [Search results p
 | 資料庫設定 | 來自資料庫伺服器的錯誤：ORA-12541：TNS：沒有接聽程式 | 不正確埠 |
 | 資料庫設定 | 來自資料庫伺服器的錯誤：ORA-12514：TNS：接聽程式目前不知道連接器描述元中要求的服務 | 不正確服務 (資料庫) 名稱 |
 | 資料庫設定 | 來自資料庫伺服器的錯誤：使用者 ' `user` ' 的登入失敗。 | 不正確使用者名稱或密碼 |
-| 完整編目 | 從完整編目SQL查詢傳回的資料行column_name包含非英數位元 | SELECT 子句中的資料行名稱中不允許非英數位元 (如底線) 。 使用別名重新命名資料行，並移除非英數位元 (範例 - SELECT column_name AS columnName) 。 |
+| 完整編目 | 從完整編目 SQL 查詢傳回的資料行column_name包含非英數位元 | SELECT 子句中的資料行名稱中不允許非英數位元 (如底線) 。 使用別名重新命名資料行，並移除非英數位元 (範例 - SELECT column_name AS columnName) 。 |
 
 ## <a name="limitations"></a>限制
 
-Oracle SQL連接器在預覽版本中有下列限制：
+Oracle SQL 連接器在預覽版本中有下列限制：
 
 * 內部部署資料庫必須執行 Oracle Database 11g 版或更新版本。
 * ACL 僅支援使用使用者主體名稱 (UPN) 、Azure Active Directory (Azure AD) 或 Active Directory 安全性。

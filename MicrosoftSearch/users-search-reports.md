@@ -9,17 +9,19 @@ audience: Admin
 ms.audience: Admin
 ms.date: ''
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 檢閱 Microsoft 搜尋使用者使用量報告
-ms.openlocfilehash: e551b77a2c10108bdbed9be78bc5e32923c9a08c
-ms.sourcegitcommit: 2d32579d3f10e38acdcc185fa891b0a43a750489
+ms.openlocfilehash: 8d7cfada2c7146062169ea5a69aff75ed7e29da1
+ms.sourcegitcommit: 6ae319b4da98b45ac2c7cbce15bc1fdc9d799cea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66713654"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68523677"
 ---
 # <a name="microsoft-search-usage-report--users"></a>Microsoft 搜尋使用量報告 – 使用者
 
@@ -75,4 +77,4 @@ ms.locfileid: "66713654"
 [Microsoft 搜尋使用量報告](usage-reports.md)</br>
 [Microsoft 搜尋使用量報告 - 查詢](queries-usage-reports.md)</br>
 [Microsoft 搜尋使用量報告 - 連線分析](connection-analytics-reports.md)</br>
-[檢視新式網站中的搜尋使用量報告](/sharepoint/view-search-usage-reports-modern-sites.md)
+[檢視新式網站中的搜尋使用量報告](/sharepoint/view-search-usage-reports-modern-sites)

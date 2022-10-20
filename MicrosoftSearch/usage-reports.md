@@ -9,17 +9,20 @@ audience: Admin
 ms.audience: Admin
 ms.date: ''
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 檢閱 Microsoft Search 使用量報告
-ms.openlocfilehash: 064ab3a68daf2cc8c147dd8dc54324aa54ea27aa
-ms.sourcegitcommit: 1fd99bd7e15392dba3a0d9339263469bbb021c01
+recommendations: false
+ms.openlocfilehash: b3cfcf512691a7e1beb8fb4749f45ccd202a5615
+ms.sourcegitcommit: 6ae319b4da98b45ac2c7cbce15bc1fdc9d799cea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66795151"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68523686"
 ---
 # <a name="microsoft-search-usage-reports"></a>Microsoft 搜尋使用量報告
 
@@ -101,7 +104,7 @@ Microsoft 搜尋使用量報表頁面中的每個報表和資料表都有一個�
 1. 在 [Microsoft 365 系統管理中心中，選取 [**設定]**，然後選取 [**組織設定]**。 
 2. 在 [組織設定] 頁面上，選 **取 [搜尋&智慧使用方式分析]**。 
 3. 在 [搜尋&智慧使用方式分析] 頁面上，取消核取 [ **允許依國家/地區、事業、部門或部門篩選使用量報告]**。
-4. 選取 [儲存 **]**。 
+4. 選取 [儲存]。 
 
 ## <a name="related-articles"></a>相關文章
 

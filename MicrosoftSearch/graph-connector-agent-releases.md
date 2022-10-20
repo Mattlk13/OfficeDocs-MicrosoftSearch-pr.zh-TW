@@ -10,12 +10,12 @@ ms.service: mssearch
 ms.localizationpriority: medium
 search.appverid: ''
 description: Microsoft Graph 連接器代理程式的發行歷程記錄，可用來使用 Microsoft 建置的連接器為內部部署資料來源編制索引
-ms.openlocfilehash: 50442bcaaa2d171e80f9eca4e7d1a72bd2f03ddb
-ms.sourcegitcommit: cd9d40240399d04eb77250b8b5b116e2d2c1bc70
+ms.openlocfilehash: 4fac8522a597307975305243f11ec840f011dcab
+ms.sourcegitcommit: 8357d8d66ed5771f314787ddc875ed1e20d6e940
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66531180"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "67423643"
 ---
 # <a name="release-history-for-microsoft-graph-connector-agent"></a>Microsoft Graph 連接器代理程式的發行歷程記錄
 
@@ -24,6 +24,10 @@ ms.locfileid: "66531180"
 如需安裝的說明，請參閱此 [頁面](graph-connector-agent.md#installation)
 
 [下載最新的 Graph 連接器代理程式](https://aka.ms/gcadownload)
+
+### <a name="version-1800-25-jul-2022"></a>版本 1.8.0.0 (*25 Jul 2022*) 
+* 支援增量編目和 OAuth for Microsoft Graph 連接器 SDK
+* 錯誤修正和可靠性改善
 
 ### <a name="version-1700-16-jun-2022"></a>版本 1.7.0.0 (*2022 年 6 月 16* 日) 
 * 停止編目和擷取資料的能力
